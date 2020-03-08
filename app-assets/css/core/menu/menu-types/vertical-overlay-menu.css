@@ -39,7 +39,7 @@
   transition: width .25s,opacity .25s,transform .25s;
   width: 260px;
   left: -260px;
-  top: 66px; }
+  top: 60px; }
   .vertical-overlay-menu .main-menu .navigation > li > a > span.badge {
     position: absolute;
     right: 20px; }

@@ -11,7 +11,7 @@
     <meta name="keywords"
         content="admin template, Frest admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
-    <title>2 Columns - Frest - Bootstrap HTML admin template</title>
+    <title>7-11賣貨便</title>
     <link rel="apple-touch-icon" sizes="60x60" href="../../../app-assets/images/ico/apple-icon-60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="../../../app-assets/images/ico/apple-icon-76.png">
     <link rel="apple-touch-icon" sizes="120x120" href="../../../app-assets/images/ico/apple-icon-120.png">
@@ -46,7 +46,7 @@
 <!-- BEGIN: Body-->
 
 <body data-menu="vertical-menu-modern"
-    class="vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-expanded">
+    class="seven-global vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-expanded">
 
 
     <!-- BEGIN: Header-->
@@ -104,16 +104,12 @@
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
             <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand"
-                        href="../html/ltr/vertical-menu-boxicons-template/index.html">
-                        <div class="brand-logo"></div>
-                        <h2 class="brand-text mb-0">Frest</h2>
-
-                    </a></li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i
-                            class="bx bx-x d-block d-xl-none font-medium-4 primary toggle-icon"></i><i
-                            class="toggle-icon bx bx-disc font-medium-4 d-none d-xl-block collapse-toggle-icon primary "
-                            data-ticon="bx-disc"></i></a></li>
+                <li class="nav-item mr-auto"></li>
+                <li class="nav-item nav-toggle">
+                    <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+                        <i class="bx bx-x d-block d-xl-none font-medium-4 primary "></i>
+                        <i class=" bx  bx-menu font-medium-4 d-none d-xl-block 
+                            primary "></i></a></li>
             </ul>
         </div>
         <div class="shadow-bottom"></div>
@@ -211,7 +207,7 @@
         </div>
         <div class="sidebar-right sidebar-sticky">
             <div class="sidebar">
-                <div class=" pr-2 ">
+                <div class="  ">
                     <div class="sidebar-content  " data-spy="affix" data-offset-top="-77">
                         <div class="card">
                             <div class="card-header">
@@ -252,8 +248,7 @@
                                 </div>
                                 <h6 class="border-top-grey border-top-lighten-2  mb-2 text-right">
                                     <a class="nav-link display-block text-muted" href="#">
-                                        <span
-                                            class="badge badge-light-grey badge-pill badge-round  ">了解更多 ></span>
+                                        <span class="badge badge-light-grey badge-pill badge-round  ">了解更多 ></span>
                                     </a>
                                 </h6>
                             </div>
@@ -294,114 +289,110 @@
                         </section>
                         <section id="content-right-sidebar-css" class="card">
                             <div class="card-header">
-                                <h4 class="card-title">CSS Classes</h4>
+                                <h4 class="card-title">待辦事項總覽 <img src="../app-assets/images/icon/info.png" alt=""
+                                        class="info-i" data-toggle="modal" data-target="#default"></h4>
                             </div>
+
+
+                            <!--基礎燈箱 -->
+                            <div class="modal fade text-left" id="default" tabindex="-1" role="dialog"
+                                aria-labelledby="myModalLabel1" style="display: none;" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="modal-title" id="myModalLabel1">Basic Modal</h3>
+                                            <button type="button" class="close rounded-pill" data-dismiss="modal"
+                                                aria-label="Close">
+                                                <i class="bx bx-x"></i>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>
+                                                Bonbon caramels muffin. Chocolate bar oat cake cookie pastry dragée
+                                                pastry. Carrot cake
+                                                chocolate tootsie roll chocolate bar candy canes biscuit.
+
+                                                Gummies bonbon apple pie fruitcake icing biscuit apple pie jelly-o
+                                                sweet roll. Toffee sugar
+                                                plum sugar plum jelly-o jujubes bonbon dessert carrot cake. Cookie
+                                                dessert tart muffin topping
+                                                donut icing fruitcake. Sweet roll cotton candy dragée danish Candy
+                                                canes chocolate bar cookie.
+                                                Gingerbread apple pie oat cake. Carrot cake fruitcake bear claw.
+                                                Pastry gummi bears
+                                                marshmallow jelly-o.
+                                            </p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light-secondary" data-dismiss="modal">
+                                                <i class="bx bx-x d-block d-sm-none"></i>
+                                                <span class="d-none d-sm-block">Close</span>
+                                            </button>
+                                            <button type="button" class="btn btn-primary ml-1" data-dismiss="modal">
+                                                <i class="bx bx-check d-block d-sm-none"></i>
+                                                <span class="d-none d-sm-block">Accept</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 燈箱結束 -->
+
                             <div class="card-content" aria-expanded="true">
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <p>This table contains all classes related to the content left sidebar layout.
-                                            This is a custom
-                                            layout classes for content left sidebar layout page requirements.</p>
-                                        <p>All these options can be set via following classes:</p>
-                                        <div class="table-responsive">
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Classes</th>
-                                                        <th>Description</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th scope="row"><code>.content-right-sidebar</code></th>
-                                                        <td>You can create 3 column right layout by adding
-                                                            <code>.content-right-sidebar</code> class in
-                                                            <code>&lt;body&gt;</code> tag.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row"><code>.sidebar-right</code></th>
-                                                        <td>In this layout sidebar should be float in right side, so
-                                                            <code>.sidebar-right</code> class needs to add in sidebar
-                                                            wrapper.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row"><code>.content-left</code></th>
-                                                        <td>In this layout content should be float in left side, so
-                                                            <code>.content-left</code> class needs to add in content
-                                                            wrapper.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <p>可用點數<span class="text-primary">8888</span> OPEN POINT點數(可折抵<span
+                                                class="text-primary">888</span>元運費或購物金）</p>
+                                        <button type="button" class="btn btn-primary glow btn-block">我的賣場</button>
+                                        <div class="shop-area d-flex">
+                                            <a class="shop-list">
+                                                <div class="shop-number text-primary">10</div>
+                                                <div class="shop-name">全部賣場</div>
+                                            </a>
+                                            <a class="shop-list">
+                                                <div class="shop-number text-primary">50</div>
+                                                <div class="shop-name">上架中賣場</div>
+                                            </a>
+                                            <a class="shop-list">
+                                                <div class="shop-number text-primary">120</div>
+                                                <div class="shop-name">已下架賣場</div>
+                                            </a>
+                                            <a class="shop-list">
+                                                <div class="shop-number text-primary">10</div>
+                                                <div class="shop-name">遭檢舉賣場</div>
+                                            </a>
+                                            <a class="shop-list">
+                                                <div class="shop-number text-primary">10</div>
+                                                <div class="shop-name">暫存</div>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </section>
                         <!--/ CSS Classes -->
-                        <!-- HTML Markup -->
-                        <section id="content-right-sidebar-html" class="card">
-                            <div class="card-header">
-                                <h4 class="card-title">HTML Markup</h4>
-                                <div class="heading-elements">
-                                    <ul class="list-inline mb-0">
-                                        <li><a data-action="collapse"><i class="bx bx-chevron-down"></i></a></li>
-                                        <li><a data-action="reload"><i class="bx bx-rotate-right"></i></a></li>
-                                        <li><a data-action="close"><i class="bx bx-x"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="card-content collapse show" aria-expanded="true">
-                                <div class="card-body">
-                                    <div class="card-text">
-                                        <p>This section contains HTML Markup to create <strong>3 column right sidebar
-                                                layout</strong>. You
-                                            need to add the <code>.content-right-sidebar</code> class in the
-                                            <code>&lt;body&gt;</code> tag
-                                            as show in below. This layout has a navigation, content and right sidebar
-                                            sections with common
-                                            header &amp; footer.</p>
-                                        <ul>
-                                            <li>Contain the <code>.content-left</code> class for adjusting content
-                                                section in right side.
-                                            </li>
-                                            <li>Contain the <code>.sidebar-right</code> class for adjusting sidebar
-                                                section in left side.
-                                            </li>
-                                        </ul>
-                                        <div class="prism-show-language">
-                                            <div class="prism-show-language-label">Markup</div>
-                                        </div>
-                                        <pre
-                                            class=" language-markup"><code class=" language-markup"><span class="token doctype">&lt;!DOCTYPE html&gt;</span><span class="token lf">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">data-menu</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-menu-modern<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>vertical-layout vertical-menu-modern content-right-sidebar navbar-sticky footer-static menu-expanded<span class="token punctuation">"</span></span> <span class="token attr-name">data-col</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content-right-sidebar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- BEGIN Content--&gt;</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>app-content content<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content-area-wrapper<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- sidebar right--&gt;</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sidebar-right<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>sidebar<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span>...<span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- sidebar right Ends--&gt;</span><span class="token lf">
-</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- content left--&gt;</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>content-left<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span>...<span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- content left Ends--&gt;</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token space"> </span><span class="token comment" spellcheck="true">&lt;!-- END Content--&gt;</span><span class="token lf">
-</span><span class="token space"> </span><span class="token space"> </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span><span class="token lf">
-</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code></pre>
+                       <section class="quick-link">
+                           <div class="row">
+                               <div class="col-md-4">
+                                   <div class="card quick-link-function  ">
+                                       
+                                       <p><i class="bx bx-search"></i><span>店鋪查詢</span></p>
+                                   </div>
+                               </div>
+                               <div class="col-md-4">
+                                    <div class="card quick-link-function">
+                                        
+                                        <p><i class="bx bx-time"></i><span>教學影片</span></p>
                                     </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!--/ HTML Markup -->
+                               </div>
+                               <div class="col-md-4">
+                                    <div class="card quick-link-function">
+                                       <p><i class="bx bx-award"></i>
+                                        <span>賣家應援站</span></p>
+                                    </div>
+                               </div>
+                           </div>
+                       </section>
                     </section>
                     <!--/ Content Right Sidebar-->
 
@@ -417,13 +408,11 @@
     <div class="drag-target"></div>
 
     <!-- BEGIN: Footer-->
-    <footer class="footer footer-static footer-light">
-        <p class="clearfix mb-0"><span class="float-left d-inline-block">2019 &copy; PIXINVENT</span><span
-                class="float-right d-sm-inline-block d-none">Crafted with<i
-                    class="bx bxs-heart pink mx-50 font-small-3"></i>by<a class="text-uppercase"
-                    href="https://1.envato.market/pixinvent_portfolio" target="_blank">Pixinvent</a></span>
-            <button class="btn btn-primary btn-icon scroll-top" type="button"><i
-                    class="bx bx-up-arrow-alt"></i></button>
+    <footer class="footer footer-static footer-light bg-white">
+        <p class="clearfix mb-0"><span
+                class="float-right d-sm-inline-block d-none">© 2020 President Information CORP. All Rights Reserved.
+                    
+           
         </p>
     </footer>
     <!-- END: Footer-->
