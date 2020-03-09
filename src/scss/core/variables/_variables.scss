@@ -95,14 +95,8 @@ $box-shadow: 0 2px 4px 0 rgba($black, .2) !default;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "IBM Plex Sans",
-Helvetica,
-Arial,
-serif;
-$font-family-monospace: "Rubik",
-Helvetica,
-Arial,
-serif;
+$font-family-sans-serif:'微軟正黑體';
+$font-family-monospace: '微軟正黑體';
 
 // stylelint-enable value-keyword-case
 $font-size-base: 1rem;

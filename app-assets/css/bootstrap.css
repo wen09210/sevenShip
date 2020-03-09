@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -31,8 +32,8 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "IBM Plex Sans", Helvetica, Arial, serif;
-  --font-family-monospace: "Rubik", Helvetica, Arial, serif; }
+  --font-family-sans-serif: 微軟正黑體;
+  --font-family-monospace: 微軟正黑體; }
 
 *,
 *::before,
@@ -47,7 +48,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "IBM Plex Sans", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -147,7 +148,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   font-size: 1em; }
 
 pre {
@@ -296,7 +297,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   font-weight: 400;
   line-height: 1.2;
   color: #475F7B; }
@@ -4145,7 +4146,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "IBM Plex Sans", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
@@ -4230,7 +4231,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "IBM Plex Sans", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
@@ -7479,7 +7480,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: "Rubik", Helvetica, Arial, serif !important; }
+  font-family: "微軟正黑體" !important; }
 
 .text-justify {
   text-align: justify !important; }

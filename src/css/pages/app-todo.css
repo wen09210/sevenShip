@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Todo Application css */
 /*----------------------*/
 .todo-application .content-area-wrapper {
@@ -32,7 +33,7 @@
           position: relative;
           height: calc(100% - 5.4rem); }
           .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list .filter-label {
-            font-family: "Rubik", Helvetica, Arial, serif;
+            font-family: "微軟正黑體";
             letter-spacing: 1px;
             color: #bac0c7; }
           .todo-application .content-area-wrapper .sidebar .todo-sidebar .todo-app-menu .sidebar-menu-list .list-group .list-group-item {
@@ -89,7 +90,7 @@
       .todo-application .content-area-wrapper .todo-new-task-sidebar .close-icon i {
         font-size: 1.75rem; }
     .todo-application .content-area-wrapper .todo-new-task-sidebar .task-title {
-      font-family: "Rubik", Helvetica, Arial, serif;
+      font-family: "微軟正黑體";
       font-size: 1.1rem; }
     .todo-application .content-area-wrapper .todo-new-task-sidebar .assigned .avatar .avatar-content {
       height: 38px;
@@ -173,7 +174,7 @@
       border-top-right-radius: 0.267rem; }
       .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-fixed-search input {
         border: 0;
-        font-family: "IBM Plex Sans", Helvetica, Arial, serif; }
+        font-family: "微軟正黑體"; }
         .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-fixed-search input:focus {
           -webkit-box-shadow: none;
           box-shadow: none; }
@@ -229,7 +230,7 @@
               -o-transition: all 0.35s ease 0s !important;
               transition: all 0.35s ease 0s !important; }
           .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper .todo-item .todo-title {
-            font-family: "Rubik", Helvetica, Arial, serif;
+            font-family: "微軟正黑體";
             color: #475F7B; }
           .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper .todo-item .todo-item-favorite,
           .todo-application .content-area-wrapper .content-right .todo-app-list-wrapper .todo-app-list .todo-task-list .todo-task-list-wrapper .todo-item .todo-item-delete {

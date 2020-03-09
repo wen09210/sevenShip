@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* dashboard ecommerce page css */
 /*------------------------------*/
 .widget-earnings-scroll {
@@ -14,7 +15,7 @@
   color: #828D99;
   cursor: pointer; }
   #widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide .swiper-text {
-    font-family: "Rubik", Helvetica, Arial, serif; }
+    font-family: "微軟正黑體"; }
   #widget-earnings .widget-earnings-swiper.swiper-container .swiper-slide.swiper-slide-active {
     /* swiper slide active */
     color: #FFFFFF;

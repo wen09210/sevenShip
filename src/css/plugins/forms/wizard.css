@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Form Wizard css  */
 /*-----------------*/
 .wizard .steps .current-info {
@@ -123,7 +124,7 @@
       .wizard.vertical .steps ul li a i {
         font-size: 2.4rem; }
         .wizard.vertical .steps ul li a i + span {
-          font-family: "Rubik", Helvetica, Arial, serif;
+          font-family: "微軟正黑體";
           color: #475F7B; }
       .wizard.vertical .steps ul li a .number {
         /* step indicator number */

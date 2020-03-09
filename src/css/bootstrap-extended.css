@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 [Table of contents]
 
@@ -210,7 +211,7 @@ pre {
 /*---------------*/
 .table th, .table td {
   /* default font-family to table data */
-  font-family: "Rubik", Helvetica, Arial, serif; }
+  font-family: "微軟正黑體"; }
 
 .table thead {
   text-transform: uppercase; }
@@ -1055,7 +1056,7 @@ input[type=number]::-webkit-outer-spin-button {
 .header-navbar {
   padding: 0px;
   min-height: 4rem;
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   -webkit-transition: 100ms ease all;
   -o-transition: 100ms ease all;
   transition: 100ms ease all;
@@ -1689,7 +1690,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: normal;
     color: #475F7B;
     padding: 1rem 1.9rem;
-    font-family: "Rubik", Helvetica, Arial, serif; }
+    font-family: "微軟正黑體"; }
 
 /* Card Column specific */
 /*---------------------*/
@@ -1815,7 +1816,7 @@ input[type=number]::-webkit-outer-spin-button {
 /*------------*/
 .badge {
   color: #FFFFFF;
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   background-color: #ff6000;
   text-transform: uppercase; }
   .badge.badge-up {
@@ -2171,7 +2172,7 @@ _:-ms-lang(x),
     padding: 1rem 1.7rem;
     border-radius: 0.267rem !important;
     font-size: 1.2rem;
-    font-family: "Rubik", Helvetica, Arial, serif;
+    font-family: "微軟正黑體";
     cursor: pointer; }
     .collapsible .card .card-header i,
     .accordion .card .card-header i {
@@ -2297,7 +2298,7 @@ _:-ms-lang(x),
     -ms-flex-align: center;
     align-items: center; }
     .modal .modal-content .modal-header .modal-title {
-      font-family: "Rubik", Helvetica, Arial, serif;
+      font-family: "微軟正黑體";
       font-weight: normal;
       font-size: 1.2rem; }
     .modal .modal-content .modal-header .close {

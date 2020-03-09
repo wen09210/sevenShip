@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*   Form Validation css  */
 /*-----------------------*/
 .form-group.issue .help-block, .form-group.issue .help-inline, .form-group.error .help-block, .form-group.error .help-inline {
@@ -19,7 +20,7 @@
     list-style-type: none;
     font-size: 0.875rem;
     padding-top: 0.2rem;
-    font-family: "IBM Plex Sans", Helvetica, Arial, serif; }
+    font-family: "微軟正黑體"; }
     .form-group .help-block ul li::before {
       content: "\eb1b";
       position: relative;

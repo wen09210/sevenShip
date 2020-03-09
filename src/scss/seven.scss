@@ -191,6 +191,12 @@ html body.navbar-sticky .app-content .content-wrapper{
 		&:hover{
 			background-color: #fef1ea;
 		}
+		@media (max-width: 992px) {
+			width:50%;
+			&:nth-child(2n):after {
+				border-right: 0px solid #dfe3e7;
+			}
+		}
 	}
 }
 .quick-link-function{

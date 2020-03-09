@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Email application css */
 /*-----------------------*/
 .email-application .content-area-wrapper {
@@ -117,10 +118,10 @@
             font-size: 1.75rem; }
         .email-application .content-area-wrapper .content-right .email-app-list-wrapper .email-app-list .email-action .action-right .email-fixed-search input {
           border-color: #DFE3E7;
-          font-family: "IBM Plex Sans", Helvetica, Arial, serif; }
+          font-family: "微軟正黑體"; }
           .email-application .content-area-wrapper .content-right .email-app-list-wrapper .email-app-list .email-action .action-right .email-fixed-search input::placeholder {
             font-size: 1rem;
-            font-family: "IBM Plex Sans", Helvetica, Arial, serif; }
+            font-family: "微軟正黑體"; }
         .email-application .content-area-wrapper .content-right .email-app-list-wrapper .email-app-list .email-action .action-right .email-fixed-search .form-control-position {
           top: 3px; }
       .email-application .content-area-wrapper .content-right .email-app-list-wrapper .email-app-list .email-action .action-right .email-pagination-next,
@@ -10271,12 +10272,12 @@
                 .email-application .content-area-wrapper .content-right .email-app-details .email-scroll-area .email-detail-head .collapse-header .card-header .information .dropdown-menu .dropdown-item {
                   margin-right: .5rem; }
   .email-application .content-area-wrapper .sidebar-label {
-    font-family: "Rubik", Helvetica, Arial, serif;
+    font-family: "微軟正黑體";
     letter-spacing: 1px;
     color: #828D99;
     margin: 1.8rem 0 .5rem 0; }
   .email-application .content-area-wrapper .attchement-text {
-    font-family: "IBM Plex Sans", Helvetica, Arial, serif; }
+    font-family: "微軟正黑體"; }
   .email-application .content-area-wrapper .action-icon {
     padding: 0.35rem 0.5rem;
     border: 1px solid #DFE3E7; }

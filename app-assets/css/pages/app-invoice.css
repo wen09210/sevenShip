@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Invoice Application css */
 /*-------------------------*/
 .invoice-view-wrapper hr {
@@ -51,11 +52,11 @@
       .invoice-list-wrapper .dataTables_wrapper .top .action-filters .dataTables_filter label input {
         width: 99%;
         height: 38px;
-        font-family: "IBM Plex Sans", Helvetica, Arial, serif;
+        font-family: "微軟正黑體";
         padding-left: 2rem;
         font-size: 1rem; }
         .invoice-list-wrapper .dataTables_wrapper .top .action-filters .dataTables_filter label input::placeholder {
-          font-family: "IBM Plex Sans", Helvetica, Arial, serif;
+          font-family: "微軟正黑體";
           color: #828D99;
           font-size: 1rem; }
   .invoice-list-wrapper .dataTables_wrapper .top .action-btns button {
@@ -170,7 +171,7 @@
     box-shadow: 0 2px 4px 0 rgba(255, 96, 0, 0.6); }
 
 .invoice-edit-wrapper .invoice-terms .invoice-terms-title {
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   color: #475F7B; }
 
 @media screen and (max-width: 1290px) {

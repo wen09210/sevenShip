@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*------------------------------------------------------------------
 
 [Table of contents]
@@ -569,7 +570,7 @@ body.footer-hidden footer {
 
 /* Main Navigation */
 .navigation {
-  font-family: "Rubik", Helvetica, Arial, serif;
+  font-family: "微軟正黑體";
   overflow-y: hidden;
   padding-bottom: 20px; }
   .navigation .navigation-header {
@@ -3251,6 +3252,11 @@ html body.navbar-sticky .app-content .content-wrapper {
       color: #2f2f2f; }
     .shop-area .shop-list:hover {
       background-color: #fef1ea; }
+    @media (max-width: 992px) {
+      .shop-area .shop-list {
+        width: 50%; }
+        .shop-area .shop-list:nth-child(2n):after {
+          border-right: 0px solid #dfe3e7; } }
 
 .quick-link-function {
   display: -webkit-box;
