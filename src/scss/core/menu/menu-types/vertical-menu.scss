@@ -50,7 +50,8 @@ body.vertical-layout {
          // Main menu expanded
          .main-menu {
             width: $menu-expanded-width;
-            top:67px;
+            top:60px;
+            z-index: 1;
             .navigation {
                > li {
                   > a {
@@ -93,7 +94,8 @@ body.vertical-layout {
          }
          // Main menu collapsed
          .main-menu {
-            top:67px;
+            top:60px;
+            z-index:1;
             width: $menu-collapsed-width;
             transition: 300ms ease all;
             backface-visibility: hidden;

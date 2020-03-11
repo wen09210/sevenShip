@@ -22,7 +22,7 @@
       opacity: 1;
       background-color: rgba(0, 0, 0, 0.2); }
   .file-manager-application .content-area-wrapper .sidebar .app-file-sidebar {
-    width: 260px;
+    width: 220px;
     height: calc(100vh - 9rem);
     border-right: 1px solid #DFE3E7;
     border-top-left-radius: 0.267rem;
@@ -103,7 +103,7 @@
       .file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .nav-tabs .nav-link:active, .file-manager-application .content-area-wrapper .sidebar .app-file-sidebar-info .nav-tabs .nav-link.active {
         color: #ff6000 !important; }
   .file-manager-application .content-area-wrapper .content-right {
-    width: calc(100% - 260px);
+    width: calc(100% - 220px);
     background-color: #FFFFFF; }
     .file-manager-application .content-area-wrapper .content-right .content-wrapper {
       padding: 0; }
@@ -171,7 +171,7 @@
       width: auto; }
     .file-manager-application .app-content .content-area-wrapper .sidebar-left .app-file-sidebar-left {
       background-color: #fafbfb;
-      width: 260px;
+      width: 220px;
       height: calc(100vh - 8.9rem);
       -webkit-transform: translateX(-110%);
       -ms-transform: translateX(-110%);

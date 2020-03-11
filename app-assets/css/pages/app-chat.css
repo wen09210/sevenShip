@@ -192,15 +192,15 @@
 
 @media (max-width: 575.98px) {
   .chat-sidebar {
-    width: 260px !important;
+    width: 220px !important;
     left: -14px !important; }
     .chat-sidebar .chat-sidebar-search,
     .chat-sidebar .chat-sidebar-list-wrapper {
-      width: 260px !important; }
+      width: 220px !important; }
   .chat-user-profile {
-    width: 260px !important; }
+    width: 220px !important; }
   .chat-profile {
-    width: 260px !important;
+    width: 220px !important;
     right: 2.6rem !important; } }
 
 @media (max-width: 991.98px) {

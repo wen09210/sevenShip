@@ -24,7 +24,7 @@
   .email-application .content-area-wrapper .sidebar {
     position: inherit; }
     .email-application .content-area-wrapper .sidebar .email-app-sidebar {
-      width: 260px;
+      width: 220px;
       height: calc(100vh - 9rem);
       border-right: 1px solid #DFE3E7;
       border-top-left-radius: 0.267rem;
@@ -105,7 +105,7 @@
         .email-application .content-area-wrapper .sidebar .compose-new-mail-sidebar .close-icon i {
           font-size: 1.75rem; }
   .email-application .content-area-wrapper .content-right {
-    width: calc(100% - 260px);
+    width: calc(100% - 220px);
     background-color: #FFFFFF; }
     .email-application .content-area-wrapper .content-right .content-wrapper {
       padding: 0; }
@@ -15257,7 +15257,7 @@
       visibility: hidden;
       opacity: 0;
       top: 0;
-      width: calc(100% - 260px);
+      width: calc(100% - 220px);
       -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
       transform: translateX(100%);

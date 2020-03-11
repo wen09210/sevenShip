@@ -250,11 +250,11 @@ span {
   body {
     // Normal Sidebar
     .content-right {
-      width: calc(100% - #{$sidebar-width});
+      width: calc(100% - #{$sidebar-width} - #{$sidebar-margin-right});
       float: right;
     }
     .content-left {
-      width: calc(100% - #{$sidebar-width});
+      width: calc(100% - #{$sidebar-width} - #{$sidebar-margin-right});
       float: left;
     }
     // Detached Sidebar
@@ -264,14 +264,14 @@ span {
         float: right;
         margin-left: -$sidebar-width;
         .content-body {
-          margin-left: calc(#{$sidebar-width} + #{$content-padding});
+          margin-left: calc(#{$sidebar-width} + #{$sidebar-margin-right} + #{$content-padding});
         }
       }
       &.content-left {
         float: left;
-        margin-right: -$sidebar-width;
+        margin-right: -$sidebar-width -$sidebar-margin-right;
         .content-body {
-          margin-right: calc(#{$sidebar-width} + #{$content-padding});
+          margin-right: calc(#{$sidebar-width} + #{$sidebar-margin-right} + #{$content-padding});
         }
       }
     }
@@ -279,6 +279,7 @@ span {
   .sidebar-right.sidebar-sticky {
     float: right !important;
     margin-left: -$sidebar-width;
+    margin-right:$sidebar-margin-right;
     width: $sidebar-width !important;
     margin-top: $navbar-height + 1;
   }

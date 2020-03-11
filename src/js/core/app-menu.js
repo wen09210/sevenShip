@@ -405,7 +405,7 @@
       if (this.expanded === false) {
         if ($body.data('menu') == 'vertical-menu-modern') {
           $('.modern-nav-toggle').find('.toggle-icon')
-            .removeClass('bx bx-circle').addClass('bx bx-menu');
+            .removeClass('bx bx-circle').addClass('bx bx-disc');
         }
         this.transit(function () {
           $body.removeClass('menu-collapsed').addClass('menu-expanded');

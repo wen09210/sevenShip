@@ -78,9 +78,9 @@
   .navbar-header {
     height: 100%;
     width: $menu-expanded-width;
-    height: $navbar-height - 0.4;
+    height: 1.6rem;
     position: relative;
-    padding: 0.35rem 1.45rem 0.3rem 1.3rem;
+    padding: 0.35rem 0.35rem 0.3rem 1.3rem;
     transition: 300ms ease all;
     cursor: pointer;
     z-index: 3;
@@ -112,7 +112,8 @@
     .modern-nav-toggle {
       animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1
         fadein;
-      margin: 0.75rem 0 0;
+      margin: 0rem 0 0;
+      padding: 0px;
     }
   }
 

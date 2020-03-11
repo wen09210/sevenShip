@@ -14,7 +14,7 @@
 
 .vertical-overlay-menu .navbar .navbar-header {
   float: left;
-  width: 260px; }
+  width: 220px; }
 
 .vertical-overlay-menu .navbar[data-nav="brand-center"] .navbar-header {
   padding: 0; }
@@ -37,8 +37,8 @@
   opacity: 0;
   transform: translate3d(0, 0, 0);
   transition: width .25s,opacity .25s,transform .25s;
-  width: 260px;
-  left: -260px;
+  width: 220px;
+  left: -220px;
   top: 60px; }
   .vertical-overlay-menu .main-menu .navigation > li > a > span.badge {
     position: absolute;
@@ -57,7 +57,7 @@
     content: "\ea48";
     font-family: "boxicons";
     font-size: 1.2rem;
-    color: #8494a7;
+    color: #999999;
     display: inline-block;
     position: absolute;
     right: 7px;
@@ -68,7 +68,7 @@
 
 .vertical-overlay-menu.menu-open .main-menu {
   opacity: 1;
-  transform: translate3d(260px, 0, 0);
+  transform: translate3d(220px, 0, 0);
   transition: width .25s,opacity .25s,transform .25s; }
 
 @media (max-width: 1199.98px) {
