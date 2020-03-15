@@ -169,10 +169,10 @@ span.livicon-evo {
 /* --------------------- */
 @media (min-width: 992px) {
   body .content-right {
-    width: calc(100% - 280px - 20px);
+    width: calc(100% - 280px - 32px);
     float: right; }
   body .content-left {
-    width: calc(100% - 280px - 20px);
+    width: calc(100% - 280px - 32px);
     float: left; }
   body .content-detached {
     width: 100%; }
@@ -180,16 +180,16 @@ span.livicon-evo {
       float: right;
       margin-left: -280px; }
       body .content-detached.content-right .content-body {
-        margin-left: calc(280px + 20px + 2.2rem); }
+        margin-left: calc(280px + 32px + 2.2rem); }
     body .content-detached.content-left {
       float: left;
-      margin-right: -300px; }
+      margin-right: -312px; }
       body .content-detached.content-left .content-body {
-        margin-right: calc(280px + 20px + 2.2rem); }
+        margin-right: calc(280px + 32px + 2.2rem); }
   .sidebar-right.sidebar-sticky {
     float: right !important;
     margin-left: -280px;
-    margin-right: 20px;
+    margin-right: 32px;
     width: 280px !important;
     margin-top: 6rem; }
   [data-col="content-left-sidebar"] .sticky-wrapper {
@@ -2937,7 +2937,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     .nav-footer-icon .nav-icon:first-child {
       margin-left: 0px; }
 
-.main-menu.menu-light, .main-menu.menu-light .navigation {
+.main-menu.menu-light,
+.main-menu.menu-light .navigation {
   background: #fff; }
 
 .main-menu.menu-light .navigation > li > ul > li:first-child > a {
@@ -2953,6 +2954,19 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .global-alert-wrapper {
   padding: 0rem 2.2rem 0;
   margin-top: 60px; }
+  .global-alert-wrapper .badge {
+    font-size: 14px;
+    padding: 0.35rem 1rem; }
+
+.badge-link {
+  color: #666;
+  padding: 6px 14px;
+  border-radius: 4px;
+  border: solid 1px #ffeba2;
+  background-color: #fffaea; }
+
+.link-blue {
+  color: #1791f2; }
 
 .global-announcement {
   padding-left: 0px;
@@ -2960,6 +2974,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   .global-announcement .alert.alert-warning {
     border-radius: 0px;
     color: #2f2f2f !important; }
+  .global-announcement .alert.alert-dismissible .close {
+    color: #f7b54e; }
 
 .badge.badge-light-danger,
 .badge.badge-light-grey {
@@ -2982,8 +2998,17 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .header-navbar.fixed-top {
   background-color: #fff; }
 
+.info-word {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  cursor: pointer; }
+
 .card .card-title {
-  font-weight: bold; }
+  font-weight: bold;
+  color: #333; }
 
 .card-header:first-child {
   border-bottom: 1px solid #dfe3e7;
@@ -3002,6 +3027,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 .sidebar-right .sidebar-content .card-body {
   padding-bottom: 0px;
   padding: 0rem; }
+
+.sidebar-right .sidebar-content .badge.know_more {
+  font-size: 1rem; }
 
 .sidebar-right .sidebar-content ul#page-navigation-list li {
   color: #ff6000;
@@ -3022,6 +3050,9 @@ html body.navbar-sticky .app-content .content-wrapper {
     .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-content {
       color: #2f2f2f;
       font-size: 13px; }
+    .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-link-time {
+      font-size: 12px;
+      color: #999999; }
 
 .info-i {
   width: 16px;
@@ -3089,6 +3120,16 @@ html body.navbar-sticky .app-content .content-wrapper {
   font-size: 14px;
   color: #9b9b9b; }
 
+.my_performance {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  padding: 1.1rem;
+  font-size: 16px;
+  color: #2f2f2f; }
+  .my_performance .performance-number {
+    font-size: 22px;
+    padding: 0 15px; }
+
 @media (min-width: 992px) {
   .sidebar-right.sidebar-sticky {
     margin-top: 2rem; } }
@@ -3096,7 +3137,11 @@ html body.navbar-sticky .app-content .content-wrapper {
 @media (max-width: 992px) {
   .sidebar-right.sidebar-sticky {
     padding-left: 2.2rem;
-    padding-right: 2.2rem; } }
+    padding-right: 2.2rem; }
+  .my_performance {
+    display: inline-block !important; }
+    .my_performance .d-flex {
+      display: inline-block !important; } }
 
 @media (min-height: 768px) {
   .main-menu.expanded .nav-footer-info {
