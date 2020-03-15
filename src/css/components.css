@@ -3334,6 +3334,9 @@ html body.navbar-sticky .app-content .content-wrapper {
     font-size: 22px;
     padding: 0 15px; }
 
+.content-column-one {
+  max-width: 1080px; }
+
 @media (min-width: 992px) {
   .sidebar-right.sidebar-sticky {
     margin-top: 2rem; } }

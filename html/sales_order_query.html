@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/forms/select/select2.min.css">
     <!-- END VENDOR CSS-->
     <!-- BEGIN Frest CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
@@ -128,7 +129,7 @@
                                  
                               </ul>
                 </li>
-                <li class=" nav-item"><a href="index.html"><i class="bx bx-folder-open"></i><span class="menu-title"
+                <li class=" nav-item"><a href="index.html"><i class="bx bx-home"></i><span class="menu-title"
                             data-i18n="Dashboard">賣場管理</span><span
                             class="badge badge-light-danger badge-pill badge-round float-right mr-2">new</span></a>
                     <ul class="menu-content">
@@ -160,13 +161,13 @@
                 </li>
 
                 
-                <li class=" nav-item"><a href="app-chat.html"><i class="bx bx-chat"></i><span class="menu-title"
-                            data-i18n="Chat">帳務查詢</span></a>
+                <li class=" nav-item"><a href="app-chat.html"><i class="bx bx-file-find"></i><span class="menu-title"
+                            data-i18n="Chat">帳務管理</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-todo.html"><i class="bx bx-check-circle"></i><span class="menu-title"
                             data-i18n="Todo">訂單工具</span></a>
                 </li>
-                <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title"
+                <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-cog"></i><span class="menu-title"
                             data-i18n="Calendar">個人資料管理</span></a>
                 </li>
                 <li class=" nav-item"><a href="app-calendar.html"><i class="bx bx-calendar"></i><span class="menu-title"
@@ -203,7 +204,7 @@
     <!-- BEGIN: Content-->
     <div class="app-content content">
         <div class="global-alert-wrapper global-announcement">
-            <div class="alert alert-warning alert-dismissible mb-0" role="alert">
+            <!-- <div class="alert alert-warning alert-dismissible mb-0" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
@@ -213,9 +214,9 @@
                         金鼠迎新賺紅包-賣貨便寄件送運費折扣券
                     </span>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <div class="sidebar-right sidebar-sticky">
+        <!-- <div class="sidebar-right sidebar-sticky">
             <div class="sidebar">
                 <div class="  ">
                     <div class="sidebar-content  " data-spy="affix" data-offset-top="-77">
@@ -279,37 +280,33 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="content-left">
+        </div> -->
+        <div class="content-column-one">
             <div class="content-wrapper">
                 <!-- header 麵包屑 -->
-                <!-- <div class="content-header row">
+                <div class="content-header row">
                     <div class="content-header-left col-12 mb-1">
                         <div class="row breadcrumbs-top">
                             <div class="col-12">
-                                <h5 class="content-header-title float-left pr-1 mb-0">Content Right Sidebar</h5>
                                 <div class="breadcrumb-wrapper">
-                                    <ol class="breadcrumb p-0 mb-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                    <ol class="breadcrumb p-0 pl-1 mb-0">
+                                        <li class="breadcrumb-item"><a href="index.html"><i class="bx 
+bx-home"></i>首頁</a>
                                         </li>
-                                        <li class="breadcrumb-item"><a href="#">Layouts</a>
+                                        <li class="breadcrumb-item active"><a href="#">賣家訂單</a>
                                         </li>
-                                        <li class="breadcrumb-item active">Content Right Sidebar
-                                        </li>
+                                       
                                     </ol>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
                 <div class="content-body">
                     <!--Content Right Sidebar-->
                     <section id="content-right-sidebar">
-                        <!-- CSS Classes -->
-                        <section class="card">
-                            <img src="../app-assets/images/banner/marketing-advertising.png" alt=""
-                                class="img-responsive">
-                        </section>
+                    
+                      
                         <section id="content-right-sidebar-css" class="card">
                             <div class="card-header">
                                 <h4 class="card-title">賣家訂單查詢及出貨
@@ -320,7 +317,6 @@
                                         </span>
                                     </h4>
                             </div>
-
 
                             <!--基礎燈箱 -->
                             <div class="modal fade text-left" id="default" tabindex="-1" role="dialog"
@@ -368,43 +364,68 @@
 
                             <div class="card-content" aria-expanded="true">
                                 <div class="card-body">
-                                    <div class="card-text">
-                                        <p>可用點數<span class="text-primary">8888</span> OPEN POINT點數(=可折抵<span
-                                                class="text-primary">888</span>元運費或購物金）
-                                            <span class="badge  badge-link">兑點<a href="" class="link-blue">連結教學</a></span>
-                                            </p>
-                                        <button type="button" class="btn btn-primary glow btn-block">賣家總覽</button>
-                                        <div class="shop-area d-flex">
-                                            <a class="shop-list">
-                                                <div class="shop-number text-primary">10</div>
-                                                <div class="shop-name">待出貨訂單</div>
-                                            </a>
-                                            <a class="shop-list">
-                                                <div class="shop-number text-primary">50</div>
-                                                <div class="shop-name">已撥款訂單</div>
-                                            </a>
-                                            <a class="shop-list">
-                                                <div class="shop-number text-primary">120</div>
-                                                <div class="shop-name">待取消訂單</div>
-                                            </a>
-                                            <a class="shop-list">
-                                                <div class="shop-number text-primary">10</div>
-                                                <div class="shop-name">待退/取消訂單</div>
-                                            </a>
-                                            <a class="shop-list">
-                                                <div class="shop-number text-primary">10</div>
-                                                <div class="shop-name">待回答問題</div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="my_performance d-flex justify-content-between align-items-center"> 
-                                        <div>我的表現</div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <div class="mr-2">總計件數<span class="performance-number">53252</span></div>
-                                            <div class="mr-2">賣家取消率（30%）<span class="performance-number">30</span></div>
-                                        </div>
-
-                                    </div>
+                                   <form class="form form-horizontal">
+                                       <div class="form-body">
+                                           <div class="row">
+                                               <div class="col-md-4">
+                                                   <label>查詢條件</label>
+                                               </div>
+                                               <div class="col-md-4">
+                                                     <div class="form-group">
+                                                         <select class="select2 form-control">
+                                                             <option value="square">Square</option>
+                                                             <option value="rectangle">Rectangle</option>
+                                                             <option value="rombo">Rombo</option>
+                                                             <option value="romboid">Romboid</option>
+                                                             <option value="trapeze">Trapeze</option>
+                                                             <option value="traible">Triangle</option>
+                                                             <option value="polygon">Polygon</option>
+                                                         </select>
+                                                     </div>
+                                               </div>
+                                               <div class="col-md-4 form-group">
+                                                   <input type="text" id="first-name" class="form-control" name="fname"
+                                                       placeholder="查詢訂單">
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <label>Email</label>
+                                               </div>
+                                               <div class="col-md-8 form-group">
+                                                   <input type="email" id="email-id" class="form-control"
+                                                       name="email-id" placeholder="Email">
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <label>Mobile</label>
+                                               </div>
+                                               <div class="col-md-8 form-group">
+                                                   <input type="number" id="contact-info" class="form-control"
+                                                       name="contact" placeholder="Mobile">
+                                               </div>
+                                               <div class="col-md-4">
+                                                   <label>Password</label>
+                                               </div>
+                                               <div class="col-md-8 form-group">
+                                                   <input type="password" id="password" class="form-control"
+                                                       name="password" placeholder="Password">
+                                               </div>
+                                               <div class="col-12 col-md-8 offset-md-4 form-group">
+                                                   <fieldset>
+                                                       <div class="checkbox">
+                                                           <input type="checkbox" class="checkbox__input" id="checkbox1"
+                                                               checked="">
+                                                           <label for="checkbox1">Remember me</label>
+                                                       </div>
+                                                   </fieldset>
+                                               </div>
+                                               <div class="col-sm-12 d-flex justify-content-end">
+                                                   <button type="submit"
+                                                       class="btn btn-primary mr-1 mb-1">Submit</button>
+                                                   <button type="reset"
+                                                       class="btn btn-light-secondary mr-1 mb-1">Reset</button>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </form>
                                 </div>
                             </div>
                         </section>
@@ -472,6 +493,7 @@
     <script src="../app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+       <script src="../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
@@ -483,7 +505,9 @@
 
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/datatables/datatable.js"></script>
+     <script src="../app-assets/js/scripts/forms/select/form-select2.js"></script>
     <!-- END: Page JS-->
+ 
 
 </body>
 <!-- END: Body-->

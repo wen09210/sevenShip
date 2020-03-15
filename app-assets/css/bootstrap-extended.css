@@ -1542,10 +1542,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
   /* Breadcrumb divider icon default */
-  content: "\ea4a";
+  content: "/";
   font-family: 'boxicons';
   position: relative;
-  top: 2px; }
+  top: 0px; }
 
 .breadcrumb.breadcrumb-divider {
   padding: 0;

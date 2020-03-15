@@ -22,10 +22,10 @@
   .breadcrumb-item + .breadcrumb-item{
     &:before{
       /* Breadcrumb divider icon default */
-      content: "\ea4a";
+      content: "/";
       font-family: 'boxicons';
       position: relative;
-      top: 2px;
+      top: 0px;
     }
   }
 
