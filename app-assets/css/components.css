@@ -2923,7 +2923,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .main-menu .nav-footer-info {
   display: none; }
 
-.main-menu.expanded .nav-footer-info {
+.menu-open .nav-footer-info {
   display: block; }
 
 .nav-footer-info li {
@@ -3147,10 +3147,13 @@ html body.navbar-sticky .app-content .content-wrapper {
     .my_performance .d-flex {
       display: inline-block !important; }
   html body.navbar-sticky .app-content .content-wrapper {
-    padding-top: 0px; } }
+    padding-top: 0px; }
+  html body.navbar-sticky .app-content .content-wrapper {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media (min-height: 768px) {
-  .main-menu.expanded .nav-footer-info {
+  .menu-open .nav-footer-info {
     position: absolute;
     font-size: 13px;
     color: #b3b3b3;
