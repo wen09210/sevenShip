@@ -349,6 +349,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 	.sidebar-right.sidebar-sticky {
 		padding-left: 2.2rem;
 		padding-right: 2.2rem;
+		padding-top: 1.5rem;
 	}
 
 	.my_performance {
@@ -357,6 +358,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 		.d-flex {
 			display: inline-block !important;
 		}
+	}
+	html body.navbar-sticky .app-content .content-wrapper{
+		padding-top: 0px;
 	}
 }
 

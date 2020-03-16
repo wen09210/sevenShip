@@ -3140,11 +3140,14 @@ html body.navbar-sticky .app-content .content-wrapper {
 @media (max-width: 992px) {
   .sidebar-right.sidebar-sticky {
     padding-left: 2.2rem;
-    padding-right: 2.2rem; }
+    padding-right: 2.2rem;
+    padding-top: 1.5rem; }
   .my_performance {
     display: inline-block !important; }
     .my_performance .d-flex {
-      display: inline-block !important; } }
+      display: inline-block !important; }
+  html body.navbar-sticky .app-content .content-wrapper {
+    padding-top: 0px; } }
 
 @media (min-height: 768px) {
   .main-menu.expanded .nav-footer-info {
