@@ -1012,11 +1012,11 @@
   if ($scrollTop > 20) {
     $(".navbar-sticky .main-header-navbar").css({
       "background-color": "#ffff",
-      "box-shadow": "-8px 12px 18px 0 rgba(25, 42, 70, 0.13)"
+      // "box-shadow": "-8px 12px 18px 0 rgba(25, 42, 70, 0.13)"
     })
     $(".navbar-static .main-header-navbar").css({
       "background-color": "transparent",
-      "box-shadow": "none"
+      // "box-shadow": "none"
     })
   }
 
@@ -1025,20 +1025,20 @@
     if ($(this).scrollTop() > 20) {
       $(".navbar-sticky .main-header-navbar").css({
         "background-color": "#ffff",
-        "box-shadow": "-8px 12px 18px 0 rgba(25, 42, 70, 0.13)"
+        // "box-shadow": "-8px 12px 18px 0 rgba(25, 42, 70, 0.13)"
       })
       $(".navbar-static .main-header-navbar").css({
         "background-color": "transparent",
-        "box-shadow": "none"
+        // "box-shadow": "none"
       })
     } else {
       $(".navbar-sticky .main-header-navbar").css({
         "background-color": "#fff",
-        "box-shadow": "none"
+        // "box-shadow": "none"
       })
       $(".navbar-static .main-header-navbar").css({
         "background-color": "transparent",
-        "box-shadow": "none"
+        // "box-shadow": "none"
       })
     }
   })
@@ -1048,7 +1048,7 @@
   if ($scrollTop > 20) {
     $(".dark-layout.navbar-sticky .main-header-navbar").css({
       "background-color": "#272e48",
-      "box-shadow": "rgba(26, 35, 59, .70) -8px 12px 18px 0px"
+      // "box-shadow": "rgba(26, 35, 59, .70) -8px 12px 18px 0px"
     })
   }
 
@@ -1057,12 +1057,12 @@
     if ($(this).scrollTop() > 20) {
       $(".dark-layout.navbar-sticky .main-header-navbar").css({
         "background-color": "#272e48",
-        "box-shadow": "rgba(26, 35, 59, .70) -8px 12px 18px 0px"
+        // "box-shadow": "rgba(26, 35, 59, .70) -8px 12px 18px 0px"
       })
     } else {
       $(".dark-layout.navbar-sticky .main-header-navbar").css({
         "background-color": "transparent",
-        "box-shadow": "none"
+        // "box-shadow": "none"
       })
     }
   })

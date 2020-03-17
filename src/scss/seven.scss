@@ -20,6 +20,12 @@
 		display: none;
 	}
 }
+.main-menu.expanded{
+	.nav-footer-info {
+		display: block;
+	}
+}
+
 
 .menu-open {
 	.nav-footer-info {
@@ -347,9 +353,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 @media (max-width: 992px) {
 	.sidebar-right.sidebar-sticky {
-		padding-left: 2.2rem;
-		padding-right: 2.2rem;
-		padding-top: 1.5rem;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 0px;
 	}
 
 	.my_performance {
@@ -360,7 +366,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		}
 	}
 	html body.navbar-sticky .app-content .content-wrapper{
-		padding-top: 0px;
+		padding-top: 2.2rem;
 	}
 	html body.navbar-sticky .app-content .content-wrapper{
 		padding-left:15px;
@@ -370,7 +376,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 // menu高度在某個尺寸下須作調整
 @media (min-height: 768px) {
-	.menu-open .nav-footer-info {
+	.main-menu.expanded .nav-footer-info {
 		position: absolute;
 		font-size: 13px;
 		color: #b3b3b3;
