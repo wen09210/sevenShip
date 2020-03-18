@@ -3798,10 +3798,10 @@ input[type="button"].btn-block {
   padding: 1.7rem; }
 
 .card-title {
-  margin-bottom: 1.4rem; }
+  margin-bottom: 0.9rem; }
 
 .card-subtitle {
-  margin-top: -0.7rem;
+  margin-top: -0.45rem;
   margin-bottom: 0; }
 
 .card-text:last-child {
@@ -3814,7 +3814,7 @@ input[type="button"].btn-block {
   margin-left: 1.7rem; }
 
 .card-header {
-  padding: 1.4rem 1.7rem;
+  padding: 0.9rem 1.7rem;
   margin-bottom: 0;
   background-color: transparent;
   border-bottom: 0px solid #dfe3e7; }
@@ -3824,7 +3824,7 @@ input[type="button"].btn-block {
     border-top: 0; }
 
 .card-footer {
-  padding: 1.4rem 1.7rem;
+  padding: 0.9rem 1.7rem;
   background-color: transparent;
   border-top: 0px solid #dfe3e7; }
   .card-footer:last-child {
@@ -3832,7 +3832,7 @@ input[type="button"].btn-block {
 
 .card-header-tabs {
   margin-right: -0.85rem;
-  margin-bottom: -1.4rem;
+  margin-bottom: -0.9rem;
   margin-left: -0.85rem;
   border-bottom: 0; }
 
@@ -3939,7 +3939,7 @@ input[type="button"].btn-block {
             border-bottom-left-radius: 0; } }
 
 .card-columns .card {
-  margin-bottom: 1.4rem; }
+  margin-bottom: 0.9rem; }
 
 @media (min-width: 576px) {
   .card-columns {
@@ -4214,7 +4214,7 @@ input[type="button"].btn-block {
 
 .alert {
   position: relative;
-  padding: 1.1rem 1.267rem;
+  padding: 0.7rem 1.267rem;
   margin-bottom: 2.67rem;
   border: 0 solid transparent;
   border-radius: 0.267rem; }
@@ -4231,7 +4231,7 @@ input[type="button"].btn-block {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1.1rem 1.267rem;
+    padding: 0.7rem 1.267rem;
     color: inherit; }
 
 .alert-primary {
