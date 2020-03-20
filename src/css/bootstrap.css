@@ -4214,7 +4214,7 @@ input[type="button"].btn-block {
 
 .alert {
   position: relative;
-  padding: 0.7rem 1.267rem;
+  padding: 0.65rem 1.267rem;
   margin-bottom: 2.67rem;
   border: 0 solid transparent;
   border-radius: 0.267rem; }
@@ -4231,7 +4231,7 @@ input[type="button"].btn-block {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 0.7rem 1.267rem;
+    padding: 0.65rem 1.267rem;
     color: inherit; }
 
 .alert-primary {

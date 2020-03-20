@@ -3102,6 +3102,16 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   left: auto !important;
   float: left; }
 
+.seven-logo {
+  width: 132px;
+  margin-right: 8px; }
+
+.seven-logo-two {
+  width: 93px; }
+
+.banner-section {
+  border-radius: 0px; }
+
 .main-menu.menu-light .navigation > li {
   margin: 0px; }
 
@@ -3151,7 +3161,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .global-alert-wrapper {
   padding: 0rem 2.2rem 0;
-  margin-top: 60px; }
+  margin-top: 54px; }
   .global-alert-wrapper .badge {
     font-size: 14px;
     padding: 0.35rem 1rem; }
@@ -3182,7 +3192,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   border-radius: 3px; }
 
 .badge.badge-light-danger {
-  background-color: #FF5B5C !important; }
+  background-color: #ff6000 !important; }
 
 .badge.badge-light-grey {
   background-color: #bababa !important; }
@@ -3221,7 +3231,8 @@ html body.navbar-sticky .app-content .content-wrapper {
   border-left: 0px; }
 
 .sidebar-right .sidebar-content .card-header:first-child {
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  padding-left: 14px; }
 
 .sidebar-right .sidebar-content .card-body {
   padding-bottom: 0px;
@@ -3233,7 +3244,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 .sidebar-right .sidebar-content ul#page-navigation-list li {
   color: #ff6000;
   border-bottom: 1px solid #dfe3e7;
-  padding: 12px 14px 0px;
+  margin: 12px 14px 0px;
   position: relative;
   font-size: 14px; }
   .sidebar-right .sidebar-content ul#page-navigation-list li:hover {
@@ -3252,14 +3263,16 @@ html body.navbar-sticky .app-content .content-wrapper {
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2; }
+      -webkit-line-clamp: 2;
+      line-height: normal; }
     .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-link-time {
       font-size: 12px;
       color: #999999; }
 
 .info-i {
   width: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-bottom: 3px; }
 
 .text-primary {
   color: #ff6000; }
@@ -3273,8 +3286,8 @@ html body.navbar-sticky .app-content .content-wrapper {
   .shop-area .shop-list {
     width: 25%;
     text-align: center;
-    padding: 2rem;
-    margin: 1rem 0px;
+    padding: 1.2rem;
+    margin: 0.8rem 0px;
     position: relative; }
     .shop-area .shop-list:nth-child(1), .shop-area .shop-list:nth-child(2), .shop-area .shop-list:nth-child(3), .shop-area .shop-list:nth-child(4) {
       border-bottom: 1px solid #dfe3e7; }
@@ -3312,7 +3325,7 @@ html body.navbar-sticky .app-content .content-wrapper {
   align-items: center; }
   .quick-link-function p {
     margin-bottom: 0px;
-    padding: 2rem 0px; }
+    padding: 1.6rem 0px; }
     .quick-link-function p i {
       font-size: 35px;
       vertical-align: middle;
