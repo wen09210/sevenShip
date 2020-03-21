@@ -3113,6 +3113,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   border-radius: 0px; }
   .banner-section .swiper-container {
     z-index: 0; }
+  .banner-section .swiper-slide {
+    width: 100% !important; }
 
 .main-menu.menu-light .navigation > li {
   margin: 0px; }
@@ -3277,7 +3279,8 @@ html body.navbar-sticky .app-content .content-wrapper {
       margin-top: 5px; }
     .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-link-time {
       font-size: 12px;
-      color: #999999; }
+      color: #999999;
+      margin-bottom: 3px; }
 
 .info-i {
   width: 16px;
