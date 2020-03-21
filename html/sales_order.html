@@ -25,6 +25,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/extensions/swiper.min.css">
     <!-- END VENDOR CSS-->
     <!-- BEGIN Frest CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
@@ -33,12 +34,13 @@
     <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
     <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css/plugins/extensions/swiper.css">
     <!-- link(rel='stylesheet', type='text/css', href='../app-assets/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/ui/prism.min.css">
     <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/documentation.css">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../assets-assets/css/seven.css">
     <!-- END Custom CSS-->
 </head>
 <!-- END: Head-->
@@ -208,7 +210,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
                 <div class="d-flex align-items-center">
-                    <span class="badge badge-light-danger badge-pill badge-round float-right mr-2">公告事項</span>
+                    <span class="badge badge-light-danger badge-pill badge-round float-right ">公告事項</span>
                     <span>
                         金鼠迎新賺紅包-賣貨便寄件送運費折扣券
                     </span>
@@ -241,11 +243,34 @@
                 <div class="content-body">
                     <!--Content Right Sidebar-->
                     <section id="content-right-sidebar">
-                        <!-- CSS Classes -->
-                        <section class="card banner-section">
-                            <img src="../app-assets/images/banner/marketing-advertising.png" alt=""
-                                class="img-responsive">
-                        </section>
+                       
+                   
+                            <!-- navigations swiper start -->
+                            <section id="component-swiper-navigations" class="card banner-section">                 
+                             
+                                    <div class="card-content">
+                                       
+                                            <div class="swiper-navigations swiper-container">
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide"> <img class="img-fluid"
+                                                            src="../app-assets/images/banner/marketing-advertising.png"
+                                                            alt="banner">
+                                                    </div>
+                                                    <div class="swiper-slide"> <img class="img-fluid"
+                                                            src="../app-assets/images/banner/marketing-advertising.png"
+                                                            alt="banner">
+                                                    </div>
+                                                </div>
+                                                <!-- Add Arrows -->
+                                                <div class="swiper-button-next"></div>
+                                                <div class="swiper-button-prev"></div>
+                                            </div>
+                                        
+                                    </div>
+                              
+                            </section>
+                            <!-- navigations swiper ends -->
+                      
                         <section id="content-right-sidebar-css" class="card">
                             <div class="card-header">
                                 <h4 class="card-title">待辦事項總覽 
@@ -307,7 +332,7 @@
                                     <div class="card-text">
                                         <p>可用點數<span class="text-primary">8888</span> OPEN POINT點數(=可折抵<span
                                                 class="text-primary">888</span>元運費或購物金）
-                                            <span class="badge  badge-link">兑點<a href="" class="link-blue">連結教學</a></span>
+                                            <span class="badge  badge-link">兌點<a href="" class="link-blue">連結教學</a></span>
                                             </p>
                                         <button type="button" class="btn btn-primary  btn-block">賣家總覽</button>
                                         <div class="shop-area d-flex">
@@ -493,7 +518,9 @@
     <script src="../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
     <!-- END: Page Vendor JS-->
-
+<!-- BEGIN: Page Vendor JS-->
+<script src="../app-assets/vendors/js/extensions/swiper.min.js"></script>
+<!-- END: Page Vendor JS-->
     <!-- BEGIN: Theme JS-->
     <script src="../app-assets/js/core/app-menu.js"></script>
     <script src="../app-assets/js/core/app.js"></script>
@@ -503,6 +530,7 @@
 
     <!-- BEGIN: Page JS-->
     <script src="../app-assets/js/scripts/datatables/datatable.js"></script>
+    <script src="../app-assets/js/scripts/extensions/swiper.js"></script>
     <!-- END: Page JS-->
 
 </body>

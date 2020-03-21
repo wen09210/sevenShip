@@ -23,7 +23,7 @@ margin-right:8px;
 	background: #fc7c2e1a;
 	color: #ff6000;
 	margin: 0px;
-	padding: 10px 1.25rem;
+	padding: 7px 1.25rem;
 	border-left: 2px solid #ff6000;
 }
 
@@ -48,7 +48,9 @@ margin-right:8px;
 .nav-footer-info {
 
 	li {
+		font-size: 13px;
 		padding: 0px 1.25rem;
+		color:#b3b3b3;
 	}
 }
 
@@ -76,7 +78,7 @@ margin-right:8px;
 
 .main-menu.menu-light .navigation>li.nav-item:not(.has-sub) a,
 .main-menu.menu-light .navigation>li.nav-item a {
-	padding: 10px 1.25rem
+	padding: 7px 1.25rem
 }
 
 .nav-user-name {
@@ -85,11 +87,15 @@ margin-right:8px;
 
 .global-alert-wrapper {
 	padding: 0rem 2.2rem 0;
-	margin-top: 54px;
+	margin-top: 56px;
 
 	.badge {
 		font-size: 14px;
-		padding: 0.35rem 1rem;
+		padding: 0.2rem 0.3rem;
+		margin-right: 7px;
+		+span{
+			font-size: 14px;
+		}
 	}
 }
 
@@ -112,6 +118,7 @@ margin-right:8px;
 	.alert.alert-warning {
 		border-radius: 0px;
 		color: #2f2f2f !important;
+		padding-left: 15px ;
 	}
 
 	.alert.alert-dismissible .close {
@@ -343,7 +350,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 .footer-static {
 	p {
 		font-size: 14px;
-		color: #9b9b9b;
+		color: #2f2f2f;
 	}
 }
 
@@ -361,6 +368,10 @@ html body.navbar-sticky .app-content .content-wrapper {
 }
 .content-column-one{
 	max-width: 1080px;
+}
+.card .swiper-button-prev,
+.card .swiper-button-next{
+	    color: #ff6000;
 }
 
 @media (min-width: 992px) {

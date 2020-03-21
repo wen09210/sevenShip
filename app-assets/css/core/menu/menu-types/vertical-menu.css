@@ -16,7 +16,7 @@ body.vertical-layout.vertical-menu-modern .main-menu {
 
 body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
   width: 220px;
-  top: 60px;
+  top: 56px;
   z-index: 1; }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > span.badge {
     position: absolute;
@@ -43,7 +43,7 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .navbar.fixed-top {
   left: 0px; }
 
 body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
-  top: 60px;
+  top: 56px;
   z-index: 1;
   width: 78px;
   transition: 300ms ease all;
