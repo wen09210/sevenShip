@@ -3111,6 +3111,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .banner-section {
   border-radius: 0px; }
+  .banner-section .swiper-container {
+    z-index: 0; }
 
 .main-menu.menu-light .navigation > li {
   margin: 0px; }
@@ -3259,18 +3261,20 @@ html body.navbar-sticky .app-content .content-wrapper {
     content: '.';
     position: absolute;
     font-size: 2rem;
-    line-height: 0.8rem; }
+    line-height: 7px; }
   .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link {
     color: #ff6000;
-    padding-left: 2px; }
+    padding-left: 2px;
+    line-height: 19px; }
     .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-content {
-      color: #2f2f2f;
+      color: #666;
       font-size: 13px;
       overflow: hidden;
       display: -webkit-box;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
-      line-height: normal; }
+      line-height: normal;
+      margin-top: 5px; }
     .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-link-time {
       font-size: 12px;
       color: #999999; }

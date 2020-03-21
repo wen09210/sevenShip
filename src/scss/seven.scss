@@ -8,6 +8,9 @@ margin-right:8px;
 }
 .banner-section{
 	border-radius:0px;
+	.swiper-container{
+		z-index:0;
+	}
 }
 
 .main-menu.menu-light .navigation>li {
@@ -219,22 +222,24 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 				position: absolute;
 				font-size: 2rem;
-				line-height: 0.8rem;
+				line-height: 7px;
 
 			}
 
 			a.nav-link {
 				color: #ff6000;
 				padding-left: 2px;
+				line-height: 19px;
 
 				.nav-content {
-					color: #2f2f2f;
+					color: #666;
 					font-size: 13px;
 					overflow: hidden;
 					display: -webkit-box;
 					-webkit-box-orient: vertical;
 					-webkit-line-clamp: 2;
 					line-height: normal;
+					margin-top:5px;
 				}
 
 				.nav-link-time {
