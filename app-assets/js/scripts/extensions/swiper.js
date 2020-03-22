@@ -128,7 +128,6 @@ $(document).ready(function () {
 
     // autoplay
     var mySwiper10 = new Swiper('.swiper-autoplay', {
-        spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
             delay: 3000,
