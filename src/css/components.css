@@ -3109,6 +3109,9 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .seven-logo-two {
   width: 93px; }
 
+.gray-text {
+  color: #a2a7ae !important; }
+
 .banner-section {
   border-radius: 0px; }
   .banner-section .swiper-container {
@@ -3141,7 +3144,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 .nav-footer-info li {
   font-size: 13px;
   padding: 0px 1.25rem;
-  color: #b3b3b3; }
+  color: #b3b3b3;
+  line-height: 21px; }
 
 .nav-footer-icon {
   padding: 15px 1.25rem 0px; }
@@ -3187,12 +3191,12 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .global-announcement {
   padding-left: 0px;
-  padding-right: 0px;
-  border: solid 1px #ffeba2; }
+  padding-right: 0px; }
   .global-announcement .alert.alert-warning {
     border-radius: 0px;
     color: #2f2f2f !important;
-    padding-left: 15px; }
+    padding-left: 15px;
+    border: solid 1px #ffeba2; }
   .global-announcement .alert.alert-dismissible .close {
     color: #f7b54e; }
 
@@ -3202,7 +3206,10 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   border-radius: 3px; }
 
 .badge.badge-light-danger {
-  background-color: #ff6000 !important; }
+  background-color: #ff6000 !important;
+  font-size: 14px;
+  padding: 0.2rem 0.3rem;
+  margin-right: 7px; }
 
 .badge.badge-light-grey {
   background-color: #bababa !important; }
@@ -3261,6 +3268,7 @@ html body.navbar-sticky .app-content .content-wrapper {
     background-color: #f5f6f7; }
   .sidebar-right .sidebar-content ul#page-navigation-list li:before {
     content: '.';
+    top: -4px;
     position: absolute;
     font-size: 2rem;
     line-height: 7px; }
@@ -3302,22 +3310,28 @@ html body.navbar-sticky .app-content .content-wrapper {
     padding: 1.2rem;
     margin: 0.8rem 0px;
     position: relative; }
-    .shop-area .shop-list:nth-child(1), .shop-area .shop-list:nth-child(2), .shop-area .shop-list:nth-child(3), .shop-area .shop-list:nth-child(4) {
-      border-bottom: 1px solid #dfe3e7; }
     .shop-area .shop-list:after {
       content: '';
       border-right: 1px solid #dfe3e7;
       position: absolute;
       right: 0px;
-      height: 80%;
-      top: 0px; }
+      height: 34px;
+      top: 30%; }
+    .shop-area .shop-list:before {
+      content: '';
+      border-bottom: 1px solid #dfe3e7;
+      position: absolute;
+      right: 0px;
+      width: 100%;
+      bottom: -13px; }
     .shop-area .shop-list:nth-child(4):after {
       border-right: 0px solid #dfe3e7; }
     .shop-area .shop-list .shop-number {
       font-size: 24px;
       line-height: normal; }
     .shop-area .shop-list .shop-name {
-      color: #2f2f2f; }
+      color: #2f2f2f;
+      font-size: 14px; }
     .shop-area .shop-list:hover {
       background-color: #fef1ea; }
     @media (max-width: 992px) {
