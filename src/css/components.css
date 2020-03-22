@@ -3298,6 +3298,28 @@ html body.navbar-sticky .app-content .content-wrapper {
 .text-primary {
   color: #ff6000; }
 
+.sales-area .nav.nav-pills ~ .tab-content {
+  background-color: #FFFFFF;
+  padding: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+  color: #2f2f2f; }
+
+.sales-area .nav {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.sales-area .nav.nav-pills .nav-item {
+  margin: 0px;
+  width: 100%; }
+  .sales-area .nav.nav-pills .nav-item .nav-link {
+    border-radius: 0;
+    text-align: center; }
+    .sales-area .nav.nav-pills .nav-item .nav-link.active {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+
 .shop-area {
   display: -webkit-box;
   display: -ms-flexbox;
