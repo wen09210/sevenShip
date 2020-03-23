@@ -3132,7 +3132,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   padding: 7px 1.25rem;
   border-left: 2px solid #ff6000; }
 
-.main-menu .nav-footer-info {
+.menu-collapsed .main-menu .nav-footer-info {
   display: none; }
 
 .main-menu.expanded .nav-footer-info {

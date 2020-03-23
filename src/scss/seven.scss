@@ -35,12 +35,14 @@ margin-right:8px;
 	padding: 7px 1.25rem;
 	border-left: 2px solid #ff6000;
 }
-
-.main-menu {
-	.nav-footer-info {
-		display: none;
+.menu-collapsed{
+	.main-menu {
+		.nav-footer-info {
+			display: none;
+		}
 	}
 }
+
 .main-menu.expanded{
 	.nav-footer-info {
 		display: block;

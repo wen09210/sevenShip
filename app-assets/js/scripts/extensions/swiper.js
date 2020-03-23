@@ -15,6 +15,7 @@ $(document).ready(function () {
 
     // navigation
     var mySwiper1 = new Swiper('.swiper-navigations', {
+       
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -268,4 +269,11 @@ $(document).ready(function () {
         e.preventDefault();
         mySwiper15.virtual.appendSlide('Slide ' + (++appendNumber));
     });
+    $('.bx-menu').click(function(){
+  
+        setTimeout(() => {
+            window.dispatchEvent(new Event("resize"))
+        }, 200)
+  
+    })
 });
