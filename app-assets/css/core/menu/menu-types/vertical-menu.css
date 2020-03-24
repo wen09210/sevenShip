@@ -1,6 +1,6 @@
 body.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a > i {
   width: 1.6rem !important;
-  margin-right: 1rem;
+  margin-right: 10px;
   float: left; }
   body.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a > i:not(.menu-livicon) {
     font-size: 1.4rem; }
@@ -8,7 +8,7 @@ body.vertical-layout.vertical-menu-modern .main-menu .navigation > li > a > i {
 body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content > li > a {
   transition: all .35s ease !important; }
   body.vertical-layout.vertical-menu-modern .main-menu .navigation .menu-content > li > a > i {
-    margin-right: 1.25rem; }
+    margin-right: 6px; }
 
 body.vertical-layout.vertical-menu-modern .main-menu {
   transform: translate3d(0, 0, 0);

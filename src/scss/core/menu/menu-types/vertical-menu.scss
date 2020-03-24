@@ -22,7 +22,7 @@ body.vertical-layout {
          .navigation {
             > li > a > i {
               width: 1.6rem !important; // give important bcz it takes default 60px from it's vendor js
-              margin-right: 1rem;
+              margin-right: 10px;
               float: left;
               &:not(.menu-livicon){
                font-size: 1.4rem;
@@ -34,7 +34,7 @@ body.vertical-layout {
                  > a {
                     transition: all .35s ease !important;
                   > i{
-                      margin-right: 1.25rem;
+                      margin-right: 6px;
                     }
                   }
                }

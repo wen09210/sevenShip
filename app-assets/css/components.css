@@ -3224,7 +3224,8 @@ html body.navbar-sticky .app-content .content-wrapper {
     padding-right: 15px; } }
 
 @media (min-height: 768px) {
-  .main-menu.expanded .nav-footer-info {
+  .main-menu.expanded .nav-footer-info,
+  .menu-expanded .nav-footer-info {
     position: absolute;
     font-size: 13px;
     color: #b3b3b3;

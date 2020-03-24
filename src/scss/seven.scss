@@ -457,10 +457,12 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 // menu高度在某個尺寸下須作調整
 @media (min-height: 768px) {
-	.main-menu.expanded .nav-footer-info {
+	.main-menu.expanded .nav-footer-info,
+	.menu-expanded .nav-footer-info {
 		position: absolute;
 		font-size: 13px;
 		color: #b3b3b3;
 		bottom: 10rem;
 	}
+
 }

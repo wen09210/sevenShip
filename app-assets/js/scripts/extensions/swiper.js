@@ -1,15 +1,6 @@
-/*=========================================================================================
-    File Name: swiper.js
-    Description: swiper plugin
-    ----------------------------------------------------------------------------------------
-    Item Name: Frest HTML Admin Template
-    Version: 1.0
-    Author: PIXINVENT
-    Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+
 $(document).ready(function () {
     //initialize swiper when document ready
-
     // default
     var mySwiper = new Swiper('.swiper-default');
 
