@@ -3315,10 +3315,12 @@ html body.navbar-sticky .app-content .content-wrapper {
   width: 100%; }
   .sales-area .nav.nav-pills .nav-item .nav-link {
     border-radius: 0;
-    text-align: center; }
+    text-align: center;
+    color: #4a4a4a; }
     .sales-area .nav.nav-pills .nav-item .nav-link.active {
       -webkit-box-shadow: none;
-      box-shadow: none; }
+      box-shadow: none;
+      color: #fff; }
 
 .shop-area {
   display: -webkit-box;
@@ -3392,7 +3394,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 .footer-static p {
   font-size: 14px;
-  color: #2f2f2f; }
+  color: #9b9b9b; }
 
 .my_performance {
   width: 100%;

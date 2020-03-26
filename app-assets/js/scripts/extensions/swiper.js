@@ -6,7 +6,9 @@ $(document).ready(function () {
 
     // navigation
     var mySwiper1 = new Swiper('.swiper-navigations', {
-       
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -121,6 +123,9 @@ $(document).ready(function () {
     // autoplay
     var mySwiper10 = new Swiper('.swiper-autoplay', {
         centeredSlides: true,
+        observer: true,
+        observeParents: true,
+        observeSlideChildren: true,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false,
@@ -260,11 +265,11 @@ $(document).ready(function () {
         e.preventDefault();
         mySwiper15.virtual.appendSlide('Slide ' + (++appendNumber));
     });
-    $('.bx-menu').click(function(){
+    // $('.bx-menu').click(function(){
+    //     setTimeout(() => {
+    //         window.dispatchEvent(new Event("resize"))
+    //         mySwiper2.update();
+    //     }, 200)
   
-        setTimeout(() => {
-            window.dispatchEvent(new Event("resize"))
-        }, 200)
-  
-    })
+    // })
 });

@@ -293,8 +293,10 @@ html body.navbar-sticky .app-content .content-wrapper {
 		.nav-link{
 			border-radius: 0;
 			text-align:center;
+			color:#4a4a4a;
 			&.active{
 				box-shadow: none;
+				color:#fff;
 			}
 		}
 	}
@@ -400,7 +402,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 .footer-static {
 	p {
 		font-size: 14px;
-		color: #2f2f2f;
+		color: #9b9b9b;
 	}
 }
 
