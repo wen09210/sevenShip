@@ -18,6 +18,9 @@ body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
   width: 220px;
   top: 56px;
   z-index: 1; }
+  @media all and (min-width: 1440px) {
+    body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu {
+      width: 15%; } }
   body.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > span.badge {
     position: absolute;
     right: 7px; }
@@ -80,6 +83,9 @@ body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu {
   body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded {
     width: 220px;
     box-shadow: 5px 0 25px 0 rgba(55, 70, 95, 0.3); }
+    @media all and (min-width: 1440px) {
+      body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded {
+        width: 15%; } }
     body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation > li.navigation-header span {
       display: block; }
     body.vertical-layout.vertical-menu-modern.menu-collapsed .main-menu.expanded .navigation > li > a i {

@@ -50,6 +50,9 @@ body.vertical-layout {
          // Main menu expanded
          .main-menu {
             width: $menu-expanded-width;
+            @media all and(min-width:1440px) {
+              width: $menu-expanded-width-large;
+            }
             top:56px;
             z-index: 1;
             .navigation {
@@ -157,6 +160,9 @@ body.vertical-layout {
             }
             &.expanded {
                width: $menu-expanded-width;
+               @media all and(min-width:1440px) {
+                  width: $menu-expanded-width-large;
+               }
                box-shadow: 5px 0 25px 0 rgba(55,70,95,0.30);
                .navigation {
                   > li {

@@ -25,6 +25,9 @@ html {
       backface-visibility: hidden;
       min-height: calc(100% - 3.5rem);
       margin-left: $menu-expanded-width;
+      @media all and(min-width:1440px){
+        margin-left:$menu-expanded-width-large;
+      }
       &.app-content {
         overflow: hidden;
         &.show-overlay {
@@ -251,10 +254,16 @@ span {
     // Normal Sidebar
     .content-right {
       width: calc(100% - #{$sidebar-width} - #{$sidebar-margin-right});
+      @media all and(min-width:1440px){
+        width: calc(100% - #{$sidebar-width-large} - #{$sidebar-margin-right-large});
+      }
       float: right;
     }
     .content-left {
       width: calc(100% - #{$sidebar-width} - #{$sidebar-margin-right});
+      @media all and(min-width:1440px) {
+        width: calc(100% - #{$sidebar-width-large} - #{$sidebar-margin-right-large});
+      }
       float: left;
     }
     // Detached Sidebar
@@ -263,15 +272,27 @@ span {
       &.content-right {
         float: right;
         margin-left: -$sidebar-width;
+         @media all and(min-width:1440px) {
+          margin-left: -$sidebar-width-large;
+         }
         .content-body {
           margin-left: calc(#{$sidebar-width} + #{$sidebar-margin-right} + #{$content-padding});
+          @media all and(min-width:1440px) {
+            margin-left: calc(#{$sidebar-width-large} + #{$sidebar-margin-right} + #{$content-padding});
+          }
         }
       }
       &.content-left {
         float: left;
         margin-right: -$sidebar-width -$sidebar-margin-right;
+         @media all and(min-width:1440px) {
+           margin-right: -$sidebar-width-large -$sidebar-margin-right-large;
+         }
         .content-body {
           margin-right: calc(#{$sidebar-width} + #{$sidebar-margin-right} + #{$content-padding});
+          @media all and(min-width:1440px) {
+            margin-right: calc(#{$sidebar-width-large} + #{$sidebar-margin-right-large} + #{$content-padding});
+          }
         }
       }
     }
@@ -282,6 +303,11 @@ span {
     margin-right:$sidebar-margin-right;
     width: $sidebar-width !important;
     margin-top: $navbar-height + 1;
+    @media all and(min-width:1440px) {
+      margin-left: -$sidebar-width-large;
+      margin-right:$sidebar-margin-right-large;
+      width: $sidebar-width-large !important;
+    }
   }
   //Left Sticky Sidebar
   [data-col="content-left-sidebar"] {

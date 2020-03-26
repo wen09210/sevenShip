@@ -71,6 +71,7 @@
         transition: width .25s,opacity .25s,transform .25s;
         width: $menu-expanded-width;
         left: -($menu-expanded-width);
+        
          top: 60px;
         .navigation{
             > li{

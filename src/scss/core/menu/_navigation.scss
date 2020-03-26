@@ -78,6 +78,9 @@
   .navbar-header {
     height: 100%;
     width: $menu-expanded-width;
+    @media all and(min-width:1440px) {
+      width: 100%;
+    }
     height: 1.6rem;
     position: relative;
     padding: 0.35rem 8px 0.3rem 1.3rem;

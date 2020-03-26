@@ -1,12 +1,3 @@
-/*=========================================================================================
-  File Name: Components.js
-  Description: For Generic Components.
-  ----------------------------------------------------------------------------------------
-  Item Name: Frest HTML Admin Template
-  Version: 1.0
-  Author: Pixinvent
-  Author URL: http://www.themeforest.net/user/pixinvent
-==========================================================================================*/
 
 (function (window, document, $) {
 

@@ -1,13 +1,4 @@
-/*=========================================================================================
-  File Name: app-menu.js
-  Description: Menu navigation, custom scrollbar, hover scroll bar, multilevel menu
-  initialization and manipulations
-  ----------------------------------------------------------------------------------------
-  Item Name: Frest HTML Admin Template
-  Version: 1.0
-  Author: Pixinvent
-  Author URL: hhttp://www.themeforest.net/user/pixinvent
-==========================================================================================*/
+
 (function (window, document, $) {
   'use strict';
 
@@ -49,7 +40,8 @@
               }
             }else{              
               menu = document.querySelector('.main-menu-content');
-              activeEl = activeEl.getBoundingClientRect().top + menu.scrollTop;
+              // activeEl = activeEl.getBoundingClientRect().top + menu.scrollTop;
+              activeEl = activeEl + menu.scrollTop;
               // If active element's top position is less than 2/3 (66%) of menu height than do not scroll
               if (activeEl > parseInt((menu.clientHeight * 2) / 3)) {
                 var start = menu.scrollTop,

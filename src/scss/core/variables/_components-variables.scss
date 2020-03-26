@@ -96,11 +96,14 @@ $menu-second-level-padding: 10px 9px;
 $menu-third-level-padding: 10px 20px;
 
 // Vertical Menu
+$menu-expanded-width-large: 15%;
 $menu-expanded-width: 220px;
 $menu-collapsed-width: 78px;
 
 // Sidebar
-$sidebar-width: 280px;
+$sidebar-width-large: 20%;
+$sidebar-margin-right-large:1%;
+$sidebar-width: 300px;
 $sidebar-margin-right:15px;
 $chat-sidebar-width: 290px;
 
