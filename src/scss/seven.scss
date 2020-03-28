@@ -99,7 +99,10 @@ margin-right:8px;
 }
 .nav-user-more .dropdown-menu{
 	left:-135px;
+}
 
+.bx-dots-horizontal-rounded {
+	font-size: 24px;
 }
 .global-alert-wrapper {
 	padding: 0rem 2.2rem 0;
@@ -385,11 +388,12 @@ html body.navbar-sticky .app-content .content-wrapper {
 			vertical-align: middle;
 			color: #ff6000;
 			margin-right: 5px;
+			text-align: center;
+			display: block;
 			@media (min-height: 768px) {
 				margin-right: 0;
 				margin-bottom:5px;
-				text-align: center;
-				display: block;
+				
 			}
 		}
 
@@ -480,4 +484,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 		bottom: 10rem;
 	}
 
+}
+@media (max-width: 320px) {
+html body.navbar-sticky .navbar-container{
+	padding-right:5px;
+}
 }

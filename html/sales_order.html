@@ -54,8 +54,8 @@
         <div class="navbar-wrapper">
             <div class="navbar-container content">
                 <div class="navbar-collapse" id="navbar-mobile">
-                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
-                        <ul class="nav navbar-nav">
+                    <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center justify-content-sm-between w-100">
+                        <ul class="nav navbar-nav d-lg-none ">
                             <li class="nav-item mobile-menu d-xl-none mr-auto"><a
                                     class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i
                                         class="ficon bx bx-menu"></i></a></li>
@@ -66,34 +66,33 @@
                                         src="../app-assets/images/logo/sevenlogo.png" alt="" class="seven-logo-two"></a>
                             </li>
                         </ul>
+                        <ul class="nav navbar-nav float-right">
 
+                            <li class="dropdown nav-user-name nav-item d-none d-lg-block">
+                                <div class="nav-link">
+                                    王曉雯，歡迎回來
+                                </div>
+                            </li>
+                            <li class="nav-item  nav-user-more">
+                                <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <span class=""><i class='bx bx-dots-horizontal-rounded'></i></span></a>
+                                <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bx bx-link mr-50"></i> 社群帳號綁定</a>
+                                    <a class="dropdown-item" href="#">
+                                        <i class="bx bx-power-off mr-50"></i> 登出</a>
+
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
                     </div>
-                    <ul class="nav navbar-nav float-right">
-
-                        <li class="dropdown nav-user-name nav-item d-none d-lg-block">
-                            <div class="nav-link">
-                                王曉雯，歡迎回來
-                            </div>
-                        </li>
-                        <li class="nav-item  nav-user-more">
-                             <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
-                                 aria-haspopup="true" aria-expanded="false">
-                                 <span class=""><i
-                                         class='bx bx-dots-horizontal-rounded'></i></span></a>
-                             <div class="dropdown-menu" aria-labelledby="dropdown-flag">
-
-                                 <a class="dropdown-item" href="#">
-                                     <i class="bx bx-link mr-50"></i> 社群帳號綁定</a>
-                                 <a class="dropdown-item" href="#">
-                                     <i class="bx bx-power-off mr-50"></i> 登出</a>
-
-                             </div>
-                        </li>
-
-
-
-
-                    </ul>
+                    
                 </div>
             </div>
         </div>
@@ -116,7 +115,8 @@
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation"
                 data-icon-style="">
-                <li class=" nav-item"><a href="app-email.html"><i class="bx bx-envelope"></i><span class="menu-title"
+                <li class=" nav-item has-sub  open"><a href="app-email.html"><i class="bx bx-envelope"></i><span
+                            class="menu-title"
                             data-i18n="Email">訂單管理</span></a>
                     <ul class="menu-content">
                         <li><a href="#"><i class="bx bx-caret-right"></i><span class="menu-item"
@@ -152,7 +152,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="dashboard-analytics.html"><i class="bx bx-right-arrow-alt"></i><span
+                        <li><a href="dashboard-analytics.html"><i class="bx bx-caret-right"></i><span
                                     class="menu-item" data-i18n="Analytics">新增賣場</span></a>
                         </li>
 
@@ -286,7 +286,7 @@
                                 <div class="modal-dialog modal-dialog-scrollable" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title" id="myModalLabel1">Basic Modal</h3>
+                                            <h3 class="modal-title" id="myModalLabel1">使用說明</h3>
                                             <button type="button" class="close rounded-pill" data-dismiss="modal"
                                                 aria-label="Close">
                                                 <i class="bx bx-x"></i>
@@ -294,29 +294,22 @@
                                         </div>
                                         <div class="modal-body">
                                             <p>
-                                                Bonbon caramels muffin. Chocolate bar oat cake cookie pastry dragée
-                                                pastry. Carrot cake
-                                                chocolate tootsie roll chocolate bar candy canes biscuit.
-
-                                                Gummies bonbon apple pie fruitcake icing biscuit apple pie jelly-o
-                                                sweet roll. Toffee sugar
-                                                plum sugar plum jelly-o jujubes bonbon dessert carrot cake. Cookie
-                                                dessert tart muffin topping
-                                                donut icing fruitcake. Sweet roll cotton candy dragée danish Candy
-                                                canes chocolate bar cookie.
-                                                Gingerbread apple pie oat cake. Carrot cake fruitcake bear claw.
-                                                Pastry gummi bears
-                                                marshmallow jelly-o.
+                                                只需依據 Excel 表單之規範填寫並上傳成功，即可快速成立訂單！(註：訂單匯入目前僅開放使用取貨付款功能)
+                                                點選「下載範例檔」取得《賣貨便_訂單匯入.xlsm》Excel表單。
+                                                請詳閱範例檔之填寫說明文字，並且依據規範輸入訂單資訊。
+                                                點選Excel表單之「驗證」按鈕，確認資料無誤後儲存檔案。
+                                                點選「選擇檔案」，選擇欲上傳文件或拖拉檔案至新增區域，點選「匯入」即可開始上傳。
+                                                若上傳成功，則檔案中所有資料將進行匯入處理，並顯示處理結果，可點選「下載匯入結果」取得結果資料。
                                             </p>
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-light-secondary" data-dismiss="modal">
+                                        <div class="modal-footer justify-content-center">
+                                            <!-- <button type="button" class="btn btn-light-secondary" data-dismiss="modal">
                                                 <i class="bx bx-x d-block d-sm-none"></i>
                                                 <span class="d-none d-sm-block">Close</span>
-                                            </button>
+                                            </button> -->
                                             <button type="button" class="btn btn-primary ml-1" data-dismiss="modal">
                                                 <i class="bx bx-check d-block d-sm-none"></i>
-                                                <span class="d-none d-sm-block">Accept</span>
+                                                <span class="d-none d-sm-block">我知道了</span>
                                             </button>
                                         </div>
                                     </div>
