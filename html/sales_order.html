@@ -70,23 +70,24 @@
                     </div>
                     <ul class="nav navbar-nav float-right">
 
-                        <li class="dropdown dropdown-language nav-item">
-                            <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <span class="selected-language">王曉雯，歡迎回來</span></a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-flag">
-
-                                <a class="dropdown-item" href="#">
-                                    <i class="bx bx-link mr-50"></i> 社群帳號綁定</a>
-                                <a class="dropdown-item" href="#">
-                                    <i class="bx bx-power-off mr-50"></i> 登出</a>
-
+                        <li class="dropdown nav-user-name nav-item d-none d-lg-block">
+                            <div class="nav-link">
+                                王曉雯，歡迎回來
                             </div>
                         </li>
-                        <li class="nav-item d-none d-lg-block nav-user-name">
-                            <div class="nav-link">
-                                ...
-                            </div>
+                        <li class="nav-item  nav-user-more">
+                             <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown"
+                                 aria-haspopup="true" aria-expanded="false">
+                                 <span class=""><i
+                                         class='bx bx-dots-horizontal-rounded'></i></span></a>
+                             <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+
+                                 <a class="dropdown-item" href="#">
+                                     <i class="bx bx-link mr-50"></i> 社群帳號綁定</a>
+                                 <a class="dropdown-item" href="#">
+                                     <i class="bx bx-power-off mr-50"></i> 登出</a>
+
+                             </div>
                         </li>
 
 
@@ -206,7 +207,7 @@
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
-                <div class="d-flex align-items-center">
+                <div class="d-flex align-items-start">
                     <span class="badge badge-light-danger badge-pill badge-round float-right ">公告事項</span>
                     <span>
                         金鼠迎新賺紅包-賣貨便寄件送運費折扣券
@@ -326,7 +327,7 @@
                             <div class="card-content" aria-expanded="true">
                                 <div class="card-body">
                                     <div class="card-text">
-                                        <p>可用點數<span class="text-primary">8888</span> OPEN POINT點數(=可折抵<span
+                                        <p>可用點數<span class="text-primary">8888</span><img src="../app-assets/images/elements/openpoint.png" alt="" class="openPointImg">點數(=可折抵<span
                                                 class="text-primary">888</span>元運費或購物金）
                                             <span class="badge  badge-link">兌點<a href=""
                                                     class="link-blue">連結教學</a></span>
@@ -446,19 +447,18 @@
                         <!--/ CSS Classes -->
                         <section class="quick-link">
                             <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="card quick-link-function  ">
-
                                         <p><i class="bx bx-search"></i><span>店鋪查詢</span></p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="card quick-link-function">
 
                                         <p><i class="bx bx-time"></i><span>教學影片</span></p>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <div class="card quick-link-function">
                                         <p><i class="bx bx-award"></i>
                                             <span>賣家應援站</span></p>
@@ -565,7 +565,7 @@
 
     <!-- BEGIN: Footer-->
     <footer class="footer footer-static footer-light bg-white">
-        <p class="clearfix mb-0"><span class="float-right d-sm-inline-block d-none">© 2020 President Information CORP.
+        <p class="clearfix mb-0"><span class="float-right d-sm-inline-block ">© 2020 President Information CORP.
                 All Rights Reserved.
 
 

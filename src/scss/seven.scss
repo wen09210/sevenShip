@@ -93,10 +93,14 @@ margin-right:8px;
 	padding: 7px 1.25rem
 }
 
-.nav-user-name {
+.nav-user-name,.nav-user-more {
 	padding: 8px 0px;
+	position: relative;
 }
+.nav-user-more .dropdown-menu{
+	left:-135px;
 
+}
 .global-alert-wrapper {
 	padding: 0rem 2.2rem 0;
 	margin-top: 56px;
@@ -188,7 +192,10 @@ margin-right:8px;
 	margin-bottom: 1.4rem;
 	padding: 0.9rem 1.7rem 1rem;
 }
-
+.openPointImg{
+	width:118px;
+	vertical-align: sub;
+}
 
 html body.navbar-sticky .app-content .content-wrapper {
 	margin-top: 0px;
@@ -378,6 +385,12 @@ html body.navbar-sticky .app-content .content-wrapper {
 			vertical-align: middle;
 			color: #ff6000;
 			margin-right: 5px;
+			@media (min-height: 768px) {
+				margin-right: 0;
+				margin-bottom:5px;
+				text-align: center;
+				display: block;
+			}
 		}
 
 		span {
