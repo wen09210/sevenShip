@@ -92,7 +92,16 @@ margin-right:8px;
 .main-menu.menu-light .navigation>li.nav-item a {
 	padding: 7px 1.25rem
 }
-
+.main-menu.menu-light .navigation>li.nav-item.open.has-sub.open .menu-content .open{
+	
+	>a{
+		color:#ff6000;
+		i {
+			color: #ff6000;
+		}
+	}
+	
+}
 .nav-user-name,.nav-user-more {
 	padding: 8px 0px;
 	position: relative;
@@ -443,6 +452,13 @@ html body.navbar-sticky .app-content .content-wrapper {
 	    color: #ff6000;
 }
 
+@media only screen and (max-width: 768px){
+	.card .swiper-button-prev,
+	.card .swiper-button-next {
+		top:65%;
+	}
+}
+
 @media (min-width: 992px) {
 	.sidebar-right.sidebar-sticky {
 
@@ -466,7 +482,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		}
 	}
 	html body.navbar-sticky .app-content .content-wrapper{
-		padding-top: 2.2rem;
+		padding-top: 7px;
 	}
 	html body.navbar-sticky .app-content .content-wrapper{
 		padding-left:15px;
