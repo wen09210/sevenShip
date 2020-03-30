@@ -3480,6 +3480,12 @@ html body.navbar-sticky .app-content .content-wrapper {
 .card .swiper-button-next {
   color: #ff6000; }
 
+.dropdown-menu .dropdown-item {
+  font-size: 1rem; }
+
+.noPadding {
+  padding: 0px; }
+
 @media only screen and (max-width: 768px) {
   .card .swiper-button-prev,
   .card .swiper-button-next {
