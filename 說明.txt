@@ -1,0 +1,7 @@
+說明
+
+主要檔案為html與
+app-assets檔
+
+其餘檔案如src,assets皆為編譯檔
+
