@@ -3481,7 +3481,11 @@ html body.navbar-sticky .app-content .content-wrapper {
   color: #ff6000; }
 
 .dropdown-menu .dropdown-item {
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #999; }
+
+.dropdown-menu i {
+  color: #999; }
 
 .noPadding {
   padding: 0px; }
@@ -3516,7 +3520,7 @@ html body.navbar-sticky .app-content .content-wrapper {
     position: absolute;
     font-size: 13px;
     color: #b3b3b3;
-    bottom: 10rem; } }
+    bottom: 100px; } }
 
 @media (max-width: 320px) {
   html body.navbar-sticky .navbar-container {

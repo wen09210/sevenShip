@@ -454,6 +454,10 @@ html body.navbar-sticky .app-content .content-wrapper {
 .dropdown-menu{
 	.dropdown-item{
 		font-size: 1rem;
+		color:#999;
+	}
+	i{
+		color:#999;
 	}
 }
 .noPadding{
@@ -504,7 +508,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		position: absolute;
 		font-size: 13px;
 		color: #b3b3b3;
-		bottom: 10rem;
+		bottom: 100px;
 	}
 
 }
