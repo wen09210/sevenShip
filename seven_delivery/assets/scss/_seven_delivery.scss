@@ -1,0 +1,154 @@
+// seven //
+
+.block_section_title {
+	font-size: 24px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: $main-blue;
+	text-align: left;
+	margin-bottom: 6px;
+}
+
+.act_title {
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+
+	color: #4a4a4a;
+	text-align: left;
+}
+
+.activity_text {
+	padding-left: 20px;
+	display: flex;
+	flex-direction: column;
+	height: auto;
+	justify-content: space-between;
+}
+
+.act_content {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.57;
+	letter-spacing: normal;
+	color: #767676;
+}
+
+.act_note {
+	font-size: 13px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.69;
+	letter-spacing: normal;
+	color: #215eb1;
+	text-align: left;
+}
+
+.d-flex {
+	display: flex !important;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.block_section {
+	max-width: 600px;
+
+}
+
+.actitvity_wrap {
+	background-color: #ededed;
+	padding: 35px;
+
+	.img-responsive {
+		width: 250px;
+	}
+}
+
+// 新聞區塊
+.news_wrap {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+	border: solid 1px #e0e0e0;
+	background-color: #ffffff;
+	padding: 10px 22px 0px;
+	height: calc(100% - 33px);
+
+	li {
+		position: relative;
+		padding: 14px 0px;
+		border-bottom: 1px solid #e2e2e2;
+		margin-left: 7px
+	}
+
+	ul li::before {
+		content: "\2022";
+		color: #88ceff;
+		display: inline-block;
+		width: 8px;
+		position: absolute;
+		left: -15px;
+	}
+}
+
+.news_title {
+	display: flex;
+	justify-content: space-between;
+
+	a.link_more {
+		font-size: 14px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: $main-blue;
+	}
+}
+
+// footer
+.cus_time {
+	color: white;
+	font-size: 12px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.58;
+	letter-spacing: normal;
+	padding: 8px 0 16px;
+}
+.corp_logo{
+
+}
+  .f-recommandLinkLogo {
+  	width: 158px;
+  }
+
+  .f-logo-white {
+	  width: 106px;
+	  margin-left: 10px;
+  }
+  .footer_function_link{
+	  display: flex;
+	  ul{
+		  flex-direction: column;
+		  li{
+			  padding:0px 50px 10px;
+		  }
+	  }
+  }
+  .footer-img-icon{
+	  width: 30px;
+	  margin:0px 7px;
+  }
+  .footerWrap.footer_all_rights_reserve {
+	  min-height: 55px;
+	  align-items: center;
+  }

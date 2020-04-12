@@ -1,0 +1,72 @@
+// mediaQuery大小
+$largePc :1400px;
+$pc:1280px;
+$smallPc:1023.9px;
+$pad-media-up:959.91px;
+$pad-media:959.9px;
+$pad-to-phone:767.9px;
+$phone-media:480px;
+
+// largePc
+@mixin largePc-width() {
+	@media all and (min-width: $largePc) {
+		@content;
+	}
+}
+
+// pc
+@mixin pc-width() {
+	@media all and (max-width: $pc) {
+		@content;
+	}
+}
+
+//平板
+//1023以下
+@mixin smallPc-width() {
+	@media all and (max-width: $smallPc) {
+		@content;
+	}
+}
+//960以上
+@mixin pad-up-width() {
+	@media all and (min-width: $pad-media-up) {
+		@content;
+	}
+}
+//手機
+//960以下
+@mixin pad-width() {
+	@media all and (max-width: $pad-media) {
+		@content;
+	}
+}
+//手機
+//768-480以下
+@mixin pad-to-phone-width() {
+	@media all and (max-width: $pad-to-phone) {
+		@content;
+	}
+}
+
+
+// 480以下
+//手機
+@mixin mini-phone-width() {
+	@media all and (max-width: $phone-media) {
+		@content;
+	}
+}
+
+//rwd
+@mixin rwd-max-width($rwdWidth) {
+	@media all and (max-width: $rwdWidth) {
+		@content;
+	}
+}
+
+@mixin rwd-min-width($rwdWidth) {
+	@media all and (min-width: $rwdWidth) {
+		@content;
+	}
+}

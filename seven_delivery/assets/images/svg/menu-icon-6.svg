@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
+                                    class="svg-icon">
+                                    <g fill="#6D6D6D" fill-rule="evenodd" transform="translate(7 3)">
+                                        <path fill-rule="nonzero"
+                                            d="M1.467.953a.513.513 0 0 0-.514.514v16.066c0 .284.23.514.514.514h7.962c.283 0 .513-.23.513-.514V1.467a.513.513 0 0 0-.513-.514H1.467zm0-.953h7.962c.81 0 1.466.657 1.466 1.467v16.066c0 .81-.656 1.467-1.466 1.467H1.467C.657 19 0 18.343 0 17.533V1.467C0 .657.657 0 1.467 0z" />
+                                        <path fill-rule="nonzero"
+                                            d="M.908 3.548v-.953h9.08v.953zM.739 15.433v-.954h9.455v.954z" />
+                                        <ellipse cx="5.55" cy="16.548" rx="1" ry="1" />
+                                    </g>
+                                </svg>
