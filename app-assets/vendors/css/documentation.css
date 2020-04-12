@@ -64,7 +64,7 @@ ul#page-navigation-list li ul li a.active{
   color: #828D99;
  }
  .breadcrumb-wrapper .breadcrumb .breadcrumb-item a:hover, a i:hover{
-  color: #5A8DEE;
+  /* color: #5A8DEE; */
 }
 .breadcrumb-wrapper .breadcrumb .breadcrumb-item + .breadcrumb-item{
   padding-left: 9px;
