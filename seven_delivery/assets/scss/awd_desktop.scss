@@ -139,7 +139,7 @@ li.on .svg-icon path {
   }
 
   .c-menuLv1>li {
-    width: 100%;
+    width: 185px;
   }
 
   .c-menuLv1__child {
@@ -152,11 +152,12 @@ li.on .svg-icon path {
   .c-menuLv1>li:last-of-type .c-menuLv1__name {
     opacity: 1;
     color: #fff;
-    background:$main-blue;
+    background:#ff8500;
   }
 
   .c-menuLv1>li:last-of-type .c-menuLv1__name:hover {
-    background-image: linear-gradient(to bottom, $main-blue, $main-blue);
+    // background-image: linear-gradient(to bottom, $main-blue, $main-blue);
+    cursor: pointer;
   }
 
 

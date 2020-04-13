@@ -79,6 +79,42 @@ a.header-small-btn {
     background-color: #2e78c7;
     color: #fff; }
 
+.d-flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
+
+.global-announcement {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
+  color: #2f2f2f !important;
+  padding-left: 15px;
+  border: solid 1px #ffeba2; }
+
+.global-alert {
+  background-color: #fffaea; }
+
+.global-alert-wrapper.container {
+  max-width: 1280px;
+  width: 100%; }
+
+.global-alert-wrapper {
+  padding: 10px 0px; }
+
+.align-items-start {
+  -webkit-box-align: start !important;
+  -ms-flex-align: start !important;
+  align-items: flex-start !important; }
+
+.badge {
+  background-color: #2e78c7;
+  font-size: 14px;
+  padding: 0.2rem 0.3rem;
+  margin-right: 7px;
+  color: #fff !important;
+  border-radius: 3px; }
+
 .block_section_title {
   font-size: 24px;
   font-weight: normal;
@@ -133,19 +169,16 @@ a.header-small-btn {
   color: #215eb1;
   text-align: left; }
 
-.d-flex {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
+.block_section {
+  max-width: 600px; }
+
+.activity_swiper {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
-
-.block_section {
-  max-width: 600px; }
 
 .actitvity_wrap {
   background-color: #ededed;
@@ -227,6 +260,194 @@ a.header-small-btn {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.sideFunction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+  position: fixed;
+  right: 0px;
+  -webkit-transition: all ease-in-out .5s;
+  -o-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s; }
+  @media all and (max-width: 640px) {
+    .sideFunction {
+      width: 100%; } }
+  @media all and (max-width: 640px) {
+    .sideFunction .myFavorBtn {
+      display: none; } }
+  .sideFunction .sideFixedBtn {
+    background-color: #848484;
+    width: 70px;
+    height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer; }
+    .sideFunction .sideFixedBtn.active {
+      background-color: #2e78c7; }
+    .sideFunction .sideFixedBtn:hover {
+      background-color: #2e78c7; }
+    .sideFunction .sideFixedBtn img {
+      max-width: 25px; }
+    .sideFunction .sideFixedBtn p {
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      color: #ffffff;
+      padding: 3px; }
+
+.sideFunctionBox {
+  width: 460px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  background-color: #edf3e9;
+  padding: 30px; }
+  @media all and (max-width: 640px) {
+    .sideFunctionBox {
+      width: 100%; } }
+  .sideFunctionBox .sideFunctionTitle {
+    font-size: 24px;
+    padding-bottom: 8px;
+    color: #4a4a4a;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; }
+    .sideFunctionBox .sideFunctionTitle span {
+      font-size: 13px; }
+    .sideFunctionBox .sideFunctionTitle a.editor span {
+      color: #00994e;
+      text-decoration: underline; }
+    .sideFunctionBox .sideFunctionTitle .editorActice i:before {
+      content: "\e906"; }
+  .sideFunctionBox .sideFunctionClose {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 12px; }
+  .sideFunctionBox .sideFunctionIcon {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50px; }
+
+@media all and (max-width: 640px) {
+  .myFavorBox {
+    padding: 30px 7px; }
+    .myFavorBox .sideFunctionTitle {
+      margin: 0px 28px; } }
+
+@media all and (max-width: 374px) {
+  .rateExchangeBox {
+    padding: 30px 5px; } }
+
+.favorFunction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .favorFunction i {
+    font-size: 50px; }
+  .favorFunction .smallDelete {
+    display: none;
+    font-size: 12px; }
+  .favorFunction .favorOuter {
+    width: 33%; }
+  .favorFunction .choosedFavor {
+    position: relative;
+    cursor: pointer;
+    width: 115px;
+    height: 115px;
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 15px; }
+    .favorFunction .choosedFavor:hover {
+      background-color: #fff;
+      border-radius: 8px; }
+      .favorFunction .choosedFavor:hover .sideFunctionIcon {
+        background-color: #edf3e9; }
+      .favorFunction .choosedFavor:hover .smallDelete {
+        display: block;
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        top: 5px;
+        padding: 4px;
+        border: 2px solid #9b9b9b;
+        border-radius: 20px;
+        right: 5px; }
+  .favorFunction .choosedFavorHover {
+    background-color: #fff;
+    border-radius: 8px; }
+    .favorFunction .choosedFavorHover .sideFunctionIcon {
+      background-color: #edf3e9; }
+    .favorFunction .choosedFavorHover .smallDelete {
+      display: block;
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      top: 5px;
+      padding: 4px;
+      border: 2px solid #9b9b9b;
+      border-radius: 20px;
+      right: 5px; }
+  .favorFunction p {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    color: #4a4a4a; }
+  .favorFunction .addSetting {
+    height: 115px; }
+    .favorFunction .addSetting p {
+      color: #00994e; }
+
+.closeFunction {
+  right: -460px; }
+  @media all and (max-width: 640px) {
+    .closeFunction {
+      right: 0px;
+      display: none; } }
+
+.mt-30 {
+  margin-top: 30px; }
 
 .sticky .svg-icon g,
 .sticky .svg-icon path {
@@ -325,7 +546,7 @@ li.on .svg-icon path {
     display: -ms-flexbox;
     display: flex; }
   .c-menuLv1 > li {
-    width: 100%; }
+    width: 185px; }
   .c-menuLv1__child {
     top: 47px;
     border-bottom: 0px;
@@ -334,12 +555,9 @@ li.on .svg-icon path {
   .c-menuLv1 > li:last-of-type .c-menuLv1__name {
     opacity: 1;
     color: #fff;
-    background: #2e78c7; }
+    background: #ff8500; }
   .c-menuLv1 > li:last-of-type .c-menuLv1__name:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2e78c7), to(#2e78c7));
-    background-image: -webkit-linear-gradient(top, #2e78c7, #2e78c7);
-    background-image: -o-linear-gradient(top, #2e78c7, #2e78c7);
-    background-image: linear-gradient(to bottom, #2e78c7, #2e78c7); }
+    cursor: pointer; }
   .c-menuLv1__wrap {
     display: -webkit-box;
     display: -ms-flexbox;

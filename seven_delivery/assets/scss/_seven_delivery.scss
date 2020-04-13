@@ -1,3 +1,40 @@
+@import '_color.scss';
+.d-flex {
+	display: flex !important;
+
+}
+// 公告 //
+.global-announcement {
+	padding-left: 0px;
+	padding-right: 0px;
+	border-radius: 0px;
+	color: #2f2f2f !important;
+	padding-left: 15px;
+	border: solid 1px #ffeba2;
+}
+.global-alert{
+background-color: #fffaea;
+}
+.global-alert-wrapper.container {
+	max-width: 1280px;
+	width:100%;
+	
+}
+.global-alert-wrapper {
+	padding: 10px 0px;
+}
+
+.align-items-start {
+	align-items: flex-start !important;
+}
+.badge{
+	background-color:$main-blue;
+	font-size: 14px;
+	padding: 0.2rem 0.3rem;
+	margin-right: 7px;
+	    color: #fff !important;
+	    border-radius: 3px;
+}
 // seven //
 
 .block_section_title {
@@ -53,17 +90,16 @@
 	text-align: left;
 }
 
-.d-flex {
-	display: flex !important;
-	justify-content: center;
-	align-items: stretch;
-}
+
 
 .block_section {
 	max-width: 600px;
 
 }
-
+.activity_swiper{
+	justify-content: center;
+	align-items: stretch;
+}
 .actitvity_wrap {
 	background-color: #ededed;
 	padding: 35px;
@@ -124,31 +160,278 @@
 	letter-spacing: normal;
 	padding: 8px 0 16px;
 }
-.corp_logo{
+
+.corp_logo {}
+
+.f-recommandLinkLogo {
+	width: 158px;
+}
+
+.f-logo-white {
+	width: 106px;
+	margin-left: 10px;
+}
+
+.footer_function_link {
+	display: flex;
+
+	ul {
+		flex-direction: column;
+
+		li {
+			padding: 0px 50px 10px;
+		}
+	}
+}
+
+.footer-img-icon {
+	width: 30px;
+	margin: 0px 7px;
+}
+
+.footerWrap.footer_all_rights_reserve {
+	min-height: 55px;
+	align-items: center;
+}
+
+// 側邊
+.sideFunction {
+	display: flex;
+	z-index: 3;
+	position: fixed;
+	right: 0px;
+	transition: all ease-in-out .5s;
+
+	@include rwd-max-width(640px) {
+		width: 100%;
+	}
+
+	.myFavorBtn {
+		@include rwd-max-width(640px) {
+			display: none;
+		}
+
+	}
+
+	.sideFixedBtn {
+		background-color: #848484;
+		width: 70px;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		cursor: pointer;
+
+		&.active {
+			background-color: $main-blue;
+		}
+
+		&:hover {
+			// background-color: #00a94f;
+			background-color: $main-blue;
+		}
+
+		img {
+			max-width: 25px;
+
+		}
+
+		p {
+			font-size: 12px;
+			font-weight: 500;
+			text-align: center;
+			color: #ffffff;
+			padding: 3px;
+		}
+	}
+}
+
+.sideFunctionBox {
+	width: 460px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+	background-color: #edf3e9;
+	padding: 30px;
+
+	@include rwd-max-width(640px) {
+		width: 100%;
+
+	}
+
+	.sideFunctionTitle {
+		font-size: 24px;
+		padding-bottom: 8px;
+		color: #4a4a4a;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+
+
+		span {
+			font-size: 13px;
+		}
+
+		a.editor span {
+			color: #00994e;
+			text-decoration: underline;
+		}
+
+		.editorActice {
+			i:before {
+				content: "\e906";
+			}
+		}
+
+	}
+
+	.sideFunctionClose {
+		font-size: 25px;
+		cursor: pointer;
+		position: absolute;
+		right: 12px;
+		top: 12px;
+	}
+
+	.sideFunctionIcon {
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		border-radius: 50px;
+	}
+}
+
+// 我的最愛側邊\
+.myFavorBox {
+	@include rwd-max-width(640px) {
+		padding: 30px 7px;
+
+		.sideFunctionTitle {
+			margin: 0px 28px;
+		}
+	}
+}
+
+// 匯率側邊
+.rateExchangeBox {
+	@include rwd-max-width(374px) {
+		padding: 30px 5px;
+
+
+	}
+}
+
+.favorFunction {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+
+	i {
+		font-size: 50px;
+	}
+
+	.smallDelete {
+		display: none;
+		font-size: 12px;
+	}
+
+	.favorOuter {
+		width: 33%;
+	}
+
+	.choosedFavor {
+		position: relative;
+		cursor: pointer;
+		width: 115px;
+		height: 115px;
+		margin: 0px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 15px;
+		padding-top: 15px;
+
+		&:hover {
+			background-color: #fff;
+			border-radius: 8px;
+
+			.sideFunctionIcon {
+				background-color: #edf3e9;
+			}
+
+			.smallDelete {
+				display: block;
+				position: absolute;
+				width: 23px;
+				height: 23px;
+				top: 5px;
+				padding: 4px;
+				border: 2px solid #9b9b9b;
+				border-radius: 20px;
+				right: 5px;
+			}
+
+
+		}
+	}
+
+	.choosedFavorHover {
+
+		background-color: #fff;
+		border-radius: 8px;
+
+		.sideFunctionIcon {
+			background-color: #edf3e9;
+		}
+
+		.smallDelete {
+			display: block;
+			position: absolute;
+			width: 23px;
+			height: 23px;
+			top: 5px;
+			padding: 4px;
+			border: 2px solid #9b9b9b;
+			border-radius: 20px;
+			right: 5px;
+		}
+
+
+
+	}
+
+	p {
+		padding: 5px;
+		font-size: 14px;
+		line-height: 1.29;
+		text-align: center;
+		color: #4a4a4a;
+	}
+
+	.addSetting {
+		height: 115px;
+
+		p {
+			color: #00994e;
+		}
+
+	}
+}
+
+
+.closeFunction {
+
+	right: -460px;
+
+	@include rwd-max-width(640px) {
+		right: 0px;
+		display: none;
+	}
 
 }
-  .f-recommandLinkLogo {
-  	width: 158px;
-  }
 
-  .f-logo-white {
-	  width: 106px;
-	  margin-left: 10px;
-  }
-  .footer_function_link{
-	  display: flex;
-	  ul{
-		  flex-direction: column;
-		  li{
-			  padding:0px 50px 10px;
-		  }
-	  }
-  }
-  .footer-img-icon{
-	  width: 30px;
-	  margin:0px 7px;
-  }
-  .footerWrap.footer_all_rights_reserve {
-	  min-height: 55px;
-	  align-items: center;
-  }
+.mt-30 {
+	margin-top: 30px;
+}

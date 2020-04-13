@@ -10511,7 +10511,6 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 		transition: visibility 0.3s, opacity 0.3s;
 		/* width: 80%; */
 		max-width: 1280px;
-		min-width: 320px;
 		margin: 0 auto;
 		max-height: 5000px;
 		position: absolute;
