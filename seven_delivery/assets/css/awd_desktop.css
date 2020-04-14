@@ -455,6 +455,9 @@ a.header-small-btn {
 .mt-30 {
   margin-top: 30px; }
 
+button:focus {
+  outline: none; }
+
 .sticky .svg-icon g,
 .sticky .svg-icon path {
   fill: #fff; }
