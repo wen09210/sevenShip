@@ -261,11 +261,17 @@ a.header-small-btn {
   -ms-flex-align: center;
   align-items: center; }
 
+.FlexColumnTop {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .sideFunction {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 3;
+  z-index: 50;
   position: fixed;
   right: 0px;
   -webkit-transition: all ease-in-out .5s;

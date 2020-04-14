@@ -15,7 +15,7 @@
     <!-- favicon-->
     <link rel="icon" type="assets/images/x-icon" href="assets/images/ico/favicon.ico">
     <link rel="stylesheet" href="assets/css/normalize-min.css">
-
+    <link rel="stylesheet" href="assets//css/bootstrap.css">
     <link href="assets/css/investCompile-dist.css" rel="stylesheet" />
     <!-- megamenu css / Begin -->
     <link rel="stylesheet" href="assets/js/vendor/jquery-ui/jquery-ui-min.css" />
@@ -25,11 +25,9 @@
     <!-- <link rel="stylesheet" href="assets/js/vendor/magnific-popup/magnific-popup.css"> -->
     <!-- Global css / Begin -->
     <!-- <link rel="stylesheet" href="assets/css/layout-min.css"> -->
-    <link rel="stylesheet" href="assets/css/mybank-login.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-    <link rel="stylesheet" href="assets/js/fancybox-3.0/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="assets/css/alpha.css" />
+    
     <link rel="stylesheet" href="assets/css/awd_desktop.css" />
     <!-- 新增 -->
     <!-- 新增end  -->
@@ -223,114 +221,170 @@
                     </div>
                 </div>
             </div>
-              <div class="sideFunction closeFunction">
-                  <ul class="nav nav-pills FlexColumnTop" id="side-tab" role="tablist">
-                      <li class=" myFavorBtn nav-item">
-                          <a class="sideFixedBtn" id="side-1-tab" data-toggle="pill" href="#side-1" role="tab"
-                              aria-selected="false">
-                              <img src="assets/images/icons/sent.png" alt="">
-                              <p>我要寄件</p>
-                          </a>
-                      </li>
-                      <li class="myFavorBtn nav-item">
-                          <a class="sideFixedBtn" id="side-2-tab" data-toggle="pill" href="#side-2" role="tab"
-                              aria-selected="false">
-                              <img src="assets/images/icons/search.png" alt="">
-                              <p>貨態查詢</p>
-                          </a>
-                      </li>
-                  </ul>
-                  <div class="tab-content" id="side-tabContent">
-                      <div class="tab-pane fade show sideFunctionBox myFavorBox  active" id="side-1" role="tabpanel">
-                          <i class="icon-cancel "></i><i class='bx bx-x sideFunctionClose'></i>
-                          <div class="sideFunctionTitle">我的最愛 <a class="editor hiddenPc"><i
-                                      class="icon-pencil"></i><span>編輯</span></a>
-                          </div>
-                          <div class="favorFunction">
-                              <a class="FlexColumn  favorOuter" href="">
-                                  <div class=" choosedFavor">
-                                      <i class="icon-twdAccount sideFunctionIcon"></i>
-                                      <p>台幣帳戶總覽</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-billQuery sideFunctionIcon"></i>
-                                      <p>帳單查詢及繳款</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-payTax sideFunctionIcon"></i>
-                                      <p>繳費繳稅</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-setting sideFunctionIcon"></i>
-                                      <p>帳戶別名設定</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-eTag sideFunctionIcon"></i>
-                                      <p>eTag自動儲值/
-                                          智慧停車</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-transfer sideFunctionIcon"></i>
-                                      <p>即時轉帳</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-eTag sideFunctionIcon"></i>
-                                      <p>行動銀行設定</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter" href="">
-                                  <div class="choosedFavor">
-                                      <i class="icon-exchange sideFunctionIcon"></i>
-                                      <p>換匯及轉帳</p>
-                                      <i class="icon-cancel smallDelete"></i>
-                                  </div>
-                              </a>
-                              <a class="FlexColumn favorOuter addSetting" href="">
+            <div class="sideFunction closeFunction">
+                <ul class="nav nav-pills FlexColumnTop" id="side-tab" role="tablist">
+                    <li class=" myFavorBtn nav-item">
+                        <a class="sideFixedBtn" id="side-1-tab" data-toggle="pill" href="#side-1" role="tab"
+                            aria-selected="false">
+                            <img src="assets/images/icons/sent.png" alt="">
+                            <p>我要寄件</p>
+                        </a>
+                    </li>
+                    <li class="myFavorBtn nav-item">
+                        <a class="sideFixedBtn" id="side-2-tab" data-toggle="pill" href="#side-2" role="tab"
+                            aria-selected="false">
+                            <img src="assets/images/icons/search.png" alt="">
+                            <p>貨態查詢</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="side-tabContent">
+                    <div class="tab-pane fade show sideFunctionBox myFavorBox  active" id="side-1" role="tabpanel">
+                        <i class="icon-cancel "></i><i class='bx bx-x sideFunctionClose'></i>
+                        <div class="sideFunctionTitle">我的最愛 <a class="editor hiddenPc"><i
+                                    class="icon-pencil"></i><span>編輯</span></a>
+                        </div>
+                        <div class="favorFunction">
+                            <a class="FlexColumn  favorOuter" href="">
+                                <div class=" choosedFavor">
+                                    <i class="icon-twdAccount sideFunctionIcon"></i>
+                                    <p>台幣帳戶總覽</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-billQuery sideFunctionIcon"></i>
+                                    <p>帳單查詢及繳款</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-payTax sideFunctionIcon"></i>
+                                    <p>繳費繳稅</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-setting sideFunctionIcon"></i>
+                                    <p>帳戶別名設定</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-eTag sideFunctionIcon"></i>
+                                    <p>eTag自動儲值/
+                                        智慧停車</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-transfer sideFunctionIcon"></i>
+                                    <p>即時轉帳</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-eTag sideFunctionIcon"></i>
+                                    <p>行動銀行設定</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter" href="">
+                                <div class="choosedFavor">
+                                    <i class="icon-exchange sideFunctionIcon"></i>
+                                    <p>換匯及轉帳</p>
+                                    <i class="icon-cancel smallDelete"></i>
+                                </div>
+                            </a>
+                            <a class="FlexColumn favorOuter addSetting" href="">
 
-                                  <img src="0516Index/img/icon/addButton.png" alt="" width="45" height="45">
-                                  <p>新增設定</p>
+                                <img src="0516Index/img/icon/addButton.png" alt="" width="45" height="45">
+                                <p>新增設定</p>
 
-                              </a>
-                          </div>
-                      </div>
-                      <div class="tab-pane fade show sideFunctionBox rateExchangeBox " id="side-2" role="tabpanel">
-                          <i class="icon-cancel sideFunctionClose"></i>
-                          <div class="sideFunctionTitle">即時匯率 <span><span class="dataTime">資料時間 :</span>
-                                  2019年02月21日08時44分 </span>
-                          </div>
-                          <!-- 即時匯率 -->
-                          <div id="data-container" class="exchange-list">
-               
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show sideFunctionBox rateExchangeBox " id="side-2" role="tabpanel">
+                         
+                             <i class="icon-cancel "></i><i class='bx bx-x sideFunctionClose'></i>
+                             <div class="sideFunctionTitle">我的最愛 <a class="editor hiddenPc"><i
+                                         class="icon-pencil"></i><span>編輯</span></a>
+                             </div>
+                             <div class="favorFunction">
+                                 <a class="FlexColumn  favorOuter" href="">
+                                     <div class=" choosedFavor">
+                                         <i class="icon-twdAccount sideFunctionIcon"></i>
+                                         <p>台幣帳戶總覽</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-billQuery sideFunctionIcon"></i>
+                                         <p>帳單查詢及繳款</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-payTax sideFunctionIcon"></i>
+                                         <p>繳費繳稅</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-setting sideFunctionIcon"></i>
+                                         <p>帳戶別名設定</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-eTag sideFunctionIcon"></i>
+                                         <p>eTag自動儲值/
+                                             智慧停車</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-transfer sideFunctionIcon"></i>
+                                         <p>即時轉帳</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-eTag sideFunctionIcon"></i>
+                                         <p>行動銀行設定</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter" href="">
+                                     <div class="choosedFavor">
+                                         <i class="icon-exchange sideFunctionIcon"></i>
+                                         <p>換匯及轉帳</p>
+                                         <i class="icon-cancel smallDelete"></i>
+                                     </div>
+                                 </a>
+                                 <a class="FlexColumn favorOuter addSetting" href="">
 
-                          </div>
-                          <!-- 即時匯率end -->
-                          <div class="sideFunctionTitle mt-30">匯率試算</div>
-                          <div id="exchange-calc-wrap" class="panel-body exchange-calc"
-                              data-url="/CathayBK/Web/service/partial/ExchangeCalc.aspx">
-                      
-                          </div>
-                      </div>
-                  </div>
-              </div>
+                                     <img src="0516Index/img/icon/addButton.png" alt="" width="45" height="45">
+                                     <p>新增設定</p>
+
+                                 </a>
+                             </div>
+                         
+                    </div>
+                </div>
+            </div>
             <div class="cubinvest-l-content ">
                 <section class="cubinvest-l-mainKv">
 
@@ -468,7 +522,7 @@
 
             </div>
 
-   
+
         </main>
 
         <footer class="footer">
@@ -553,6 +607,7 @@
     <!-- Global js / Begin -->
     <script src="assets/js/vendor/jquery-3_2_1-min.js"></script>
     <script src="assets/js/vendor/modernizr-3_5_0-min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/picturefill-background/picturefill-background-min.js"></script>
 
     <!-- inline RWD image -->
@@ -608,17 +663,19 @@
         // sideFunctionClose
 
         $('.myFavorBtn').click(function () {
-        $('.sideFunction').removeClass('closeFunction')
+            $('.sideFunction').removeClass('closeFunction');
+           
         })
-        $('.sideFunctionClose').click(function(){
-        $('.sideFunction').addClass('closeFunction')
-        $('.sideFixedBtn').removeClass('active');
-        $('.blackMask').removeClass('on');
+        $('.sideFunctionClose').click(function () {
+            $('.sideFunction').addClass('closeFunction')
+            $('.sideFixedBtn').removeClass('active');
+            $('.blackMask').removeClass('on');
         })
         $('.smallDelete').click(function (e) {
-        $(this).parents('.favorOuter').remove();
-        return false;
+            $(this).parents('.favorOuter').remove();
+            return false;
         })
+        
 
         //
     </script>

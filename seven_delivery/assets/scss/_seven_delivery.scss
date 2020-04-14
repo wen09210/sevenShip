@@ -193,11 +193,13 @@ background-color: #fffaea;
 	min-height: 55px;
 	align-items: center;
 }
-
+.FlexColumnTop{
+	flex-direction: column;
+}
 // 側邊
 .sideFunction {
 	display: flex;
-	z-index: 3;
+	z-index: 50;
 	position: fixed;
 	right: 0px;
 	transition: all ease-in-out .5s;
