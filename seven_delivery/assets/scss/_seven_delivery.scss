@@ -1,4 +1,4 @@
-@import '_color.scss';
+
 .d-flex {
 	display: flex !important;
 
@@ -253,8 +253,9 @@ background-color: #fffaea;
 .sideFunctionBox {
 	width: 460px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-	background-color: #edf3e9;
-	padding: 30px;
+	background-color: #fff;
+	padding: 22px 30px;
+	min-height: 370px;
 
 	@include rwd-max-width(640px) {
 		width: 100%;
@@ -264,13 +265,13 @@ background-color: #fffaea;
 	.sideFunctionTitle {
 		font-size: 24px;
 		padding-bottom: 8px;
-		color: #4a4a4a;
+		color: $main-blue;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
 
-
+		
 		span {
 			font-size: 13px;
 		}
@@ -297,13 +298,22 @@ background-color: #fffaea;
 	}
 
 	.sideFunctionIcon {
-		width: 50px;
-		height: 50px;
-		background-color: #fff;
+		padding: 15px;
+		background-color: #d8d8d8;
 		border-radius: 50px;
+		color:$main-blue;
 	}
 }
-
+.sideFunctionSubTitle {
+	font-size: 16px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #4a4a4a;
+	margin-top: 17px;
+}
 // 我的最愛側邊\
 .myFavorBox {
 	@include rwd-max-width(640px) {
@@ -331,7 +341,7 @@ background-color: #fffaea;
 	align-items: center;
 
 	i {
-		font-size: 50px;
+		font-size: 30px;
 	}
 
 	.smallDelete {
@@ -360,7 +370,8 @@ background-color: #fffaea;
 			border-radius: 8px;
 
 			.sideFunctionIcon {
-				background-color: #edf3e9;
+				background-color: $main-blue;
+				color:#fff;
 			}
 
 			.smallDelete {
@@ -378,7 +389,7 @@ background-color: #fffaea;
 
 		}
 	}
-
+	
 	.choosedFavorHover {
 
 		background-color: #fff;
