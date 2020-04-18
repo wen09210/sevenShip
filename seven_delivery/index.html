@@ -11,13 +11,13 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="360">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="cleartype" content="on">
     <!-- favicon-->
     <link rel="icon" type="assets/images/x-icon" href="assets/images/ico/favicon.ico">
     <link rel="stylesheet" href="assets/css/normalize-min.css">
     <link rel="stylesheet" href="assets//css/bootstrap.css">
     <link rel="stylesheet" href="assets/js/vendor/slick/slick.css" />
     <link rel="stylesheet" href="assets/fonts/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/form-validation.css">
     <link rel="stylesheet" href="assets/css/awd_desktop.css" />
 </head>
 <body class="home rwd ">
@@ -230,11 +230,43 @@
                         <i class='bx bx-x sideFunctionClose'></i>
                         <div class="sideFunctionTitle">貨態查詢
                         </div>
-                        <div class="sideFunctionSubTitle">取貨編號/交貨服務代碼</div>
-                        <input type="text" placeholder="請輸入取貨編號">
-                        <div class="sideFunctionSubTitle">驗證號碼</div>
-                        <input type="text" placeholder="請輸入驗證碼">
-
+                            <div class="col-md-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Simple Form Validation</h4>
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="card-body">
+                                            <p class="mt-1">Add <code>novalidate</code> attribute to form tag and
+                                                <code>required</code> attribute to
+                                                input tag.</p>
+                                            <form class="form-horizontal" novalidate>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="controls">
+                                                                <input type="text" name="text" class="form-control"
+                                                                    placeholder="First Name" required
+                                                                    data-validation-required-message="This First Name field is required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <div class="controls">
+                                                                <input type="email" name="email" class="form-control"
+                                                                    placeholder="Email" required
+                                                                    data-validation-required-message="This Email field is required">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -243,26 +275,26 @@
 
                     <div class="cubinvest-l-mainKv__slider" data-slider="banner">
                         <div class="cubinvest-c-banner">
-                            <div class="cubinvest-c-banner__background picturefill-background">
-                                <span data-src="assets/images/banner/banner.jpg"></span>
-                            </div>
+                   
+                               <img src="assets/images/banner/banner.jpg">
+                          
                         </div>
                         <div class="cubinvest-c-banner">
-                            <div class="cubinvest-c-banner__background picturefill-background">
-                                <span data-src="assets/images/banner/banner2.jpg"></span>
-                            </div>
+                  
+                               <img src="assets/images/banner/banner2.jpg">
+                     
                         </div>
                         <div class="cubinvest-c-banner">
-                            <div class="cubinvest-c-banner__background picturefill-background">
-                                <span data-src="assets/images/banner/banner3.jpg"></span>
+                       
+                                <img src="assets/images/banner/banner3.jpg">
 
-                            </div>
+                       
 
                         </div>
                         <div class="cubinvest-c-banner">
-                            <div class="cubinvest-c-banner__background picturefill-background">
-                                <span data-src="assets/images/banner/banner4.jpg"></span>
-                            </div>
+                       
+                                <img src="assets/images/banner/banner4.jpg">
+                         
                         </div>
                     </div>
 
@@ -441,14 +473,17 @@
         </footer>
     </div>
     <!--smart_all end-->
-    <script src="assets/js/vendor/jquery-3_2_1-min.js"></script>
+    <script src="assets/js/vendor/jquery.min.js"></script>
     <script src="assets/js/vendor/modernizr-3_5_0-min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/vendor/picturefill-background/picturefill-background-min.js"></script>
     <script src="assets/js/vendor/slick/slick.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/jqBootstrapValidation.js"></script>
+    <script src="assets/js/vendor/form-validation.js"></script>
     <script>
+       
         // 輪播
         $(function () {
+        
             $('[data-slider="banner"]').slick({
                 autoplay: false,
                 autoplaySpeed: 5000,
