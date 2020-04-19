@@ -6,6 +6,9 @@
 @import '_button.scss';
 @import '_seven_delivery.scss';
 
+a,a:hover{
+  text-decoration: none;
+}
 .sticky .svg-icon g,
 .sticky .svg-icon path {
   fill: #fff;
@@ -1098,4 +1101,8 @@ body.isScrolled .card a.cardInside:hover .cardImage img {
   letter-spacing: 0.6px;
   text-align: center;
   margin: 10px auto 0px;
+}
+a.goOutlink {
+  color: $main-blue;
+  text-decoration: underline;
 }

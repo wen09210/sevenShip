@@ -162,7 +162,8 @@
                             </div>
                         </li>
                         <li class="go_sell"><a href="#" class="c-menuLv1__name"><img
-                                    src="assets/images/icons/sell_logo.png" alt="" width="25px" height="25px;">去賣貨便</a>
+                                    src="assets/images/icons/sell_logo.png" alt="" 
+                                    class="sell_logo">去賣貨便</a>
                         </li>
                     </ul>
                 </div>
@@ -238,19 +239,22 @@
                                             <input type="text" name="text" class="form-control" placeholder="請輸入取貨編號"
                                                 required data-validation-required-message="請輸入取貨編號">
                                         </div>
-                                        <div>請輸入繳費證明聯的第二段條碼前8碼查詢教學</div>
+                                        <div>請輸入繳費證明聯的第二段條碼前8碼<a href="" class="goOutlink">查詢教學</a></div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
                                     <div class="form-group">
                                         <div class="sideFunctionSubTitle">驗證號碼</div>
-                                        <div class="controls">
-                                            <input type="text" name="text" class="form-control" placeholder="請輸入驗證碼"
+                                        <div class="controls d-flex">
+                                            <input type="text" name="text" class="form-control col-8" placeholder="請輸入驗證碼"
                                                 required data-validation-required-message="請輸入驗證碼">
+                                            <img src="assets/images/validateCode.png" alt="" class="col-4">
                                         </div>
                                     </div>
                                 </div>
-                               
+                                <div class="col-sm-6">
+                                    
+                                </div>
                             </div>
                             <div class="queryItemBtn">
                                     <button type="submit" class="btn btn-light-blue">查詢</button>
