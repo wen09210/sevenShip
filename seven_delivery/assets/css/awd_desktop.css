@@ -1493,7 +1493,8 @@ a.header-small-btn {
   line-height: normal;
   letter-spacing: normal;
   color: #4a4a4a;
-  margin-top: 17px; }
+  margin-top: 17px;
+  margin-bottom: 9px; }
 
 @media all and (max-width: 640px) {
   .myFavorBox {
@@ -1597,6 +1598,19 @@ a.header-small-btn {
 button:focus {
   outline: none; }
 
+.btn-light-blue {
+  background-color: #66aaf1;
+  color: #fff;
+  cursor: pointer; }
+  .btn-light-blue:hover {
+    color: #fff; }
+
+.queryItemBtn {
+  text-align: center;
+  margin: 33px auto; }
+  .queryItemBtn .btn-light-blue {
+    padding: 8px 33px; }
+
 .sticky .svg-icon g,
 .sticky .svg-icon path {
   fill: #fff; }
@@ -1604,13 +1618,6 @@ button:focus {
 li.on .svg-icon g,
 li.on .svg-icon path {
   fill: #2e78c7; }
-
-.iconTransparent {
-  opacity: 0; }
-
-.l-mobileHeader__contact {
-  background-image: url(../image/a-fa.png);
-  background-size: 35px; }
 
 .hrSpan {
   border-top: 1px solid #2560ae;
@@ -1623,7 +1630,7 @@ li.on .svg-icon path {
 .f-footerContactUs-icon a:hover {
   color: #2e78c7; }
 
-.cubinvest-c-riskProvisions__action span {
+.cs-c-riskProvisions__action span {
   color: #6d6d6d; }
 
 [data-switch-content="riskProvisions"] {
@@ -1744,7 +1751,7 @@ li.on .svg-icon path {
     padding: 15px;
     /* height: 100%; */
     text-align: left; }
-  a.c-menuLv3__name.cubinvest-o-link.cubinvest-o-link--menu {
+  a.c-menuLv3__name.cs-o-link.cs-o-link--menu {
     line-height: 1.2; }
   /* 快速登入按鈕 */
   .c-promote,
@@ -2088,22 +2095,23 @@ header.header .info-menu,
     .footerWrap {
       min-width: 960px; } }
 
-.cubinvest-l-content--fixTop {
+.cs-l-content--fixTop {
   padding-top: 128px; }
 
 @media only screen and (min-width: 960px) {
-  .cubinvest-l-content--fixTop {
+  .cs-l-content--fixTop {
     padding-top: 128px; } }
 
 .is-fixHeader.sticky + .container {
   padding-top: 128px; }
 
 /*  */
-.cubinvest-l-mainKv {
+.cs-l-mainKv {
   min-width: 960px;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 420px; }
 
-.cubinvest-l-mainKv:before {
+.cs-l-mainKv:before {
   content: '';
   background-image: url(../images/banner-bg.png);
   position: absolute;
@@ -2115,14 +2123,14 @@ header.header .info-menu,
   background-repeat: no-repeat; }
 
 @media all and (max-width: 1920px) {
-  .cubinvest-l-mainKv:before {
+  .cs-l-mainKv:before {
     min-width: 785px; } }
 
 @media all and (max-width: 1080px) {
-  .cubinvest-l-mainKv:before {
+  .cs-l-mainKv:before {
     min-width: 700px; } }
 
-.cubinvest-c-banner__background {
+.cs-c-banner__background {
   height: 420px; }
 
 button.slick-next.slick-arrow:before {
@@ -2143,7 +2151,7 @@ button.slick-prev.slick-arrow:before {
 button.slick-prev.slick-arrow:hover:before {
   background-image: url(../images/banner-arrow-left.png); }
 
-.cubinvest-l-mainKv__text {
+.cs-l-mainKv__text {
   position: absolute;
   top: 0px;
   z-index: 3;
@@ -2152,11 +2160,11 @@ button.slick-prev.slick-arrow:hover:before {
   margin-top: -530px; }
 
 @media all and (max-width: 1960px) {
-  .cubinvest-l-mainKv__text {
+  .cs-l-mainKv__text {
     left: 3%; } }
 
 @media all and (max-width: 1280px) {
-  .cubinvest-l-mainKv__text {
+  .cs-l-mainKv__text {
     left: 4.3%; } }
 
 .cub-text-wrapper {
@@ -2192,17 +2200,17 @@ button.slick-prev.slick-arrow:hover:before {
   width: 140px;
   margin-top: 30px; }
 
-.cubinvest-l-mainKv__nav {
+.cs-l-mainKv__nav {
   position: absolute;
   bottom: 35px;
   z-index: 55; }
 
 @media all and (max-width: 1960px) {
-  .cubinvest-l-mainKv__nav {
+  .cs-l-mainKv__nav {
     left: 3%; } }
 
 @media all and (max-width: 1280px) {
-  .cubinvest-l-mainKv__nav {
+  .cs-l-mainKv__nav {
     left: 4.3%; } }
 
 .slick-dots li.slick-active button:before {
@@ -2219,21 +2227,21 @@ button.slick-prev.slick-arrow:hover:before {
   background-color: #fff;
   border: 1px solid #fff; }
 
-.cubinvest-l-wrap {
+.cs-l-wrap {
   max-width: 1280px;
   margin: 0 auto; }
 
 @media all and (max-width: 1920px) {
-  .cubinvest-l-wrap {
+  .cs-l-wrap {
     max-width: 1280px; } }
 
-.cubinvest-l-mainBlock {
+.cs-l-mainBlock {
   padding: 60px 0; }
 
-.cubinvest-l-mainBlock-small {
+.cs-l-mainBlock-small {
   padding: 20px 0 40px; }
 
-.cubinvest-l-mainBlock--bglightGrn {
+.cs-l-mainBlock--bglightGrn {
   background-color: #edf3e9;
   min-width: 960px; }
 

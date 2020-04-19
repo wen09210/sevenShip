@@ -1,19 +1,19 @@
 /*------------------------     slider     ------------------------*/
-.cubinvest-l-mainKv {
+.cs-l-mainKv {
 	position: relative;
 }
 
-.cubinvest-l-mainKv:before,
-.cubinvest-l-mainKv:after {
+.cs-l-mainKv:before,
+.cs-l-mainKv:after {
 	content: " ";
 	display: table;
 }
 
-.cubinvest-l-mainKv:after {
+.cs-l-mainKv:after {
 	clear: both;
 }
 
-.cubinvest-l-mainKv__nav {
+.cs-l-mainKv__nav {
 	position: absolute;
 	bottom: 15px;
 	width: 100%;
@@ -21,31 +21,31 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.cubinvest-l-mainKv--pd\@t {
+	.cs-l-mainKv--pd\@t {
 		padding: 0 15px;
 	}
 
-	.cubinvest-l-mainKv__nav {
+	.cs-l-mainKv__nav {
 		position: absolute;
 		bottom: 35px;
 	}
 
-	.cubinvest-l-mainKv__nav--sm {
+	.cs-l-mainKv__nav--sm {
 		bottom: 20px;
 	}
 
-	.cubinvest-l-mainKv__nav--xs {
+	.cs-l-mainKv__nav--xs {
 		bottom: 10px;
 	}
 }
 
-.cubinvest-c-banner {
+.cs-c-banner {
 	position: relative;
 	float: left;
 	width: 100%;
 }
 
-.cubinvest-c-banner__background {
+.cs-c-banner__background {
 	width: 100%;
 	height: 335px;
 	background-position: center center;
@@ -54,7 +54,7 @@
 	background-repeat: no-repeat;
 }
 
-.cubinvest-c-banner__text {
+.cs-c-banner__text {
 	width: 100%;
 	position: absolute;
 	top: 50%;
@@ -64,12 +64,12 @@
 	padding: 0 0 0 40px;
 }
 
-.cubinvest-c-banner__text--right {
+.cs-c-banner__text--right {
 	text-align: right;
 	padding: 0 40px 0 0;
 }
 
-.cubinvest-c-banner--sm .cubinvest-c-banner__background {
+.cs-c-banner--sm .cs-c-banner__background {
 	height: 207px;
 	background-position: center center;
 	-webkit-background-size: contain;
@@ -77,7 +77,7 @@
 	background-repeat: no-repeat;
 }
 
-.cubinvest-c-banner--sm .cubinvest-c-banner__text {
+.cs-c-banner--sm .cs-c-banner__text {
 	width: 100%;
 	position: absolute;
 	top: 42%;
@@ -87,12 +87,12 @@
 	padding: 0 0 0 20px;
 }
 
-.cubinvest-c-banner--sm .cubinvest-c-banner__text--right {
+.cs-c-banner--sm .cs-c-banner__text--right {
 	text-align: right;
 	padding: 0 20px 0 0;
 }
 
-.cubinvest-c-banner--xs .cubinvest-c-banner__background {
+.cs-c-banner--xs .cs-c-banner__background {
 	height: 170px;
 	background-position: center center;
 	-webkit-background-size: contain;
@@ -100,7 +100,7 @@
 	background-repeat: no-repeat;
 }
 
-.cubinvest-c-banner--xs .cubinvest-c-banner__text {
+.cs-c-banner--xs .cs-c-banner__text {
 	width: 100%;
 	position: absolute;
 	top: 45%;
@@ -110,13 +110,13 @@
 	padding: 0 0 0 20px;
 }
 
-.cubinvest-c-banner--xs .cubinvest-c-banner__text--right {
+.cs-c-banner--xs .cs-c-banner__text--right {
 	text-align: right;
 	padding: 0 20px 0 0;
 }
 
 @media only screen and (min-width: 960px) {
-	.cubinvest-c-banner__background {
+	.cs-c-banner__background {
 		width: 100%;
 		height: 400px;
 		background-position: center center;
@@ -125,60 +125,60 @@
 		background-repeat: no-repeat;
 	}
 
-	.cubinvest-c-banner__text {
+	.cs-c-banner__text {
 		position: absolute;
 		left: 0;
 		top: 48%;
 		padding: 0 0 0 60px;
 	}
 
-	.cubinvest-c-banner__text--right {
+	.cs-c-banner__text--right {
 		padding: 0 60px 0 0;
 	}
 
-	.cubinvest-c-banner--sm .cubinvest-c-banner__background {
+	.cs-c-banner--sm .cs-c-banner__background {
 		height: 250px;
 	}
 
-	.cubinvest-c-banner--sm .cubinvest-c-banner__text {
+	.cs-c-banner--sm .cs-c-banner__text {
 		position: absolute;
 		left: 0;
 		padding: 0 0 0 60px;
 	}
 
-	.cubinvest-c-banner--sm .cubinvest-c-banner__text--right {
+	.cs-c-banner--sm .cs-c-banner__text--right {
 		padding: 0 60px 0 0;
 	}
 
-	.cubinvest-c-banner--xs .cubinvest-c-banner__background {
+	.cs-c-banner--xs .cs-c-banner__background {
 		height: 200px;
 	}
 
-	.cubinvest-c-banner--xs .cubinvest-c-banner__text {
+	.cs-c-banner--xs .cs-c-banner__text {
 		position: absolute;
 		left: 0;
 		top: 48%;
 		padding: 0 0 0 40px;
 	}
 
-	.cubinvest-c-banner--xs .cubinvest-c-banner__text--right {
+	.cs-c-banner--xs .cs-c-banner__text--right {
 		padding: 0 40px 0 0;
 	}
 }
 
-.cubinvest-c-bannerText {
+.cs-c-bannerText {
 	display: inline-block;
 	max-width: 195px;
 	text-align: left;
 }
 
-.cubinvest-c-bannerText__title {
+.cs-c-bannerText__title {
 	margin-bottom: 5px;
 	font-size: 24px;
 	color: #333333;
 }
 
-.cubinvest-c-bannerText__slogan {
+.cs-c-bannerText__slogan {
 	display: block;
 	font-size: 16px;
 	line-height: 1.35;
@@ -187,20 +187,20 @@
 	color: #333333;
 }
 
-.cubinvest-c-bannerText--sm {
+.cs-c-bannerText--sm {
 	max-width: 190px;
 }
 
-.cubinvest-c-bannerText--sm .cubinvest-c-bannerText {
+.cs-c-bannerText--sm .cs-c-bannerText {
 	color: #333333;
 }
 
-.cubinvest-c-bannerText--sm .cubinvest-c-bannerText__title {
+.cs-c-bannerText--sm .cs-c-bannerText__title {
 	margin-bottom: 5px;
 	font-size: 20px;
 }
 
-.cubinvest-c-bannerText--sm .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--sm .cs-c-bannerText__slogan {
 	display: block;
 	font-size: 14px;
 	line-height: 1.35;
@@ -208,21 +208,21 @@
 	margin-bottom: 10px;
 }
 
-.cubinvest-c-bannerText--sm .cubinvest-c-bannerText--light .cubinvest-c-bannerText--sm .cubinvest-c-bannerText__title,
-.cubinvest-c-bannerText--sm .cubinvest-c-bannerText--light .cubinvest-c-bannerText--sm .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--sm .cs-c-bannerText--light .cs-c-bannerText--sm .cs-c-bannerText__title,
+.cs-c-bannerText--sm .cs-c-bannerText--light .cs-c-bannerText--sm .cs-c-bannerText__slogan {
 	color: #fff;
 }
 
-.cubinvest-c-bannerText--xs .cubinvest-c-bannerText {
+.cs-c-bannerText--xs .cs-c-bannerText {
 	color: #333333;
 }
 
-.cubinvest-c-bannerText--xs .cubinvest-c-bannerText__title {
+.cs-c-bannerText--xs .cs-c-bannerText__title {
 	margin-bottom: 5px;
 	font-size: 20px;
 }
 
-.cubinvest-c-bannerText--xs .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--xs .cs-c-bannerText__slogan {
 	display: block;
 	font-size: 14px;
 	line-height: 1.35;
@@ -230,40 +230,40 @@
 	margin-bottom: 10px;
 }
 
-.cubinvest-c-bannerText--xs .cubinvest-c-bannerText--light .cubinvest-c-bannerText--xs .cubinvest-c-bannerText__title,
-.cubinvest-c-bannerText--xs .cubinvest-c-bannerText--light .cubinvest-c-bannerText--xs .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--xs .cs-c-bannerText--light .cs-c-bannerText--xs .cs-c-bannerText__title,
+.cs-c-bannerText--xs .cs-c-bannerText--light .cs-c-bannerText--xs .cs-c-bannerText__slogan {
 	color: #fff;
 }
 
-.cubinvest-c-bannerText--light .cubinvest-c-bannerText__title,
-.cubinvest-c-bannerText--light .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--light .cs-c-bannerText__title,
+.cs-c-bannerText--light .cs-c-bannerText__slogan {
 	color: #fff;
 }
 
-.cubinvest-c-bannerText--light .cubinvest-c-bannerText__title {
+.cs-c-bannerText--light .cs-c-bannerText__title {
 	border-color: #fff;
 }
 
-.cubinvest-c-bannerText--grn .cubinvest-c-bannerText__title,
-.cubinvest-c-bannerText--grn .cubinvest-c-bannerText__slogan {
+.cs-c-bannerText--grn .cs-c-bannerText__title,
+.cs-c-bannerText--grn .cs-c-bannerText__slogan {
 	color: #2e78c7;
 }
 
-.cubinvest-c-bannerText--grn .cubinvest-c-bannerText__title {
+.cs-c-bannerText--grn .cs-c-bannerText__title {
 	border-color: #2e78c7;
 }
 
 @media only screen and (min-width: 960px) {
-	.cubinvest-c-bannerText {
+	.cs-c-bannerText {
 		max-width: 320px;
 	}
 
-	.cubinvest-c-bannerText__title {
+	.cs-c-bannerText__title {
 		margin-bottom: 10px;
 		font-size: 40px;
 	}
 
-	.cubinvest-c-bannerText__slogan {
+	.cs-c-bannerText__slogan {
 		display: block;
 		font-size: 20px;
 		overflow: hidden;
@@ -271,17 +271,17 @@
 		color: #333333;
 	}
 
-	.cubinvest-c-bannerText--sm {
+	.cs-c-bannerText--sm {
 		width: 300px;
 	}
 
-	.cubinvest-c-bannerText--sm .cubinvest-c-bannerText__title {
+	.cs-c-bannerText--sm .cs-c-bannerText__title {
 		margin-bottom: 10px;
 		font-size: 30px;
 		line-height: normal;
 	}
 
-	.cubinvest-c-bannerText--sm .cubinvest-c-bannerText__slogan {
+	.cs-c-bannerText--sm .cs-c-bannerText__slogan {
 		display: block;
 		font-size: 18px;
 		line-height: 1.5;
@@ -289,17 +289,17 @@
 		margin-bottom: 18px;
 	}
 
-	.cubinvest-c-bannerText--xs {
+	.cs-c-bannerText--xs {
 		width: 270px;
 	}
 
-	.cubinvest-c-bannerText--xs .cubinvest-c-bannerText__title {
+	.cs-c-bannerText--xs .cs-c-bannerText__title {
 		margin-bottom: 10px;
 		font-size: 30px;
 		line-height: normal;
 	}
 
-	.cubinvest-c-bannerText--xs .cubinvest-c-bannerText__slogan {
+	.cs-c-bannerText--xs .cs-c-bannerText__slogan {
 		display: block;
 		font-size: 16px;
 		line-height: 1.5;
@@ -309,7 +309,7 @@
 }
 
 @media only screen and (min-width: 960px) {
-	.cubinvest-l-windDirectionSlider {
+	.cs-l-windDirectionSlider {
 		padding: 0 40px;
 	}
 }

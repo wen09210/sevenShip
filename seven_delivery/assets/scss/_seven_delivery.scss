@@ -313,6 +313,7 @@ background-color: #fffaea;
 	letter-spacing: normal;
 	color: #4a4a4a;
 	margin-top: 17px;
+	margin-bottom: 9px;
 }
 // 我的最愛側邊\
 .myFavorBox {
@@ -450,4 +451,20 @@ background-color: #fffaea;
 }
 button:focus{
 	outline: none;
+}
+
+.btn-light-blue{
+	background-color: #66aaf1;
+	color:#fff;
+	cursor: pointer;
+	&:hover{
+		color:#fff;
+	}
+}
+.queryItemBtn{
+	text-align: center;
+	margin:33px auto;
+	.btn-light-blue {
+		padding:8px 33px;
+	}
 }
