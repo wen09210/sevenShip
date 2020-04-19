@@ -83,7 +83,7 @@ li.on .svg-icon path {
 
   header.header .sub-menu .change-unit-menu li div {
     border: none;
-    padding: 0px 15px 0px;
+    padding: 0px 6px 0px;
   }
 
   header.header .sub-menu .change-unit-menu {
@@ -812,7 +812,7 @@ button.slick-prev.slick-arrow:hover:before {
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 200px 0px 0px;
+  margin: 180px 0px 0px;
 }
 
 .cub-text-wrapper h2 {
@@ -830,6 +830,7 @@ button.slick-prev.slick-arrow:hover:before {
   font-weight: normal;
   letter-spacing: 0px;
   color: #ffffff;
+  margin-top:30px;
   display: block;
 }
 
@@ -840,7 +841,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainKv__nav {
   position: absolute;
-  bottom: 35px;
+  bottom: 60px;
   z-index: 55;
 }
 
