@@ -184,7 +184,7 @@ li.on .svg-icon path {
     font-weight: normal;
     border-bottom: 1px solid $main-blue;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -887,6 +887,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0;
+  min-width: 1280px;
 }
 
 .cs-l-mainBlock-small {

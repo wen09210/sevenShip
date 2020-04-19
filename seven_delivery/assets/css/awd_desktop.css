@@ -750,9 +750,6 @@ header.header .sub-menu .change-unit-menu li {
 header.header .sub-menu .change-unit-menu li.active {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAGCAYAAAAVMmT4AAAARUlEQVQoFQXBARHAQBADIXLz/sXWwBbWNwTARoUBMOQIMKBiEGMD8IAhLACgZMAcA4gQAgwCOIKAAWAAWOQQ2BAAIACsH46rHfnSck3UAAAAAElFTkSuQmCC) center bottom no-repeat transparent; }
 
-header.header .sub-menu .change-unit-menu li:last-child a {
-  padding-right: 0; }
-
 .footer a {
   color: #fff;
   font-size: 12px; }
@@ -1190,6 +1187,12 @@ a.header-small-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  padding: 6px;
+  letter-spacing: normal;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -1743,7 +1746,7 @@ li.on .svg-icon path {
     font-weight: normal;
     border-bottom: 1px solid #2e78c7;
     margin-bottom: 15px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -2245,7 +2248,8 @@ button.slick-prev.slick-arrow:hover:before {
     max-width: 1280px; } }
 
 .cs-l-mainBlock {
-  padding: 60px 0; }
+  padding: 60px 0;
+  min-width: 1280px; }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }
