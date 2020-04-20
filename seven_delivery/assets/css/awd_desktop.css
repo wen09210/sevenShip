@@ -641,7 +641,7 @@ header.header .site-menu ul li.lang a {
   line-height: 17px; }
 
 header.header .info-menu {
-  height: 80px;
+  height: 73px;
   background-color: #fff;
   position: relative; }
 
@@ -716,7 +716,7 @@ header.header .info-menu .search > input[type=text]:hover {
 header.header .info-menu .logo {
   left: 0;
   position: absolute;
-  top: 22px; }
+  top: 12px; }
 
 header.header .info-menu .toggle {
   float: none;
@@ -902,7 +902,6 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
   top: 50%;
   right: 10px;
   margin-top: -10px;
-  background-image: url(../images/layout/deco-menu.png);
   -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   background-position: 0 0; }
@@ -1026,7 +1025,6 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
   top: 50%;
   right: 10px;
   margin-top: -10px;
-  background-image: url(../images/layout/deco-menu.png);
   -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   background-position: 0 0; }
@@ -1214,6 +1212,9 @@ a.header-small-btn {
   display: -ms-flexbox !important;
   display: flex !important; }
 
+.cs-l-main {
+  position: relative; }
+
 .global-announcement {
   padding-left: 0px;
   padding-right: 0px;
@@ -1223,7 +1224,12 @@ a.header-small-btn {
   border: solid 1px #ffeba2; }
 
 .global-alert {
-  background-color: #fffaea; }
+  background-color: #fffaea;
+  position: absolute;
+  top: 0;
+  z-index: 22;
+  width: 100%;
+  opacity: 0.95; }
 
 .global-alert-wrapper.container {
   max-width: 1280px;
@@ -1404,7 +1410,7 @@ a.header-small-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 50;
+  z-index: 150;
   position: fixed;
   right: 0px;
   -webkit-transition: all ease-in-out .5s;
@@ -1448,8 +1454,11 @@ a.header-small-btn {
       color: #ffffff;
       padding: 3px; }
 
+.sideRemark {
+  font-size: 13px; }
+
 .sideFunctionBox {
-  width: 460px;
+  width: 360px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -1534,7 +1543,6 @@ a.header-small-btn {
   .favorFunction .choosedFavor {
     position: relative;
     cursor: pointer;
-    width: 115px;
     height: 115px;
     margin: 0px;
     display: -webkit-box;
@@ -1547,7 +1555,6 @@ a.header-small-btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-top: 15px;
     padding-top: 15px; }
     .favorFunction .choosedFavor:hover {
       background-color: #fff;
@@ -1592,7 +1599,7 @@ a.header-small-btn {
       color: #00994e; }
 
 .closeFunction {
-  right: -460px; }
+  right: -360px; }
   @media all and (max-width: 640px) {
     .closeFunction {
       right: 0px;
@@ -2129,7 +2136,6 @@ header.header .info-menu,
   content: '';
   background-image: url(../images/banner-bg.png);
   position: absolute;
-  width: 55%;
   z-index: 1;
   height: 420px;
   background-size: cover;
@@ -2138,7 +2144,7 @@ header.header .info-menu,
 
 @media all and (max-width: 1920px) {
   .cs-l-mainKv:before {
-    min-width: 785px; } }
+    min-width: 558px; } }
 
 @media all and (max-width: 1080px) {
   .cs-l-mainKv:before {
@@ -2173,10 +2179,6 @@ button.slick-prev.slick-arrow:hover:before {
   width: 1280px;
   margin-top: -530px; }
 
-@media all and (max-width: 1960px) {
-  .cs-l-mainKv__text {
-    left: 3%; } }
-
 @media all and (max-width: 1280px) {
   .cs-l-mainKv__text {
     left: 4.3%; } }
@@ -2192,7 +2194,7 @@ button.slick-prev.slick-arrow:hover:before {
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 180px 0px 0px; }
+  margin: 200px 0px 0px; }
 
 .cub-text-wrapper h2 {
   width: 361px;
@@ -2213,7 +2215,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cub-text-wrapper a.cub-button {
   width: 140px;
-  margin-top: 30px; }
+  margin-top: 20px; }
 
 .cs-l-mainKv__nav {
   position: absolute;
@@ -2252,7 +2254,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0;
-  min-width: 1280px; }
+  min-width: 960px; }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }

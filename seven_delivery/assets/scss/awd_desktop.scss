@@ -734,7 +734,6 @@ header.header .info-menu,
   content: '';
   background-image: url(../images/banner-bg.png);
   position: absolute;
-  width: 55%;
   z-index: 1;
   height: 420px;
   background-size: cover;
@@ -744,7 +743,7 @@ header.header .info-menu,
 
 @media all and (max-width: 1920px) {
   .cs-l-mainKv:before {
-    min-width: 785px;
+    min-width: 558px;
   }
 }
 
@@ -790,9 +789,9 @@ button.slick-prev.slick-arrow:hover:before {
 }
 
 @media all and (max-width: 1960px) {
-  .cs-l-mainKv__text {
-    left: 3%;
-  }
+  // .cs-l-mainKv__text {
+  //   left: 3%;
+  // }
 }
 
 @media all and (max-width: 1280px) {
@@ -812,7 +811,7 @@ button.slick-prev.slick-arrow:hover:before {
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  margin: 180px 0px 0px;
+  margin: 200px 0px 0px;
 }
 
 .cub-text-wrapper h2 {
@@ -836,7 +835,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cub-text-wrapper a.cub-button {
   width: 140px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .cs-l-mainKv__nav {
@@ -888,7 +887,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0;
-  min-width: 1280px;
+  min-width: 960px;
 }
 
 .cs-l-mainBlock-small {

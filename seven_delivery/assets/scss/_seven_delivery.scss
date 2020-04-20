@@ -3,6 +3,9 @@
 	display: flex !important;
 
 }
+.cs-l-main{
+	position: relative;
+}
 // 公告 //
 .global-announcement {
 	padding-left: 0px;
@@ -14,6 +17,11 @@
 }
 .global-alert{
 background-color: #fffaea;
+    position: absolute;
+    top: 0;
+    z-index: 22;
+	width: 100%;
+	opacity: 0.95;
 }
 .global-alert-wrapper.container {
 	max-width: 1280px;
@@ -204,7 +212,7 @@ background-color: #fffaea;
 // 側邊
 .sideFunction {
 	display: flex;
-	z-index: 50;
+	z-index: 150;
 	position: fixed;
 	right: 0px;
 	transition: all ease-in-out .5s;
@@ -254,9 +262,11 @@ background-color: #fffaea;
 		}
 	}
 }
-
+.sideRemark{
+	font-size: 13px;
+}
 .sideFunctionBox {
-	width: 460px;
+	width: 360px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 	background-color: #fff;
 	padding: 22px 30px;
@@ -362,13 +372,13 @@ background-color: #fffaea;
 	.choosedFavor {
 		position: relative;
 		cursor: pointer;
-		width: 115px;
+		// width: 115px;
 		height: 115px;
 		margin: 0px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 15px;
+		// margin-top: 15px;
 		padding-top: 15px;
 
 		&:hover {
@@ -442,7 +452,7 @@ background-color: #fffaea;
 
 .closeFunction {
 
-	right: -460px;
+	right: -360px;
 
 	@include rwd-max-width(640px) {
 		right: 0px;
