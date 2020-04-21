@@ -1213,7 +1213,8 @@ a.header-small-btn {
   display: flex !important; }
 
 .cs-l-main {
-  position: relative; }
+  position: relative;
+  min-height: calc(100vh - 330px); }
 
 .global-announcement {
   padding-left: 0px;
@@ -1263,6 +1264,10 @@ a.header-small-btn {
   text-align: left;
   margin-bottom: 6px; }
 
+.cs-l-container {
+  width: 100%;
+  min-width: 960px; }
+
 .act_title {
   font-size: 16px;
   font-weight: bold;
@@ -1308,6 +1313,9 @@ a.header-small-btn {
 
 .block_section {
   max-width: 600px; }
+  @media all and (max-width: 1280px) {
+    .block_section {
+      max-width: 49%; } }
 
 .activity_swiper {
   -webkit-box-pack: center;
@@ -1321,7 +1329,8 @@ a.header-small-btn {
   background-color: #ededed;
   padding: 35px; }
   .actitvity_wrap .img-responsive {
-    width: 250px; }
+    width: 100%;
+    max-width: 250px; }
 
 .news_wrap {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
@@ -1334,7 +1343,11 @@ a.header-small-btn {
     position: relative;
     padding: 14px 0px;
     border-bottom: 1px solid #e2e2e2;
-    margin-left: 7px; }
+    margin-left: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
     .news_wrap li:hover {
       background-color: #f5f6f7; }
   .news_wrap ul li::before {
@@ -1629,7 +1642,8 @@ button:focus {
   height: 20px;
   vertical-align: text-bottom; }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none; }
 
 .sticky .svg-icon g,
@@ -2104,7 +2118,9 @@ header.header .info-menu,
       min-width: 960px; } }
   @media all and (min-width: 959.91px) {
     .footer {
-      display: block; } }
+      display: block;
+      position: absolute;
+      width: 100%; } }
 
 .footerWrap {
   min-width: 1280px;
