@@ -306,13 +306,17 @@ button.close{
 
 .sideRemark {
 	font-size: 13px;
+	padding-top: 7px;
 }
-
+.vaildNumber{
+	margin-left:10px;
+	padding:0px;
+}
 .sideFunctionBox {
 	width: 360px;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 	background-color: #fff;
-	padding: 22px 30px;
+	padding: 22px 30px 0px;
 	min-height: 370px;
 
 	@include rwd-max-width(640px) {
@@ -373,6 +377,9 @@ button.close{
 	color: #4a4a4a;
 	margin-top: 17px;
 	margin-bottom: 9px;
+}
+.secondTitle{
+	margin-top:13px;
 }
 
 // 我的最愛側邊\

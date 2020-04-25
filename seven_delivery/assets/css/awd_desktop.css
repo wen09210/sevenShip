@@ -1486,14 +1486,19 @@ button.close {
       padding: 3px; }
 
 .sideRemark {
-  font-size: 13px; }
+  font-size: 13px;
+  padding-top: 7px; }
+
+.vaildNumber {
+  margin-left: 10px;
+  padding: 0px; }
 
 .sideFunctionBox {
   width: 360px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
-  padding: 22px 30px;
+  padding: 22px 30px 0px;
   min-height: 370px; }
   @media all and (max-width: 640px) {
     .sideFunctionBox {
@@ -1541,6 +1546,9 @@ button.close {
   color: #4a4a4a;
   margin-top: 17px;
   margin-bottom: 9px; }
+
+.secondTitle {
+  margin-top: 13px; }
 
 @media all and (max-width: 640px) {
   .myFavorBox {
@@ -2209,12 +2217,12 @@ button.slick-prev.slick-arrow:hover:before {
   z-index: 3;
   height: 100%;
   width: 1240px;
-  padding: 0px 24px;
+  padding: 0px 20px;
   margin-top: -530px; }
 
 @media all and (max-width: 1280px) {
   .cs-l-mainKv__text {
-    left: 4.3%; } }
+    padding: 0px 10px; } }
 
 .cub-text-wrapper {
   display: -webkit-box !important;
