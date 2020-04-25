@@ -28,14 +28,14 @@
 }
 
 .global-alert-wrapper.container {
-	max-width: 1280px;
+	max-width: 1240px;
 	width: 100%;
 	font-size: 14px;
 
 }
 
 .global-alert-wrapper {
-	padding: 10px 0px;
+	padding: 10px 20px;
 }
 
 .align-items-start {
@@ -45,12 +45,16 @@
 .badge {
 	background-color: $main-blue;
 	font-size: 14px;
-	padding: 0.2rem 0.3rem;
-	margin-right: 7px;
+	padding: 4px 10px;
+	margin-right: 12px;
 	color: #fff !important;
 	border-radius: 3px;
+	font-weight: 100;
 }
-
+.iconLogin{
+	margin:0px 6px;
+	padding:0px;
+}
 // seven //
 
 .block_section_title {
@@ -83,7 +87,7 @@
 }
 
 .activity_text {
-	padding-left: 20px;
+	padding:0 25px;
 	display: flex;
 	flex-direction: column;
 	height: auto;
@@ -95,14 +99,22 @@
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 1.57;
 	letter-spacing: normal;
 	color: #767676;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 4.5em;
+	line-height: 1.5em;
 }
-
+button.close{
+	width:10px;
+	color:#f7b54e;
+	&:hover,&:active,&:focus{
+		color:#f7b54e;
+	}
+}
 .act_note {
 	font-size: 13px;
-	font-weight: bold;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: 1.69;
@@ -128,11 +140,12 @@
 
 .actitvity_wrap {
 	background-color: #ededed;
-	padding: 35px;
+	padding: 36px 35px 42px;
 
 	.img-responsive {
 		width: 100%;
-		max-width: 250px;
+		max-width: 257px;
+		height: 100%;
 	}
 }
 
@@ -148,10 +161,10 @@
 		position: relative;
 		padding: 14px 0px;
 		border-bottom: 1px solid #e2e2e2;
-		margin-left: 7px;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		padding-left: 15px;
 
 		&:hover {
 			background-color: #f5f6f7;
@@ -165,7 +178,7 @@
 		display: inline-block;
 		width: 8px;
 		position: absolute;
-		left: -15px;
+		left: 0px;
 	}
 }
 
@@ -209,12 +222,16 @@
 
 .footer_function_link {
 	display: flex;
+	@include rwd-min-width(1100px){
+		margin-left: -85px;
 
+	}
+	
 	ul {
 		flex-direction: column;
 
 		li {
-			padding: 0px 50px 10px;
+			padding: 0px 100px 5px 0px;
 		}
 	}
 }

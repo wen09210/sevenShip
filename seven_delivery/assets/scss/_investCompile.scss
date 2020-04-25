@@ -163,7 +163,7 @@ html {
 	.container-fluid {
 		width: 80%;
 		min-width: 960px;
-		max-width: 1280px
+		max-width: 1240px
 	}
 }
 
@@ -185,14 +185,14 @@ body {
 @media only screen and (min-width:1100px) {
 	header.header.flexible .container {
 		width: 80%;
-		max-width: 1280px
+		max-width: 1240px
 	}
 }
 
 @media only screen and (min-width:1100px) {
 	.rwd header.header .container {
 		width: 80%;
-		max-width: 1280px
+		max-width: 1240px
 	}
 }
 
@@ -606,7 +606,7 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 
 	.l-menu__container {
 		width: 80%;
-		max-width: 1280px;
+		max-width: 1240px;
 		min-width: 320px
 	}
 }
@@ -732,7 +732,7 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 		-o-transition: visibility 0.3s, opacity 0.3s;
 		transition: visibility 0.3s, opacity 0.3s;
 		/* width: 80%; */
-		max-width: 1280px;
+		max-width: 1240px;
 		margin: 0 auto;
 		max-height: 5000px;
 		position: absolute;

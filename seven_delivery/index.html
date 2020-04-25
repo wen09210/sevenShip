@@ -43,7 +43,7 @@
                             <li id="layout_0_top_0_RepMenuTypes_liMenuTypes_2">
                                 <div>
                                     <a href="" class="header-small-btn ">
-                                        <i class="bx bx-user"></i>登入
+                                        <i class="bx bx-user iconLogin"></i>登入
                                     </a>
                                 </div>
                             </li>
@@ -172,6 +172,9 @@
         <main class="cs-l-main">
             <div class=" global-alert">
                 <div class="global-alert-wrapper container">
+                    <button type="button" class="close closeBtn" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
                     <div class="d-flex align-items-start">
                         <span class="badge  ">公告事項</span>
                         <span>
@@ -344,7 +347,7 @@
                                     <div class="activity_text">
                                         <div class="act_title">交貨便專用服務袋全新改版1</div>
                                         <div class="act_content">
-                                            1/1~1/31透過賣貨便寄件，寄件結帳完成可獲得20元運費折扣券，折扣劵可合併使用，寄越多省越喔!
+                                            1/1~1/31透過賣貨便寄件，寄件結帳完成可獲得20元運費折扣券，折扣劵可合併使用，寄越多省越多喔!
                                         </div>
                                         <div class="act_note">
                                             活動期間：2020/1/1~31(兌換至2/7)
@@ -383,10 +386,10 @@
 
                             <div class="news_wrap">
                                 <ul>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間...</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間...</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間...</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間...</a> </li>
+                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -524,7 +527,9 @@
             $(this).parents('.favorOuter').remove();
             return false;
         })
-
+        $('button.closeBtn').click(function(){
+            $('.global-alert').remove()
+        })
 
         //
     </script>
