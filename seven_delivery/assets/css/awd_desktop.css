@@ -1707,7 +1707,13 @@ button:focus {
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   .actitvity_wrap .img-responsive {
-    width: auto; } }
+    width: auto; }
+  .activity_text {
+    display: inline-block; }
+    .activity_text .act_title {
+      margin-bottom: 12px; }
+    .activity_text .act_note {
+      margin-top: 30px; } }
 
 a,
 a:hover {

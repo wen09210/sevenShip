@@ -609,6 +609,15 @@ button:focus {
 
 		.img-responsive {
 			width: auto;
-}
+			}
 		}
+	.activity_text{
+		display: inline-block;
+		.act_title{
+			margin-bottom: 12px;
+		}
+		.act_note{
+			margin-top:30px;
+		}
+	}
 }
