@@ -753,8 +753,27 @@ header.header .info-menu,
   }
 }
 
-.cs-c-banner__background {
+// banner圖片換這邊
+.cs-c-banner {
   height: 420px;
+}
+@media all and (max-width: 1440px) {
+ .cs-c-banner {
+  background-position-x: -220px;
+ }
+ }
+
+[data-banner="cs-banner-1"]{
+    background-image: url(../images/banner/banner.jpg);
+}
+[data-banner="cs-banner-2"] {
+  background-image: url(../images/banner/banner2.jpg);
+}
+[data-banner="cs-banner-3"] {
+  background-image: url(../images/banner/banner3.jpg);
+}
+[data-banner="cs-banner-4"] {
+  background-image: url(../images/banner/banner4.jpg);
 }
 
 button.slick-next.slick-arrow:before {

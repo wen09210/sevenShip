@@ -271,28 +271,10 @@
                 <section class="cs-l-mainKv ">
 
                     <div class="cs-l-mainKv__slider " data-slider="banner">
-                        <div class="cs-c-banner">
-
-                            <img src="assets/images/banner/banner.jpg">
-
-                        </div>
-                        <div class="cs-c-banner">
-
-                            <img src="assets/images/banner/banner2.jpg">
-
-                        </div>
-                        <div class="cs-c-banner">
-
-                            <img src="assets/images/banner/banner3.jpg">
-
-
-
-                        </div>
-                        <div class="cs-c-banner">
-
-                            <img src="assets/images/banner/banner4.jpg">
-
-                        </div>
+                        <div class="cs-c-banner" data-banner="cs-banner-1"></div>
+                        <div class="cs-c-banner" data-banner="cs-banner-2"></div>
+                        <div class="cs-c-banner" data-banner="cs-banner-3"></div>
+                        <div class="cs-c-banner" data-banner="cs-banner-4"></div>
                     </div>
 
                     <div class="cs-l-wrap mainBlockWrap">
@@ -341,9 +323,9 @@
                             <div class="block_section_title">最新活動</div>
 
                             <div class="actitvity_wrap">
-                                <div class="activity_swiper d-flex">
+                                <a href="#" class="activity_swiper d-flex">
                                     <img src="assets/images/promote/Activity_20190827.jpg" alt=""
-                                        class="img-responsive">
+                                        class="img-responsive ">
                                     <div class="activity_text">
                                         <div class="act_title">交貨便專用服務袋全新改版1</div>
                                         <div class="act_content">
@@ -353,8 +335,8 @@
                                             活動期間：2020/1/1~31(兌換至2/7)
                                         </div>
                                     </div>
-                                </div>
-                                <div class="activity_swiper d-flex">
+                                </a>
+                                <a href="#" class="activity_swiper d-flex">
                                     <img src="assets/images/promote/health.jpg" alt="" class="img-responsive">
                                     <div class="activity_text">
                                         <div class="act_title">交貨便專用服務袋全新改版2</div>
@@ -365,8 +347,8 @@
                                             活動期間：2020/1/1~31(兌換至2/7)
                                         </div>
                                     </div>
-                                </div>
-                                <div class="activity_swiper d-flex">
+                                </a>
+                                <a href="#" class="activity_swiper d-flex">
                                     <img src="assets/images/promote/noodle.jpg" alt="" class="img-responsive">
                                     <div class="activity_text">
                                         <div class="act_title">交貨便專用服務袋全新改版3</div>
@@ -377,7 +359,7 @@
                                             活動期間：2020/1/1~31(兌換至2/7)
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="block_section">
@@ -386,10 +368,10 @@
 
                             <div class="news_wrap">
                                 <ul>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
-                                    <li><a href="">因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href=""><span class="newsDay">2020/04/25</span>因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href=""><span class="newsDay">2020/04/25</span>因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href=""><span class="newsDay">2020/04/25</span>因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
+                                    <li><a href=""><span class="newsDay">2020/04/25</span>因應春節連假，配合銀行服務時間，將調整帳務撥款時間配合銀行服務時間</a> </li>
                                 </ul>
                             </div>
                         </div>
@@ -476,63 +458,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jqBootstrapValidation.js"></script>
     <script src="assets/js/vendor/form-validation.js"></script>
-    <script>
-        // 輪播
-        $(function () {
-
-            $('[data-slider="banner"]').slick({
-                autoplay: false,
-                autoplaySpeed: 5000,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true,
-                arrows: false,
-                asNavFor: '[data-text="text"]',
-                appendDots: $('[data-slider-nav="mainKv"]'),
-            });
-            $('[data-text="text"]').slick({
-                autoplay: false,
-                autoplaySpeed: 5000,
-                asNavFor: '[data-slider="banner"]',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: false,
-                cssEase: false,
-                touchMove: false,
-            });
-            $('.actitvity_wrap').slick({
-                autoplay: false,
-                autoplaySpeed: 5000,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: false,
-                arrows: true,
-                
-            });
-
-        });
-        // sideFunctionClose
-
-        $('.myFavorBtn').click(function () {
-            $('.sideFunction').removeClass('closeFunction');
-
-        })
-        $('.sideFunctionClose').click(function () {
-            $('.sideFunction').addClass('closeFunction')
-            $('.sideFixedBtn').removeClass('active');
-            $('.blackMask').removeClass('on');
-        })
-        $('.smallDelete').click(function (e) {
-            $(this).parents('.favorOuter').remove();
-            return false;
-        })
-        $('button.closeBtn').click(function(){
-            $('.global-alert').remove()
-        })
-
-        //
-    </script>
+    <script src="assets/js/delivery.js"></script>
 
 
 
