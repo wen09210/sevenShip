@@ -401,8 +401,8 @@
 	position: absolute;
 	top: 45%;
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	padding: 0;
 	-webkit-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
@@ -416,8 +416,8 @@
 
 button.slick-next.slick-arrow,
 button.slick-prev.slick-arrow {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	position: absolute;
 	/* top: calc(50% + 48px); */
 	z-index: 50;
@@ -427,8 +427,8 @@ button.slick-next.slick-arrow:before,
 button.slick-prev.slick-arrow:before {
 	content: "";
 	display: block;
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	opacity: 1;
 	background-repeat: no-repeat;
 }
