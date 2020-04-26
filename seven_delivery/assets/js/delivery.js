@@ -3,7 +3,7 @@
         $(function () {
 
             $('[data-slider="banner"]').slick({
-                autoplay: false,
+                autoplay: true,
                 autoplaySpeed: 5000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
@@ -24,7 +24,7 @@
                 touchMove: false,
             });
             $('.actitvity_wrap').slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 5000,
                 slidesToShow: 1,
                 slidesToScroll: 1,

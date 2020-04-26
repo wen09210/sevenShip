@@ -333,6 +333,14 @@
 	padding: 0;
 	position: static;
 }
+  .slick-slide {
+  	margin: 0 20px;
+  }
+
+  /* the parent */
+  .slick-list {
+  	margin: 0 -20px;
+  }
 
 .slick-dots li {
 	display: inline-block;
