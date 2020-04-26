@@ -601,3 +601,14 @@ button:focus {
 	height: 20px;
 	vertical-align: text-bottom;
 }
+
+// 專門for ie 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+	.actitvity_wrap {
+
+		.img-responsive {
+			width: auto;
+}
+		}
+}
