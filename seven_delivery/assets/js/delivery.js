@@ -24,7 +24,7 @@
                 touchMove: false,
             });
             $('.actitvity_wrap').slick({
-                autoplay: true,
+                autoplay: false,
                 autoplaySpeed: 5000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
