@@ -624,7 +624,7 @@ header.header {
   }
 
   @include rwd-max-width(1080px) {
-    min-width: 960px;
+    min-width: 1280px;
   }
 
 
@@ -682,7 +682,7 @@ header.header .info-menu,
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 960px;
+    min-width: 1280px;
 
   }
 
@@ -701,7 +701,7 @@ header.header .info-menu,
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 960px;
+    min-width: 1280px;
   }
 
   margin: 0 auto;
@@ -725,7 +725,7 @@ header.header .info-menu,
 
 
 .cs-l-mainKv {
-  min-width: 960px;
+  min-width: 1280px;
   overflow: hidden;
   height: 420px;
 }
@@ -741,11 +741,11 @@ header.header .info-menu,
   background-repeat: no-repeat;
 }
 
-@media all and (max-width: 1920px) {
+
   .cs-l-mainKv:before {
     min-width: 45%;
   }
-}
+
 
 @media all and (max-width: 1280px) {
   .cs-l-mainKv:before {
@@ -907,7 +907,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0 74px;
-  min-width: 960px;
+  min-width: 1280px;
 }
 
 .cs-l-mainBlock-small {
@@ -916,7 +916,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock--bglightGrn {
   background-color: #edf3e9;
-  min-width: 960px;
+  min-width: 1280px;
 }
 
 .mainBlockWrap {
@@ -929,7 +929,7 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 960px;
+  min-width: 1280px;
 }
 
 @media all and (max-width: 1280px) {

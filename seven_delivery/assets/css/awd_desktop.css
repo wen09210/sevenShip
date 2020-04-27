@@ -1278,7 +1278,7 @@ a.header-small-btn {
 
 .cs-l-container {
   width: 100%;
-  min-width: 960px; }
+  min-width: 1280px; }
 
 .act_title {
   font-size: 16px;
@@ -1491,12 +1491,6 @@ button.close {
   -webkit-transition: all ease-in-out .5s;
   -o-transition: all ease-in-out .5s;
   transition: all ease-in-out .5s; }
-  @media all and (max-width: 640px) {
-    .sideFunction {
-      width: 100%; } }
-  @media all and (max-width: 640px) {
-    .sideFunction .myFavorBtn {
-      display: none; } }
   .sideFunction .sideFixedBtn {
     background-color: #848484;
     width: 70px;
@@ -1544,9 +1538,6 @@ button.close {
   background-color: #fff;
   padding: 22px 30px 0px;
   min-height: 370px; }
-  @media all and (max-width: 640px) {
-    .sideFunctionBox {
-      width: 100%; } }
   .sideFunctionBox .sideFunctionTitle {
     font-size: 24px;
     padding-bottom: 8px;
@@ -1683,10 +1674,6 @@ button.close {
 
 .closeFunction {
   right: -360px; }
-  @media all and (max-width: 640px) {
-    .closeFunction {
-      right: 0px;
-      display: none; } }
 
 .mt-30 {
   margin-top: 30px; }
@@ -2154,7 +2141,7 @@ header.header {
       min-width: 1080px; } }
   @media all and (max-width: 1080px) {
     header.header {
-      min-width: 960px; } }
+      min-width: 1280px; } }
 
 header.header .info-menu,
 .l-menu {
@@ -2195,7 +2182,7 @@ header.header .info-menu,
       min-width: 1240px; } }
   @media all and (max-width: 1280px) {
     .footer {
-      min-width: 960px; } }
+      min-width: 1280px; } }
   @media all and (min-width: 959.91px) {
     .footer {
       display: block;
@@ -2210,7 +2197,7 @@ header.header .info-menu,
       min-width: 1240px; } }
   @media all and (max-width: 1280px) {
     .footerWrap {
-      min-width: 960px; } }
+      min-width: 1280px; } }
 
 .cs-l-content--fixTop {
   padding-top: 128px; }
@@ -2224,7 +2211,7 @@ header.header .info-menu,
 
 /*  */
 .cs-l-mainKv {
-  min-width: 960px;
+  min-width: 1280px;
   overflow: hidden;
   height: 420px; }
 
@@ -2238,9 +2225,8 @@ header.header .info-menu,
   background-position: right;
   background-repeat: no-repeat; }
 
-@media all and (max-width: 1920px) {
-  .cs-l-mainKv:before {
-    min-width: 45%; } }
+.cs-l-mainKv:before {
+  min-width: 45%; }
 
 @media all and (max-width: 1280px) {
   .cs-l-mainKv:before {
@@ -2367,14 +2353,14 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0 74px;
-  min-width: 960px; }
+  min-width: 1280px; }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }
 
 .cs-l-mainBlock--bglightGrn {
   background-color: #edf3e9;
-  min-width: 960px; }
+  min-width: 1280px; }
 
 .mainBlockWrap {
   display: -webkit-box;
@@ -2386,7 +2372,7 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 960px; }
+  min-width: 1280px; }
 
 @media all and (max-width: 1280px) {
   .mainBlockWrap {
