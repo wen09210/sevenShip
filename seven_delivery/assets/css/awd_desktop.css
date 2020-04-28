@@ -1223,6 +1223,9 @@ a.header-small-btn {
   position: relative;
   min-height: calc(100vh - 330px); }
 
+.fade:not(.show) {
+  opacity: 1 !important; }
+
 .global-announcement {
   padding-left: 0px;
   padding-right: 0px;
@@ -1847,20 +1850,20 @@ li.on .svg-icon path {
   .c-menuLv2 {
     padding: 0px;
     width: 100%;
-    background-color: #ededed; }
+    background-color: #ededed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
   .c-menuLv2 > li {
     border-bottom: 0;
     float: left;
     width: 100%;
-    padding: 15px;
+    padding: 15px 12px;
     /* height: 100%; */
     text-align: left; }
   a.c-menuLv3__name.cs-o-link.cs-o-link--menu {
     line-height: 1.2; }
-  /* 快速登入按鈕 */
-  .c-promote,
-  .fastEntry {
-    width: 138px; }
   .c-fastEntry {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1920,7 +1923,8 @@ li.on .svg-icon path {
   .rwd header.header .container,
   .l-menu__container,
   .c-menuLv1__child {
-    width: 100%; }
+    width: 100%;
+    min-width: 555px; }
   .l-menu__container {
     max-width: 1240px; }
   .c-menuLv1 > li:last-of-type {
@@ -2156,20 +2160,8 @@ header.header .info-menu,
 .l-cubHeader {
   display: block; }
 
-.c-fastEntry {
-  padding: 10px;
-  width: 14.285714%; }
-  @media all and (max-width: 1920px) {
-    .c-fastEntry {
-      padding: 10px;
-      width: 14.285714%; } }
-  @media all and (max-width: 1280px) {
-    .c-fastEntry {
-      padding: 0px; } }
-  @media all and (max-width: 1080px) {
-    .c-fastEntry {
-      padding: 0px;
-      width: 150px; } }
+.l-menu .c-menuLv2 > li {
+  float: left; }
 
 .footer {
   display: block;

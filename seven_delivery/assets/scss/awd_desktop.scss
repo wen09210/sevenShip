@@ -143,6 +143,7 @@ li.on .svg-icon path {
     top: 47px;
     border-bottom: 0px;
     box-shadow: 0 0px 8px rgba(2, 2, 2, .15);
+    
   }
 
 
@@ -197,6 +198,8 @@ li.on .svg-icon path {
     padding: 0px;
     width: 100%;
     background-color: #ededed;
+    display: flex;
+    width: 100%;
   }
 
   .c-menuLv2>li {
@@ -204,20 +207,13 @@ li.on .svg-icon path {
     float: left;
     width: 100%;
     // width: calc(100% / 6);
-    padding: 15px;
+    padding: 15px 12px;
     /* height: 100%; */
     text-align: left;
   }
 
   a.c-menuLv3__name.cs-o-link.cs-o-link--menu {
     line-height: 1.2;
-  }
-
-  /* 快速登入按鈕 */
-  .c-promote,
-  .fastEntry {
-    width: 138px;
-
   }
 
   .c-fastEntry {
@@ -283,6 +279,7 @@ li.on .svg-icon path {
   .l-menu__container,
   .c-menuLv1__child {
     width: 100%;
+    min-width: 555px;
   }
 
   .l-menu__container {
@@ -646,26 +643,10 @@ header.header .info-menu,
   display: block;
 }
 
-.c-menuLv2 {}
-
-.c-fastEntry {
-  padding: 10px;
-  width: 14.285714%;
-
-  @include rwd-max-width(1920px) {
-    padding: 10px;
-    width: 14.285714%;
-  }
-
-  @include rwd-max-width(1280px) {
-    padding: 0px;
-  }
-
-  @include rwd-max-width(1080px) {
-    padding: 0px;
-    width: 150px;
-  }
+.l-menu .c-menuLv2>li{
+float:left;
 }
+
 
 // footer
 .footer {
