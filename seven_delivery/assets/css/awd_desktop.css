@@ -1812,7 +1812,8 @@ li.on .svg-icon path {
     top: 47px;
     border-bottom: 0px;
     -webkit-box-shadow: 0 0px 8px rgba(2, 2, 2, 0.15);
-    box-shadow: 0 0px 8px rgba(2, 2, 2, 0.15); }
+    box-shadow: 0 0px 8px rgba(2, 2, 2, 0.15);
+    min-width: 555px; }
   .c-menuLv1 > li:last-of-type .c-menuLv1__name {
     opacity: 1;
     color: #fff;
@@ -1922,8 +1923,7 @@ li.on .svg-icon path {
   .rwd header.header .container,
   .l-menu__container,
   .c-menuLv1__child {
-    width: 100%;
-    min-width: 555px; }
+    width: 100%; }
   .l-menu__container {
     max-width: 1240px; }
   .c-menuLv1 > li:last-of-type {
