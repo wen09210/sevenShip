@@ -680,7 +680,7 @@ float:left;
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 1280px;
+    min-width: 1240px;
   }
 
   margin: 0 auto;
@@ -735,6 +735,7 @@ float:left;
 // banner圖片換這邊
 .cs-c-banner {
   height: 420px;
+  background-size:cover ;
 }
 @media all and (max-width: 1440px) {
  .cs-c-banner {

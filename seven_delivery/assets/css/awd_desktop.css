@@ -1702,6 +1702,8 @@ button:focus {
   vertical-align: text-bottom; }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .footerWrap.footer_all_rights_reserve {
+    margin-top: 20px; }
   .actitvity_wrap {
     margin-right: 30px; }
   .actitvity_wrap .img-responsive {
@@ -2187,7 +2189,7 @@ header.header .info-menu,
       min-width: 1240px; } }
   @media all and (max-width: 1280px) {
     .footerWrap {
-      min-width: 1280px; } }
+      min-width: 1240px; } }
 
 .cs-l-content--fixTop {
   padding-top: 128px; }
@@ -2223,7 +2225,8 @@ header.header .info-menu,
     min-width: 563px; } }
 
 .cs-c-banner {
-  height: 420px; }
+  height: 420px;
+  background-size: cover; }
 
 @media all and (max-width: 1440px) {
   .cs-c-banner {

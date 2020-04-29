@@ -593,6 +593,9 @@ button:focus {
 // 專門for ie 
 @media screen and (-ms-high-contrast: active),
 (-ms-high-contrast: none) {
+	.footerWrap.footer_all_rights_reserve{
+		margin-top:20px;
+	}
 	.actitvity_wrap {
 		margin-right: 30px;
 	}
