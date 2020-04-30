@@ -674,6 +674,9 @@ float:left;
 
 .footerWrap {
   min-width:1240px;
+  padding-left:10px;
+  padding-right: 10px;
+
 
   @include rwd-max-width(1920px) {
     min-width: 1240px;
@@ -704,7 +707,7 @@ float:left;
 
 
 .cs-l-mainKv {
-  min-width: 1280px;
+  min-width: 1240px;
   overflow: hidden;
   height: 420px;
 }
@@ -887,7 +890,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 60px 0 74px;
-  min-width: 1280px;
+  min-width: 1240px;
 }
 
 .cs-l-mainBlock-small {
@@ -909,7 +912,7 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 1280px;
+  min-width: 1240px;
 }
 
 @media all and (max-width: 1280px) {
