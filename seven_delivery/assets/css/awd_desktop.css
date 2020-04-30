@@ -1772,7 +1772,7 @@ li.on .svg-icon path {
     border-top: 1px solid #0068b6; }
   header.header .sub-menu .change-unit-menu li div {
     border: none;
-    padding: 0px 6px 0px; }
+    padding: 0px 0px 0px 12px; }
   header.header .sub-menu .change-unit-menu {
     position: absolute;
     bottom: 20px; }
