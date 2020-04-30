@@ -2183,8 +2183,6 @@ header.header .info-menu,
 
 .footerWrap {
   min-width: 1240px;
-  padding-left: 10px;
-  padding-right: 10px;
   margin: 0 auto; }
   @media all and (max-width: 1920px) {
     .footerWrap {
