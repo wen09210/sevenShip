@@ -302,9 +302,6 @@ span.livicon-evo {
 /* ---------- */
 footer.footer {
   padding: 1rem 2.2rem; }
-  footer.footer a {
-    margin-left: 0.3rem;
-    color: #727E8C; }
   footer.footer span i {
     color: #FF5B5C;
     position: relative;
