@@ -23,14 +23,13 @@
                 cssEase: false,
                 touchMove: false,
             });
-            $('.actitvity_wrap').slick({
+            $('.actitvity_wrap,.best_seller').slick({
                 autoplay: false,
                 autoplaySpeed: 5000,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 dots: false,
                 arrows: true,
-                
             });
 
         });

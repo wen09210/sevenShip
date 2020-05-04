@@ -1343,6 +1343,21 @@ button.close {
     .block_section {
       max-width: 49%; } }
 
+.block_section-lg {
+  width: 100%; }
+
+.best_seller .img-responsive {
+  max-width: 410px; }
+
+.best_seller .slick-list {
+  max-width: 870px;
+  margin: 0 auto;
+  max-height: 240px;
+  border: 1px solid #e2e2e2; }
+
+.best_seller .slick-slide {
+  margin: 0px; }
+
 .activity_swiper {
   -webkit-box-pack: center;
   -ms-flex-pack: center;

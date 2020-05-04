@@ -134,6 +134,23 @@ button.close{
 		max-width: 49%;
 	}
 }
+.block_section-lg{
+	width: 100%;
+}
+.best_seller{
+	.img-responsive {
+		max-width: 410px;
+	}
+	.slick-list{
+	max-width: 870px;
+	margin: 0 auto;
+	max-height: 240px;
+	border:1px solid #e2e2e2;
+	}
+	.slick-slide{
+		margin:0px;
+	}
+}
 
 .activity_swiper {
 	justify-content: center;
