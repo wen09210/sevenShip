@@ -1285,7 +1285,8 @@ a.header-small-btn {
   width: 100%;
   min-width: 1280px; }
 
-.act_title {
+.act_title,
+.best_seller_title {
   font-size: 16px;
   font-weight: bold;
   font-stretch: normal;
@@ -1310,16 +1311,19 @@ a.header-small-btn {
   justify-content: space-between; }
 
 .act_content {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  height: 4.5em; }
+
+.act_content,
+.best_seller_content {
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   color: #767676;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  height: 4.5em;
   line-height: 1.5em; }
 
 button.close {
@@ -1328,7 +1332,8 @@ button.close {
   button.close:hover, button.close:active, button.close:focus {
     color: #f7b54e; }
 
-.act_note {
+.act_note,
+.best_seller_note {
   font-size: 13px;
   font-stretch: normal;
   font-style: normal;
@@ -1336,6 +1341,24 @@ button.close {
   letter-spacing: normal;
   color: #ff6000;
   text-align: left; }
+
+.best_seller_title {
+  font-size: 21px;
+  margin-top: 30px;
+  margin-bottom: 12px; }
+
+.best_seller_text {
+  padding: 0px 25px; }
+
+.best_seller_note {
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #ff6000;
+  text-align: right;
+  text-decoration: underline; }
 
 .block_section {
   max-width: 600px; }
@@ -1445,13 +1468,16 @@ button.close {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .news_title a.link_more {
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #ff6000; }
+
+a.link_more {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9b9b9b; }
 
 .cus_time {
   color: white;
