@@ -5,15 +5,17 @@
 @import '_button.scss';
 @import '_seven_delivery.scss';
 
-html body{
+html body {
   background-color: #fff;
   letter-spacing: initial;
-  p{
+
+  p {
     line-height: inherit;
   }
 }
-.bx{
-  font-size:initial;
+
+.bx {
+  font-size: initial;
 }
 
 a,
@@ -653,8 +655,8 @@ header.header .info-menu,
   display: block;
 }
 
-.l-menu .c-menuLv2>li{
-float:left;
+.l-menu .c-menuLv2>li {
+  float: left;
 }
 
 
@@ -684,7 +686,7 @@ float:left;
 }
 
 .footerWrap {
-  min-width:1240px;
+  min-width: 1240px;
 
 
   @include rwd-max-width(1920px) {
@@ -733,9 +735,9 @@ float:left;
 }
 
 
-  .cs-l-mainKv:before {
-    min-width: 45%;
-  }
+.cs-l-mainKv:before {
+  min-width: 45%;
+}
 
 
 @media all and (max-width: 1440px) {
@@ -747,23 +749,27 @@ float:left;
 // banner圖片換這邊
 .cs-c-banner {
   height: 420px;
-  background-size:cover ;
+  background-size: cover;
 }
-@media all and (max-width: 1440px) {
- .cs-c-banner {
-  background-position-x: -220px;
- }
- }
 
-[data-banner="cs-banner-1"]{
-    background-image: url(../images/banner/banner.jpg);
+@media all and (max-width: 1440px) {
+  .cs-c-banner {
+    background-position-x: -220px;
+  }
 }
+
+[data-banner="cs-banner-1"] {
+  background-image: url(../images/banner/banner.jpg);
+}
+
 [data-banner="cs-banner-2"] {
   background-image: url(../images/banner/banner2.jpg);
 }
+
 [data-banner="cs-banner-3"] {
   background-image: url(../images/banner/banner3.jpg);
 }
+
 [data-banner="cs-banner-4"] {
   background-image: url(../images/banner/banner4.jpg);
 }
@@ -795,7 +801,7 @@ button.slick-prev.slick-arrow:hover:before {
   top: 0px;
   z-index: 3;
   height: 100%;
-  width:1240px;
+  width: 1240px;
   padding: 0px 20px;
   margin-top: -530px;
 }
@@ -808,7 +814,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 @media all and (max-width: 1280px) {
   .cs-l-mainKv__text {
-   padding: 0px 10px;
+    padding: 0px 10px;
   }
 }
 
@@ -822,7 +828,7 @@ button.slick-prev.slick-arrow:hover:before {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 200px 20px 0px;
 }
 
@@ -887,7 +893,7 @@ button.slick-prev.slick-arrow:hover:before {
 }
 
 .cs-l-wrap {
-  max-width:1240px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -898,7 +904,7 @@ button.slick-prev.slick-arrow:hover:before {
 }
 
 .cs-l-mainBlock {
-  padding-top: 50px;
+  margin-top: 50px;
   min-width: 1240px;
 }
 
@@ -912,16 +918,11 @@ button.slick-prev.slick-arrow:hover:before {
 }
 
 .mainBlockWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   position: relative;
   min-width: 1240px;
+  display: inline-block;
 }
 
 @media all and (max-width: 1280px) {
@@ -1122,15 +1123,76 @@ a.goOutlink {
 }
 
 // seven_ship
-footer.footer{
-  padding:0px;
+footer.footer {
+  padding: 0px;
 }
-.nav.nav-pills .nav-item{
-  margin:0px;
+
+.nav.nav-pills .nav-item {
+  margin: 0px;
 }
-.nav.nav-pills~.tab-content{
-  padding:0px;
+
+.nav.nav-pills~.tab-content {
+  padding: 0px;
 }
-.text_emphasize{
-  color:#c75501;
+
+.text_emphasize {
+  color: #c75501;
+}
+
+.step1-Block {
+  background-color: #fef4e9;
+  max-width: 100%;
+}
+
+.step-block-title {
+  padding-top: 50px;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.91;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.step-sub-title {
+  font-size: 24px;
+  padding-top: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  color: #434343;
+  text-align: center;
+}
+.step-1-work-tab{
+  padding:44px 0px;
+  margin:0 auto;
+  max-width: 980px;
+
+}
+#step-1-work-tab.nav-tabs {
+  border-bottom:0px;
+  .nav-item.current:before,.nav-item.current:after{
+    display: none;
+  }
+  .nav-link{
+    font-size: 24px;
+    padding:10px 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04px;
+    color: #434343;
+    background-color: #fff;
+    &.active{
+      background-color: $main-orange;
+      color:#fff;
+    }
+  }
+}
+.work-tab-title{
+  color: #434343;
+  font-size: 21px;
 }

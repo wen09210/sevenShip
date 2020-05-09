@@ -2285,7 +2285,8 @@ button.slick-prev.slick-arrow:hover:before {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
   margin: 200px 20px 0px; }
 
 .cub-text-wrapper h2 {

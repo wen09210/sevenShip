@@ -100,7 +100,8 @@
 	height: auto;
 	justify-content: space-between;
 }
-.act_content{
+
+.act_content {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 4.5em;
@@ -114,7 +115,7 @@
 	font-style: normal;
 	letter-spacing: normal;
 	color: #767676;
-	
+
 	line-height: 1.5em;
 }
 
@@ -138,6 +139,9 @@ button.close {
 	letter-spacing: normal;
 	color: $main-orange;
 	text-align: left;
+	right: 30px;
+	bottom: 15px;
+	position: absolute;
 }
 
 .best_seller_title {
@@ -148,7 +152,9 @@ button.close {
 
 .best_seller_text {
 	padding: 0px 25px;
+	position: relative;
 }
+
 .best_seller_note {
 	font-size: 14px;
 	font-stretch: normal;
@@ -302,19 +308,21 @@ button.close {
 .news_title {
 	display: flex;
 	justify-content: space-between;
-	a.link_more{
+
+	a.link_more {
 		color: $main-orange;
 	}
 }
-	a.link_more {
-		font-size: 14px;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color:#9b9b9b;
-	}
+
+a.link_more {
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #9b9b9b;
+}
 
 // footer
 .cus_time {

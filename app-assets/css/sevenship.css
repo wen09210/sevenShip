@@ -1340,7 +1340,10 @@ button.close {
   line-height: 1.69;
   letter-spacing: normal;
   color: #ff6000;
-  text-align: left; }
+  text-align: left;
+  right: 30px;
+  bottom: 15px;
+  position: absolute; }
 
 .best_seller_title {
   font-size: 21px;
@@ -1348,7 +1351,8 @@ button.close {
   margin-bottom: 12px; }
 
 .best_seller_text {
-  padding: 0px 25px; }
+  padding: 0px 25px;
+  position: relative; }
 
 .best_seller_note {
   font-size: 14px;
@@ -2338,7 +2342,8 @@ button.slick-prev.slick-arrow:hover:before {
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
   margin: 200px 20px 0px; }
 
 .cub-text-wrapper h2 {
@@ -2398,7 +2403,7 @@ button.slick-prev.slick-arrow:hover:before {
     max-width: 1240px; } }
 
 .cs-l-mainBlock {
-  padding-top: 50px;
+  margin-top: 50px;
   min-width: 1240px; }
 
 .cs-l-mainBlock-small {
@@ -2409,16 +2414,11 @@ button.slick-prev.slick-arrow:hover:before {
   min-width: 1280px; }
 
 .mainBlockWrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 1240px; }
+  min-width: 1240px;
+  display: inline-block; }
 
 @media all and (max-width: 1280px) {
   .mainBlockWrap {
@@ -2588,3 +2588,54 @@ footer.footer {
 
 .text_emphasize {
   color: #c75501; }
+
+.step1-Block {
+  background-color: #fef4e9;
+  max-width: 100%; }
+
+.step-block-title {
+  padding-top: 50px;
+  font-size: 34px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.91;
+  letter-spacing: normal;
+  text-align: center; }
+
+.step-sub-title {
+  font-size: 24px;
+  padding-top: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  color: #434343;
+  text-align: center; }
+
+.step-1-work-tab {
+  padding: 44px 0px;
+  margin: 0 auto;
+  max-width: 980px; }
+
+#step-1-work-tab.nav-tabs {
+  border-bottom: 0px; }
+  #step-1-work-tab.nav-tabs .nav-item.current:before, #step-1-work-tab.nav-tabs .nav-item.current:after {
+    display: none; }
+  #step-1-work-tab.nav-tabs .nav-link {
+    font-size: 24px;
+    padding: 10px 40px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.04px;
+    color: #434343;
+    background-color: #fff; }
+    #step-1-work-tab.nav-tabs .nav-link.active {
+      background-color: #ff6000;
+      color: #fff; }
+
+.work-tab-title {
+  color: #434343;
+  font-size: 21px; }
