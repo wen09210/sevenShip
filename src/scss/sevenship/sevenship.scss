@@ -1139,23 +1139,6 @@ footer.footer {
   color: #c75501;
 }
 
-.step1-Block {
-  background-color: $step-1-color;
-  max-width: 100%;
-}
-
-.step2-Block {
-  margin-top: 2px;
-  background-color: $step-2-color;
-  max-width: 100%;
-}
-
-.step3-Block {
-  margin-top: 2px;
-  background-color: $step-3-color;
-  max-width: 100%;
-}
-
 .step-block-title {
   padding-top: 50px;
   font-size: 34px;
@@ -1216,7 +1199,12 @@ footer.footer {
 
 .work-tab-title {
   color: #434343;
+  font-size: 24px;
+  font-weight: bold;
+}
+.work-tab-sub-title {
   font-size: 21px;
+  line-height: normal;
 }
 
 .work-tab-ul {
@@ -1248,6 +1236,41 @@ footer.footer {
 }
 
 // 個別區塊
+.step1-Block {
+  background-color: $step-1-color;
+  max-width: 100%;
+}
+
+.step2-Block {
+  margin-top: 2px;
+  background-color: $step-2-color;
+  max-width: 100%;
+}
+
+.step3-Block {
+  margin-top: 2px;
+  background-color: $step-3-color;
+  max-width: 100%;
+}
+
+.step4-Block {
+  margin-top: 2px;
+  background-color: $step-4-color;
+  max-width: 100%;
+}
+
+.step5-Block {
+  margin-top: 2px;
+  background-color: $step-5-color;
+  max-width: 100%;
+}
+
+.step6-Block {
+  margin-top: 0px;
+  background: $step-6-color;
+  max-width: 100%;
+}
+
 .promote-content-2 {
   .know-more-btn {
     border: solid 1px $step-2-text-color;
@@ -1293,6 +1316,83 @@ footer.footer {
       content: '';
       background-image: url(../../../app-assets/images/icons/tick-2.png);
     }
+  }
+}
+
+.promote-content-4 {
+  .know-more-btn {
+    border: solid 1px $step-4-text-color;
+    color: $step-4-text-color;
+
+    &:hover {
+      border: solid 1px #fff;
+      color: #fff;
+      background-color: $step-4-text-color;
+    }
+  }
+
+  .promote-title4 {
+    color: $step-4-text-color;
+  }
+
+  .promote-ul-4 {
+    li:before {
+      content: '';
+      background-image: url(../../../app-assets/images/icons/tick-3.png);
+    }
+  }
+}
+
+.promote-content-5 {
+  .know-more-btn {
+    border: solid 1px $step-5-text-color;
+    color: $step-5-text-color;
+
+    &:hover {
+      border: solid 1px #fff;
+      color: #fff;
+      background-color: $step-5-text-color;
+    }
+  }
+
+  .promote-title5 {
+    color: $step-5-text-color;
+  }
+
+  .promote-ul-5 {
+    li:before {
+      content: '';
+      background-image: url(../../../app-assets/images/icons/tick-4.png);
+    }
+  }
+}
+
+.promote-content-6 {
+  .know-more-btn {
+    border: solid 1px $main-orange;
+    color: $main-orange;
+
+    &:hover {
+      border: solid 1px #fff;
+      color: #fff;
+      background-color: $main-orange;
+    }
+  }
+
+  .promote-title6 {
+    color: $main-orange;
+    font-size: 30px;
+  }
+
+  .promote-sub-title {
+    font-size: 18px;
+    color: $main-orange;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
   }
 }
 
@@ -1346,4 +1446,13 @@ footer.footer {
   margin-top: 30px;
   font-size: 18px;
   display: inline-block;
+}
+
+.bottom-banner {
+  max-width: 570px;
+}
+.bottom-banner-content{
+  padding:0px 25px;
+  width:500px;
+  text-align:center;
 }

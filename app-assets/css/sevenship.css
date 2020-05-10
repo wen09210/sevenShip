@@ -2589,20 +2589,6 @@ footer.footer {
 .text_emphasize {
   color: #c75501; }
 
-.step1-Block {
-  background-color: #fef4e9;
-  max-width: 100%; }
-
-.step2-Block {
-  margin-top: 2px;
-  background-color: #fdf8e2;
-  max-width: 100%; }
-
-.step3-Block {
-  margin-top: 2px;
-  background-color: #eef9f3;
-  max-width: 100%; }
-
 .step-block-title {
   padding-top: 50px;
   font-size: 34px;
@@ -2652,7 +2638,12 @@ footer.footer {
 
 .work-tab-title {
   color: #434343;
-  font-size: 21px; }
+  font-size: 24px;
+  font-weight: bold; }
+
+.work-tab-sub-title {
+  font-size: 21px;
+  line-height: normal; }
 
 .work-tab-ul {
   color: #ff6000; }
@@ -2673,6 +2664,38 @@ footer.footer {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; } }
+
+.step1-Block {
+  background-color: #fef4e9;
+  max-width: 100%; }
+
+.step2-Block {
+  margin-top: 2px;
+  background-color: #fdf8e2;
+  max-width: 100%; }
+
+.step3-Block {
+  margin-top: 2px;
+  background-color: #eef9f3;
+  max-width: 100%; }
+
+.step4-Block {
+  margin-top: 2px;
+  background-color: #f0f8e2;
+  max-width: 100%; }
+
+.step5-Block {
+  margin-top: 2px;
+  background-color: #feefea;
+  max-width: 100%; }
+
+.step6-Block {
+  margin-top: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(39%, rgba(255, 229, 210, 0.63)), to(rgba(255, 244, 229, 0)));
+  background: -webkit-linear-gradient(top, rgba(255, 229, 210, 0.63) 39%, rgba(255, 244, 229, 0));
+  background: -o-linear-gradient(top, rgba(255, 229, 210, 0.63) 39%, rgba(255, 244, 229, 0));
+  background: linear-gradient(to bottom, rgba(255, 229, 210, 0.63) 39%, rgba(255, 244, 229, 0));
+  max-width: 100%; }
 
 .promote-content-2 .know-more-btn {
   border: solid 1px #cc9901;
@@ -2703,6 +2726,58 @@ footer.footer {
 .promote-content-3 .promote-ul-3 li:before {
   content: '';
   background-image: url(../../../app-assets/images/icons/tick-2.png); }
+
+.promote-content-4 .know-more-btn {
+  border: solid 1px #32ae65;
+  color: #32ae65; }
+  .promote-content-4 .know-more-btn:hover {
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #32ae65; }
+
+.promote-content-4 .promote-title4 {
+  color: #32ae65; }
+
+.promote-content-4 .promote-ul-4 li:before {
+  content: '';
+  background-image: url(../../../app-assets/images/icons/tick-3.png); }
+
+.promote-content-5 .know-more-btn {
+  border: solid 1px #f16776;
+  color: #f16776; }
+  .promote-content-5 .know-more-btn:hover {
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #f16776; }
+
+.promote-content-5 .promote-title5 {
+  color: #f16776; }
+
+.promote-content-5 .promote-ul-5 li:before {
+  content: '';
+  background-image: url(../../../app-assets/images/icons/tick-4.png); }
+
+.promote-content-6 .know-more-btn {
+  border: solid 1px #ff6000;
+  color: #ff6000; }
+  .promote-content-6 .know-more-btn:hover {
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #ff6000; }
+
+.promote-content-6 .promote-title6 {
+  color: #ff6000;
+  font-size: 30px; }
+
+.promote-content-6 .promote-sub-title {
+  font-size: 18px;
+  color: #ff6000;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center; }
 
 .promote-title {
   font-size: 32px;
@@ -2747,3 +2822,11 @@ footer.footer {
   margin-top: 30px;
   font-size: 18px;
   display: inline-block; }
+
+.bottom-banner {
+  max-width: 570px; }
+
+.bottom-banner-content {
+  padding: 0px 25px;
+  width: 500px;
+  text-align: center; }
