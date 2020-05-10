@@ -1320,7 +1320,7 @@ a.header-small-btn {
   line-height: 1.5em; }
 
 button.close {
-  width: 10px;
+  width: 15px;
   color: #f7b54e; }
   button.close:hover, button.close:active, button.close:focus {
     color: #f7b54e; }

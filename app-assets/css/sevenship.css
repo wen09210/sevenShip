@@ -2593,6 +2593,16 @@ footer.footer {
   background-color: #fef4e9;
   max-width: 100%; }
 
+.step2-Block {
+  margin-top: 2px;
+  background-color: #fdf8e2;
+  max-width: 100%; }
+
+.step3-Block {
+  margin-top: 2px;
+  background-color: #eef9f3;
+  max-width: 100%; }
+
 .step-block-title {
   padding-top: 50px;
   font-size: 34px;
@@ -2621,7 +2631,8 @@ footer.footer {
 
 #step-1-work-tab.nav-tabs {
   border-bottom: 0px; }
-  #step-1-work-tab.nav-tabs .nav-item.current:before, #step-1-work-tab.nav-tabs .nav-item.current:after {
+  #step-1-work-tab.nav-tabs .nav-item.current:before,
+  #step-1-work-tab.nav-tabs .nav-item.current:after {
     display: none; }
   #step-1-work-tab.nav-tabs .nav-link {
     font-size: 24px;
@@ -2631,11 +2642,108 @@ footer.footer {
     line-height: normal;
     letter-spacing: 0.04px;
     color: #434343;
-    background-color: #fff; }
+    background-color: #fff;
+    border-radius: 2px;
+    border: solid 1px #848f93; }
     #step-1-work-tab.nav-tabs .nav-link.active {
       background-color: #ff6000;
-      color: #fff; }
+      color: #fff;
+      border: 0px; }
 
 .work-tab-title {
   color: #434343;
   font-size: 21px; }
+
+.work-tab-ul {
+  color: #ff6000; }
+  .work-tab-ul .bx {
+    font-size: 35px; }
+  .work-tab-ul li {
+    padding: 20px 0px;
+    border-bottom: solid 1px #d3d3d3; }
+    .work-tab-ul li:last-child {
+      border-bottom: 0px; }
+
+.text-black {
+  color: #434343; }
+
+@media all and (max-width: 960px) {
+  .work-tab-main-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; } }
+
+.promote-content-2 .know-more-btn {
+  border: solid 1px #cc9901;
+  color: #cc9901; }
+  .promote-content-2 .know-more-btn:hover {
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #cc9901; }
+
+.promote-content-2 .promote-title2 {
+  color: #cc9901; }
+
+.promote-content-2 .promote-ul-2 li:before {
+  content: '';
+  background-image: url(../../../app-assets/images/icons/tick-1.png); }
+
+.promote-content-3 .know-more-btn {
+  border: solid 1px #1ab6b7;
+  color: #1ab6b7; }
+  .promote-content-3 .know-more-btn:hover {
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #1ab6b7; }
+
+.promote-content-3 .promote-title3 {
+  color: #1ab6b7; }
+
+.promote-content-3 .promote-ul-3 li:before {
+  content: '';
+  background-image: url(../../../app-assets/images/icons/tick-2.png); }
+
+.promote-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal; }
+
+.promote-sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6d6d6d;
+  margin-top: 10px; }
+
+.promote-ul li {
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.78;
+  letter-spacing: normal;
+  color: #888888;
+  padding-left: 40px;
+  position: relative; }
+  .promote-ul li:before {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    left: 0px;
+    top: 11px; }
+
+.know-more-btn {
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 15px 100px;
+  margin-top: 30px;
+  font-size: 18px;
+  display: inline-block; }

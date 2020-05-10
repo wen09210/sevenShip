@@ -1140,7 +1140,19 @@ footer.footer {
 }
 
 .step1-Block {
-  background-color: #fef4e9;
+  background-color: $step-1-color;
+  max-width: 100%;
+}
+
+.step2-Block {
+  margin-top: 2px;
+  background-color: $step-2-color;
+  max-width: 100%;
+}
+
+.step3-Block {
+  margin-top: 2px;
+  background-color: $step-3-color;
   max-width: 100%;
 }
 
@@ -1166,33 +1178,172 @@ footer.footer {
   color: #434343;
   text-align: center;
 }
-.step-1-work-tab{
-  padding:44px 0px;
-  margin:0 auto;
+
+.step-1-work-tab {
+  padding: 44px 0px;
+  margin: 0 auto;
   max-width: 980px;
 
 }
+
 #step-1-work-tab.nav-tabs {
-  border-bottom:0px;
-  .nav-item.current:before,.nav-item.current:after{
+  border-bottom: 0px;
+
+  .nav-item.current:before,
+  .nav-item.current:after {
     display: none;
   }
-  .nav-link{
+
+  .nav-link {
     font-size: 24px;
-    padding:10px 40px;
+    padding: 10px 40px;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.04px;
     color: #434343;
     background-color: #fff;
-    &.active{
+    border-radius: 2px;
+    border: solid 1px #848f93;
+
+    &.active {
       background-color: $main-orange;
-      color:#fff;
+      color: #fff;
+      border: 0px;
     }
   }
 }
-.work-tab-title{
+
+.work-tab-title {
   color: #434343;
   font-size: 21px;
+}
+
+.work-tab-ul {
+  color: $main-orange;
+
+  .bx {
+    font-size: 35px;
+  }
+
+  li {
+    padding: 20px 0px;
+
+    border-bottom: solid 1px #d3d3d3;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
+
+.text-black {
+  color: #434343;
+}
+
+.work-tab-main-content {
+  @include rwd-max-width(960px) {
+    flex-direction: column-reverse;
+  }
+}
+
+// 個別區塊
+.promote-content-2 {
+  .know-more-btn {
+    border: solid 1px $step-2-text-color;
+    color: $step-2-text-color;
+
+    &:hover {
+      border: solid 1px #fff;
+      color: #fff;
+      background-color: $step-2-text-color;
+    }
+  }
+
+  .promote-title2 {
+    color: $step-2-text-color;
+  }
+
+  .promote-ul-2 {
+    li:before {
+      content: '';
+      background-image: url(../../../app-assets/images/icons/tick-1.png);
+    }
+  }
+}
+
+.promote-content-3 {
+  .know-more-btn {
+    border: solid 1px $step-3-text-color;
+    color: $step-3-text-color;
+
+    &:hover {
+      border: solid 1px #fff;
+      color: #fff;
+      background-color: $step-3-text-color;
+    }
+  }
+
+  .promote-title3 {
+    color: $step-3-text-color;
+  }
+
+  .promote-ul-3 {
+    li:before {
+      content: '';
+      background-image: url(../../../app-assets/images/icons/tick-2.png);
+    }
+  }
+}
+
+.promote-title {
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.promote-sub-title {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #6d6d6d;
+  margin-top: 10px;
+}
+
+.promote-ul {
+  li {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.78;
+    letter-spacing: normal;
+    color: #888888;
+    padding-left: 40px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      left: 0px;
+      top: 11px;
+    }
+  }
+}
+
+.know-more-btn {
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 15px 100px;
+  margin-top: 30px;
+  font-size: 18px;
+  display: inline-block;
 }
