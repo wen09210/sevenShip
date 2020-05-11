@@ -1,0 +1,181 @@
+.f-footerContactUs-icon a {
+	color: #333;
+}
+
+.f-footerContactUs-icon a:hover {
+	color: $main-orange;
+}
+.footerGoTop img {
+	width: 40px;
+	cursor: pointer;
+}
+
+.footerWrap {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.footer .f-footerContactUs {
+	background-color: #f8f8f8;
+}
+
+.f-contactWrap {
+	display: flex;
+	justify-content: space-around;
+	padding: 25px;
+
+}
+
+.footer .f-footerContactUs img {
+	max-width: 65px;
+
+}
+
+
+.f-footerContactUs-icon {
+	text-align: center;
+}
+
+.f-footerContactUs-icon:hover {
+	color: $main-orange;
+	cursor: pointer;
+}
+
+.f-footerContactUs-icon:hover img {
+	box-shadow: 0px 0px 8px #e6e6e6;
+	border-radius: 30px;
+}
+
+.f-footerContactUs-icon p {
+	padding-top: 10px;
+}
+
+.f-warningWord {
+	text-align: center;
+	background-color: #fff;
+	padding: 20px;
+}
+
+.f-warningWord p {
+	font-size: 15px;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: #6d6d6d;
+	line-height: 2;
+
+}
+
+.f-warningWord p.f-bigWarning {
+
+	font-size: 18px;
+	padding: 10px 0px 20px 0px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: 0.1px;
+	text-align: center;
+	color: #6d6d6d;
+}
+
+.f-recommandLink {
+	background-color: $main-orange;
+}
+
+.f-recommandLink ul {
+	display: flex;
+	align-items: center;
+
+}
+
+
+
+.f-recommandFlex {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+}
+
+.pt-30 {
+	padding-top: 30px;
+}
+
+.f-recommandLink .allRightReserve {
+	color: #fff;
+	float: right;
+	font-size: 14px;
+}
+
+
+
+
+
+.f-recommandLink .iconSpan:before {
+	content: '';
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-size: contain;
+}
+
+
+
+
+.footer .back-to-top:hover {
+	background-image: url(../image/top-hover.png);
+}
+
+.footer .back-to-top.sticky {
+	right: 50px;
+}
+
+.footer .back-to-top:hover {
+	background-position: 0px;
+}
+
+.footer .back-to-top a {
+	display: block;
+	width: 50px;
+	height: 50px;
+}
+
+// footer
+.footer {
+	a {
+		font-size: 14px;
+	}
+
+	display: block;
+	min-width: 100%;
+
+
+	@include rwd-min-width(1280px) {
+		min-width: 1280px;
+
+	}
+
+	@include pad-up-width {
+		display: block;
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.footerWrap {
+	min-width: 100%;
+
+	@include rwd-min-width(1280px) {
+		min-width: 1240px;
+	}
+
+	margin: 0 auto;
+}
+
+.cs-l-content--fixTop {
+	padding-top: 128px;
+}
+
+footer.footer {
+	padding: 0px;
+}

@@ -1,8 +1,11 @@
 @import '_color.scss';
 @import '_slider.scss';
-@import '_investCompile.scss';
 @import '_screenWidth.scss';
+@import '_investCompile.scss';
 @import '_button.scss';
+@import '_slideNav.scss';
+@import '_rwdMenu.scss';
+@import '_footer.scss';
 @import '_seven_delivery.scss';
 
 html body {
@@ -40,24 +43,12 @@ li.on .svg-icon path {
   display: block;
 }
 
-.f-footerContactUs-icon a {
-  color: #333;
-}
 
-.f-footerContactUs-icon a:hover {
-  color: $main-orange;
-}
 
-.cs-c-riskProvisions__action span {
-  color: #6d6d6d;
-}
 
-[data-switch-content="riskProvisions"] {
-  display: none;
-}
 
 /* 桌機板 */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 960px) {
 
   header.header .info-menu,
   .l-menu {
@@ -296,7 +287,6 @@ li.on .svg-icon path {
 
   .l-menu__container {
     max-width: 1240px;
-    ;
   }
 
   .c-menuLv1>li:last-of-type {
@@ -359,165 +349,8 @@ li.on .svg-icon path {
   header.is-fixHeader.sticky .c-menuLv1>li:last-child .c-menuLv1__name {
     background: $main-orange;
   }
+}
 
-
-  .footerGoTop img {
-    width: 40px;
-    cursor: pointer;
-  }
-
-  .footerWrap {
-    max-width: 1240px;
-    margin: 0 auto;
-  }
-
-  .footer .f-footerContactUs {
-    background-color: #f8f8f8;
-  }
-
-  .f-contactWrap {
-    display: flex;
-    justify-content: space-around;
-    padding: 25px;
-
-  }
-
-  .footer .f-footerContactUs img {
-    max-width: 65px;
-
-  }
-
-
-  .f-footerContactUs-icon {
-    text-align: center;
-  }
-
-  .f-footerContactUs-icon:hover {
-    color: $main-orange;
-    cursor: pointer;
-  }
-
-  .f-footerContactUs-icon:hover img {
-    box-shadow: 0px 0px 8px #e6e6e6;
-    border-radius: 30px;
-  }
-
-  .f-footerContactUs-icon p {
-    padding-top: 10px;
-  }
-
-  .f-warningWord {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-  }
-
-  .f-warningWord p {
-    font-size: 15px;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: #6d6d6d;
-    line-height: 2;
-
-  }
-
-  .f-warningWord p.f-bigWarning {
-
-    font-size: 18px;
-    padding: 10px 0px 20px 0px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.1px;
-    text-align: center;
-    color: #6d6d6d;
-  }
-
-  .f-recommandLink {
-    background-color: $main-orange;
-  }
-
-  .f-recommandLink ul {
-    display: flex;
-    align-items: center;
-
-  }
-
-
-
-  .f-recommandFlex {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-
-  }
-
-  .pt-30 {
-    padding-top: 30px;
-  }
-
-  .f-recommandLink .allRightReserve {
-    color: #fff;
-    float: right;
-    font-size: 14px;
-  }
-
-
-
-
-
-  .f-recommandLink .iconSpan:before {
-    content: '';
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-size: contain;
-  }
-
-
-  .footer .back-to-top {
-    float: right;
-    text-align: right;
-    width: 50px;
-    height: 50px;
-    z-index: 9999;
-    cursor: pointer;
-    background-size: contain;
-    background-image: url(../image/top.png);
-  }
-
-  .footer .a-fa {
-    text-align: right;
-    width: 75px;
-    height: 70px;
-    position: fixed;
-    background-repeat: no-repeat;
-    right: 32px;
-    cursor: pointer;
-    z-index: 100;
-    background-size: contain;
-    background-image: url(../image/a-fa.png);
-  }
-
-
-  .footer .back-to-top:hover {
-    background-image: url(../image/top-hover.png);
-  }
-
-  .footer .back-to-top.sticky {
-    right: 50px;
-  }
-
-  .footer .back-to-top:hover {
-    background-position: 0px;
-  }
-
-  .footer .back-to-top a {
-    display: block;
-    width: 50px;
-    height: 50px;
-  }
 
   .rwd-mobile {
     display: none !important;
@@ -526,7 +359,7 @@ li.on .svg-icon path {
   .rwd-desktop {
     display: block !important;
   }
-}
+
 
 @media only screen and (min-width: 1080px) {
   .c-fastEntryIcon {
@@ -621,17 +454,8 @@ header.header {
 
   z-index: 999;
   width: 100%;
-  min-width: 1240px;
-
-  @include rwd-max-width(1920px) {
-    min-width: 1240px;
-  }
-
-  @include rwd-max-width(1280px) {
-    min-width: 1080px;
-  }
-
-  @include rwd-max-width(1080px) {
+  min-width: 100%;
+  @include rwd-min-width(1080px) {
     min-width: 1280px;
   }
 
@@ -659,51 +483,6 @@ header.header .info-menu,
   float: left;
 }
 
-
-// footer
-.footer {
-  a {
-    font-size: 14px;
-  }
-
-  display: block;
-  min-width: 1240px;
-
-  @include rwd-max-width(1920px) {
-    min-width: 1240px;
-  }
-
-  @include rwd-max-width(1280px) {
-    min-width: 1280px;
-
-  }
-
-  @include pad-up-width {
-    display: block;
-    position: absolute;
-    width: 100%;
-  }
-}
-
-.footerWrap {
-  min-width: 1240px;
-
-
-  @include rwd-max-width(1920px) {
-    min-width: 1240px;
-  }
-
-  @include rwd-max-width(1280px) {
-    min-width: 1240px;
-  }
-
-  margin: 0 auto;
-}
-
-.cs-l-content--fixTop {
-  padding-top: 128px;
-}
-
 @media only screen and (min-width: 960px) {
   .cs-l-content--fixTop {
     padding-top: 128px;
@@ -718,7 +497,7 @@ header.header .info-menu,
 
 
 .cs-l-mainKv {
-  min-width: 1240px;
+  min-width: 100%;
   overflow: hidden;
   height: 420px;
 }
@@ -801,7 +580,7 @@ button.slick-prev.slick-arrow:hover:before {
   top: 0px;
   z-index: 3;
   height: 100%;
-  width: 1240px;
+  width: 100%;
   padding: 0px 20px;
   margin-top: -530px;
 }
@@ -905,7 +684,9 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   margin-top: 50px;
+  @media all and (min-width: 1280px) {
   min-width: 1240px;
+  }
 }
 
 .cs-l-mainBlock-small {
@@ -921,21 +702,16 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 1240px;
+  
   display: inline-block;
-}
-
-@media all and (max-width: 1280px) {
-  .mainBlockWrap {
+  @include rwd-min-width(1280px){
+    min-width: 1240px;
     padding: 0px 10px;
   }
+
 }
 
-@media all and (max-width: 1080px) {
-  .mainBlockWrap {
-    padding: 0px 10px;
-  }
-}
+
 
 body:not(.isScrolled) .card:hover .cardText {
   -webkit-animation: slideInUp .3s ease-in-out;
@@ -1123,9 +899,7 @@ a.goOutlink {
 }
 
 // seven_ship
-footer.footer {
-  padding: 0px;
-}
+
 
 .nav.nav-pills .nav-item {
   margin: 0px;
@@ -1371,6 +1145,7 @@ footer.footer {
   .know-more-btn {
     border: solid 1px $main-orange;
     color: $main-orange;
+    margin-top:8px;
 
     &:hover {
       border: solid 1px #fff;
@@ -1456,3 +1231,4 @@ footer.footer {
   width:500px;
   text-align:center;
 }
+

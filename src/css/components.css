@@ -3273,7 +3273,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 
 .img-responsive {
   max-width: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .header-navbar.fixed-top {
   background-color: #fff; }

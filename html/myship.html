@@ -46,7 +46,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="home rwd ">
+<body class="home ">
     <div class="cs-l-container">
         <div class="marginTopSpace"></div>
         <header class="header">
@@ -82,6 +82,24 @@
                         </ul>
                     </div>
                 </nav>
+            </div>
+            <div class="l-mobileHeader l-mobileHeader--transparent">
+                <div class="l-mobileHeader__container">
+                    <div class="wrap clearfix">
+                        <div class="l-mobileHeader__burger" data-id="js-burger">
+                            <div class="c-burger">
+                                <span class="c-burger--top"></span>
+                                <span class="c-burger--middle"></span>
+                                <span class="c-burger--bottom"></span>
+                            </div>
+                        </div>
+                        <a href="#" class="l-mobileHeader__logo">
+                            <img src="../app-assets/images/logo/7-eleven.png"
+                                alt="" class="seven-logo"><img src="../app-assets/images/logo/sevenlogo.png" alt=""
+                                class="seven-logo-two"></a>
+                        <a href="#" class="m_icon l-mobileHeader__contact"></a>
+                    </div>
+                </div>
             </div>
             <nav class="l-menu">
                 <div class="l-menu__container">
@@ -165,6 +183,7 @@
                 </div>
             </nav>
         </header>
+
         <main class="cs-l-main">
             <div class=" global-alert">
                 <div class="global-alert-wrapper container">
@@ -179,6 +198,56 @@
                     </div>
                 </div>
             </div>
+            <!-- sliderBar-->
+            <nav class="side-nav " id="side-nav">
+                <ul class="alignment ">
+                    <li class="nav-item">
+                        <a href="#step1-block" class="nav-link">
+                            <div class="scaling-svg-container">
+                                <i class="bx bx-user-plus"></i>
+                                <div class="hover">
+                                    <span>加入我們</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#step2-block" class="nav-link">
+                            <div class="scaling-svg-container">
+                                <i class='bx bx-purchase-tag'></i>
+                                <div class="hover"><span>加入我們</span></div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#step3-block" class=" nav-link">
+                            <div class="scaling-svg-container">
+                                <i class='bx bx-news'></i>
+                                <div class="hover"><span>加入我們</span></div>
+
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#step4-block" class=" nav-link">
+                            <div class="scaling-svg-container">
+                                <i class="bx bx-store"></i>
+                                <div class="hover"><span>娛樂</span></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#step5-block" class=" nav-link">
+                            <div class="scaling-svg-container">
+                                <i class="bx bx-support"></i>
+                                <div class="hover"><span>畢業</span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
             <div class="cs-l-content ">
                 <section class="cs-l-mainKv ">
 
@@ -205,7 +274,6 @@
                                         寄送服務！</h2>
                                     <span>寄件取貨，到店最方便</span>
                                 </div>
-                                <a href="" class="cub-button">立即暸解</a>
                             </div>
                             <div class="cub-text-wrapper">
                                 <div>
@@ -363,7 +431,7 @@
                     </div>
                 </section>
                 <!-- tab區塊 -->
-                <section class="cs-l-mainBlock step1-Block">
+                <section class="cs-l-mainBlock step1-Block" id="step1-block">
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title"> 新手教學，開店超級簡單</div>
                         <div class="step-sub-title">賣貨便 · 四步驟輕鬆上架</div>
@@ -403,7 +471,7 @@
                                         <div class="col-md-4 ">
                                             <div class="work-tab-title">
                                                 Step1 加入會員
-                                            <div class="work-tab-sub-title">成為賣家第一步，馬上行動</div> 
+                                                <div class="work-tab-sub-title">成為賣家第一步，馬上行動</div>
                                             </div>
                                             <ul class="work-tab-ul">
                                                 <li class="d-flex">
@@ -521,7 +589,7 @@
                     </div>
                 </section>
                 <!-- 賣貨便比較 -->
-                <section class="cs-l-mainBlock step2-Block">
+                <section class="cs-l-mainBlock step2-Block" id="step2-block">
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title "><span class="text-black">賣貨便・優勢比較</span>
                             四大優勢，社群買賣結帳更安心！</div>
@@ -547,7 +615,7 @@
                     </div>
                 </section>
                 <!-- 買家購物體驗 -->
-                <section class="cs-l-mainBlock step3-Block">
+                <section class="cs-l-mainBlock step3-Block" id="step3-block">
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title "></div>
                         <div class="d-flex justify-content-center align-items-center">
@@ -571,7 +639,7 @@
                     </div>
                 </section>
                 <!-- 出貨串連 -->
-                <section class="cs-l-mainBlock step4-Block">
+                <section class="cs-l-mainBlock step4-Block" id="step4-block">
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title "></div>
                         <div class="d-flex justify-content-center align-items-center">
@@ -596,11 +664,11 @@
                     </div>
                 </section>
                 <!-- 出貨串連 -->
-                <section class="cs-l-mainBlock step5-Block">
+                <section class="cs-l-mainBlock step5-Block" id="step5-block">
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title "></div>
                         <div class="d-flex justify-content-center align-items-center">
-                            
+
                             <div class="">
                                 <div class="promote-content promote-content-5">
                                     <div class="promote-title promote-title5">出貨串聯App，一鍵列印高效率</div>
@@ -629,7 +697,7 @@
                                 <div class="promote-content promote-content-6">
                                     <div class="promote-title promote-title6">免費開啟你第一個賣場</div>
                                     <div class="promote-sub-title">你賣貨我買單大比拼</div>
-                                <a href="" class="know-more-btn">了解更多</a>
+                                    <a href="" class="know-more-btn">了解更多</a>
                                 </div>
                             </div>
                         </div>
@@ -642,6 +710,8 @@
             </div>
         </main>
         <footer class="footer">
+            <button class="btn  btn-icon scroll-top" type="button" style="display: inline-block;"><img
+                    src="../app-assets/images/icons/go-top.png" alt="" width="40px"></button>
             <section class="f-recommandLink">
                 <div class=" f-recommandCompany">
                     <div class="footerWrap f-recommandFlex pt-30">
@@ -713,7 +783,6 @@
     <!-- BEGIN: Vendor JS-->
     <script src="../app-assets/vendors/js/vendors.min.js"></script>
     <!-- BEGIN Vendor JS-->
-
     <!-- BEGIN: Page Vendor JS-->
     <script src="../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
     <script src="../app-assets/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
@@ -738,10 +807,33 @@
     <script src="../app-assets/js/scripts/datatables/datatable.js"></script>
     <script src="../app-assets/js/scripts/extensions/swiper.js"></script>
     <script src="../app-assets/vendors/slick/slick.js"></script>
-    <script src="assets/js/vendor/jqBootstrapValidation.js"></script>
-    <script src="assets/js/vendor/form-validation.js"></script>
     <script src="../app-assets/js/core/delivery.js"></script>
     <!-- END: Page JS-->
+    <script>
+        $(document).ready(function () {
+            $('body').scrollspy({
+                target: '#side-nav'
+            });
+        });
+         $('[data-id="js-burger"]').on('click', function () {
+         $('body').toggleClass('is-openMenu');
+         $('.header').toggleClass('on');
+         });
+
+         $('.o-menuMask').on('touchstart click', function (e) {
+         e.preventDefault();
+         $('body').removeClass('is-openMenu');
+         $('.header').removeClass('on');
+         });
+
+         $('.c-menuLv1__name').on('click', function () {
+         $(this).toggleClass('on');
+         });
+
+         $('.c-menuLv2__name').on('click', function () {
+         $(this).toggleClass('on');
+         });
+    </script>
 </body>
 <!-- END: Body-->
 

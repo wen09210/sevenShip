@@ -143,10 +143,12 @@ html {
 }
 
 .container {
-	width: 1240px;
-	min-width: 1240px;
+	width: 100%;
 	margin: 0 auto;
-	position: relative
+	position: relative;
+	@include rwd-min-width(1280px){
+		min-width: 1240px;
+	}
 }
 
 .container.full-screen {
@@ -426,13 +428,7 @@ header.header .info-menu .toggle .icon-dotted-border {
 }
 
 header.header .sub-menu {
-	background: #efefef;
-	background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAlCAIAAAAFobSEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NTc3MiwgMjAxNC8wMS8xMy0xOTo0NDowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0JCNjM3NzMzQUU4MTFFNkIwRDBBRUNFMUM3MTFDMkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0JCNjM3NzQzQUU4MTFFNkIwRDBBRUNFMUM3MTFDMkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQkI2Mzc3MTNBRTgxMUU2QjBEMEFFQ0UxQzcxMUMyQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQkI2Mzc3MjNBRTgxMUU2QjBEMEFFQ0UxQzcxMUMyQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpJ0kksAAABxSURBVHjapJFRCsAwCEN19P43bpwz+6hhrLAVGrD6glqPCFvOkZdPVJ8Ta35kosUb/liDVK3f8QNA5806D7h7ZqgXjyqm3v6k4pu/uWeKWjyR0uRlPt3PTx4P8xVJHaH9h/T//l9bf92PiT+i8acAAwC5C8mZ+K8HsAAAAABJRU5ErkJggg==");
-	font-weight: bold;
-	border-top: 4px solid #fff200;
-	border-bottom: 1px solid #c3c4c3;
-	position: relative;
-	height: 42px
+
 }
 
 header.header .sub-menu .change-unit-menu {
@@ -490,7 +486,7 @@ header.header .sub-menu .change-unit-menu {
 	border-bottom: 1px solid #4da3f5 !important;
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 
 	header.header .l-menu .c-menuLv1>li,
 	header.header .l-menu .c-menuLv2>li {
@@ -549,7 +545,7 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 }
 
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 	header.header {
 		position: relative
 	}
@@ -584,7 +580,7 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 	margin: 0 auto
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 	.l-menu {
 		position: relative;
 		top: 0;
@@ -670,7 +666,7 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 	display: none
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 	.c-menuLv1 {
 		width: 320px
 	}
@@ -829,7 +825,7 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 	max-height: 5000px
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 	.c-menuLv2 {
 		display: block;
 		/* float: left; */
@@ -917,7 +913,7 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 	background-position: 0 -20px
 }
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:960px) {
 	.c-menuLv3 {
 		margin: 0
 	}
