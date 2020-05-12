@@ -9,12 +9,6 @@
 	width: 40px;
 	cursor: pointer;
 }
-
-.footerWrap {
-	max-width: 1240px;
-	margin: 0 auto;
-}
-
 .footer .f-footerContactUs {
 	background-color: #f8f8f8;
 }
@@ -164,12 +158,16 @@
 
 .footerWrap {
 	min-width: 100%;
-
+	max-width: 1240px;
+	margin: 0 auto;
 	@include rwd-min-width(1280px) {
 		min-width: 1240px;
 	}
+	@include rwd-max-width(960px) {
+		display: block;
+	}
 
-	margin: 0 auto;
+	
 }
 
 .cs-l-content--fixTop {

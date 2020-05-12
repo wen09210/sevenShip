@@ -455,7 +455,7 @@ header.header {
   z-index: 999;
   width: 100%;
   min-width: 100%;
-  @include rwd-min-width(1080px) {
+  @include rwd-min-width(1280px) {
     min-width: 1280px;
   }
 
@@ -519,7 +519,7 @@ header.header .info-menu,
 }
 
 
-@media all and (max-width: 1440px) {
+@media all and (min-width: 1440px) {
   .cs-l-mainKv:before {
     min-width: 620px;
   }
@@ -684,9 +684,19 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   margin-top: 50px;
-  @media all and (min-width: 1280px) {
+  @include rwd-min-width(1280px) {
   min-width: 1240px;
   }
+  @include rwd-max-width(960px){
+    .d-flex{
+      flex-direction: column !important;
+    }
+    .d-flex-reverse-m {
+      flex-direction: column-reverse !important;
+
+    }
+  }
+
 }
 
 .cs-l-mainBlock-small {
@@ -695,7 +705,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock--bglightGrn {
   background-color: #edf3e9;
-  min-width: 1280px;
+  // min-width: 1280px;
 }
 
 .mainBlockWrap {
@@ -1044,7 +1054,17 @@ a.goOutlink {
   background: $step-6-color;
   max-width: 100%;
 }
-
+.promote-content{
+  
+  @include rwd-max-width(960px){
+    padding: 15px;
+    text-align: center;
+    
+  }
+}
+.promote-ul {
+  text-align: left;
+}
 .promote-content-2 {
   .know-more-btn {
     border: solid 1px $step-2-text-color;
@@ -1223,12 +1243,14 @@ a.goOutlink {
   display: inline-block;
 }
 
-.bottom-banner {
+.bottom-banner{
+  line-height: 0px;
+  img{
   max-width: 570px;
 }
+} 
 .bottom-banner-content{
   padding:0px 25px;
-  width:500px;
   text-align:center;
 }
 

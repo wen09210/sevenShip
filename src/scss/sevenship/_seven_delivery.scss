@@ -177,6 +177,10 @@ button.close {
 	@include rwd-max-width(1280px) {
 		max-width: 49%;
 	}
+	@include rwd-max-width(960px) {
+		max-width: 100%;
+	}
+
 }
 
 .block_section-lg {
