@@ -156,6 +156,9 @@ button.close {
 .best_seller_text {
 	padding: 0px 25px;
 	position: relative;
+	@include rwd-max-width(768px){
+		display: block;
+	}
 }
 
 .best_seller_note {

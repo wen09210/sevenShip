@@ -688,7 +688,8 @@ button.slick-prev.slick-arrow:hover:before {
   min-width: 1240px;
   }
   @include rwd-max-width(960px){
-    .d-flex{
+    padding:0px 30px;
+    .m-flex-column{
       flex-direction: column !important;
     }
     .d-flex-reverse-m {
@@ -950,6 +951,9 @@ a.goOutlink {
   padding: 44px 0px;
   margin: 0 auto;
   max-width: 980px;
+  .nav{
+    flex-wrap:nowrap;
+  }
 
 }
 
@@ -978,6 +982,10 @@ a.goOutlink {
       color: #fff;
       border: 0px;
     }
+    @include rwd-max-width(960px){
+      font-size: 16px;
+      padding: 10px 0px;
+    }
   }
 }
 
@@ -989,6 +997,9 @@ a.goOutlink {
 .work-tab-sub-title {
   font-size: 21px;
   line-height: normal;
+  @include rwd-max-width(960px){
+    
+  }
 }
 
 .work-tab-ul {
@@ -1014,7 +1025,7 @@ a.goOutlink {
 }
 
 .work-tab-main-content {
-  @include rwd-max-width(960px) {
+  @include rwd-max-width(991px) {
     flex-direction: column-reverse;
   }
 }
@@ -1084,7 +1095,7 @@ a.goOutlink {
   .promote-ul-2 {
     li:before {
       content: '';
-      background-image: url(../../../app-assets/images/icons/tick-1.png);
+      background-image: url(../images/icons/tick-1.png);
     }
   }
 }
@@ -1108,7 +1119,7 @@ a.goOutlink {
   .promote-ul-3 {
     li:before {
       content: '';
-      background-image: url(../../../app-assets/images/icons/tick-2.png);
+      background-image: url(../images/icons/tick-2.png);
     }
   }
 }
@@ -1132,7 +1143,7 @@ a.goOutlink {
   .promote-ul-4 {
     li:before {
       content: '';
-      background-image: url(../../../app-assets/images/icons/tick-3.png);
+      background-image: url(../images/icons/tick-3.png);
     }
   }
 }
@@ -1156,7 +1167,7 @@ a.goOutlink {
   .promote-ul-5 {
     li:before {
       content: '';
-      background-image: url(../../../app-assets/images/icons/tick-4.png);
+      background-image: url(../images/icons/tick-4.png);
     }
   }
 }
@@ -1198,6 +1209,9 @@ a.goOutlink {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  @include rwd-max-width(640px){
+    font-size: 21px;
+  }
 }
 
 .promote-sub-title {
@@ -1209,6 +1223,9 @@ a.goOutlink {
   letter-spacing: normal;
   color: #6d6d6d;
   margin-top: 10px;
+  @include rwd-max-width(640px) {
+    font-size: 16px;
+  }
 }
 
 .promote-ul {
@@ -1247,6 +1264,9 @@ a.goOutlink {
   line-height: 0px;
   img{
   max-width: 570px;
+  @include rwd-max-width(640px){
+    max-width: 100%;
+  }
 }
 } 
 .bottom-banner-content{

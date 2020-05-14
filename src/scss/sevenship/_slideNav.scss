@@ -171,4 +171,7 @@
 
 .scroll-top{
   right: 20px;
+  bottom:6%;
+    @include rwd-max-width(960px) {
+  bottom:70px;}
 }

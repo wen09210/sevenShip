@@ -1356,7 +1356,10 @@ a.header-small-btn {
 
 .scroll-top {
   right: 20px;
-  bottom: 70px; }
+  bottom: 6%; }
+  @media all and (max-width: 960px) {
+    .scroll-top {
+      bottom: 70px; } }
 
 .o-iconLogo,
 .o-iconManuQL,
@@ -3589,7 +3592,7 @@ a.goOutlink {
 
 .promote-content-2 .promote-ul-2 li:before {
   content: '';
-  background-image: url(../../../app-assets/images/icons/tick-1.png); }
+  background-image: url(../images/icons/tick-1.png); }
 
 .promote-content-3 .know-more-btn {
   border: solid 1px #1ab6b7;
@@ -3604,7 +3607,7 @@ a.goOutlink {
 
 .promote-content-3 .promote-ul-3 li:before {
   content: '';
-  background-image: url(../../../app-assets/images/icons/tick-2.png); }
+  background-image: url(../images/icons/tick-2.png); }
 
 .promote-content-4 .know-more-btn {
   border: solid 1px #32ae65;
@@ -3619,7 +3622,7 @@ a.goOutlink {
 
 .promote-content-4 .promote-ul-4 li:before {
   content: '';
-  background-image: url(../../../app-assets/images/icons/tick-3.png); }
+  background-image: url(../images/icons/tick-3.png); }
 
 .promote-content-5 .know-more-btn {
   border: solid 1px #f16776;
@@ -3634,7 +3637,7 @@ a.goOutlink {
 
 .promote-content-5 .promote-ul-5 li:before {
   content: '';
-  background-image: url(../../../app-assets/images/icons/tick-4.png); }
+  background-image: url(../images/icons/tick-4.png); }
 
 .promote-content-6 .know-more-btn {
   border: solid 1px #ff6000;
