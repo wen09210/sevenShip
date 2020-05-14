@@ -1355,7 +1355,8 @@ a.header-small-btn {
   background-repeat: no-repeat; }
 
 .scroll-top {
-  right: 20px; }
+  right: 20px;
+  bottom: 70px; }
 
 .o-iconLogo,
 .o-iconManuQL,
@@ -2359,6 +2360,9 @@ button.close {
 .best_seller_text {
   padding: 0px 25px;
   position: relative; }
+  @media all and (max-width: 768px) {
+    .best_seller_text {
+      display: block; } }
 
 .best_seller_note {
   font-size: 14px;
@@ -3262,16 +3266,18 @@ button.slick-prev.slick-arrow:hover:before {
     .cs-l-mainBlock {
       min-width: 1240px; } }
   @media all and (max-width: 960px) {
-    .cs-l-mainBlock .d-flex {
-      -webkit-box-orient: vertical !important;
-      -webkit-box-direction: normal !important;
-      -ms-flex-direction: column !important;
-      flex-direction: column !important; }
-    .cs-l-mainBlock .d-flex-reverse-m {
-      -webkit-box-orient: vertical !important;
-      -webkit-box-direction: reverse !important;
-      -ms-flex-direction: column-reverse !important;
-      flex-direction: column-reverse !important; } }
+    .cs-l-mainBlock {
+      padding: 0px 30px; }
+      .cs-l-mainBlock .m-flex-column {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important; }
+      .cs-l-mainBlock .d-flex-reverse-m {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+        flex-direction: column-reverse !important; } }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }
@@ -3472,6 +3478,9 @@ a.goOutlink {
   padding: 44px 0px;
   margin: 0 auto;
   max-width: 980px; }
+  .step-1-work-tab .nav {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap; }
 
 #step-1-work-tab.nav-tabs {
   border-bottom: 0px; }
@@ -3493,6 +3502,10 @@ a.goOutlink {
       background-color: #ff6000;
       color: #fff;
       border: 0px; }
+    @media all and (max-width: 960px) {
+      #step-1-work-tab.nav-tabs .nav-link {
+        font-size: 16px;
+        padding: 10px 0px; } }
 
 .work-tab-title {
   color: #434343;
@@ -3516,7 +3529,7 @@ a.goOutlink {
 .text-black {
   color: #434343; }
 
-@media all and (max-width: 960px) {
+@media all and (max-width: 991px) {
   .work-tab-main-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -3653,6 +3666,9 @@ a.goOutlink {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal; }
+  @media all and (max-width: 640px) {
+    .promote-title {
+      font-size: 21px; } }
 
 .promote-sub-title {
   font-size: 24px;
@@ -3663,6 +3679,9 @@ a.goOutlink {
   letter-spacing: normal;
   color: #6d6d6d;
   margin-top: 10px; }
+  @media all and (max-width: 640px) {
+    .promote-sub-title {
+      font-size: 16px; } }
 
 .promote-ul li {
   font-size: 18px;
@@ -3694,6 +3713,9 @@ a.goOutlink {
   line-height: 0px; }
   .bottom-banner img {
     max-width: 570px; }
+    @media all and (max-width: 640px) {
+      .bottom-banner img {
+        max-width: 100%; } }
 
 .bottom-banner-content {
   padding: 0px 25px;
