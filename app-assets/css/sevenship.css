@@ -3156,10 +3156,11 @@ header.header .info-menu,
   height: 420px;
   background-size: cover;
   background-position: right;
-  background-repeat: no-repeat; }
-
-.cs-l-mainKv:before {
+  background-repeat: no-repeat;
   min-width: 45%; }
+  @media all and (max-width: 960px) {
+    .cs-l-mainKv:before {
+      display: none; } }
 
 .cs-c-banner {
   height: 420px;
@@ -3742,13 +3743,33 @@ a.goOutlink {
   display: inline-block; }
 
 .bottom-banner {
-  line-height: 0px; }
+  line-height: 0px;
+  position: relative;
+  z-index: 1; }
   .bottom-banner img {
     max-width: 570px; }
-    @media all and (max-width: 640px) {
+    @media all and (max-width: 960px) {
       .bottom-banner img {
         max-width: 100%; } }
+  @media all and (max-width: 960px) {
+    .bottom-banner {
+      position: absolute;
+      bottom: 0px; } }
 
 .bottom-banner-content {
   padding: 0px 25px;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+
+.hidden-phone {
+  display: block; }
+  @media all and (max-width: 960px) {
+    .hidden-phone {
+      display: none; } }
+
+.hidden-pc {
+  display: none; }
+  @media all and (max-width: 960px) {
+    .hidden-pc {
+      display: block; } }

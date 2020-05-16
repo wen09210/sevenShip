@@ -511,11 +511,10 @@ header.header .info-menu,
   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-}
-
-
-.cs-l-mainKv:before {
   min-width: 45%;
+  @include rwd-max-width(960px){
+    display: none;
+  }
 }
 
 
@@ -1275,15 +1274,36 @@ a.goOutlink {
 
 .bottom-banner{
   line-height: 0px;
+  position: relative;
+  z-index: 1;
   img{
   max-width: 570px;
-  @include rwd-max-width(640px){
+  @include rwd-max-width(960px){
     max-width: 100%;
   }
-}
+  }
+  @include rwd-max-width(960px) {
+    position: absolute;
+    bottom:0px;
+  }
+
 } 
 .bottom-banner-content{
   padding:0px 25px;
   text-align:center;
+  position: relative;
+  z-index: 2;
 }
 
+.hidden-phone{
+  display: block;
+  @include rwd-max-width(960px){
+    display: none;
+  }
+}
+.hidden-pc{
+   display: none;
+   @include rwd-max-width(960px) {
+     display: block;
+   }
+}
