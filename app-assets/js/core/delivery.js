@@ -30,6 +30,16 @@
                 slidesToScroll: 1,
                 dots: false,
                 arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            dots: true,
+                            arrows: false,
+                            dots: false,
+                        }
+                    },
+                ]    
             });
 
         });

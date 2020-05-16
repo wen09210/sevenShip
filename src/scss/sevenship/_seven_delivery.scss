@@ -189,10 +189,25 @@ button.close {
 .block_section-lg {
 	width: 100%;
 }
-
+.best_seller_outer{
+	@include rwd-max-width(960px) {
+	max-width: 640px;
+	margin:0px auto;
+	overflow: hidden;
+	}
+}
+.best_seller_swiper {
+	@include rwd-max-width(960px) {
+		margin:5px 0px;
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+	}
+}
 .best_seller {
 	.img-responsive {
 		max-width: 410px;
+		@include rwd-max-width(960px) {
+			max-width: 100%;
+		}
 	}
 
 	.slick-list {
@@ -200,10 +215,16 @@ button.close {
 		margin: 0 auto;
 		max-height: 240px;
 		border: 1px solid #e2e2e2;
+			@include rwd-max-width(960px) {
+				overflow: initial;
+				border:0px;
+			}
 	}
-
 	.slick-slide {
 		margin: 0px;
+		@include rwd-max-width(960px) {
+			margin: 30px;
+		}
 	}
 }
 

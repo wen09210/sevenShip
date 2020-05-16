@@ -19,10 +19,13 @@
 .side-nav {
   position: fixed;
   right: 20px;
-  width: 50px;
-  height: 100%;
   z-index: 90;
   bottom: 0;
+  display: inline-block;
+  @include rwd-min-width(960px){
+    top: calc(50% - 235px);
+  }
+  
   @include rwd-max-width(960px){
     right:10px;
   }
@@ -35,7 +38,7 @@
   }
   .alignment {
     position: absolute;
-    top:200px;
+    top:0px;
     right: 0;
     border-radius: 28px;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);

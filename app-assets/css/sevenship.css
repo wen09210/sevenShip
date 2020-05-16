@@ -1216,10 +1216,12 @@ a.header-small-btn {
 .side-nav {
   position: fixed;
   right: 20px;
-  width: 50px;
-  height: 100%;
   z-index: 90;
-  bottom: 0; }
+  bottom: 0;
+  display: inline-block; }
+  @media all and (min-width: 960px) {
+    .side-nav {
+      top: calc(50% - 235px); } }
   @media all and (max-width: 960px) {
     .side-nav {
       right: 10px; } }
@@ -1232,7 +1234,7 @@ a.header-small-btn {
       padding: 10px 0; } }
   .side-nav .alignment {
     position: absolute;
-    top: 200px;
+    top: 0px;
     right: 0;
     border-radius: 28px;
     -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
@@ -1771,8 +1773,7 @@ header.header .sub-menu .change-unit-menu li div {
   .c-menuLv1 > li:last-of-type {
     border-right: 1px solid #dfdfdf; }
   .c-menuLv1 > li:hover .c-menuLv1__name {
-    background-color: #fff;
-    height: 40px; }
+    background-color: #fff; }
   .c-menuLv1__name {
     background-color: #f8f8f8;
     border-bottom: 0;
@@ -2389,17 +2390,39 @@ button.close {
 .block_section-lg {
   width: 100%; }
 
+@media all and (max-width: 960px) {
+  .best_seller_outer {
+    max-width: 640px;
+    margin: 0px auto;
+    overflow: hidden; } }
+
+@media all and (max-width: 960px) {
+  .best_seller_swiper {
+    margin: 5px 0px;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2); } }
+
 .best_seller .img-responsive {
   max-width: 410px; }
+  @media all and (max-width: 960px) {
+    .best_seller .img-responsive {
+      max-width: 100%; } }
 
 .best_seller .slick-list {
   max-width: 870px;
   margin: 0 auto;
   max-height: 240px;
   border: 1px solid #e2e2e2; }
+  @media all and (max-width: 960px) {
+    .best_seller .slick-list {
+      overflow: initial;
+      border: 0px; } }
 
 .best_seller .slick-slide {
   margin: 0px; }
+  @media all and (max-width: 960px) {
+    .best_seller .slick-slide {
+      margin: 30px; } }
 
 .activity_swiper {
   -webkit-box-pack: center;
@@ -3138,10 +3161,6 @@ header.header .info-menu,
 .cs-l-mainKv:before {
   min-width: 45%; }
 
-@media all and (min-width: 1440px) {
-  .cs-l-mainKv:before {
-    min-width: 620px; } }
-
 .cs-c-banner {
   height: 420px;
   background-size: cover; }
@@ -3281,6 +3300,10 @@ button.slick-prev.slick-arrow:hover:before {
         -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
         flex-direction: column-reverse !important; } }
+
+@media all and (max-width: 960px) {
+  .cs-l-mainBlock.cs-slick-main-block {
+    padding: 0; } }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }
@@ -3465,6 +3488,12 @@ a.goOutlink {
   line-height: 0.91;
   letter-spacing: normal;
   text-align: center; }
+  @media all and (max-width: 960px) {
+    .step-block-title span {
+      font-size: 21px; }
+    .step-block-title .text-black {
+      font-size: 24px;
+      display: block; } }
 
 .step-sub-title {
   font-size: 24px;
