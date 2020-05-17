@@ -6,7 +6,8 @@
 .cs-l-main {
 	position: relative;
 	min-height: calc(100vh - 330px);
-	@include rwd-max-width(960px){
+
+	@include rwd-max-width(960px) {
 		margin-top: 50px;
 	}
 }
@@ -80,10 +81,11 @@
 
 .cs-l-container {
 	width: 100%;
-	@include rwd-min-width(1280px){
+
+	@include rwd-min-width(1280px) {
 		min-width: 1280px;
 	}
-	
+
 }
 
 .act_title,
@@ -159,7 +161,8 @@ button.close {
 .best_seller_text {
 	padding: 0px 25px;
 	position: relative;
-	@include rwd-max-width(768px){
+
+	@include rwd-max-width(768px) {
 		display: block;
 	}
 }
@@ -183,6 +186,7 @@ button.close {
 	@include rwd-max-width(1280px) {
 		max-width: 49%;
 	}
+
 	@include rwd-max-width(960px) {
 		max-width: 100%;
 	}
@@ -192,22 +196,26 @@ button.close {
 .block_section-lg {
 	width: 100%;
 }
-.best_seller_outer{
+
+.best_seller_outer {
 	@include rwd-max-width(960px) {
-	max-width: 640px;
-	margin:0px auto;
-	overflow: hidden;
+		max-width: 640px;
+		margin: 0px auto;
+		overflow: hidden;
 	}
 }
+
 .best_seller_swiper {
 	@include rwd-max-width(960px) {
-		margin:5px 0px;
-	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+		margin: 5px 0px;
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 	}
 }
+
 .best_seller {
 	.img-responsive {
 		max-width: 410px;
+
 		@include rwd-max-width(960px) {
 			max-width: 100%;
 		}
@@ -218,13 +226,16 @@ button.close {
 		margin: 0 auto;
 		max-height: 240px;
 		border: 1px solid #e2e2e2;
-			@include rwd-max-width(960px) {
-				overflow: initial;
-				border:0px;
-			}
+
+		@include rwd-max-width(960px) {
+			overflow: initial;
+			border: 0px;
+		}
 	}
+
 	.slick-slide {
 		margin: 0px;
+
 		@include rwd-max-width(960px) {
 			margin: 30px;
 		}
@@ -358,58 +369,19 @@ a.link_more {
 	color: #9b9b9b;
 }
 
-// footer
-.cus_time {
-	color: white;
-	font-size: 12px;
-	font-weight: normal;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.58;
-	letter-spacing: normal;
-	padding: 8px 0 16px;
-}
-
-.corp_logo {}
-
-.f-recommandLinkLogo {
-	width: 158px;
-}
-
-.f-logo-white {
-	width: 106px;
-	margin-left: 10px;
-}
-
-.footer_function_link {
-	display: flex;
-
-	@include rwd-min-width(1100px) {
-		margin-left: -85px;
-
-	}
-
-	ul {
-		flex-direction: column;
-
-		li {
-			padding: 0px 100px 5px 0px;
-		}
-	}
-}
-
-.footer-img-icon {
-	width: 30px;
-	margin: 0px 7px;
-}
-
-.footerWrap.footer_all_rights_reserve {
-	min-height: 55px;
-	align-items: center;
-}
-
 .FlexColumnTop {
 	flex-direction: column;
+}
+
+.new-content-text {
+	@include rwd-max-width(960px){
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	}
+	
 }
 
 // 側邊
@@ -694,9 +666,10 @@ button:focus {
 .sell_logo {
 	width: 27px;
 	height: 20px;
-	margin-right:5px;
+	margin-right: 5px;
 	vertical-align: text-bottom;
-	@include rwd-max-width(960px){
+
+	@include rwd-max-width(960px) {
 		display: none;
 	}
 }
