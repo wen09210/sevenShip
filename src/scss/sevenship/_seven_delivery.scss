@@ -6,6 +6,9 @@
 .cs-l-main {
 	position: relative;
 	min-height: calc(100vh - 330px);
+	@include rwd-max-width(960px){
+		margin-top: 50px;
+	}
 }
 
 .fade:not(.show) {
@@ -691,7 +694,11 @@ button:focus {
 .sell_logo {
 	width: 27px;
 	height: 20px;
+	margin-right:5px;
 	vertical-align: text-bottom;
+	@include rwd-max-width(960px){
+		display: none;
+	}
 }
 
 // 專門for ie 

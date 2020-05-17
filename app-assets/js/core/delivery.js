@@ -61,3 +61,26 @@
         $('button.closeBtn').click(function(){
             $('.global-alert').remove()
         })
+$(document).ready(function () {
+    $('body').scrollspy({
+        target: '#side-nav'
+    });
+});
+$('[data-id="js-burger"]').on('click', function () {
+    $('body').toggleClass('is-openMenu');
+    $('.header').toggleClass('on');
+});
+
+$('.o-menuMask').on('touchstart click', function (e) {
+    e.preventDefault();
+    $('body').removeClass('is-openMenu');
+    $('.header').removeClass('on');
+});
+
+$('.c-menuLv1__name').on('click', function () {
+    $(this).toggleClass('on');
+});
+
+$('.c-menuLv2__name').on('click', function () {
+    $(this).toggleClass('on');
+});

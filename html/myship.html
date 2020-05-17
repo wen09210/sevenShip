@@ -49,6 +49,7 @@
 <body class="home ">
     <div class="cs-l-container">
         <div class="marginTopSpace"></div>
+        <div class="o-menuMask"></div>
         <header class="header">
             <div class="l-cubHeader">
                 <nav class="info-menu">
@@ -112,8 +113,8 @@
                                     <ul class="c-menuLv2">
 
                                         <li>
-                                            <div class="c-menuLv2__name">一般交貨便</div>
-                                            <div class="c-menuLv2__child">
+                                            <div class="c-menuLv2__name">教學一</div>
+                                            <!-- <div class="c-menuLv2__child">
                                                 <ul class="c-menuLv3">
                                                     <li><a href="#"
                                                             class="c-menuLv3__name cs-o-link cs-o-link--menu">我要寄件</a>
@@ -122,11 +123,11 @@
                                                             class="c-menuLv3__name cs-o-link cs-o-link--menu">貨態查詢</a>
                                                     </li>
                                                 </ul>
-                                            </div>
+                                            </div> -->
                                         </li>
                                         <li>
-                                            <div class="c-menuLv2__name">國際交貨便</div>
-                                            <div class="c-menuLv2__child">
+                                            <div class="c-menuLv2__name">教學二</div>
+                                            <!-- <div class="c-menuLv2__child">
                                                 <ul class="c-menuLv3">
                                                     <li><a href="#"
                                                             class="c-menuLv3__name cs-o-link cs-o-link--menu">我要寄件</a>
@@ -136,18 +137,7 @@
                                                     </li>
 
                                                 </ul>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="c-menuLv2__name">取貨門市(關)轉店修改</div>
-                                            <div class="c-menuLv2__child">
-                                                <ul class="c-menuLv3">
-                                                    <li><a href="#" class="c-menuLv3__name cs-o-link
-                                                            cs-o-link--menu">取貨門市(關)轉店修改</a>
-                                                    </li>
-
-                                                </ul>
-                                            </div>
+                                            </div> -->
                                         </li>
 
 
@@ -178,7 +168,28 @@
                         <li class="go_sell"><a href="#" class="c-menuLv1__name"><img
                                     src="../app-assets/images/icons/sell_logo.png" alt="" class="sell_logo">去賣貨便</a>
                         </li>
+                        
+                        
                     </ul>
+                    <div id="mobile_menu_login" >
+                        <div class="mobile-login-btn ">
+                            <div>
+                                <a href="" class="header-small-btn ">
+                                    <i class="bx bx-user iconLogin"></i>登入
+                                </a>
+                            </div>
+                            <div>
+                                <a href="" class="header-small-btn active">
+                                    註冊
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <p>客服專線：(02)2721-4234</p>
+                            <p>週一至週五：09:00~18:00(例假日休息)</p>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </nav>
@@ -589,13 +600,18 @@
                     </div>
                 </section>
                 <!-- 賣貨便比較 -->
-                <section class="cs-l-mainBlock step2-Block" id="step2-block">
+                <section class="cs-l-mainBlock step2-Block" id="step2-block"
+                    >
                     <div class="cs-l-wrap ">
                         <div class="block_section_title step-block-title ">
                             <span class="text-black">賣貨便・優勢比較</span>
                             <span>四大優勢，社群買賣結帳更安心！</span></div>
                         <div class="d-flex m-flex-column justify-content-center align-items-center">
-                            <div class=""><img src="../app-assets/images/promote/promoteStep1.svg" alt=""
+                            <div class=""
+                                data-anijs="if: scroll, on: window, do: fadeInLeft animated,before: $scrollReveal,after:
+                                removeAnim"><img
+                                    src="
+                                ../app-assets/images/promote/promoteStep1.svg" alt=""
                                     class="img-responsive"></div>
                             <div class="">
                                 <div class="promote-content promote-content-2">
@@ -814,32 +830,10 @@
     <script src="../app-assets/js/scripts/extensions/swiper.js"></script>
     <script src="../app-assets/vendors/slick/slick.js"></script>
     <script src="../app-assets/js/core/delivery.js"></script>
+    <script src="../app-assets/js/core/anijs-min.js"></script>
+    <script src="../app-assets/js/core/anijs-helper-scrollreveal.js"></script>
     <!-- END: Page JS-->
-    <script>
-        $(document).ready(function () {
-            $('body').scrollspy({
-                target: '#side-nav'
-            });
-        });
-         $('[data-id="js-burger"]').on('click', function () {
-         $('body').toggleClass('is-openMenu');
-         $('.header').toggleClass('on');
-         });
 
-         $('.o-menuMask').on('touchstart click', function (e) {
-         e.preventDefault();
-         $('body').removeClass('is-openMenu');
-         $('.header').removeClass('on');
-         });
-
-         $('.c-menuLv1__name').on('click', function () {
-         $(this).toggleClass('on');
-         });
-
-         $('.c-menuLv2__name').on('click', function () {
-         $(this).toggleClass('on');
-         });
-    </script>
 </body>
 <!-- END: Body-->
 

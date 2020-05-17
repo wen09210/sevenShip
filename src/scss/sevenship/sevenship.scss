@@ -7,6 +7,7 @@
 @import '_rwdMenu.scss';
 @import '_footer.scss';
 @import '_seven_delivery.scss';
+@import '_animate.scss';
 
 html body {
   background-color: #fff;
@@ -464,20 +465,22 @@ header.header {
 
 header.header .info-menu,
 .l-menu {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #fff;
   box-shadow: 0px 3px 8px rgba(2, 2, 2, 0.15);
-
+  color:#6d6d6d;
 }
 
 .c-menuLv1__name {
   background-color: rgba(255, 255, 255, 0);
   height: 47px;
   line-height: 25px;
+  @include rwd-max-width(960px){
+    height: 50px;
+      background-color: #fff6f1;
+      color:#6d6d6d;
+  }
 }
 
-.l-cubHeader {
-  display: block;
-}
 
 .l-menu .c-menuLv2>li {
   float: left;

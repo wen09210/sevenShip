@@ -241,9 +241,9 @@ header.header .sub-menu .change-unit-menu li div {
 .l-mobileHeader__logo {
       display: flex;
       justify-content: center;
-      height: 11px;
+      height: 50px;
       align-items: center;
-      margin-top: 14px;
+      // margin-top: 14px;
       -webkit-background-size: 160px 22px;
       /* background-size: 160px 22px; */
 }
@@ -389,7 +389,7 @@ header.header .sub-menu .change-unit-menu li div {
   top: 0;
   left: -85%;
   width: 85%;
-  height: 100%;
+  height: auto;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   -webkit-box-sizing: border-box;
@@ -447,7 +447,10 @@ header.header .sub-menu .change-unit-menu li div {
   display: block;
   padding: 20px 50px 20px 30px;
   background-color: #eaf4e5;
-  position: relative
+  position: relative;
+  @include rwd-max-width(960px){
+    padding:15px 30px;
+  }
 }
 
 .c-menuLv1__name.direct:after {
@@ -463,7 +466,7 @@ header.header .sub-menu .change-unit-menu li div {
   top: 50%;
   right: 10px;
   margin-top: -10px;
-  background-image: url(../image/deco-menu.png);
+  background-image: url(../images/icons/deco-menu.png);
   -webkit-background-size: 20px 40px;
   background-size: 20px 40px;
   background-position: 0 0
@@ -580,7 +583,10 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
   display: block;
   padding: 20px 50px 20px 0;
   background-color: #f9fbf7;
-  position: relative
+  position: relative;
+  @include rwd-max-width(960px){
+    padding: 13px 0px;
+  }
 }
 
 .c-menuLv2__name.direct:after {
@@ -898,14 +904,14 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 }
 
 .o-menuMask {
-  background-color: rgba(0, 0, 0, .6);
+  background-color: rgba(51, 51, 51, .6);
   display: none;
   position: absolute;
   top: 50px;
   left: -100%;
   width: 300%;
   height: 100%;
-  z-index: 50
+  z-index: 65;
 }
 
 @media only screen and (min-width:960px) {
@@ -913,5 +919,28 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
   .c-menuSocial,
   .c-quickLink {
     display: none
+  }
+#mobile_menu_login {
+  display: none;
+}
+}
+
+.l-cubHeader{
+  @include rwd-max-width(960px){
+    display: none;
+  }
+}
+
+#mobile_menu_login {
+  padding:15px 20px;
+    
+}
+.mobile-login-btn{
+  @include rwd-max-width(960px) {
+    display: flex;
+    .header-small-btn {
+      margin-right:16px;
+      margin-bottom: 10px;
+    }
   }
 }

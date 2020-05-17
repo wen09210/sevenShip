@@ -19,7 +19,7 @@
 .side-nav {
   position: fixed;
   right: 20px;
-  z-index: 90;
+  z-index: 49;
   bottom: 0;
   display: inline-block;
   @include rwd-min-width(960px){
@@ -75,7 +75,7 @@
         font-size:27px;
         padding: 17px;
         &:before{
-          color: #b2b2b2;
+          color: #909191;
         }
         @include rwd-max-width(960px) {
           padding: 8px;
@@ -116,6 +116,8 @@
 }
 
 .scaling-svg-container{
+      display:none;
+@include rwd-min-width(960px) {
   &:hover .hover{
     display:block ;
     position: absolute;
@@ -132,8 +134,7 @@
     min-width:80px;
     line-height:25px;
     padding:0 5px;
-    @include rwd-max-width(960px){
-       display:none;
+
     }
   }
   .hover{
@@ -175,6 +176,7 @@
 .scroll-top{
   right: 20px;
   bottom:6%;
+  z-index: 64;
     @include rwd-max-width(960px) {
   bottom:70px;}
 }

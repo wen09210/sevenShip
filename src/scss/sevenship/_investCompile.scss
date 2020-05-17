@@ -141,7 +141,8 @@ a:hover {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
-	@include rwd-min-width(1280px){
+
+	@include rwd-min-width(1280px) {
 		min-width: 1240px;
 	}
 }
@@ -170,6 +171,7 @@ a:hover {
 		min-width: 940px
 	}
 }
+
 html,
 body {
 	font-size: 16px;
@@ -422,9 +424,7 @@ header.header .info-menu .toggle .icon-dotted-border {
 	border-color: #333
 }
 
-header.header .sub-menu {
-
-}
+header.header .sub-menu {}
 
 header.header .sub-menu .change-unit-menu {
 	position: absolute;
@@ -479,6 +479,11 @@ header.header .sub-menu .change-unit-menu {
 .go_sell {
 	margin-top: -1px;
 	border-bottom: 1px solid #4da3f5 !important;
+
+	@include rwd-max-width(960px) {
+		margin-top: 0px;
+		border-bottom: solid 1px #dfdfdf !important;
+	}
 }
 
 @media only screen and (min-width:960px) {
