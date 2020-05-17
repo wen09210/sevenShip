@@ -648,6 +648,12 @@ button.slick-prev.slick-arrow:hover:before {
 .cub-text-wrapper a.cub-button {
   width: 140px;
   margin-top: 20px;
+  @include rwd-max-width(960px) {
+    background-color: transparent;
+    color:#fff;
+    border:1px solid #fff;
+    min-width: 80px;
+  }
 }
 
 .cs-l-mainKv__nav {
@@ -705,7 +711,7 @@ button.slick-prev.slick-arrow:hover:before {
   }
 
   @include rwd-max-width(960px) {
-    padding: 0px 30px;
+    padding: 0px 10px;
 
     .m-flex-column {
       flex-direction: column !important;
@@ -719,12 +725,12 @@ button.slick-prev.slick-arrow:hover:before {
 
 }
 
-.cs-l-mainBlock.cs-slick-main-block {
-  @include rwd-max-width(960px) {
-    padding: 0;
-  }
+// .cs-l-mainBlock.cs-slick-main-block {
+//   @include rwd-max-width(960px) {
+//     padding: 0;
+//   }
 
-}
+// }
 
 
 .cs-l-mainBlock-small {
@@ -747,6 +753,9 @@ button.slick-prev.slick-arrow:hover:before {
     min-width: 1240px;
     padding: 0px 10px;
   }
+   @include rwd-max-width(960px) {
+    padding:0 10px;
+   }
 
 }
 

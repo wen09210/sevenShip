@@ -2508,9 +2508,6 @@ button.close {
 
 .best_seller .slick-slide {
   margin: 0px; }
-  @media all and (max-width: 960px) {
-    .best_seller .slick-slide {
-      margin: 30px; } }
 
 .activity_swiper {
   -webkit-box-pack: center;
@@ -2870,8 +2867,8 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2014 Daniel Eden
 */
 .animated {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
@@ -7055,6 +7052,12 @@ button.slick-prev.slick-arrow:hover:before {
 .cub-text-wrapper a.cub-button {
   width: 140px;
   margin-top: 20px; }
+  @media all and (max-width: 960px) {
+    .cub-text-wrapper a.cub-button {
+      background-color: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      min-width: 80px; } }
 
 .cs-l-mainKv__nav {
   position: absolute;
@@ -7098,7 +7101,7 @@ button.slick-prev.slick-arrow:hover:before {
       min-width: 1240px; } }
   @media all and (max-width: 960px) {
     .cs-l-mainBlock {
-      padding: 0px 30px; }
+      padding: 0px 10px; }
       .cs-l-mainBlock .m-flex-column {
         -webkit-box-orient: vertical !important;
         -webkit-box-direction: normal !important;
@@ -7109,10 +7112,6 @@ button.slick-prev.slick-arrow:hover:before {
         -webkit-box-direction: reverse !important;
         -ms-flex-direction: column-reverse !important;
         flex-direction: column-reverse !important; } }
-
-@media all and (max-width: 960px) {
-  .cs-l-mainBlock.cs-slick-main-block {
-    padding: 0; } }
 
 .cs-l-mainBlock-small {
   padding: 20px 0 40px; }
@@ -7129,6 +7128,9 @@ button.slick-prev.slick-arrow:hover:before {
     .mainBlockWrap {
       min-width: 1240px;
       padding: 0px 10px; } }
+  @media all and (max-width: 960px) {
+    .mainBlockWrap {
+      padding: 0 10px; } }
 
 body:not(.isScrolled) .card:hover .cardText {
   -webkit-animation: slideInUp .3s ease-in-out;

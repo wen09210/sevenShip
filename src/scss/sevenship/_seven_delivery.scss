@@ -236,9 +236,9 @@ button.close {
 	.slick-slide {
 		margin: 0px;
 
-		@include rwd-max-width(960px) {
-			margin: 30px;
-		}
+		// @include rwd-max-width(960px) {
+		// 	margin: 30px;
+		// }
 	}
 }
 
