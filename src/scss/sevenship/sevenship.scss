@@ -1,6 +1,6 @@
 @import '_color.scss';
-@import '_slider.scss';
 @import '_screenWidth.scss';
+@import '_slider.scss';
 @import '_investCompile.scss';
 @import '_button.scss';
 @import '_slideNav.scss';
@@ -674,23 +674,7 @@ button.slick-prev.slick-arrow:hover:before {
   }
 }
 
-.slick-dots li.slick-active button:before {
-  border: 1px solid #fffeea;
-  background-color: #fffeea;
-}
 
-.slick-dots {
-  text-align: left;
-}
-
-.slick-dots li {
-  margin: 0 10px;
-}
-
-.slick-dots li button:before {
-  background-color: #fcc494;
-  border: 1px solid #fcc494;
-}
 
 .cs-l-wrap {
   max-width: 1240px;

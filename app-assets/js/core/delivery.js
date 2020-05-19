@@ -36,7 +36,6 @@
                         settings: {
                             dots: true,
                             arrows: false,
-                            dots: false,
                         }
                     },
                 ]    

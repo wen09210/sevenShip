@@ -306,6 +306,10 @@
 .slick-dots li.slick-active button:before {
   border: 1px solid #fffeea;
   background-color: #fffeea; }
+  @media all and (max-width: 960px) {
+    .slick-dots li.slick-active button:before {
+      border: 1px solid #ff6000;
+      background-color: #ff6000; } }
 
 @media only screen and (min-width: 960px) {
   .slick-dots li {
@@ -371,6 +375,23 @@ button.slick-prev.slick-arrow:hover:before {
 button.slick-prev.slick-disabled:before,
 button.slick-next.slick-disabled:before {
   opacity: 0; }
+
+.slick-dots {
+  text-align: left; }
+  @media all and (max-width: 960px) {
+    .slick-dots {
+      text-align: center; } }
+
+.slick-dots li {
+  margin: 0 10px; }
+
+.slick-dots li button:before {
+  background-color: #fcc494;
+  border: 1px solid #fcc494; }
+  @media all and (max-width: 960px) {
+    .slick-dots li button:before {
+      background-color: #666;
+      border: 1px solid #666; } }
 
 abbr,
 address,
@@ -7277,20 +7298,6 @@ button.slick-prev.slick-arrow:hover:before {
 @media all and (max-width: 1280px) {
   .cs-l-mainKv__nav {
     left: 4.3%; } }
-
-.slick-dots li.slick-active button:before {
-  border: 1px solid #fffeea;
-  background-color: #fffeea; }
-
-.slick-dots {
-  text-align: left; }
-
-.slick-dots li {
-  margin: 0 10px; }
-
-.slick-dots li button:before {
-  background-color: #fcc494;
-  border: 1px solid #fcc494; }
 
 .cs-l-wrap {
   max-width: 1240px;

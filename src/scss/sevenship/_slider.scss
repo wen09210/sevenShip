@@ -390,6 +390,10 @@
 .slick-dots li.slick-active button:before {
 	border: 1px solid #fffeea;
 	background-color: #fffeea;
+	@include rwd-max-width(960px){
+		border: 1px solid $main-orange;
+		background-color: $main-orange;
+	}
 }
 
 @media only screen and (min-width: 960px) {
@@ -468,4 +472,24 @@ button.slick-prev.slick-arrow:hover:before {
 button.slick-prev.slick-disabled:before,
 button.slick-next.slick-disabled:before {
 	opacity: 0;
+}
+
+.slick-dots {
+	text-align: left;
+	@include rwd-max-width(960px){
+		text-align: center;
+	}
+}
+
+.slick-dots li {
+	margin: 0 10px;
+}
+
+.slick-dots li button:before {
+	background-color: #fcc494;
+	border: 1px solid #fcc494;
+	@include rwd-max-width(960px) {
+		background-color: #666;
+		border: 1px solid #666;
+	}
 }
