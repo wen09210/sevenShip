@@ -735,7 +735,6 @@ button.slick-prev.slick-arrow:hover:before {
 
   @include rwd-min-width(1280px) {
     min-width: 1240px;
-    padding: 0px 10px;
   }
    @include rwd-max-width(960px) {
     padding:0 10px;

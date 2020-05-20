@@ -2462,8 +2462,7 @@ button.close {
   color: #ff6000;
   text-align: left;
   right: 30px;
-  bottom: 15px;
-  position: absolute; }
+  bottom: 15px; }
 
 .best_seller_title {
   font-size: 21px;
@@ -7339,8 +7338,7 @@ button.slick-prev.slick-arrow:hover:before {
   display: inline-block; }
   @media all and (min-width: 1280px) {
     .mainBlockWrap {
-      min-width: 1240px;
-      padding: 0px 10px; } }
+      min-width: 1240px; } }
   @media all and (max-width: 960px) {
     .mainBlockWrap {
       padding: 0 10px; } }
