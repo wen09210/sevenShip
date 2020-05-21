@@ -12,13 +12,29 @@
 .cs-l-mainKv:after {
 	clear: both;
 }
-
 .cs-l-mainKv__nav {
 	position: absolute;
-	bottom: 15px;
-	width: 100%;
-	text-align: center;
+	bottom: 60px;
+	z-index: 55;
+		width: 100%;
+		text-align: center;
+	@include rwd-max-width(960px) {
+		bottom: 15px;
+	}
 }
+
+@media all and (max-width: 1960px) {
+	.cs-l-mainKv__nav {
+		left: 3%;
+	}
+}
+
+@media all and (max-width: 1280px) {
+	.cs-l-mainKv__nav {
+		left: 4.3%;
+	}
+}
+
 
 @media only screen and (min-width: 960px) {
 	.cs-l-mainKv--pd\@t {
@@ -333,14 +349,15 @@
 	padding: 0;
 	position: static;
 }
-  .slick-slide {
-	  margin: 0 20px;
-  }
 
-  /* the parent */
-  .slick-list {
-  	margin: 0 -20px;
-  }
+.slick-slide {
+	margin: 0 20px;
+}
+
+/* the parent */
+.slick-list {
+	margin: 0 -20px;
+}
 
 .slick-dots li {
 	display: inline-block;
@@ -390,7 +407,8 @@
 .slick-dots li.slick-active button:before {
 	border: 1px solid #fffeea;
 	background-color: #fffeea;
-	@include rwd-max-width(960px){
+
+	@include rwd-max-width(960px) {
 		border: 1px solid $main-orange;
 		background-color: $main-orange;
 	}
@@ -476,7 +494,8 @@ button.slick-next.slick-disabled:before {
 
 .slick-dots {
 	text-align: left;
-	@include rwd-max-width(960px){
+
+	@include rwd-max-width(960px) {
 		text-align: center;
 	}
 }
@@ -488,8 +507,28 @@ button.slick-next.slick-disabled:before {
 .slick-dots li button:before {
 	background-color: #fcc494;
 	border: 1px solid #fcc494;
+
 	@include rwd-max-width(960px) {
 		background-color: #666;
 		border: 1px solid #666;
+	}
+}
+
+@include rwd-max-width(960px) {
+	.bgGradient {
+		position: relative;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			display: block;
+			width: 100%;
+			z-index: 45;
+			height: 70px;
+			bottom: -1px;
+			background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%);
+		}
+
 	}
 }
