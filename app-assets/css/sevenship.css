@@ -2565,6 +2565,9 @@ button.close {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch; }
+  @media all and (max-width: 640px) {
+    .activity_swiper {
+      display: block !important; } }
 
 @-webkit-keyframes pulse {
   0% {
@@ -2595,15 +2598,27 @@ button.close {
 .actitvity_wrap {
   background-color: #ededed;
   padding: 36px 35px 42px; }
+  @media all and (max-width: 640px) {
+    .actitvity_wrap {
+      padding: 0px;
+      background: #fff; }
+      .actitvity_wrap .slick-slide {
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+        margin: 20px; } }
   .actitvity_wrap .img-responsive {
     width: 100%;
     max-width: 257px;
     height: 100%; }
-    .actitvity_wrap .img-responsive:hover {
-      -webkit-animation-name: pulse;
-      animation-name: pulse;
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s; }
+    @media all and (max-width: 640px) {
+      .actitvity_wrap .img-responsive {
+        max-width: 100%; } }
+    @media all and (min-width: 640px) {
+      .actitvity_wrap .img-responsive:hover {
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s; } }
 
 .news_wrap {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);

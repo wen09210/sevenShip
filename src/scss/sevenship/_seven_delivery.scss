@@ -245,6 +245,9 @@ button.close {
 .activity_swiper {
 	justify-content: center;
 	align-items: stretch;
+	@include rwd-max-width(640px){
+		display: block !important;
+	}
 }
 
 
@@ -290,19 +293,31 @@ button.close {
 .actitvity_wrap {
 	background-color: #ededed;
 	padding: 36px 35px 42px;
+	@include rwd-max-width(640px) {
+		padding: 0px;
+		background: #fff;;
+		
+	.slick-slide{
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+		margin:20px;
+	}
+	}
 
 	.img-responsive {
 		width: 100%;
 		max-width: 257px;
 		height: 100%;
+		@include rwd-max-width(640px){
+			max-width: 100%;
+		}
 
 		// overflow: hidden;
+		@include rwd-min-width(640px) {
 		&:hover {
 			animation-name: pulse;
 			animation-duration: 1s;
-
-
 		}
+	}
 	}
 
 }
