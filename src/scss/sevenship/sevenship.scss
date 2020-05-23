@@ -12,6 +12,7 @@
 html body {
   background-color: #fff;
   letter-spacing: initial;
+  overflow-x: hidden;
 
   p {
     line-height: inherit;
@@ -505,6 +506,9 @@ header.header .info-menu,
   min-width: 100%;
   overflow: hidden;
   height: 420px;
+  @include rwd-max-width(640px) {
+    height:280px
+  }
 }
 
 .cs-l-mainKv:before {
@@ -520,6 +524,9 @@ header.header .info-menu,
 
   @include rwd-max-width(960px) {
     display: none;
+  }
+  @include rwd-max-width(640px) {
+    height: 280px
   }
 }
 
@@ -537,6 +544,9 @@ header.header .info-menu,
   }
   @media all and (max-width: 960px) {
     background-position-x: 0px;
+  }
+  @include rwd-max-width(640px) {
+    height: 280px
   }
 }
 
@@ -589,6 +599,9 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   padding: 0px 20px;
   margin-top: -530px;
+  @include rwd-max-width(640px){
+    margin-top:-420px;
+  }
 }
 
 @media all and (max-width: 1960px) {
@@ -615,6 +628,9 @@ button.slick-prev.slick-arrow:hover:before {
   -ms-flex-pack: distribute;
   justify-content: flex-start;
   margin: 200px 20px 0px;
+   @include rwd-max-width(960px) {
+     margin-top: 195px;
+   }
 }
 
 .cub-text-wrapper h2 {
@@ -626,7 +642,7 @@ button.slick-prev.slick-arrow:hover:before {
   color: #ffffff;
   @include rwd-max-width(960px){
       font-size: 24px;
-      width: 150px;
+      width: 175px;
   }
 }
 
@@ -642,6 +658,7 @@ button.slick-prev.slick-arrow:hover:before {
      font-size: 16px;
      width: 150px;
      font-weight: normal;
+     margin-top: 8px;
    }
 }
 
@@ -653,6 +670,11 @@ button.slick-prev.slick-arrow:hover:before {
     color:#fff;
     border:1px solid #fff;
     min-width: 80px;
+    margin-top: 10px;
+    width: 88px;
+    font-size: 14px;
+    font-weight: normal;
+    padding:7px;
   }
 }
 
@@ -680,6 +702,7 @@ button.slick-prev.slick-arrow:hover:before {
 
   @include rwd-max-width(960px) {
     padding: 0px 10px;
+    margin-top:30px;
 
     .m-flex-column {
       flex-direction: column !important;
@@ -720,8 +743,12 @@ button.slick-prev.slick-arrow:hover:before {
   @include rwd-min-width(1280px) {
     min-width: 1240px;
   }
-   @include rwd-max-width(960px) {
+
+   @include rwd-max-width(1100px) {
     padding:0 10px;
+   }
+   @include rwd-max-width(960px) {
+     padding: 0px;
    }
 
 }

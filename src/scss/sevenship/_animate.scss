@@ -4863,7 +4863,7 @@ or from end to start, or both.*/
 }
 @keyframes fade-in-left {
 	0% {
-		transform: translateX(-50px);
+		transform: translateX(-150px);
 		opacity: 0;
 	}
 
@@ -4878,7 +4878,7 @@ or from end to start, or both.*/
 
 @keyframes fade-in-right {
 	0% {
-		transform: translateX(50px);
+		transform: translateX(150px);
 		opacity: 0;
 	}
 

@@ -99,6 +99,9 @@
 
 	color: #4a4a4a;
 	text-align: left;
+	@include rwd-max-width(960px) {
+		font-size: 20px;
+	}
 }
 
 .activity_text {
@@ -107,12 +110,18 @@
 	flex-direction: column;
 	height: auto;
 	justify-content: space-between;
+	@include rwd-max-width(960px){
+		padding:13px 20px;
+	}
 }
 
 .act_content {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 4.5em;
+	@include rwd-max-width(960px) {
+		height: auto;
+	}
 }
 
 .act_content,
@@ -123,7 +132,6 @@
 	font-style: normal;
 	letter-spacing: normal;
 	color: #767676;
-
 	line-height: 1.5em;
 }
 
@@ -149,6 +157,7 @@ button.close {
 	text-align: left;
 	right: 30px;
 	bottom: 15px;
+	    line-break: anywhere;
 	// position: absolute;
 }
 
@@ -156,28 +165,22 @@ button.close {
 	font-size: 21px;
 	margin-top: 30px;
 	margin-bottom: 12px;
+	@include rwd-max-width(960px){
+		font-size: 20px;
+		margin-top: 0px;
+	}
 }
 
 .best_seller_text {
 	padding: 0px 25px;
 	position: relative;
-
+	@include rwd-max-width(960px) {
+		padding:13px 30px;
+	}
 	@include rwd-max-width(768px) {
 		display: block;
 	}
 }
-
-.best_seller_note {
-	font-size: 14px;
-	font-stretch: normal;
-	font-style: normal;
-	line-height: 1.5;
-	letter-spacing: normal;
-	color: $main-orange;
-	text-align: right;
-	text-decoration: underline;
-}
-
 
 
 .block_section {
@@ -199,15 +202,18 @@ button.close {
 
 .best_seller_outer {
 	@include rwd-max-width(960px) {
-		max-width: 640px;
+		max-width: 100%;
 		margin: 0px auto;
 		overflow: hidden;
+	}
+	@include rwd-max-width(640px) {
+		max-width: 640px;
 	}
 }
 
 .best_seller_swiper {
 	@include rwd-max-width(960px) {
-		margin: 5px 0px;
+		margin: 10px 0px;
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 	}
 }
@@ -299,7 +305,7 @@ button.close {
 		
 	.slick-slide{
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-		margin:20px;
+		margin:20px 0px;
 	}
 	}
 
@@ -368,10 +374,12 @@ button.close {
 .news_title {
 	display: flex;
 	justify-content: space-between;
-
-	a.link_more {
-		color: $main-orange;
+	@include rwd-max-width(960px){
+		margin-top: 30px;
 	}
+	// a.link_more {
+	// 	color: $main-orange;
+	// }
 }
 
 a.link_more {
