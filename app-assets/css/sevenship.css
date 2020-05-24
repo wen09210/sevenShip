@@ -2533,7 +2533,7 @@ button.close {
   position: relative; }
   @media all and (max-width: 960px) {
     .best_seller_text {
-      padding: 13px 30px; } }
+      padding: 13px 20px; } }
   @media all and (max-width: 768px) {
     .best_seller_text {
       display: block; } }
@@ -7507,11 +7507,13 @@ a.goOutlink {
   letter-spacing: normal;
   text-align: center; }
   @media all and (max-width: 960px) {
-    .step-block-title span {
-      font-size: 21px; }
-    .step-block-title .text-black {
-      font-size: 24px;
-      display: block; } }
+    .step-block-title {
+      font-size: 27px; }
+      .step-block-title span {
+        font-size: 21px; }
+      .step-block-title .text-black {
+        font-size: 24px;
+        display: block; } }
 
 .step-sub-title {
   font-size: 24px;

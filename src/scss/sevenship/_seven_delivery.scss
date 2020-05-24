@@ -157,7 +157,7 @@ button.close {
 	text-align: left;
 	right: 30px;
 	bottom: 15px;
-	    line-break: anywhere;
+	line-break: anywhere;
 	// position: absolute;
 }
 
@@ -175,7 +175,7 @@ button.close {
 	padding: 0px 25px;
 	position: relative;
 	@include rwd-max-width(960px) {
-		padding:13px 30px;
+		padding:13px 20px;
 	}
 	@include rwd-max-width(768px) {
 		display: block;

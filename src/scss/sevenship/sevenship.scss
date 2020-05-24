@@ -966,6 +966,7 @@ a.goOutlink {
   text-align: center;
 
   @include rwd-max-width(960px) {
+    font-size: 27px;
     span {
       font-size: 21px;
     }
@@ -974,8 +975,9 @@ a.goOutlink {
       font-size: 24px;
       display: block;
     }
-
   }
+
+  
 }
 
 .step-sub-title {
