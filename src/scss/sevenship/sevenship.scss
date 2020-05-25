@@ -1351,12 +1351,12 @@ a.goOutlink {
   display: block;
 
   @include rwd-max-width(960px) {
-    display: none;
+    display: none !important;
   }
 }
 
 .hidden-pc {
-  display: none;
+  display: none !important;
 
   @include rwd-max-width(960px) {
     display: block;

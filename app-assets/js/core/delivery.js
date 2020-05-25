@@ -83,3 +83,18 @@ $('.c-menuLv1__name').on('click', function () {
 $('.c-menuLv2__name').on('click', function () {
     $(this).toggleClass('on');
 });
+// 漢堡連結
+$('.cs-o-link').on('touchstart click', function (e) {
+    e.preventDefault();
+    $('body').removeClass('is-openMenu');
+    $('.header').removeClass('on');
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $($(this).attr("href")).offset().top
+    }, 1000);
+});
+
+$('.side-nav .nav-link').on('touchstart click', function () {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $($(this).attr("href")).offset().top
+    }, 1000);
+});

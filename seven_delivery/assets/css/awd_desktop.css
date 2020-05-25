@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*------------------------     slider     ------------------------*/
 .cs-l-mainKv {
-  position: relative; }
+  position: relative;
+  background-color: rgba(46, 120, 199, 0.8); }
 
 .cs-l-mainKv:before,
 .cs-l-mainKv:after {
@@ -312,7 +313,7 @@
     margin: 0 10px; } }
 
 .slick-dotted.slick-slider {
-  margin: 0; }
+  margin: 0 auto; }
 
 .slick-prev,
 .slick-next {
@@ -371,6 +372,10 @@ button.slick-prev.slick-arrow:hover:before {
 button.slick-prev.slick-disabled:before,
 button.slick-next.slick-disabled:before {
   opacity: 0; }
+
+.cs-l-mainKv__slider {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 abbr,
 address,
@@ -1335,7 +1340,8 @@ button.close {
   text-align: left; }
 
 .block_section {
-  max-width: 600px; }
+  max-width: 600px;
+  width: 100%; }
   @media all and (max-width: 1280px) {
     .block_section {
       max-width: 49%; } }

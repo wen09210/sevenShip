@@ -129,6 +129,7 @@ button.close{
 
 .block_section {
 	max-width: 600px;
+	width:100%;
 
 	@include rwd-max-width(1280px) {
 		max-width: 49%;
@@ -206,7 +207,7 @@ button.close{
 	background-color: #ffffff;
 	padding: 19px 22px 0px;
 	height: calc(100% - 33px);
-	  font-size: 14px;
+	font-size: 14px;
 
 	li {
 		position: relative;

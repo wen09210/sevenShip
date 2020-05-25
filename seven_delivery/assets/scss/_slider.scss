@@ -1,6 +1,7 @@
 /*------------------------     slider     ------------------------*/
 .cs-l-mainKv {
 	position: relative;
+	background-color: rgba($main-blue, 0.8);
 }
 
 .cs-l-mainKv:before,
@@ -399,7 +400,7 @@
 }
 
 .slick-dotted.slick-slider {
-	margin: 0;
+	margin: 0 auto;
 }
 
 .slick-prev,
@@ -468,4 +469,8 @@ button.slick-prev.slick-arrow:hover:before {
 button.slick-prev.slick-disabled:before,
 button.slick-next.slick-disabled:before {
 	opacity: 0;
+}
+.cs-l-mainKv__slider {
+	max-width: 1920px;
+	margin: 0 auto;
 }

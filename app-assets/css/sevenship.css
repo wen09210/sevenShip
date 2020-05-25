@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /*------------------------     slider     ------------------------*/
 .cs-l-mainKv {
-  position: relative; }
+  position: relative;
+  background-color: rgba(255, 96, 0, 0.8); }
 
 .cs-l-mainKv:before,
 .cs-l-mainKv:after {
@@ -323,7 +324,7 @@
     margin: 0 10px; } }
 
 .slick-dotted.slick-slider {
-  margin: 0; }
+  margin: 0 auto; }
 
 .slick-prev,
 .slick-next {
@@ -416,6 +417,10 @@ button.slick-next.slick-disabled:before {
       background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%);
       background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%);
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%); } }
+
+.cs-l-mainKv__slider {
+  max-width: 1920px;
+  margin: 0 auto; }
 
 abbr,
 address,
@@ -2314,28 +2319,28 @@ footer.footer {
   width: 158px; }
 
 .f-logo-white {
-  width: 106px;
+  width: 110px;
   margin-left: 10px; }
 
-.footer_function_link {
+footer .footer_function_link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .footer_function_link ul {
+  footer .footer_function_link ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .footer_function_link ul li {
+    footer .footer_function_link ul li {
       padding: 0px 100px 5px 0px; }
       @media all and (max-width: 1200px) {
-        .footer_function_link ul li {
+        footer .footer_function_link ul li {
           padding-right: 50px; } }
       @media all and (max-width: 640px) {
-        .footer_function_link ul li {
+        footer .footer_function_link ul li {
           padding-right: 50px; } }
   @media all and (max-width: 960px) {
-    .footer_function_link {
+    footer .footer_function_link {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; } }
@@ -2539,7 +2544,8 @@ button.close {
       display: block; } }
 
 .block_section {
-  max-width: 600px; }
+  max-width: 600px;
+  width: 100%; }
   @media all and (max-width: 1280px) {
     .block_section {
       max-width: 49%; } }
@@ -7791,10 +7797,10 @@ a.goOutlink {
   display: block; }
   @media all and (max-width: 960px) {
     .hidden-phone {
-      display: none; } }
+      display: none !important; } }
 
 .hidden-pc {
-  display: none; }
+  display: none !important; }
   @media all and (max-width: 960px) {
     .hidden-pc {
       display: block; } }
