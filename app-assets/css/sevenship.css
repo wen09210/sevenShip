@@ -2631,6 +2631,8 @@ button.close {
     .actitvity_wrap {
       padding: 0px;
       background: #fff; }
+      .actitvity_wrap.slick-slider {
+        margin: 0 -10px; }
       .actitvity_wrap .slick-slide {
         -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);

@@ -303,7 +303,9 @@ button.close {
 	@include rwd-max-width(640px) {
 		padding: 0px;
 		background: #fff;;
-		
+		&.slick-slider{
+			margin: 0 -10px;
+		}
 	.slick-slide{
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
 		margin:10px 10px;

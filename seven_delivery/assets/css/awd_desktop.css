@@ -373,10 +373,6 @@ button.slick-prev.slick-disabled:before,
 button.slick-next.slick-disabled:before {
   opacity: 0; }
 
-.cs-l-mainKv__slider {
-  max-width: 1920px;
-  margin: 0 auto; }
-
 abbr,
 address,
 article,
@@ -1274,7 +1270,7 @@ a.header-small-btn {
 
 .block_section_title {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
