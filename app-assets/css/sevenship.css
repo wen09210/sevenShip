@@ -418,10 +418,6 @@ button.slick-next.slick-disabled:before {
       background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%);
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #f9fbf7 100%); } }
 
-.cs-l-mainKv__slider {
-  max-width: 1920px;
-  margin: 0 auto; }
-
 abbr,
 address,
 article,
@@ -1352,7 +1348,7 @@ a.header-small-btn {
             display: block;
             position: initial;
             background-color: transparent;
-            color: #606060;
+            color: #ff6000;
             line-height: normal;
             min-width: auto;
             padding: 0px; } }
@@ -2638,7 +2634,7 @@ button.close {
       .actitvity_wrap .slick-slide {
         -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
-        margin: 10px 0px; } }
+        margin: 10px 10px; } }
   .actitvity_wrap .img-responsive {
     width: 100%;
     max-width: 257px;
