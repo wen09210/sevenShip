@@ -19,7 +19,7 @@
 .side-nav {
   position: fixed;
   right: 20px;
-  z-index: 49;
+  z-index: 70;
   bottom: 0;
   display: inline-block;
   @include rwd-min-width(960px){

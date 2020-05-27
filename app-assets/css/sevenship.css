@@ -34,8 +34,7 @@
   .cs-l-mainKv--pd\@t {
     padding: 0 15px; }
   .cs-l-mainKv__nav {
-    position: absolute;
-    bottom: 35px; }
+    position: absolute; }
   .cs-l-mainKv__nav--sm {
     bottom: 20px; }
   .cs-l-mainKv__nav--xs {
@@ -1265,7 +1264,7 @@ a.header-small-btn {
 .side-nav {
   position: fixed;
   right: 20px;
-  z-index: 49;
+  z-index: 70;
   bottom: 0;
   display: inline-block; }
   @media all and (min-width: 960px) {
@@ -2435,7 +2434,7 @@ footer .footer_function_link {
 
 .block_section_title {
   font-size: 24px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
