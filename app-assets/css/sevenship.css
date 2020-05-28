@@ -362,7 +362,7 @@ button.slick-prev.slick-arrow:before {
   background-repeat: no-repeat; }
 
 button.slick-next.slick-arrow {
-  right: 10px; }
+  right: 0px; }
 
 button.slick-next.slick-arrow:before {
   background-image: url(../images/icons/arrows/slider-arrow-right.svg); }
