@@ -7185,6 +7185,15 @@ header.header .info-menu,
   .cs-c-banner {
     height: 280px; } }
 
+@media all and (max-width: 960px) {
+  .mobile-text-black {
+    color: #000 !important; }
+    .mobile-text-black h2, .mobile-text-black span {
+      color: #000 !important; }
+    .mobile-text-black a.cub-button {
+      color: #000 !important;
+      border: 1px solid #000 !important; } }
+
 [data-banner="cs-banner-1"] {
   background-image: url(../images/banner/banner.jpg); }
   @media all and (max-width: 960px) {

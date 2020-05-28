@@ -737,13 +737,13 @@ float:left;
 .cs-c-banner {
   height: 420px;
   background-size:cover ;
+  
 }
 @media all and (max-width: 1440px) {
  .cs-c-banner {
   background-position-x: -220px;
  }
  }
-
 [data-banner="cs-banner-1"]{
     background-image: url(../images/banner/banner.jpg);
 }
