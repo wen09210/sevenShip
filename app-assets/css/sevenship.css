@@ -7193,12 +7193,21 @@ header.header .info-menu,
 
 [data-banner="cs-banner-2"] {
   background-image: url(../images/banner/banner2.jpg); }
+  @media all and (max-width: 960px) {
+    [data-banner="cs-banner-2"] {
+      background-image: url(../images/banner/mobile-banner-2.jpg); } }
 
 [data-banner="cs-banner-3"] {
   background-image: url(../images/banner/banner3.jpg); }
+  @media all and (max-width: 960px) {
+    [data-banner="cs-banner-3"] {
+      background-image: url(../images/banner/mobile-banner-3.jpg); } }
 
 [data-banner="cs-banner-4"] {
   background-image: url(../images/banner/banner4.jpg); }
+  @media all and (max-width: 960px) {
+    [data-banner="cs-banner-4"] {
+      background-image: url(../images/banner/mobile-banner-4.jpg); } }
 
 button.slick-next.slick-arrow:before {
   background-image: url(../images/banner-arrow-right.png);
