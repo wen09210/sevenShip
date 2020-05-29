@@ -334,6 +334,17 @@
 /* ==========================================================================
    slick 套件修改
    ========================================================================== */
+.actitvity_wrap{
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease;
+	-webkit-transition: opacity 0.2s ease;
+}
+.actitvity_wrap.slick-initialized{
+	visibility: visible;
+	opacity: 1;
+}
+
 .slick-initialized .slick-slide {
 	outline: 0;
 }
