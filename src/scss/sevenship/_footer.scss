@@ -205,17 +205,19 @@ footer.footer {
 footer{
 .footer_function_link {
 	display: flex;
+	justify-content: space-around;
+	width: 33%;
 
 	ul {
 		flex-direction: column;
 
 		li {
-			padding: 0px 100px 5px 0px;
+			// padding: 0px 100px 5px 0px;
 			@include rwd-max-width(1200px) {
-				padding-right:50px;
+				// padding-right:50px;
 			}
 			@include rwd-max-width(640px){
-				padding-right:50px;
+				// padding-right:50px;
 			}
 		}
 	}

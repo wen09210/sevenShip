@@ -1273,6 +1273,9 @@ a.header-small-btn {
   margin: 0px 6px;
   padding: 0px; }
 
+.text_emphasize {
+  color: #2e78c7; }
+
 .block_section_title {
   font-size: 24px;
   font-weight: bold;
