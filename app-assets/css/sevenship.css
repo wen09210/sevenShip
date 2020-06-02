@@ -2433,6 +2433,9 @@ footer .footer_function_link {
   color: #fff !important;
   border-radius: 3px;
   font-weight: 100; }
+  @media all and (max-width: 960px) {
+    .global-alert-wrapper .badge {
+      font-weight: normal; } }
 
 .iconLogin {
   margin: 0px 6px;
