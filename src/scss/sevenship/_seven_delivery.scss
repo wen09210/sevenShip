@@ -80,6 +80,7 @@
 	color: $main-orange;
 	text-align: left;
 	margin-bottom: 6px;
+	min-height: 33px;
 }
 
 .cs-l-container {
@@ -302,7 +303,7 @@ button.close {
 
 .actitvity_wrap {
 	background-color: #ededed;
-	padding: 36px 35px 42px;
+	padding: 36px 45px ;
 	@include rwd-max-width(640px) {
 		padding: 0px;
 		background: #fff;;
@@ -340,7 +341,7 @@ button.close {
 	border: solid 1px #e0e0e0;
 	background-color: #ffffff;
 	padding: 19px 22px 0px;
-	height: calc(100% - 33px);
+	height: calc(100% - 39px);
 	font-size: 14px;
 
 	li {
@@ -380,6 +381,7 @@ button.close {
 .news_title {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	@include rwd-max-width(960px){
 		margin-top: 30px;
 	}

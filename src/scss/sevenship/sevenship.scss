@@ -683,24 +683,6 @@ button.slick-prev.slick-arrow:hover:before {
    }
 }
 
-.cub-text-wrapper a.cub-button {
-  width: 140px;
-  margin-top: 20px;
-  @include rwd-max-width(960px) {
-    background-color: transparent;
-    color:#fff;
-    border:1px solid #fff;
-    min-width: 80px;
-    margin-top: 10px;
-    width: 88px;
-    font-size: 14px;
-    font-weight: normal;
-    padding:7px;
-  }
-}
-
-
-
 
 
 .cs-l-wrap {
@@ -1382,4 +1364,8 @@ a.goOutlink {
   @include rwd-max-width(960px) {
     display: block;
   }
+}
+
+.qrcodeImg{
+  height: 100%;
 }

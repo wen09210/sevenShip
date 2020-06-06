@@ -1,6 +1,6 @@
 .cub-text-wrapper a.cub-button {
-	background-color: #ffffff;
-	color: $main-orange;
+	background-color: #fffee0;
+	color: #e85200;
 	padding: 12px 20px;
 	font-size: 18px;
 	font-weight: 500;
@@ -12,13 +12,29 @@
 	min-width: 190px;
 	display: inline-block;
 	border-radius: 4px;
+	width: 140px;
+	margin-top: 20px;
 
 	&:hover {
-		background-color: $light-orange;
+		background-color: #feffb3;
+		color: #dc4e00;
+	}
+	@include rwd-max-width(960px) {
+		background-color: transparent;
 		color: #fff;
+		border: 1px solid #fff;
+		min-width: 80px;
+		margin-top: 10px;
+		width: 88px;
+		font-size: 14px;
+		font-weight: normal;
+		padding: 7px;
+		&:hover {
+			background-color: transparent;
+			color: #fff;
+		}
 	}
 }
-
 .displayRight {
 	display: flex;
 	justify-content: flex-end;
