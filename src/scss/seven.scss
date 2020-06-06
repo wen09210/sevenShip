@@ -324,6 +324,16 @@ html body.navbar-sticky .app-content .content-wrapper {
 .shop-area {
 	display: flex;
 	flex-wrap: wrap;
+	position: relative;
+	&:before{
+		content: '';
+		position: absolute;
+		bottom: -1px;
+		width: 100%;
+		height: 1px;
+		background: #ffffff;
+		z-index: 3;
+	}
 
 	.shop-list {
 		width: 25%;
