@@ -3330,3 +3330,13 @@ html body.navbar-sticky .app-content .content-wrapper {
 @media (max-width: 320px) {
   html body.navbar-sticky .navbar-container {
     padding-right: 5px; } }
+
+.seven-form-label {
+  background-color: #fff6f1;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  margin-bottom: 4px; }
+
+.form-group {
+  margin: 0.5rem 0px; }

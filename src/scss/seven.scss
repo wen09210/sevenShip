@@ -1,3 +1,4 @@
+$form-label: #fff6f1;
 // logo
 .seven-logo{
 width:132px;
@@ -533,4 +534,15 @@ html body.navbar-sticky .app-content .content-wrapper {
 html body.navbar-sticky .navbar-container{
 	padding-right:5px;
 }
+}
+// 元件頁
+.seven-form-label{
+	background-color: $form-label;
+	justify-content: flex-end;
+	align-items: center;
+	display: flex;
+	margin-bottom: 4px;
+}
+.form-group {
+	margin: 0.5rem 0px;
 }

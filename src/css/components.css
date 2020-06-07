@@ -3538,4 +3538,20 @@ html body.navbar-sticky .app-content .content-wrapper {
   html body.navbar-sticky .navbar-container {
     padding-right: 5px; } }
 
+.seven-form-label {
+  background-color: #fff6f1;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4px; }
+
+.form-group {
+  margin: 0.5rem 0px; }
+
 /*# sourceMappingURL=components.css.map */
