@@ -536,13 +536,32 @@ html body.navbar-sticky .navbar-container{
 }
 }
 // 元件頁
-.seven-form-label{
+.seven-form-label {
 	background-color: $form-label;
 	justify-content: flex-end;
 	align-items: center;
 	display: flex;
 	margin-bottom: 4px;
+	text-align: right;
+	label{
+		font-size: 15px;
+	}
+	
 }
 .form-group {
 	margin: 0.5rem 0px;
+}
+.seven-form-sub-label{
+	font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: right;
+	color: #6d6d6d;
+
+}
+.text-red{
+	color:#ef4e4e;
 }

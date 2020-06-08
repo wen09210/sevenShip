@@ -3549,9 +3549,25 @@ html body.navbar-sticky .app-content .content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4px; }
+  margin-bottom: 4px;
+  text-align: right; }
+  .seven-form-label label {
+    font-size: 15px; }
 
 .form-group {
   margin: 0.5rem 0px; }
+
+.seven-form-sub-label {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #6d6d6d; }
+
+.text-red {
+  color: #ef4e4e; }
 
 /*# sourceMappingURL=components.css.map */
