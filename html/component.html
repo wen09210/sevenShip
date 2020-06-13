@@ -347,35 +347,133 @@
                                                         <option value="polygon">Polygon</option>
                                                     </select>
                                                 </div>
+                                                <div class="col-md-4 form-group">
+                                                    <input type="number" id="contact-info" class="form-control"
+                                                        name="contact" placeholder="請選擇商品種類">
+                                                </div>
                                             </div>
                                                 <!-- 日期 -->
                                             <div class="row">
                                                 <div class="col-md-2 seven-form-label">
                                                     <div>
                                                         <label>訂單日期</label>
-                                                        <div class="seven-form-sub-label"><span class="text-red">*</span>查詢期間最多 90 天
+                                                        <div class="seven-form-remark"><span class="text-red">*</span>查詢期間最多 90 天
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-5 form-group">
+                                                <div class="col-md-4 form-group">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
-                                                            placeholder="Select Date">
+                                                            placeholder="選擇查詢起日">
                                                         <div class="form-control-position">
                                                             <i class='bx bx-calendar'></i>
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-md-5 form-group">
+                                                <div class="col-md-4 form-group">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
-                                                            placeholder="Select Date">
+                                                            placeholder="選擇查詢迄日">
                                                         <div class="form-control-position">
                                                             <i class='bx bx-calendar'></i>
                                                         </div>
                                                     </fieldset>
                                                 </div>
                                             </div>
+                                            <!-- 下拉 -->
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>賣場類型</label>
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">全部</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                        <option value="romboid">Romboid</option>
+                                                        <option value="trapeze">Trapeze</option>
+                                                        <option value="traible">Triangle</option>
+                                                        <option value="polygon">Polygon</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>搜尋條件</label>
+                                                </div>
+                                                <div class="col-md-2 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">全部賣場</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">全部類型</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">賣場名稱</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>搜尋賣場名稱</label>
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <input type="text"  class="form-control"
+                                                        name="contact" placeholder="搜尋賣場名稱">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>請填寫姓名<span class="label-required">必填</span></label>
+                                                </div>
+                                                <div class="col-md-8 form-group">
+                                                    <input type="text" class="form-control" name="contact"
+                                                        placeholder="請填寫姓名">
+                                                        <div class="seven-form-remark"><span
+                                                                class="text-red">*</span>提醒您！請填寫真實姓名，避免影響日後取件權益。如有填寫銀行帳戶，必須與<銀行帳號設定>之戶名相同，避免影響日後收款權益。
+                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>手機號碼</label>
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <input type="number"" class="form-control" name="contact"
+                                                        placeholder="09******000" disabled>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2 seven-form-label">
+                                                    <label>電子發票設定</label>
+                                                </div>
+                                                <div class="col-md-4 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">三聯式發票</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                        <option value="romboid">Romboid</option>
+                                                        <option value="trapeze">Trapeze</option>
+                                                        <option value="traible">Triangle</option>
+                                                        <option value="polygon">Polygon</option>
+                                                    </select>
+                                                    <input type="number"" class=" form-control" name="contact"
+                                                        placeholder="09******000" >
+                                                    <input type="number"" class=" form-control" name="contact"
+                                                        placeholder="09******000" >
+                                                </div>
+                                            </div>
+
                                                 <div class="col-md-4">
                                                     <label>Mobile</label>
                                                 </div>

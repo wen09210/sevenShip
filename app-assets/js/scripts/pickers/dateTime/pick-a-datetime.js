@@ -14,7 +14,11 @@
   // * Pick-a-date Picker *//
   // ************************//
   // Basic date
-  $('.pickadate').pickadate();
+  $('.pickadate').pickadate({
+    today: '',
+    clear: '',
+    close: ''
+  });
 
   // Format Date Picker
   $('.format-picker').pickadate({
@@ -24,7 +28,7 @@
   // Date limits
   $('.pickadate-limits').pickadate({
       min: [2019,7,20],
-      max: [2019,7,28]
+      max: [2019,7,28],
   });
 
   // Disabled Dates & Weeks

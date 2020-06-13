@@ -543,25 +543,50 @@ html body.navbar-sticky .navbar-container{
 	display: flex;
 	margin-bottom: 4px;
 	text-align: right;
+	padding: 20px 15px;
 	label{
-		font-size: 15px;
+		font-size: 16px;
+		color:#333;
+	}
+	.label-required {
+		border-radius: 2px;
+		background-color: #ababab;
+		font-size: 14px;
+		padding:1px 10px;
+		margin-left: 5px;
+		font-weight: normal;
+		line-height: 1.86;
+		letter-spacing: normal;
+		color: #ffffff;
 	}
 	
 }
 .form-group {
 	margin: 0.5rem 0px;
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	input,select{
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
 }
-.seven-form-sub-label{
+.seven-form-remark{
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
 	letter-spacing: normal;
-	text-align: right;
 	color: #6d6d6d;
-
 }
 .text-red{
 	color:#ef4e4e;
 }
+.form-control:disabled{
+	border: solid 1px #d8d8d8;
+	background-color: #f2f2f2;
+}
+// 必填
