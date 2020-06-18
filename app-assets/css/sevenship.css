@@ -2650,7 +2650,7 @@ button.close {
 
 .actitvity_wrap {
   background-color: #ededed;
-  padding: 36px 45px; }
+  padding: 36px 45px 42px; }
   @media all and (max-width: 640px) {
     .actitvity_wrap {
       padding: 0px;
@@ -2680,8 +2680,7 @@ button.close {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14);
   border: solid 1px #e0e0e0;
   background-color: #ffffff;
-  padding: 10px 22px 10px;
-  height: calc(100% - 39px);
+  padding: 14px 22px;
   font-size: 14px; }
   .news_wrap li {
     position: relative;
