@@ -138,6 +138,9 @@
 	color: #767676;
 	line-height: 1.5em;
 }
+.best_seller_content{
+	font-size: 16px;
+}
 
 button.close {
 	width: 15px;
@@ -304,6 +307,9 @@ button.close {
 .actitvity_wrap {
 	background-color: #ededed;
 	padding: 36px 45px 42px;
+	@include rwd-max-width(1280px) {
+		padding: 60px 45px 42px;
+	}
 	@include rwd-max-width(640px) {
 		padding: 0px;
 		background: #fff;;
@@ -320,8 +326,12 @@ button.close {
 		width: 100%;
 		max-width: 257px;
 		height: 100%;
+		@include rwd-max-width(1280px) {
+			width:200px;
+		}
 		@include rwd-max-width(640px){
 			max-width: 100%;
+			width:100%;
 		}
 
 		// overflow: hidden;
@@ -397,6 +407,12 @@ a.link_more {
 	line-height: normal;
 	letter-spacing: normal;
 	color: #9b9b9b;
+	&:hover{
+		color: #ff6000;
+	 i{
+		color: #ff6000; 
+	 }
+	}
 }
 
 .FlexColumnTop {

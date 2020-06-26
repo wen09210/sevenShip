@@ -542,6 +542,12 @@ header.header .info-menu,
     @media all and (max-width: 1440px) {
     background-position-x: -220px;
   }
+  @media all and (max-width: 1360px) {
+    background-position-x: -150px;
+  }
+   @media all and (max-width: 1280px) {
+     background-position-x: -360px;
+   }
   @media all and (max-width: 960px) {
     background-position-x: 0px;
   }
@@ -697,10 +703,14 @@ button.slick-prev.slick-arrow:hover:before {
 }
 
 .cs-l-mainBlock {
-  margin-top: 50px;
+  margin-top:50px;
+  padding:0px 2.5% 0;
 
   @include rwd-min-width(1280px) {
     min-width: 1240px;
+  }
+  @include rwd-max-width(1024px) {
+    padding:0px 40px;
   }
 
   @include rwd-max-width(960px) {
@@ -1114,14 +1124,18 @@ a.goOutlink {
   margin-top: 0px;
   background: $step-6-color;
   max-width: 100%;
+  padding-top:14px;
+  .promote-content{
+    width: auto;
+  }
 }
 
 .promote-content {
-
+  width:460px;
   @include rwd-max-width(960px) {
+    width:auto;
     padding: 15px 0px 25px;
     text-align: center;
-
   }
 }
 
@@ -1344,10 +1358,13 @@ a.goOutlink {
 }
 
 .bottom-banner-content {
-  padding: 0px 25px;
+  padding: 0px 112px;
   text-align: center;
   position: relative;
   z-index: 2;
+    @include rwd-max-width(1280px) {
+      padding: 0px 25px;
+    }
 }
 
 .hidden-phone {
@@ -1362,10 +1379,20 @@ a.goOutlink {
   display: none !important;
 
   @include rwd-max-width(960px) {
-    display: block;
+    display: block !important;
   }
 }
-
+  @include rwd-min-width(1200px) {
 .qrcodeImg{
   height: 100%;
+}
+}
+//間距調整
+.cus-pl-25 {
+  @include rwd-min-width(1360px) {
+    padding-left: 25px;
+  }
+}
+.row{
+  margin:0px;
 }

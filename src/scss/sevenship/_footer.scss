@@ -74,6 +74,9 @@
 
 .f-recommandLink {
 	background-color: $main-orange;
+	@include rwd-min-width(1024px){
+		padding:0px 40px;
+	}
 }
 
 .f-recommandLink ul {
@@ -138,6 +141,7 @@
 .footer {
 	a {
 		font-size: 14px;
+		line-height: 2.14;
 	}
 
 	display: block;
@@ -184,11 +188,11 @@ footer.footer {
 // footer
 .cus_time {
 	color: white;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
 	font-style: normal;
-	line-height: 1.58;
+	line-height: 1.57;
 	letter-spacing: normal;
 	padding: 8px 0 16px;
 }
@@ -237,19 +241,29 @@ footer{
 	min-height: 55px;
 	align-items: center;
 	@include rwd-max-width(960px) {
-		min-height: 40px;
-		padding:11px 28px;
+	min-height: 40px;
+	padding:11px 20px;
+		ul {
+			justify-content: center;
+			text-align: center;
+		}
+	a{
+		font-size: 12px;
 	}
+	}
+
 }
 .footer_last{
 	display: flex;
 	@include rwd-min-width(1200px) {
 	.footerQrcode{
 		display: flex;
+		align-items: flex-end;
 	}
 	.QrcodeText{
 		margin-left: 1rem;
 		align-items: flex-end;
+		font-size: 13px;
 	}
 }
 	@include rwd-max-width(1200px){

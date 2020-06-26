@@ -2534,3 +2534,8 @@ body.isScrolled .card a.cardInside:hover .cardImage img {
 a.goOutlink {
   color: #2e78c7;
   text-decoration: underline; }
+
+.vaildNumber {
+  margin-left: 10px;
+  padding: 0px;
+  height: calc(2.25rem + 2px); }
