@@ -3134,6 +3134,7 @@ input.text {
 	top: 15%;
 	bottom: 15%;
 	width: 1px;
+	height: 200px;
 	background-color: #ddd;
 }
 [class*="col-"]:last-child .icon_box_style1::before {
@@ -4942,6 +4943,7 @@ h6.blog_title {
 	margin: 0 auto;
 }
 .product_img {
+	height: 295px;
 	position: relative;
 	overflow: hidden;
 }
@@ -6969,9 +6971,18 @@ blockquote p:last-child {
 .modal-backdrop {
 	z-index: 9999;
 }
+/* 修改 */
 .text-white,footer p{
 	color: #FFFFFF !important;
 }
 .feature-color{
 	background-color: #eee;
+}
+footer .footer_function_link {
+	justify-content: flex-start;
+	width: 50%;
+	text-align: left;
+}
+footer .footer_function_link ul{
+	align-items: flex-start;
 }
