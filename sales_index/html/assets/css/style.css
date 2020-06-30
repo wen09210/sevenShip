@@ -6978,6 +6978,9 @@ blockquote p:last-child {
 .feature-color{
 	background-color: #eee;
 }
+.feature-color .icon_box {
+	color:#ff6000;
+}
 footer .footer_function_link {
 	justify-content: flex-start;
 	width: 50%;
