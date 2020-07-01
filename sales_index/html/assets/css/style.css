@@ -6989,3 +6989,33 @@ footer .footer_function_link {
 footer .footer_function_link ul{
 	align-items: flex-start;
 }
+.seven-logo {
+	width: 132px;
+	margin-right: 8px;
+}
+.seven-logo-two {
+	width: 93px;
+}
+header.header .info-menu,
+.l-menu{
+	box-shadow: none;
+}
+.index-title{
+
+	font-size: 32px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: 0.05px;
+	color: #6d6d6d;
+	padding: 16px 0px;
+
+}
+.text-orange{
+	color:#ff6000;
+}
+p.index-remark{
+	margin-bottom: 0;
+	margin-top: 20px;
+}
