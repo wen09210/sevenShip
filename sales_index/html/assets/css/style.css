@@ -1372,7 +1372,11 @@ button:focus {
 .navbar .attr-nav li .search_trigger i {
 	font-size: 20px;
 	vertical-align: middle;
-	line-height: normal;
+	color: #fff;
+	position: absolute;
+	line-height: 1;
+	left: 15px;
+	top: 13px;
 }
 .navbar .attr-nav li.cart_wrap .nav-link i {
 	font-size: 20px;
@@ -2648,7 +2652,7 @@ input.text {
 .carousel-control-next, .carousel-control-prev {
 	font-size: 45px;
 	height: 50px;
-	opacity: 0;
+	opacity: 1;
 	top: 50%;
 	-moz-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -7018,4 +7022,9 @@ header.header .info-menu,
 p.index-remark{
 	margin-bottom: 0;
 	margin-top: 20px;
+}
+.back-to-old{
+	position: absolute;
+	left: 265px;
+	top: 35px;
 }
