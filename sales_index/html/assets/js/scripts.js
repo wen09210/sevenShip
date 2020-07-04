@@ -684,7 +684,7 @@ PAGE JS
 	}
 	else {
 		$.removeData(image, 'elevateZoom');//remove zoom instance from image
-		$('.zoomContainer:last-child').remove();// remove zoom container from DOM
+		$('.zoomContainer').remove();// remove zoom container from DOM
 	}
 	
 	$.magnificPopup.defaults.callbacks = {
@@ -696,7 +696,7 @@ PAGE JS
       setTimeout(function() {
         $('body').removeClass('zoom_image');
 		$('body').removeClass('zoom_gallery_image');
-		$('.zoomContainer').slice(1).remove();
+		$('.zoomContainer').remove();
       	}, 100);
       }
   	};
@@ -795,6 +795,7 @@ PAGE JS
 		}
 	});
 	
+	
 	/*===================================*
 	25. Cart Page Payment option
 	*===================================*/	
@@ -818,3 +819,8 @@ PAGE JS
 	});
 	
 })(jQuery);
+
+function item_remove(item) {
+	console.log($(item));
+	$(item).closest('li').remove();
+}

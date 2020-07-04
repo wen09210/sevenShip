@@ -6,8 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta content="Anil z" name="author">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Shopwise is Powerful features and You Can Use The Perfect Build this Template For Any eCommerce Website. The template is built for sell Fashion Products, Shoes, Bags, Cosmetics, Clothes, Sunglasses, Furniture, Kids Products, Electronics, Stationery Products and Sporting Goods.">
-<meta name="keywords" content="ecommerce, electronics store, Fashion store, furniture store,  bootstrap 4, clean, minimal, modern, online store, responsive, retail, shopping, ecommerce store">
 
 <!-- SITE TITLE -->
 <title>賣貨便首頁</title>
@@ -39,8 +37,9 @@
 <link rel="stylesheet" href="assets/css/slick-theme.css">
 <!-- Style CSS -->
 <link rel="stylesheet" href="../../app-assets/css/sevenship.css">
-<link rel="stylesheet" href="assets/css/style.css">
 <link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/style.css">
+
 
 
 </head>
@@ -132,25 +131,25 @@
                     <div class="search_wrap">
                         <span class="close-search"><i class="ion-ios-close-empty"></i></span>
                         <form>
-                            <input type="text" placeholder="Search" class="form-control" id="search_input">
+                            <input type="text" placeholder="搜尋" class="form-control" id="search_input">
                             <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
                         </form>
                     </div>
                     <div class="search_overlay"></div>
                 </li>
                 <li class="dropdown cart_dropdown"><a class="nav-link cart_trigger" href="#" data-toggle="dropdown"><i
-                            class="linearicons-cart"></i><span class="cart_count">2</span></a>
+                            class="bx bx-cart"></i><span class="cart_count">2</span></a>
                     <div class="cart_box dropdown-menu dropdown-menu-right">
                         <ul class="cart_list">
                             <li>
-                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                <a href="#" class="item_remove" onclick="item_remove(this)"><i class="ion-close"></i></a>
                                 <a href="#"><img src="assets/images/cart_thamb1.jpg" alt="cart_thumb1">Variable product
                                     001</a>
                                 <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
                                             class="price_symbole">$</span></span>78.00</span>
                             </li>
                             <li>
-                                <a href="#" class="item_remove"><i class="ion-close"></i></a>
+                                <a href="#" class="item_remove" onclick="item_remove(this)"><i class=" ion-close"></i></a>
                                 <a href="#"><img src="assets/images/cart_thamb2.jpg" alt="cart_thumb2">Ornare sed
                                     consequat</a>
                                 <span class="cart_quantity"> 1 x <span class="cart_amount"> <span
@@ -158,10 +157,11 @@
                             </li>
                         </ul>
                         <div class="cart_footer">
-                            <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span
-                                        class="price_symbole">$</span></span>159.00</p>
-                            <p class="cart_buttons"><a href="#" class="btn btn-fill-line rounded-0 view-cart">View
-                                    Cart</a><a href="#" class="btn btn-fill-out rounded-0 checkout">Checkout</a></p>
+                            <!-- <p class="cart_total"><strong>Subtotal:</strong> <span class="cart_price"> <span
+                                        class="price_symbole">$</span></span>159.00</p> -->
+                            <p class="cart_buttons"><button class="btn btn-fill-out btn-addtocart" type="button"><i
+                            			class="bx bx-dollar-circle"></i>
+                            		直接結帳</button></p>
                         </div>
                     </div>
                 </li>
@@ -220,7 +220,8 @@
                             href="https://auth-test.openpoint.com.tw/SETMemberAuth_sit/Register.html?client_id=c2cpm&v=ItxmBqMyv9JaT7bnHPFRuSDIgUpDyd5hfTfgXbJ506sV0nDJD2IeoMWXfU39ahhooXrFi3P%2F1m%2FXrmzvl8s57bmhRFMxRvsS4Oo%2FfKDqLrHjl50M8xnT3qQ5cgtdUwE1H0Lw6FIh5OPpNp6%2BZtrbVVrOU%2FGsEvKB1yxeSUvrdfLAbpCQDk5VsH0i%2FNLU2O5J1vpneO7m9WAicOnGdtBPGRb3LYatNcUN1K7sEguTVhJSX1zQGpOJaXmxnQye%2BvtM09y859GgijHSdkpW9RqB94E5JBVMv9V2fi%2BYTWDTVtQ4PGnsno7%2FdCpwkfyvwdMiNKlMtisyco8NIKoZ6PK0QZOKKzLuyUSwGX8q2EedCM0%3D"
                             class="nav-link">
                             <div class="scaling-svg-container">
-                                <i class="bx bx-cart"></i>
+								<i class="bx bx-cart"></i>
+								<span class="cart_count">2</span>
                                 <div class="hover">
                                     <span>購物車</span>
                                 </div>
@@ -228,35 +229,35 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#news" class=" nav-link">
+                        <a href="" class=" nav-link">
                             <div class="scaling-svg-container">
-                                <i class='bx bxl-facebook-square'></i>
+                                <img src="./assets/images/bx-facebook.png" alt="" width="30" height="30">
                                 <div class="hover"><span>facebook</span></div>
 
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#seller" class=" nav-link">
+                        <a href="" class=" nav-link">
                             <div class="scaling-svg-container">
-                                <i class="bx bx-store"></i>
+                                <img src="./assets/images/bx-line.png" alt="" width="30" height="30">
                                 <div class="hover"><span>line</span></div>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#seller" class=" nav-link">
+                        <a href="" class=" nav-link">
                             <div class="scaling-svg-container">
                                 <i class="bx bx-store"></i>
-                                <div class="hover"><span>商店</span></div>
+                                <div class="hover"><span>其他賣場</span></div>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#footer" class=" nav-link">
+                        <a href="" class=" nav-link">
                             <div class="scaling-svg-container">
                                 <i class='bx bx-dislike'></i>
-                                <div class="hover"><span>聯絡我們</span></div>
+                                <div class="hover"><span>檢舉</span></div>
                             </div>
                         </a>
                     </li>
@@ -306,340 +307,656 @@
 	        </div>
 	    </div>
 	    <div class="row shop_container grid">
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img1.jpg" alt="product_img1">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">Blue Dress For Woman</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$45.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="shop-product-detail.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img2.jpg" alt="product_img2">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">Lether Gray Tuxedo</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$55.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img3.jpg" alt="product_img3">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">woman full sliv dress</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$68.00</span>
-	                        <del>$99.00</del>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img2.jpg" alt="product_img2">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">light blue Shirt</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$69.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img1.jpg" alt="product_img1">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">blue dress for woman</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$45.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img3.jpg" alt="product_img3">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">Blue casual check shirt</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$55.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img1.jpg" alt="product_img1">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">white black line dress</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$68.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img2.jpg" alt="product_img2">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">Men blue jins Shirt</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$69.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	        <div class="col-md-3 col-6">
-	            <div class="product">
-	                <div class="product_img">
-	                    <a href="shop-product-detail.html">
-	                        <img src="assets/images/product_img3.jpg" alt="product_img3">
-	                    </a>
-	                    <div class="product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	                <div class="product_info">
-	                    <h6 class="product_title"><a href="shop-product-detail.html">T-Shirt Form Girls</a></h6>
-	                    <div class="product_price">
-	                        <span class="price">$45.00</span>
-	                    </div>
-	                    <div class="pr_desc">
-	                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-	                            Nullam id varius nunc id varius nunc.</p>
-	                    </div>
-	                    <div class="list_product_action_box">
-	                        <ul class="list_none pr_action_btn">
-	                            <li class="add-to-cart"><a href="#"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
-	                            
-	                            <li><a href="//bestwebcreator.com/shopwise/demo/shop-quick-view.html" class="popup-ajax"><i
-	                                        class="icon-magnifier-add"></i></a></li>
-	                            
-	                        </ul>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>			
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 col-6">
+				<div class="product">
+					<div class="product_img">
+						<a href="./shop-quick-view.html" class="popup-ajax">
+							<img src="assets/images/open-img1.jpg" alt="product_img1">
+						</a>
+						<div class="product_action_box">
+							<ul class="list_none pr_action_btn">
+								<li class="add-to-cart"><a href="./shop-quick-view.html"><i class="icon-basket-loaded"></i> Add
+										To Cart</a></li>
+
+								<li><a href="./shop-quick-view.html" class="popup-ajax"><i class="icon-magnifier-add"></i></a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="product_info">
+						<h6 class="product_title"><a href="#">英國經典 Clarks Originals Wallabee 低筒
+								袋鼠鞋</a></h6>
+						<div class="product_price">
+							<span class="price">$4500.00</span>
+						</div>
+						<div class="clearfix"></div>
+						<div class="list_product_action_box">
+							<div class="pr_switch_wrap">
+								<span class="switch_lable">規格:</span>
+								<div class="product_size_switch">
+									<span>xs</span>
+									<span>s</span>
+									<span>m</span>
+									<span>l</span>
+									<span>xl</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+									<span>黃曉明</span>
+								</div>
+
+							</div>
+							<hr />
+							<div class="cart_extra">
+								<div class="cart-product-quantity">
+									<div class="quantity">
+										<input type="button" value="-" class="minus">
+										<input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
+										<input type="button" value="+" class="plus">
+									</div>
+								</div>
+								<div class="cart_btn">
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i class="bx bx-cart"></i>
+										加入購物車</button>
+									<button class="btn btn-fill-out btn-addtocart" type="button"><i
+											class="bx bx-dollar-circle"></i>
+										直接結帳</button>
+								</div>
+							</div>
+							<hr />
+						</div>
+					</div>
+				</div>
+			</div>
+	       
+	        
 	    </div>
 	    <div class="row">
 	        <div class="col-12">
