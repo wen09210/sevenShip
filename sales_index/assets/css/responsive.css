@@ -1461,7 +1461,6 @@ blockquote p {
 .product_header_right {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-top: 15px;
 }
 .newsletter_form2 input, .newsletter_form2 input:focus {
 	height: 52px;
