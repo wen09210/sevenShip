@@ -884,7 +884,9 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
   header.header {
     position: relative; }
   .l-cubHeader {
-    display: block; }
+    display: block; 
+    padding: 10px 15px;
+    }
   .l-mobileHeader {
     display: none; } }
 

@@ -3154,6 +3154,11 @@ input.text {
 	height: 200px;
 	background-color: #ddd;
 }
+@media only screen and (max-width: 991px){
+	.icon_box_style1::before {
+		display: none;
+	}
+}
 [class*="col-"]:last-child .icon_box_style1::before {
 	content: normal;
 }

@@ -451,10 +451,7 @@
 .heading_s1, .heading_s4 {
 	margin-bottom: 20px;
 }
-.header_wrap nav.navbar {
-	display: table;
-	width: 100%;
-}
+
 .header_wrap .navbar .navbar-nav.attr-nav {
 	display: block;
 	float: right;
@@ -1963,7 +1960,7 @@ footer .widget_title,
 	padding: 2px 10px 2px 0;
 }
 .navbar-nav .dropdown-menu.cart_box.show {
-	right: -50px;
+	right: -15px;
 	width: 310px;
 }
 .navbar-nav .dropdown-menu.cart_box.show.cart_right {
