@@ -2542,6 +2542,15 @@ footer .footer_function_link {
 
 .best_seller_content {
   font-size: 16px; }
+  @media all and (max-width: 960px) {
+    .best_seller_content {
+      height: 100px; } }
+  @media all and (max-width: 640px) {
+    .best_seller_content {
+      height: 125px; } }
+  @media all and (max-width: 420px) {
+    .best_seller_content {
+      height: 180px; } }
 
 button.close {
   width: 15px;
