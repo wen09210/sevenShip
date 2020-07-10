@@ -1409,15 +1409,22 @@ a.header-small-btn {
         background-color: transparent;
         color: #606060;
         line-height: normal; } }
-
 .scaling-svg-container {
   position: relative;
   width: 100%;
-  display: inline-block; }
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 17px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+
   @media all and (max-width: 960px) {
     .scaling-svg-container {
       width: 100%;
-      padding: 0;
+      padding: 17px 0;
       padding-bottom: 10px; } }
   .scaling-svg-container .scaling-svg {
     position: absolute;

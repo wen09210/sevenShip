@@ -1800,7 +1800,6 @@ footer .widget_title,
 	display: block;
 }
 .shop_container .col-6 {
-	max-width: 100%;
 	-ms-flex: 0 0 100%;
 	flex: 0 0 100%;
 }
