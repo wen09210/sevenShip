@@ -632,11 +632,11 @@ PAGE JS
 			$('.shop_container').removeClass('grid').addClass('list');
 			$(this).addClass('active').siblings().removeClass('active');
 		}
-		$(".shop_container").append('<div class="loading_pr"><div class="mfp-preloader"></div></div>');
-		setTimeout(function(){
-		  $('.loading_pr').remove();
-		  $container.isotope('layout');
-		}, 800);
+		// $(".shop_container").append('<div class="loading_pr"><div class="mfp-preloader"></div></div>');
+		// setTimeout(function(){
+		//   $('.loading_pr').remove();
+		//   $container.isotope('layout');
+		// }, 800);
 	});
 	
 	/*===================================*
@@ -667,65 +667,70 @@ PAGE JS
 	21. QUICKVIEW POPUP + ZOOM IMAGE + PRODUCT SLIDER JS
 	*===================================*/
 	var image = $('#product_img');
-	//var zoomConfig = {};
-	var zoomActive = false;
+	$('a.product_gallery_item').click(function(){
+		image.attr('src', $(this).attr('data-image'));
+		$('a.product_gallery_item').removeClass('active');
+		$(this).addClass('active');
+	})
+	// //var zoomConfig = {};
+	// var zoomActive = false;
 	
-    zoomActive = !zoomActive;
-	if(zoomActive) {
-		if ($(image).length > 0){
-			$(image).elevateZoom({
-				cursor: "crosshair",
-				easing : true, 
-				gallery:'pr_item_gallery',
-				zoomType: "inner",
-				galleryActiveClass: "active"
-			}); 
-		}
-	}
-	else {
-		$.removeData(image, 'elevateZoom');//remove zoom instance from image
-		$('.zoomContainer').remove();// remove zoom container from DOM
-	}
+    // zoomActive = !zoomActive;
+	// if(zoomActive) {
+	// 	if ($(image).length > 0){
+	// 		$(image).elevateZoom({
+	// 			cursor: "crosshair",
+	// 			easing : true, 
+	// 			gallery:'pr_item_gallery',
+	// 			zoomType: "inner",
+	// 			galleryActiveClass: "active"
+	// 		}); 
+	// 	}
+	// }
+	// else {
+	// 	$.removeData(image, 'elevateZoom');//remove zoom instance from image
+	// 	$('.zoomContainer').remove();// remove zoom container from DOM
+	// }
 	
-	$.magnificPopup.defaults.callbacks = {
-    open: function() {
-      $('body').addClass('zoom_image');
-    },
-    close: function() {
-      // Wait until overflow:hidden has been removed from the html tag
-      setTimeout(function() {
-        $('body').removeClass('zoom_image');
-		$('body').removeClass('zoom_gallery_image');
-		$('.zoomContainer').remove();
-      	}, 100);
-      }
-  	};
+	// $.magnificPopup.defaults.callbacks = {
+    // open: function() {
+    //   $('body').addClass('zoom_image');
+    // },
+    // close: function() {
+    //   // Wait until overflow:hidden has been removed from the html tag
+    //   setTimeout(function() {
+    //     $('body').removeClass('zoom_image');
+	// 	$('body').removeClass('zoom_gallery_image');
+	// 	$('.zoomContainer').remove();
+    //   	}, 100);
+    //   }
+  	// };
 	
-	// Set up gallery on click
-	var galleryZoom = $('#pr_item_gallery');
-	galleryZoom.magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		gallery:{
-			enabled: true
-		},
-		callbacks: {
-			elementParse: function(item) {
-				item.src = item.el.attr('data-zoom-image');
-			}
-		}
-	});
+	// // Set up gallery on click
+	// var galleryZoom = $('#pr_item_gallery');
+	// galleryZoom.magnificPopup({
+	// 	delegate: 'a',
+	// 	type: 'image',
+	// 	gallery:{
+	// 		enabled: true
+	// 	},
+	// 	callbacks: {
+	// 		elementParse: function(item) {
+	// 			item.src = item.el.attr('data-zoom-image');
+	// 		}
+	// 	}
+	// });
 	
-	// Zoom image when click on icon
-	$('.product_img_zoom').on('click', function(){
-		var atual = $('#pr_item_gallery a').attr('data-zoom-image');
-		$('body').addClass('zoom_gallery_image');
-		$('#pr_item_gallery .item').each(function(){
-			if( atual == $(this).find('.product_gallery_item').attr('data-zoom-image') ) {
-				return galleryZoom.magnificPopup('open', $(this).index());
-			}
-		});
-	});
+	// // Zoom image when click on icon
+	// $('.product_img_zoom').on('click', function(){
+	// 	var atual = $('#pr_item_gallery a').attr('data-zoom-image');
+	// 	$('body').addClass('zoom_gallery_image');
+	// 	$('#pr_item_gallery .item').each(function(){
+	// 		if( atual == $(this).find('.product_gallery_item').attr('data-zoom-image') ) {
+	// 			return galleryZoom.magnificPopup('open', $(this).index());
+	// 		}
+	// 	});
+	// });
 	
 	$('.plus').on('click', function() {
 		if ($(this).prev().val()) {
@@ -821,6 +826,5 @@ PAGE JS
 })(jQuery);
 
 function item_remove(item) {
-	console.log($(item));
 	$(item).closest('li').remove();
 }

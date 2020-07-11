@@ -77,9 +77,9 @@
                 <div class="cart_extra">
                     <div class="cart-product-quantity">
                         <div class="quantity">
-                            <input type="button" value="-" class="minus">
+                            <input type="button" value="-" class="minus cart-minus">
                             <input type="text" name="quantity" value="1" title="Qty" class="qty" size="4">
-                            <input type="button" value="+" class="plus">
+                            <input type="button" value="+" class="plus cart-plus">
                         </div>
                     </div>
                     <div class="cart_btn">
@@ -104,5 +104,22 @@
         </div>
     </div>
 </div>
-
-<script src="assets/js/scripts.js"></script>
+<script>
+    var image = $('#product_img');
+    $('a.product_gallery_item').click(function(){
+    image.attr('src', $(this).attr('data-image'));
+    $('a.product_gallery_item').removeClass('active');
+    $(this).addClass('active');
+    })
+    $('.cart-plus').on('click', function() {
+    if ($(this).prev().val()) {
+    $(this).prev().val(+$(this).prev().val() + 1);
+    }
+    });
+    $('.cart-minus').on('click', function() {
+    if ($(this).next().val() > 1) {
+    if ($(this).next().val() > 1) $(this).next().val(+$(this).next().val() - 1);
+    }
+    });
+</script>
+<!-- <script src="assets/js/scripts.js"></script> -->

@@ -7160,6 +7160,7 @@ p.index-remark{
 @media all and (max-width:640px) {
 	.cart_btn .btn {
 	width: 118px;
+	font-size: 14px;
 	}
 	.seven-logo {
 		width: 185px;
