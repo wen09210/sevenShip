@@ -7118,7 +7118,17 @@ p.index-remark{
 	font-size: 25px;
 	margin-left: 25px;
 }
+.scaling-svg-container .cart_count{
+	position: absolute;
+	right: 15px;
+	left: auto;
+	top: 15px;
+}
+
 @media all and (max-width:960px) {
+	.scaling-svg-container .cart_count{
+	right: 0px;
+}
 	.product_img:before{
 		display: none;
 	}
@@ -7159,18 +7169,12 @@ p.index-remark{
 }
 @media all and (max-width:640px) {
 	.cart_btn .btn {
-	width: 118px;
-	font-size: 14px;
+	width: 116px;
+	font-size: 13px;
 	}
 	.seven-logo {
 		width: 185px;
 	}
-}
-.scaling-svg-container .cart_count{
-	position: absolute;
-	right: 15px;
-	left: auto;
-	top: 15px;
 }
 
 
