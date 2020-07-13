@@ -3018,7 +3018,8 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   .main-menu.menu-light .navigation > li.nav-item.open.has-sub.open .menu-content .open > a i {
     color: #ff6000; }
 
-.nav-user-name, .nav-user-more {
+.nav-user-name,
+.nav-user-more {
   padding: 8px 0px;
   position: relative; }
 
@@ -3360,7 +3361,8 @@ html body.navbar-sticky .app-content .content-wrapper {
   width: 100%;
   flex-direction: column;
   justify-content: center; }
-  .form-group input, .form-group select {
+  .form-group input,
+  .form-group select {
     margin-top: 3px;
     margin-bottom: 3px; }
 
@@ -3379,3 +3381,15 @@ html body.navbar-sticky .app-content .content-wrapper {
 .form-control:disabled {
   border: solid 1px #d8d8d8;
   background-color: #f2f2f2; }
+
+.input-remark {
+  color: #ff2828;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-top: 3px; }
+
+.custom-checkbox label,
+.custom-radio label {
+  word-break: break-all;
+  white-space: nowrap; }

@@ -521,6 +521,8 @@ PAGE JS
 	
 	$('.popup-ajax').magnificPopup({
 		type: 'ajax',
+		closeOnBgClick: false,
+		fixedContentPos: true,
 		callbacks: {
 			ajaxContentAdded: function() {
 				carousel_slider();

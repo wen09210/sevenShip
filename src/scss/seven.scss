@@ -1,22 +1,28 @@
 $form-label: #fff6f1;
+
 // logo
-.seven-logo{
-width:132px;
-margin-right:8px;
+.seven-logo {
+	width: 132px;
+	margin-right: 8px;
 }
-.seven-logo-two{
-	width:93px;
+
+.seven-logo-two {
+	width: 93px;
 }
-.gray-text{
-	color:#a2a7ae !important;
+
+.gray-text {
+	color: #a2a7ae !important;
 }
-.banner-section{
-	border-radius:0px;
-	.swiper-container{
-		z-index:0;
+
+.banner-section {
+	border-radius: 0px;
+
+	.swiper-container {
+		z-index: 0;
 	}
-	.swiper-slide{
-		width:100% !important;
+
+	.swiper-slide {
+		width: 100% !important;
 	}
 }
 
@@ -36,7 +42,8 @@ margin-right:8px;
 	padding: 7px 1.25rem;
 	border-left: 2px solid #ff6000;
 }
-.menu-collapsed{
+
+.menu-collapsed {
 	.main-menu {
 		.nav-footer-info {
 			display: none;
@@ -44,7 +51,7 @@ margin-right:8px;
 	}
 }
 
-.main-menu.expanded{
+.main-menu.expanded {
 	.nav-footer-info {
 		display: block;
 	}
@@ -58,11 +65,12 @@ margin-right:8px;
 }
 
 .nav-footer-info {
-	width:100%;
+	width: 100%;
+
 	li {
 		font-size: 13px;
 		padding: 0px 1.25rem;
-		color:#b3b3b3;
+		color: #b3b3b3;
 		line-height: 21px;
 	}
 }
@@ -93,27 +101,33 @@ margin-right:8px;
 .main-menu.menu-light .navigation>li.nav-item a {
 	padding: 7px 1.25rem
 }
-.main-menu.menu-light .navigation>li.nav-item.open.has-sub.open .menu-content .open{
-	
-	>a{
-		color:#ff6000;
+
+.main-menu.menu-light .navigation>li.nav-item.open.has-sub.open .menu-content .open {
+
+	>a {
+		color: #ff6000;
+
 		i {
 			color: #ff6000;
 		}
 	}
-	
+
 }
-.nav-user-name,.nav-user-more {
+
+.nav-user-name,
+.nav-user-more {
 	padding: 8px 0px;
 	position: relative;
 }
-.nav-user-more .dropdown-menu{
-	left:-135px;
+
+.nav-user-more .dropdown-menu {
+	left: -135px;
 }
 
 .bx-dots-horizontal-rounded {
 	font-size: 24px;
 }
+
 .global-alert-wrapper {
 	padding: 0rem 2.2rem 0;
 	margin-top: 56px;
@@ -122,7 +136,8 @@ margin-right:8px;
 		font-size: 14px;
 		padding: 0.2rem 0.3rem;
 		margin-right: 7px;
-		+span{
+
+		+span {
 			font-size: 14px;
 		}
 	}
@@ -143,12 +158,12 @@ margin-right:8px;
 .global-announcement {
 	padding-left: 0px;
 	padding-right: 0px;
-	
+
 	.alert.alert-warning {
 		border-radius: 0px;
 		color: #2f2f2f !important;
-		padding-left: 15px ;
-		    border: solid 1px #ffeba2;
+		padding-left: 15px;
+		border: solid 1px #ffeba2;
 	}
 
 	.alert.alert-dismissible .close {
@@ -198,7 +213,7 @@ margin-right:8px;
 
 .card .card-title {
 	font-weight: bold;
-	color:#333;
+	color: #333;
 }
 
 .card-header:first-child {
@@ -206,8 +221,9 @@ margin-right:8px;
 	margin-bottom: 1.4rem;
 	padding: 0.9rem 1.7rem 1rem;
 }
-.openPointImg{
-	width:118px;
+
+.openPointImg {
+	width: 118px;
 	vertical-align: sub;
 }
 
@@ -222,7 +238,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 .sidebar-right .sidebar-content {
 	.card-header:first-child {
 		margin-bottom: 0px;
-		padding-left:14px;
+		padding-left: 14px;
 	}
 
 	.card-body {
@@ -253,7 +269,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 			&:before {
 				content: '.';
-				top:-4px;
+				top: -4px;
 				position: absolute;
 				font-size: 2rem;
 				line-height: 7px;
@@ -273,15 +289,15 @@ html body.navbar-sticky .app-content .content-wrapper {
 					-webkit-box-orient: vertical;
 					-webkit-line-clamp: 2;
 					line-height: normal;
-					margin-top:5px;
+					margin-top: 5px;
 				}
 
 				.nav-link-time {
 					font-size: 12px;
 					color: #999999;
-					margin-bottom:3px;
+					margin-bottom: 3px;
 				}
-			
+
 			}
 
 		}
@@ -297,6 +313,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 .text-primary {
 	color: #ff6000;
 }
+
 .sales-area .nav.nav-pills~.tab-content {
 	background-color: #FFFFFF;
 	padding: 0;
@@ -304,29 +321,35 @@ html body.navbar-sticky .app-content .content-wrapper {
 	border-radius: 0;
 	color: #2f2f2f;
 }
-.sales-area{
-	.nav{
+
+.sales-area {
+	.nav {
 		flex-wrap: nowrap;
 	}
-	.nav.nav-pills .nav-item{
-		margin:0px;
+
+	.nav.nav-pills .nav-item {
+		margin: 0px;
 		width: 100%;
-		.nav-link{
+
+		.nav-link {
 			border-radius: 0;
-			text-align:center;
-			color:#4a4a4a;
-			&.active{
+			text-align: center;
+			color: #4a4a4a;
+
+			&.active {
 				box-shadow: none;
-				color:#fff;
+				color: #fff;
 			}
 		}
 	}
 }
+
 .shop-area {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
-	&:before{
+
+	&:before {
 		content: '';
 		position: absolute;
 		bottom: -1px;
@@ -358,13 +381,14 @@ html body.navbar-sticky .app-content .content-wrapper {
 			height: 34px;
 			top: 30%;
 		}
-		&:before{
-			    content: '';
-			    border-bottom: 1px solid #dfe3e7;
-			    position: absolute;
-			    right: 0px;
-			    width: 100%;
-			    bottom: -13px;
+
+		&:before {
+			content: '';
+			border-bottom: 1px solid #dfe3e7;
+			position: absolute;
+			right: 0px;
+			width: 100%;
+			bottom: -13px;
 		}
 
 		&:nth-child(4):after {
@@ -411,10 +435,11 @@ html body.navbar-sticky .app-content .content-wrapper {
 			margin-right: 5px;
 			text-align: center;
 			display: block;
+
 			@media (min-height: 768px) {
 				margin-right: 0;
-				margin-bottom:5px;
-				
+				margin-bottom: 5px;
+
 			}
 		}
 
@@ -456,35 +481,42 @@ html body.navbar-sticky .app-content .content-wrapper {
 		padding: 0 15px
 	}
 }
-.content-column-one{
+
+.content-column-one {
 	max-width: 1080px;
 }
+
 .card .swiper-button-prev,
-.card .swiper-button-next{
-	    color: #ff6000;
+.card .swiper-button-next {
+	color: #ff6000;
 }
-.dropdown-menu{
-	.dropdown-item{
+
+.dropdown-menu {
+	.dropdown-item {
 		font-size: 1rem;
-		color:#999;
+		color: #999;
 	}
-	i{
-		color:#999;
+
+	i {
+		color: #999;
 	}
 }
-.noPadding{
+
+.noPadding {
 	padding: 0px;
 }
-.shop-list-update-date{
-	color:#a6a6a6;
+
+.shop-list-update-date {
+	color: #a6a6a6;
 	margin-bottom: 17px;
 	font-weight: normal
-
 }
-@media only screen and (max-width: 768px){
+
+@media only screen and (max-width: 768px) {
+
 	.card .swiper-button-prev,
 	.card .swiper-button-next {
-		top:65%;
+		top: 65%;
 	}
 }
 
@@ -510,17 +542,21 @@ html body.navbar-sticky .app-content .content-wrapper {
 			display: inline-block !important;
 		}
 	}
-	html body.navbar-sticky .app-content .content-wrapper{
+
+	html body.navbar-sticky .app-content .content-wrapper {
 		padding-top: 7px;
 	}
-	html body.navbar-sticky .app-content .content-wrapper{
-		padding-left:15px;
-		padding-right: 15px;;
+
+	html body.navbar-sticky .app-content .content-wrapper {
+		padding-left: 15px;
+		padding-right: 15px;
+		;
 	}
 }
 
 // menu高度在某個尺寸下須作調整
 @media (min-height: 768px) {
+
 	.main-menu.expanded .nav-footer-info,
 	.menu-expanded .nav-footer-info {
 		position: absolute;
@@ -530,11 +566,13 @@ html body.navbar-sticky .app-content .content-wrapper {
 	}
 
 }
+
 @media (max-width: 320px) {
-html body.navbar-sticky .navbar-container{
-	padding-right:5px;
+	html body.navbar-sticky .navbar-container {
+		padding-right: 5px;
+	}
 }
-}
+
 // 元件頁
 .seven-form-label {
 	background-color: $form-label;
@@ -544,23 +582,26 @@ html body.navbar-sticky .navbar-container{
 	margin-bottom: 4px;
 	text-align: right;
 	padding: 20px 15px;
-	label{
+
+	label {
 		font-size: 16px;
-		color:#333;
+		color: #333;
 	}
+
 	.label-required {
 		border-radius: 2px;
 		background-color: #ababab;
 		font-size: 14px;
-		padding:1px 10px;
+		padding: 1px 10px;
 		margin-left: 5px;
 		font-weight: normal;
 		line-height: 1.86;
 		letter-spacing: normal;
 		color: #ffffff;
 	}
-	
+
 }
+
 .form-group {
 	margin: 0.5rem 0px;
 	display: flex;
@@ -568,12 +609,15 @@ html body.navbar-sticky .navbar-container{
 	width: 100%;
 	flex-direction: column;
 	justify-content: center;
-	input,select{
+
+	input,
+	select {
 		margin-top: 3px;
 		margin-bottom: 3px;
 	}
 }
-.seven-form-remark{
+
+.seven-form-remark {
 	font-size: 14px;
 	font-weight: normal;
 	font-stretch: normal;
@@ -582,11 +626,25 @@ html body.navbar-sticky .navbar-container{
 	letter-spacing: normal;
 	color: #6d6d6d;
 }
-.text-red{
-	color:#ef4e4e;
+
+.text-red {
+	color: #ef4e4e;
 }
-.form-control:disabled{
+
+.form-control:disabled {
 	border: solid 1px #d8d8d8;
 	background-color: #f2f2f2;
 }
-// 必填
+
+.input-remark {
+	color: #ff2828;
+	font-size: 14px;
+	font-weight: normal;
+	letter-spacing: normal;
+	margin-top:3px;
+}
+.custom-checkbox label,
+.custom-radio label{
+	word-break: break-all;
+	white-space: nowrap;
+}
