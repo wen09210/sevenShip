@@ -829,4 +829,5 @@ PAGE JS
 
 function item_remove(item) {
 	$(item).closest('li').remove();
-}
+	event.stopPropagation()
+};

@@ -46,7 +46,30 @@
 </head>
 
 <body>
-
+	<!-- Home Popup Section -->
+	<div class="modal fade subscribe_popup mfp-close-btn-in" id="dislike-modal" tabindex="-1" role="dialog"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">檢舉</h5>
+					<button title="Close (Esc)" type="button" class="mfp-close " data-dismiss="modal" aria-label="Close">×</button>
+				</div>
+				<div class="modal-body">
+					<div class="text-center pd-30">
+						<textarea rows="5" class="w-100">
+							為了維持良好拍賣交易品質，若您發現賣場違反了賣貨便平台規範或是商品為禁止販售商品，請填寫檢舉原因，收到檢舉後，賣場管理員將透過系統會依序對於被檢舉的商品頁面進行檢視，違者將【強制下架】賣場。
+						</textarea>
+					</div>
+				</div>
+				<div class="modal-footer justify-content-center">
+					<button type="button" class="btn btn-border-fill " data-dismiss="modal">取消</button>
+					<button type="button" class="btn btn-fill-out " data-dismiss="modal">送出</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Screen Load Popup Section -->
 	<!-- START HEADER -->
 	<header class="header header_wrap fixed-top header_with_topbar nav-fixed">
 		<div class="l-cubHeader container top-header">
@@ -230,7 +253,7 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<a href="" class=" nav-link">
+				<a href="" class=" nav-link" data-toggle="modal" data-target="#dislike-modal">
 					<div class="scaling-svg-container">
 						<i class='bx bx-error-alt'></i>
 						<div class="hover"><span>檢舉賣場</span></div>
