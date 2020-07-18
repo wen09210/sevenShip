@@ -262,7 +262,11 @@
 
 .actitvity_wrap.slick-initialized {
   visibility: visible;
-  opacity: 1; }
+  opacity: 1;
+  height: 253px; }
+  @media only screen and (max-width: 640px) {
+    .actitvity_wrap.slick-initialized {
+      height: auto; } }
 
 .slick-initialized .slick-slide {
   outline: 0; }
@@ -2550,7 +2554,7 @@ footer .footer_function_link {
       height: 125px; } }
   @media all and (max-width: 420px) {
     .best_seller_content {
-      height: 180px; } }
+      height: 140px; } }
 
 button.close {
   width: 15px;
@@ -2680,7 +2684,7 @@ button.close {
   padding: 36px 45px 42px; }
   @media all and (max-width: 1280px) {
     .actitvity_wrap {
-      padding: 60px 45px 42px; } }
+      padding: 40px 45px 42px; } }
   @media all and (max-width: 640px) {
     .actitvity_wrap {
       padding: 0px;

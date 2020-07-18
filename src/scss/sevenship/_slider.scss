@@ -341,6 +341,11 @@
 .actitvity_wrap.slick-initialized{
 	visibility: visible;
 	opacity: 1;
+	height: 253px;
+	@media only screen and (max-width: 640px) {
+		height:auto;
+	}
+	
 }
 
 .slick-initialized .slick-slide {
