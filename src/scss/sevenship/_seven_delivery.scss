@@ -9,6 +9,7 @@
 
 	@include rwd-max-width(960px) {
 		margin-top: 50px;
+		min-height: calc(100vh - 267px);
 	}
 }
 

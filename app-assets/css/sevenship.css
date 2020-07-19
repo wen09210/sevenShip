@@ -2415,6 +2415,9 @@ footer .footer_function_link {
       -ms-flex-direction: column;
       flex-direction: column; } }
 
+.footer.no-sidebar {
+  padding-bottom: 0; }
+
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -2425,7 +2428,8 @@ footer .footer_function_link {
   min-height: calc(100vh - 330px); }
   @media all and (max-width: 960px) {
     .cs-l-main {
-      margin-top: 50px; } }
+      margin-top: 50px;
+      min-height: calc(100vh - 267px); } }
 
 .fade:not(.show) {
   opacity: 1 !important; }
