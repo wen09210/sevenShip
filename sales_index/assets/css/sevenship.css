@@ -700,7 +700,7 @@ header.header .site-menu ul li.lang a {
   line-height: 17px; }
 
 header.header .info-menu {
-  height: 73px;
+  height: 66px;
   background-color: #fff;
   position: relative; }
 
@@ -774,8 +774,7 @@ header.header .info-menu .search > input[type=text]:hover {
 
 header.header .info-menu .logo {
   left: 0;
-  position: absolute;
-  top: 12px; }
+  position: absolute; }
 
 header.header .info-menu .toggle {
   float: none;
@@ -910,6 +909,9 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
   margin: 0 auto; }
 
 @media only screen and (min-width: 960px) {
+  header.header .info-menu .logo{
+    top:12px;
+  }
   .l-menu {
     position: relative;
     top: 0;
@@ -1292,7 +1294,7 @@ a.header-small-btn {
 .side-nav {
   position: fixed;
   right: 20px;
-  z-index: 70;
+  z-index: 999;
   bottom: 0;
   display: inline-block; }
   @media all and (min-width: 960px) {
