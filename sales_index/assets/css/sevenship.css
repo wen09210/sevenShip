@@ -633,8 +633,7 @@ header.header .site-menu {
   display: block;
   background: #11a847;
   height: 24px;
-  font-size: 1em;
-  font-family: "MingLiU"; }
+  font-size: 1em;}
 
 header.header .site-menu a {
   text-decoration: none;
@@ -669,8 +668,6 @@ header.header .site-menu a.lang {
   background: #0a874e;
   border-radius: 1px; }
 
-header.header .site-menu a.lang.en {
-  font-family: "Verdana"; }
 
 header.header .site-menu a.lang:hover {
   color: #008852;
@@ -711,8 +708,7 @@ header.header .info-menu ul {
 
 header.header .info-menu a {
   text-decoration: none;
-  color: #333;
-  font-family: "MingLiU"; }
+  color: #333; }
 
 header.header .info-menu a:hover {
   color: #FC7C2E; }
