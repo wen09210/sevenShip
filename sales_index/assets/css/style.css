@@ -5548,6 +5548,10 @@ h6.blog_title {
 	font-size: 20px;
 	margin-bottom: 15px;
 }
+.shop_container.list .product .product_title a {
+	min-height: 32px;
+	display: inline-block;
+}
 .shop_container.list .product_info {
 	overflow: hidden;
 	text-align: left;
