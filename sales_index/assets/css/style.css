@@ -7217,6 +7217,11 @@ p.index-remark{
 		padding-top:15px;
 	}
 }
+header.header .sub-menu .change-unit-menu {
+	position: absolute;
+	bottom: auto;
+	top: 20px;
+}
 @media all and (max-width:640px) {
 	.cart_btn .btn {
 	width: 116px;
@@ -7225,16 +7230,15 @@ p.index-remark{
 	.seven-logo {
 		width: 185px;
 	}
+	header.header .sub-menu .change-unit-menu {
+		top: 6px;
+	}
 }
 
 
 
 
-header.header .sub-menu .change-unit-menu {
-	position: absolute;
-	bottom: auto;
-	top: 20px;
-}
+
 
 @media (min-width: 992px){
  .navbar-expand-lg {
