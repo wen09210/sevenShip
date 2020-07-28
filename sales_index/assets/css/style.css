@@ -123,6 +123,11 @@ video {
 .section.pt_30{
 	padding-top: 30px;
 }
+@media all and (max-width:768px){
+	.section.pt_30 {
+		padding-top: 10px;
+	}
+}
 .section.pb_5 {
 	padding-bottom: 5px;
 }
@@ -2637,6 +2642,33 @@ input.text {
 .banner_section.shop_el_slider .banner_content_wrap .carousel-item {
 	height: 400px;
 }
+
+@media all and (max-width:768px){
+	.banner_section.slide_medium,
+	.banner_section.slide_medium .carousel-item,
+	.banner_section.slide_medium .banner_content_wrap,
+	.banner_section.slide_medium .banner_content_wrap .carousel-item,
+	.banner_section.shop_el_slider,
+	.banner_section.shop_el_slider .carousel-item,
+	.banner_section.shop_el_slider .banner_content_wrap,
+	.banner_section.shop_el_slider .banner_content_wrap .carousel-item {
+		height: 200px;
+	}
+}
+@media all and (max-width:640px) {
+
+	.banner_section.slide_medium,
+	.banner_section.slide_medium .carousel-item,
+	.banner_section.slide_medium .banner_content_wrap,
+	.banner_section.slide_medium .banner_content_wrap .carousel-item,
+	.banner_section.shop_el_slider,
+	.banner_section.shop_el_slider .carousel-item,
+	.banner_section.shop_el_slider .banner_content_wrap,
+	.banner_section.shop_el_slider .banner_content_wrap .carousel-item {
+		height: 104px;
+	}
+}
+
 .banner_section.slide_wrap, 
 .banner_section.slide_wrap .carousel-item, 
 .banner_section.slide_wrap .banner_content_wrap, 
