@@ -3616,4 +3616,8 @@ html body.navbar-sticky .app-content .content-wrapper {
   word-break: break-all;
   white-space: nowrap; }
 
+.main-menu.menu-light .navigation > li ul li > a {
+  padding: 7px calc(1rem + 10px) !important;
+  margin: 0 11px; }
+
 /*# sourceMappingURL=components.css.map */
