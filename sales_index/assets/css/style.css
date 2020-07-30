@@ -5132,6 +5132,7 @@ h6.blog_title {
 	-webkit-box-orient:vertical;
 	-webkit-line-clamp:2;
 	font-size: 14px;
+	height:32px;
 	letter-spacing: 0.41px;
 }
 .product_color_switch span {
@@ -7234,11 +7235,6 @@ header.header .sub-menu .change-unit-menu {
 		top: 6px;
 	}
 }
-
-
-
-
-
 
 @media (min-width: 992px){
  .navbar-expand-lg {
