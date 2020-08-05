@@ -51,6 +51,7 @@ p {
 	color:#687188;
 	line-height: 28px;
 	margin-bottom: 25px;
+	word-break:break-all;
 }
 a {
 	color: #292b2c;
@@ -5325,11 +5326,13 @@ h6.blog_title {
 }
 .switch_lable {
     float: left;
-	margin: 10px;
-	margin-left:0px;
+	margin-top: 5px;
 }
 .pr_detail .pr_switch_wrap {
     margin-bottom: 10px;
+}
+.product_size_switch{
+	padding-left:45px;
 }
 .product_size_switch span {
 	cursor: pointer;
@@ -7489,3 +7492,6 @@ header.header .info-menu a{
 		cursor: default;
 		pointer-events:none;
 	}
+.clearfix{
+	clear:both;
+}
