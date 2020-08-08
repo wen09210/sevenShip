@@ -1542,11 +1542,12 @@ button:focus {
 	color: #333 !important;
 }
 .cart_list img {
-	border: 1px solid #ddd
+	border: 1px solid #ddd;
 	background-color: #ffffff;
 	float: left;
 	margin-right: 10px;
-	max-width: 80px;
+	max-width: 90px;
+	height: 90px;
 }
 .cart_list a {
 	font-size: 14px;
@@ -5124,6 +5125,35 @@ h6.blog_title {
 	background-color: #ff6000;
 	color: #fff;
 }
+p.cart_item_title{
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	margin-bottom: 0;
+}
+span.cart_item_spec {
+	cursor: pointer;
+	text-transform: uppercase;
+	min-width: 24px;
+	padding: 0px 3px;
+	display: inline-block;
+	border: 2px solid #ddd;
+	text-align: center;
+	line-height: 22px;
+	font-size: 13px;
+	text-align: left;
+	margin: 3px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:1;
+}
+.product .product_title{
+	min-height: 32px;
+}
 .product .product_title,
 .product_box .product_title,
 .product_wrap .product_title {
@@ -5133,7 +5163,6 @@ h6.blog_title {
 	-webkit-box-orient:vertical;
 	-webkit-line-clamp:2;
 	font-size: 14px;
-	height:32px;
 	letter-spacing: 0.41px;
 }
 .product_color_switch span {
@@ -5587,6 +5616,11 @@ h6.blog_title {
 .shop_container.list .product .product_title a {
 	min-height: 32px;
 	display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .shop_container.list .product_info {
 	overflow: hidden;
@@ -7495,6 +7529,12 @@ header.header .info-menu a{
 .clearfix{
 	clear:both;
 }
+
 .bx-dollar-circle:before{
 	color:#fff;
+}
+
+.cart_buttons:hover .bx-dollar-circle:before,
+.cart_btn:hover .bx-dollar-circle:before {
+	color: #ff6000;
 }
