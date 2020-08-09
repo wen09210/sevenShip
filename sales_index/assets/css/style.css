@@ -5168,6 +5168,7 @@ span.cart_item_spec {
 	-webkit-box-orient:vertical;
 	-webkit-line-clamp:2;
 	letter-spacing: 0.41px;
+	line-height: normal;
 }
 .product_color_switch span {
 	height: 15px;
