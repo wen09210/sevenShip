@@ -4944,7 +4944,6 @@ h6.blog_title {
 }
 .product_info {
 	padding: 15px;
-	height: 95px;
 }
 .price {
 	color: #ff6000;
@@ -5155,6 +5154,8 @@ span.cart_item_spec {
 
 .product .product_title a{
 	font-size: 14px;
+	height: 38px;
+    display: block;
 }
 .product_title a:hover {
 	color:inherit;
