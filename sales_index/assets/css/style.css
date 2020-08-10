@@ -915,14 +915,7 @@ button:focus {
 .heading_light .heading_icon i {
 	color: #fff !important;
 }
-.heading_uppercase h1,
-.heading_uppercase h2,
-.heading_uppercase h3,
-.heading_uppercase h4,
-.heading_uppercase h5,
-.heading_uppercase h6 {
-	text-transform: uppercase;
-}
+
 .heading_light * {
 	color: #fff;
 }
@@ -1164,7 +1157,6 @@ button:focus {
 .navbar .navbar-nav .dropdown-header {
     color: #333;
     padding: 10px 20px;
-    text-transform: uppercase;
     font-weight: bold;
 }
 .navbar-nav.attr-nav {
@@ -1870,9 +1862,7 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 .top-header.light_skin .header_list li a:hover span {
 	color: #ff6000;
 }
-.main_menu_uppercase .navbar-nav > li > .nav-link {
-	text-transform: uppercase;
-}
+
 .main_menu_weight_100 .navbar .navbar-nav > li > .nav-link {
 	font-weight: 100;
 }
@@ -2063,7 +2053,6 @@ header.light_skin.nav-fixed .social_icons li a:hover {
 }
 .el_banner1 .el_title span {
 	font-size: 20px;
-	text-transform: uppercase;
 	font-weight: 600;
 }
 .el_banner1 .el_img img {
@@ -2302,7 +2291,6 @@ input.text {
 .ddcommon .ddTitleText {
 	padding: 5px 7px 5px 10px;
 	display: inline-block;
-	text-transform: uppercase;
 }
 .ddcommon .ddlabel {
 	text-transform: capitalize;
@@ -2385,7 +2373,6 @@ input.text {
 }
 .categories_btn span {
 	vertical-align: middle;
-	text-transform: uppercase;
 	font-weight: 500;
 }
 .categories_btn {
@@ -2456,7 +2443,6 @@ input.text {
 #navCatContent ul li .dropdown-menu .dropdown-header {
 	color: #333;
 	padding: 10px 15px;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 #navCatContent .mega-menu-col {
@@ -3687,7 +3673,6 @@ h6.blog_title {
 	font-size: 14px;
 	line-height: normal;
 	margin-bottom: 8px;
-	text-transform: uppercase;
 	font-style: italic;
 }
 .comment-reply i {
@@ -4534,7 +4519,6 @@ h6.blog_title {
 	background-color: #fff;
 	padding: 0 15px;
 	position: relative;
-	text-transform: uppercase;
 }
 .different_login::before {
 	content: "";
@@ -4936,7 +4920,6 @@ h6.blog_title {
 	position: absolute;
 	left: 10px;
 	top: 10px;
-	text-transform: uppercase;
 	color: #fff;
 	padding: 2px 8px;
 	font-size: 13px;
@@ -5134,8 +5117,6 @@ p.cart_item_title{
 	margin-bottom: 0;
 }
 span.cart_item_spec {
-	cursor: pointer;
-	text-transform: uppercase;
 	min-width: 24px;
 	padding: 0px 3px;
 	display: inline-block;
@@ -5145,6 +5126,10 @@ span.cart_item_spec {
 	font-size: 13px;
 	text-align: left;
 	margin: 3px;
+}
+span.cart_item_spec span{
+	
+	cursor: pointer;
 	overflow:hidden;
 	text-overflow:ellipsis;
 	display:-webkit-box;
@@ -5155,7 +5140,7 @@ span.cart_item_spec {
 .product .product_title a{
 	font-size: 14px;
 	height: 38px;
-    display: block;
+	display: block;
 }
 .product_title a:hover {
 	color:inherit;
@@ -5371,7 +5356,6 @@ span.cart_item_spec {
 }
 .product_size_switch span {
 	cursor: pointer;
-	text-transform: uppercase;
 	min-width: 24px;
 	padding: 0px 3px;
 	display: inline-block;
@@ -5794,7 +5778,6 @@ span.cart_item_spec {
 }
 .compare_box table tr td.row_title {
 	width: 270px;
-	text-transform: uppercase;
 	font-weight: 600;
 }
 .row_remove a, .row_remove a:hover {
@@ -6468,7 +6451,6 @@ footer .widget_recent_post .post_img img {
 	border-right: 0;
 	border-bottom: 2px solid rgba(0,0,0,0);
 	text-align: center;
-	text-transform: uppercase;
 }
 .tab-style3 .nav-tabs .nav-item a.active {
 	border-bottom-color: #ff6000;
@@ -7060,7 +7042,6 @@ blockquote p:last-child {
 	padding: 0px 5px;
 	border-radius: 20px;
 	background-color: #28A745;
-	text-transform: uppercase;
 	font-weight: 600;
 }
 .alert .close {
@@ -7349,12 +7330,10 @@ header.header .info-menu a{
 }
 
 .dropdown-menu .dropdown-header {
-	text-transform: uppercase;
 	font-weight: 500;
 }
 
 .dropdown-menu .dropdown-item {
-	text-transform: uppercase;
 	display: flex;
 	align-items: center;
 	padding-top:5px;
