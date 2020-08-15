@@ -2650,9 +2650,9 @@ button.close {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   @media all and (max-width: 640px) {
     .activity_swiper {
       display: block !important; } }
@@ -2689,6 +2689,14 @@ button.close {
   @media all and (max-width: 1280px) {
     .actitvity_wrap {
       padding: 40px 45px 42px; } }
+  @media all and (min-width: 961px) {
+    .actitvity_wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   @media all and (max-width: 640px) {
     .actitvity_wrap {
       padding: 0px;
@@ -7430,151 +7438,6 @@ button.slick-prev.slick-arrow:hover:before {
     .mainBlockWrap {
       padding: 0px; } }
 
-body:not(.isScrolled) .card:hover .cardText {
-  -webkit-animation: slideInUp .3s ease-in-out;
-  animation: slideInUp .3s ease-in-out; }
-
-body.isScrolled .card a.cardInside:hover .cardImage img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease; }
-
-.card {
-  width: 390px;
-  height: 465px;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
-  background-color: #ffffff;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer; }
-
-@media all and (max-width: 1920px) {
-  .card {
-    width: 390px;
-    height: 465px; } }
-
-@media all and (max-width: 1280px) {
-  .card {
-    width: 330px;
-    height: auto; } }
-
-@media all and (max-width: 1080px) {
-  .card {
-    width: 300px;
-    height: auto; } }
-
-.card:hover {
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15); }
-
-.card img {
-  max-width: 390px;
-  max-height: 232px;
-  width: 100%;
-  height: 100%; }
-
-.card img.serviceIcon {
-  position: absolute;
-  z-index: 3;
-  width: 75px;
-  height: 75px;
-  left: calc(50% - 37.5px);
-  top: calc(50% - 37.5px); }
-
-@media all and (max-width: 1920px) {
-  .card img.serviceIcon {
-    width: 75px;
-    height: 75px;
-    left: calc(50% - 37.5px);
-    top: calc(50% - 37.5px); } }
-
-@media all and (max-width: 1280px) {
-  .card img.serviceIcon {
-    width: 65px;
-    height: 65px;
-    left: calc(50% - 33.5px);
-    top: calc(50% - 50px); } }
-
-@media all and (max-width: 1080px) {
-  .card img.serviceIcon {
-    width: 60px;
-    height: 60px;
-    left: calc(50% - 30px);
-    top: calc(50% - 55px); } }
-
-.card .cardText {
-  padding: 35px 35px 30px 35px; }
-
-@media all and (max-width: 1920px) {
-  .card .cardText {
-    padding: 35px 35px 30px 35px;
-    height: 235px; } }
-
-@media all and (max-width: 1280px) {
-  .card .cardText {
-    padding: 35px 15px 30px; } }
-
-@media all and (max-width: 1080px) {
-  .card .cardText {
-    padding: 35px 10px 30px; } }
-
-.card .cardText .cardTitle {
-  height: 30px;
-  font-size: 22px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #00994e;
-  border-bottom: 1px solid #00994e;
-  width: 90px;
-  margin: 0 auto 15px; }
-
-.card .cardText .cardSubTitle {
-  color: #00994e;
-  letter-spacing: 0.4px;
-  font-size: 18px;
-  height: 27px;
-  overflow: hidden; }
-
-@media all and (max-width: 1920px) {
-  .card .cardText .cardSubTitle {
-    font-size: 18px; } }
-
-@media all and (max-width: 1280px) {
-  .card .cardText .cardSubTitle {
-    font-size: 17px; } }
-
-@media all and (max-width: 1080px) {
-  .card .cardText .cardSubTitle {
-    font-size: 16px; } }
-
-.card .cardText .cardContentText {
-  max-height: 50px;
-  overflow: hidden;
-  height: 50px; }
-
-.card .cardText .cardButton {
-  border-radius: 70px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#51be77), to(#27ae58));
-  background-image: -webkit-linear-gradient(top, #51be77, #27ae58);
-  background-image: -o-linear-gradient(top, #51be77, #27ae58);
-  background-image: linear-gradient(to bottom, #51be77, #27ae58);
-  width: 140px;
-  height: 40px;
-  font-size: 14px;
-  letter-spacing: 0.6px;
-  text-align: center;
-  margin: 10px auto 0px; }
-
 a.goOutlink {
   color: #ff6000;
   text-decoration: underline; }
@@ -7909,3 +7772,17 @@ a.goOutlink {
 
 .row {
   margin: 0px; }
+
+.collapse-icon [data-toggle="collapse"]:before {
+  content: '\ea48'; }
+
+.collapse-icon.accordion-icon-rotate [aria-expanded="true"]:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.accordion .card .card-header {
+  background-color: #f4f4f4; }
+
+.accordion .card.open .card-header {
+  background-color: #ff6000; }
