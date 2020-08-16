@@ -252,7 +252,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 		font-size: 1rem;
 	}
 
-
+	.side-know-more{
+		padding: 0.567rem 1.33rem;
+	}
 	ul#page-navigation-list {
 
 
@@ -276,7 +278,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 			}
 
-			a.nav-link {
+			a {
 				color: #ff6000;
 				padding-left: 2px;
 				line-height: 19px;
@@ -555,17 +557,17 @@ html body.navbar-sticky .app-content .content-wrapper {
 }
 
 // menu高度在某個尺寸下須作調整
-@media (min-height: 768px) {
+// @media (min-height: 768px) {
 
-	.main-menu.expanded .nav-footer-info,
-	.menu-expanded .nav-footer-info {
-		position: absolute;
-		font-size: 13px;
-		color: #b3b3b3;
-		bottom: 100px;
-	}
+// 	.main-menu.expanded .nav-footer-info,
+// 	.menu-expanded .nav-footer-info {
+// 		position: absolute;
+// 		font-size: 13px;
+// 		color: #b3b3b3;
+// 		bottom: 100px;
+// 	}
 
-}
+// }
 
 @media (max-width: 320px) {
 	html body.navbar-sticky .navbar-container {

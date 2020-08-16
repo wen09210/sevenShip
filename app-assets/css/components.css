@@ -3123,6 +3123,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 .sidebar-right .sidebar-content .badge.know_more {
   font-size: 1rem; }
 
+.sidebar-right .sidebar-content .side-know-more {
+  padding: 0.567rem 1.33rem; }
+
 .sidebar-right .sidebar-content ul#page-navigation-list li {
   color: #ff6000;
   border-bottom: 1px solid #dfe3e7;
@@ -3137,11 +3140,11 @@ html body.navbar-sticky .app-content .content-wrapper {
     position: absolute;
     font-size: 2rem;
     line-height: 7px; }
-  .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link {
+  .sidebar-right .sidebar-content ul#page-navigation-list li a {
     color: #ff6000;
     padding-left: 2px;
     line-height: 19px; }
-    .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-content {
+    .sidebar-right .sidebar-content ul#page-navigation-list li a .nav-content {
       color: #666;
       font-size: 13px;
       overflow: hidden;
@@ -3150,7 +3153,7 @@ html body.navbar-sticky .app-content .content-wrapper {
       -webkit-line-clamp: 2;
       line-height: normal;
       margin-top: 5px; }
-    .sidebar-right .sidebar-content ul#page-navigation-list li a.nav-link .nav-link-time {
+    .sidebar-right .sidebar-content ul#page-navigation-list li a .nav-link-time {
       font-size: 12px;
       color: #999999;
       margin-bottom: 3px; }
@@ -3319,14 +3322,6 @@ html body.navbar-sticky .app-content .content-wrapper {
   html body.navbar-sticky .app-content .content-wrapper {
     padding-left: 15px;
     padding-right: 15px; } }
-
-@media (min-height: 768px) {
-  .main-menu.expanded .nav-footer-info,
-  .menu-expanded .nav-footer-info {
-    position: absolute;
-    font-size: 13px;
-    color: #b3b3b3;
-    bottom: 100px; } }
 
 @media (max-width: 320px) {
   html body.navbar-sticky .navbar-container {
