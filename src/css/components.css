@@ -3658,4 +3658,47 @@ html body.navbar-sticky .app-content .content-wrapper {
   letter-spacing: normal;
   color: #6d6d6d; }
 
+a.form-link {
+  color: #00994e;
+  text-decoration: underline; }
+
+.success-tick {
+  position: relative;
+  padding-left: 25px;
+  color: #ff6000; }
+
+.success-tick:before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 4px; }
+
+.success-tick:after {
+  content: ' ';
+  height: 20px;
+  width: 20px;
+  border: 1px solid #DFE3E7;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  -webkit-transition: 100ms ease-in-out;
+  -o-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  border-top-style: none;
+  border-right-style: none;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: 0.4rem;
+  width: 0.8rem;
+  border-color: #ff6000;
+  border-radius: 0;
+  border-width: 2px;
+  top: 6px;
+  left: 4px; }
+
 /*# sourceMappingURL=components.css.map */
