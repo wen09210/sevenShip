@@ -269,7 +269,7 @@ button.close {
 
 .activity_swiper {
 	justify-content: center;
-	align-items: stretch;
+	align-items: center;
 	@include rwd-max-width(640px){
 		display: block !important;
 	}
@@ -318,8 +318,13 @@ button.close {
 .actitvity_wrap {
 	background-color: #ededed;
 	padding: 36px 45px 42px;
+	
 	@include rwd-max-width(1280px) {
 		padding: 40px 45px 42px;
+	}
+	@include rwd-min-width(961px) {
+		display: flex;
+		align-items: center;
 	}
 	@include rwd-max-width(640px) {
 		padding: 0px;

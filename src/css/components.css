@@ -3615,4 +3615,46 @@ html body.navbar-sticky .app-content .content-wrapper {
   padding: 7px calc(1rem + 10px) !important;
   margin: 0 11px; }
 
+.collapse-header.open .collapse-title {
+  color: #fff; }
+
+.collapse-header.open [aria-expanded="true"]:before {
+  color: #fff; }
+
+.collapse-icon [data-toggle="collapse"]:before {
+  content: '\ea48'; }
+
+.collapse-icon.accordion-icon-rotate [aria-expanded="true"]:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.accordion .card .card-header {
+  background-color: #f4f4f4; }
+
+.accordion .card.open .card-header {
+  background-color: #ff6000; }
+
+.collapsible .card.open,
+.accordion .card.open {
+  border: 0px;
+  border-radius: 0; }
+
+.accordion .card .card-header {
+  border: 0px; }
+
+.collapse-content-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4a4a4a; }
+
+.collapse-content {
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: #6d6d6d; }
+
 /*# sourceMappingURL=components.css.map */

@@ -1919,13 +1919,13 @@ _:-ms-lang(x),
 .accordion .card {
   margin-bottom: .71rem;
   box-shadow: none;
-  border-radius: 0.267rem !important; }
+  border-radius: 0 !important; }
   .collapsible .card .card-header,
   .accordion .card .card-header {
     margin: 0;
     border: solid 1px #DFE3E7;
     padding: 1rem 1.7rem;
-    border-radius: 0.267rem !important;
+    border-radius: 0 !important;
     font-size: 1.2rem;
     font-family: "微軟正黑體";
     cursor: pointer; }
@@ -1934,9 +1934,7 @@ _:-ms-lang(x),
       margin-right: 1rem; }
   .collapsible .card.open,
   .accordion .card.open {
-    /* open class for shadow and border-radius of card */
-    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1) !important;
-    border-radius: 0.267rem !important; }
+    /* open class for shadow and border-radius of card */ }
     .collapsible .card.open .card-header,
     .accordion .card.open .card-header {
       /* card-header when open class exist */

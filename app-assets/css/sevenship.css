@@ -7772,17 +7772,3 @@ a.goOutlink {
 
 .row {
   margin: 0px; }
-
-.collapse-icon [data-toggle="collapse"]:before {
-  content: '\ea48'; }
-
-.collapse-icon.accordion-icon-rotate [aria-expanded="true"]:before {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.accordion .card .card-header {
-  background-color: #f4f4f4; }
-
-.accordion .card.open .card-header {
-  background-color: #ff6000; }
