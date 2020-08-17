@@ -666,7 +666,8 @@ html body.navbar-sticky .app-content .content-wrapper {
 }
 
 .collapse-icon [data-toggle="collapse"]:before {
-	content: '\ea48'
+	content: '\ea48';
+	right:10px;
 }
 
 .collapse-icon.accordion-icon-rotate [aria-expanded="true"]:before {
