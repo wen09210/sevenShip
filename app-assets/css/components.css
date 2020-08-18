@@ -3473,3 +3473,9 @@ a.form-link {
   border-width: 2px;
   top: 6px;
   left: 4px; }
+
+.accordion .card:last-child {
+  margin-bottom: 70px; }
+  @media screen and (max-width: 960px) {
+    .accordion .card:last-child {
+      margin-bottom: 50px; } }

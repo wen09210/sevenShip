@@ -890,9 +890,13 @@
             if ($listItem.is('.open')) {
               $listItem.removeClass('open');
               menuObj.collapse($listItem);
-            } else {
+            } else if ($listItem.is('[data-toggle="modal"]')) {
+              console.log($listItem.attr('data-target'));
+              var tempId = $listItem.attr('data-target')
+              $(tempId ).modal();
+            }
+            else{
               $listItem.addClass('open');
-
               menuObj.expand($listItem);
 
               // If menu collapsible then do not take any action
