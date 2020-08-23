@@ -3,13 +3,13 @@
   "starter_kit": "starter-kit",
   "documentation": "documentation",
   "assets": "assets",
-  "app_assets": "app-assets",
+  "app_assets": "Content/components",
   "assets_path": "../../../assets",
-  "app_assets_path": "../../../app-assets",
+  "app_assets_path": "../../../Content/components",
   "destination": {
-    "js": "app-assets/js",
-    "css": "app-assets/css",
-    "css_rtl": "app-assets/css-rtl"
+    "js": "Content/components/js",
+    "css": "Content/components/css",
+    "css_rtl": "Content/components/css-rtl"
   },
   "source": {
     "path": "src",
