@@ -123,7 +123,7 @@
 .act_content {
 	overflow: hidden;
 	text-overflow: ellipsis;
-	height: 4.5em;
+	height: 6em;
 	@include rwd-max-width(960px) {
 		height: auto;
 	}

@@ -2533,7 +2533,7 @@ footer .footer_function_link {
   overflow: hidden;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  height: 4.5em; }
+  height: 6em; }
   @media all and (max-width: 960px) {
     .act_content {
       height: auto; } }
@@ -7364,7 +7364,7 @@ button.slick-prev.slick-arrow:hover:before {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.1px;
-  color: #ffffff; }
+  color: #f00; }
   @media all and (max-width: 960px) {
     .cub-text-wrapper h2 {
       font-size: 24px;
