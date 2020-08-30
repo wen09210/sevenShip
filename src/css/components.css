@@ -3561,6 +3561,11 @@ html body.navbar-sticky .app-content .content-wrapper {
     line-height: 1.86;
     letter-spacing: normal;
     color: #ffffff; }
+  @media all and (max-width: 768px) {
+    .seven-form-label {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; } }
 
 .form-group {
   margin: 0.5rem 0px;

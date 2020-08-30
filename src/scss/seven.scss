@@ -601,7 +601,14 @@ html body.navbar-sticky .app-content .content-wrapper {
 		letter-spacing: normal;
 		color: #ffffff;
 	}
-
+	@media all and (max-width:768px){
+		justify-content: flex-start;
+		padding:10px 15px;
+		.seven-form-remark-outer{
+			display: flex;
+			justify-content: center;
+		}
+	}
 }
 
 .form-group {
