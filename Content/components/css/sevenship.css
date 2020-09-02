@@ -7776,6 +7776,8 @@ a.goOutlink {
 .news-collapse-tab {
   max-width: 960px;
   margin: 0 auto; }
+  .news-collapse-tab .accordion {
+    width: 100%; }
 
 .collapse-title {
   color: #4a4a4a;
