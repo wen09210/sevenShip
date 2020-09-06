@@ -7072,6 +7072,10 @@ or from end to start, or both.*/
 .news-collapse-tab .card .card-content .card-body {
   padding-top: 1.7rem; }
 
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
 .seven-logo {
   width: 132px;
   margin-right: 8px; }
@@ -7675,5 +7679,8 @@ a.form-link {
 
 .max-960 {
   max-width: 960px; }
+
+.mobile-display-collapse {
+  display: none; }
 
 /*# sourceMappingURL=components.css.map */

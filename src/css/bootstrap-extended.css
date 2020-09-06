@@ -2,6 +2,7 @@
 /*------------------------------------------------------------------
 [Table of contents]
 
+
 - Reboot css
 - Font size [Small / Medium / Large]
 - Font weight
@@ -1654,8 +1655,7 @@ input[type=number]::-webkit-outer-spin-button {
   .card .card-header .card-title {
     margin-bottom: 0; }
   .card .card-header ~ .card-content .card-body {
-    /* Removed card top padding as padding already there for card header */
-    padding-top: 0; }
+    /* Removed card top padding as padding already there for card header */ }
   .card .heading-elements,
   .card .heading-elements-toggle {
     background-color: inherit;
@@ -2401,3 +2401,5 @@ _:-ms-lang(x),
   white-space: nowrap;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis; }
+
+/*# sourceMappingURL=bootstrap-extended.css.map */

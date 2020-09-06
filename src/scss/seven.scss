@@ -2,6 +2,10 @@ $form-label: #fff6f1;
 $main-orange: #ff6000;
 @import 'seven-components/seven_button';
 @import 'seven-components/seven_news-collapse';
+.row{
+	margin-right:0px;
+	margin-left:0px;
+}
 // logo
 .seven-logo {
 	width: 132px;
@@ -805,4 +809,7 @@ a.form-link {
 }
 .max-960{
 	max-width: 960px;
+}
+.mobile-display-collapse{
+	display: none;
 }
