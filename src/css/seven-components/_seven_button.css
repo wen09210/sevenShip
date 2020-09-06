@@ -1,0 +1,29 @@
+.button-section {
+  text-align: center; }
+  .button-section.btn-big .btn {
+    width: 230px; }
+    @media screen and (max-width: 768px) {
+      .button-section.btn-big .btn:nth-last-of-type(2):first-child,
+      .button-section.btn-big .btn:nth-last-of-type(2):first-child ~ .btn {
+        width: calc(50% - 4px); } }
+  .button-section.btn-small .btn {
+    width: 120px; }
+    @media screen and (max-width: 768px) {
+      .button-section.btn-small .btn:nth-last-of-type(2):first-child,
+      .button-section.btn-small .btn:nth-last-of-type(2):first-child ~ .btn {
+        width: calc(50% - 4px); }
+      .button-section.btn-small .btn:nth-last-of-type(3):first-child {
+        width: 100%; }
+      .button-section.btn-small .btn:nth-last-of-type(3):first-child ~ .btn {
+        width: calc(50% - 4px); } }
+  .button-section .btn {
+    padding-left: inherit;
+    padding-right: inherit; }
+  .button-section .btn-light-orange {
+    background: #ffeee6; }
+  .button-section .btn-light-gray {
+    border: 1px solid #e5e5e5;
+    color: #333; }
+
+.max-960 {
+  max-width: 960px; }

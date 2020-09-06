@@ -1,5 +1,7 @@
 $form-label: #fff6f1;
-
+$main-orange: #ff6000;
+@import 'seven-components/seven_button';
+@import 'seven-components/seven_news-collapse';
 // logo
 .seven-logo {
 	width: 132px;
@@ -37,10 +39,10 @@ $form-label: #fff6f1;
 .main-menu.menu-light .navigation>li.nav-item.open>a,
 .main-menu.menu-light .navigation>li.nav-item.sidebar-group-active>a {
 	background: #fc7c2e1a;
-	color: #ff6000;
+	color: $main-orange;
 	margin: 0px;
 	padding: 7px 1.25rem;
-	border-left: 2px solid #ff6000;
+	border-left: 2px solid $main-orange;
 }
 
 .menu-collapsed {
@@ -105,10 +107,10 @@ $form-label: #fff6f1;
 .main-menu.menu-light .navigation>li.nav-item.open.has-sub.open .menu-content .open {
 
 	>a {
-		color: #ff6000;
+		color: $main-orange;
 
 		i {
-			color: #ff6000;
+			color: $main-orange;
 		}
 	}
 
@@ -178,7 +180,7 @@ $form-label: #fff6f1;
 }
 
 .badge.badge-light-danger {
-	background-color: #ff6000 !important;
+	background-color: $main-orange !important;
 	font-size: 14px;
 	padding: 0.2rem 0.3rem;
 	margin-right: 7px;
@@ -259,7 +261,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 
 		li {
-			color: #ff6000;
+			color: $main-orange;
 			border-bottom: 1px solid #dfe3e7;
 			margin: 12px 14px 0px;
 			position: relative;
@@ -279,7 +281,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 			}
 
 			a {
-				color: #ff6000;
+				color: $main-orange;
 				padding-left: 2px;
 				line-height: 19px;
 
@@ -313,7 +315,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 }
 
 .text-primary {
-	color: #ff6000;
+	color: $main-orange;
 }
 
 .sales-area .nav.nav-pills~.tab-content {
@@ -433,7 +435,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		i {
 			font-size: 35px;
 			vertical-align: middle;
-			color: #ff6000;
+			color: $main-orange;
 			margin-right: 5px;
 			text-align: center;
 			display: block;
@@ -452,7 +454,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 	}
 
 	&:hover {
-		background-color: #ff6000;
+		background-color: $main-orange;
 
 		i {
 			color: #fff;
@@ -464,12 +466,6 @@ html body.navbar-sticky .app-content .content-wrapper {
 	}
 }
 
-.footer-static {
-	p {
-		font-size: 14px;
-		color: #9b9b9b;
-	}
-}
 
 .my_performance {
 	width: 100%;
@@ -490,7 +486,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 
 .card .swiper-button-prev,
 .card .swiper-button-next {
-	color: #ff6000;
+	color: $main-orange;
 }
 
 .dropdown-menu {
@@ -686,7 +682,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 }
 
 .accordion .card.open .card-header {
-	background-color: #ff6000;
+	background-color: $main-orange;
 }
 .collapsible .card.open,
 .accordion .card.open{
@@ -717,7 +713,7 @@ a.form-link {
 .success-tick{
 	position: relative;
 	padding-left: 25px;
-	color: #ff6000;
+	color: $main-orange;
 }
 .success-tick:before {
     content: '';
@@ -744,7 +740,7 @@ a.form-link {
 	transform: rotate(-45deg);
 	height: 0.4rem;
 	width: 0.8rem;
-	border-color: #ff6000;
+	border-color: $main-orange;
 	border-radius: 0;
 	border-width: 2px;
 	top: 6px;
@@ -755,4 +751,58 @@ a.form-link {
 	@media screen and(max-width: 960px) {
 		margin-bottom:50px;
 	}
+}
+
+// btn section
+
+.button-section{
+	text-align:center;
+	&.btn-big{
+		.btn{
+			width: 230px;
+			@media screen and (max-width:768px) {
+				&:nth-last-of-type(2):first-child,
+				&:nth-last-of-type(2):first-child ~ .btn
+					{
+						width: calc(50% - 4px);
+				}
+			}
+		}
+		
+		
+	}
+	&.btn-small{
+		.btn{
+			width:120px;
+			@media screen and (max-width:768px) {
+				&:nth-last-of-type(2):first-child,
+				&:nth-last-of-type(2):first-child~.btn {
+					width: calc(50% - 4px);
+				}
+				&:nth-last-of-type(3):first-child {
+					width: 100%;
+				}
+
+				&:nth-last-of-type(3):first-child~.btn {
+					width: calc(50% - 4px);
+				}
+			}
+			
+		}
+		
+	}
+	.btn{
+		padding-left:inherit;
+		padding-right:inherit;
+	}
+	.btn-light-orange{
+		background: #ffeee6;
+	}
+	.btn-light-gray {
+		border:1px solid #e5e5e5;
+		color:#333;
+	}
+}
+.max-960{
+	max-width: 960px;
 }

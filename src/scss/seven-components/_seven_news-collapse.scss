@@ -1,0 +1,72 @@
+//news問答區塊
+.news-collapse-tab {
+
+	margin: 0 auto;
+
+	.accordion {
+		width: 100%;
+	}
+
+	.nav.nav-tabs~.tab-content {
+		padding-left: 0;
+	}
+}
+
+.collapse-title {
+	color: #4a4a4a;
+	font-size: 16px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.news-collapse-tab .nav-tabs {
+	border-bottom: 0px;
+
+
+	.nav-item.current:before,
+	.nav-item.current:after {
+		display: none;
+	}
+
+	.nav-link {
+		font-size: 16px;
+		padding: 10px 0px;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: 0.04px;
+		color: #434343;
+		background-color: #fff;
+		border-radius: 2px;
+		border: solid 1px #848f93;
+
+		&.active {
+			background-color: $main-orange;
+			color: #fff;
+			border: 0px;
+		}
+
+		@media screen and(max-width:960px) {
+			font-size: 16px;
+			padding: 10px 0px;
+		}
+	}
+
+	@media screen and(max-width:960px) {
+		.nav-item {
+			width: calc(50% - 0.8rem);
+
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.news-collapse-tab {
+	.card .card-content .card-body {
+		padding-top: 1.7rem;
+	}
+}

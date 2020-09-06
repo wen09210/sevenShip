@@ -1,0 +1,62 @@
+
+// btn section
+
+.button-section{
+	text-align:center;
+	&.btn-big{
+		.btn{
+			width: 230px;
+			@media screen and (max-width:768px) {
+				// 一顆按鈕時
+				&:nth-last-of-type(1):first-child {
+					width: 100%
+				}
+				// 兩顆按鈕時
+				&:nth-last-of-type(2):first-child,
+				&:nth-last-of-type(2):first-child ~ .btn
+					{
+						width: calc(50% - 4px);
+				}
+			}
+		}
+		
+		
+	}
+	&.btn-small{
+		.btn{
+			width:120px;
+			@media screen and (max-width:768px) {
+				&:nth-last-of-type(1):first-child {
+					width: 100%;
+				}
+				&:nth-last-of-type(2):first-child,
+				&:nth-last-of-type(2):first-child~.btn {
+					width: calc(50% - 4px);
+				}
+				&:nth-last-of-type(3):first-child {
+					width: 100%;
+				}
+
+				&:nth-last-of-type(3):first-child~.btn {
+					width: calc(50% - 4px);
+				}
+			}
+			
+		}
+		
+	}
+	.btn{
+		padding-left:inherit;
+		padding-right:inherit;
+	}
+	.btn-light-orange{
+		background: #ffeee6;
+	}
+	.btn-light-gray {
+		border:1px solid #e5e5e5;
+		color:#333;
+	}
+}
+.max-960{
+	max-width: 960px;
+}
