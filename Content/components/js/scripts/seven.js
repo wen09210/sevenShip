@@ -2,6 +2,7 @@
 $(function () {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $("select").select2('destroy');
+        $("select").addClass('select-arrow-down')
     }
 
     if ($(window).innerWidth() > 768) { $('.mobile-hidden-accordin').addClass('mobile-display-collapse'); }
@@ -28,3 +29,4 @@ $('.mobile-hidden-accordin').click(function () {
     var el = $('.mobile-hidden-accordin .collapse-title span');
     el.text(el.text() == '收合' ? '全部展開' : '收合');
 })
+

@@ -813,3 +813,16 @@ a.form-link {
 .mobile-display-collapse{
 	display: none;
 }
+.select2.form-control.select-arrow-down.select-arrow-down {
+	    background-image: url(../images/select2-dropdown.png);
+	    background-position: calc(100% - 12px) 13px,
+	    calc(100% - 20px) 13px,
+	    100% 0;
+	    background-size: 16px 12px,
+	    8px 8px;
+	    background-repeat: no-repeat;
+	    -webkit-appearance: none;
+	    -moz-appearance: none;
+	    padding-right: 1.5rem;
+	    
+}
