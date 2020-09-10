@@ -36,6 +36,7 @@
     <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="../../Content/components/css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="../../Content/components/css/plugins/extensions/swiper.css">
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/plugins/forms/validation/form-validation.css">
     <!-- link(rel='stylesheet', type='text/css', href='../../Content/components/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
     <!-- <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/ui/prism.min.css"> -->
     <!-- <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/documentation.css"> -->
@@ -261,10 +262,9 @@
             <div class="content-wrapper">
                 <!-- header 麵包屑 -->
                 <div class="content-header row">
-                    <div class="content-header-left col-12 mb-1">
+                    <div class="content-header-left col-12 m-p-10">
                         <div class="row breadcrumbs-top">
-                            <div class="col-12">
-                                <div class="breadcrumb-wrapper col-12">
+                                <div class="breadcrumb-wrapper ">
                                     <ol class="breadcrumb p-0 mb-0">
                                         <li class="breadcrumb-item"><a href="index.html"><i
                                                     class="bx bx-home-alt"></i>首頁</a>
@@ -273,7 +273,6 @@
                                         </li>
                                     </ol>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,7 +280,7 @@
                     <!--Content Right Sidebar-->
                     <section id="content-right-sidebar">
                         <section id="content-right-sidebar-css" class="card">
-                            <div class="card-header">
+                            <div class="card-header m-p-10">
                                 <h4 class="card-title">賣家訂單查詢及出貨
                                     <span data-toggle="modal" data-target="#default" class="info-word ">
                                         <img src="../../Content/components/images/icons/info.png" alt="" class="info-i">
@@ -327,9 +326,8 @@
                                 </div>
                             </div>
                             <!-- 燈箱結束 -->
-
-                            <div class="card-content" aria-expanded="true">
-                                <div class="card-body">
+                            <div class="card-content " aria-expanded="true">
+                                <div class="card-body m-p-10">
                                     <div class=" accordion collapse-icon accordion-icon-rotate" id="mobile-accordionWrapa1"
                                         data-toggle-hover="true">
                                         <div class="card collapse-header open">
@@ -345,7 +343,7 @@
                                             <div id="accordion1" role="tabpanel" data-parent="#mobile-accordionWrapa1"
                                                 aria-labelledby="heading1" class="collapse show "
                                                 style="">
-                                                <div class="card-content">
+                                                <div class="card-content ">
                                                     <div class="card-body">
                                                         <p class="collapse-content-title"> 1. 金流代收最安心：
                                                         </p>
@@ -358,7 +356,7 @@
                                         </div>
                             
                                     </div>
-                                    <form class="form form-horizontal">
+                                    <form class="form form-horizontal" novalidate>
                                         <div class="form-body">
                                             <div class="row">
                                                 <div class="col-md-2 seven-form-label">
@@ -389,7 +387,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4 form-group">
+                                                <div class="col-md-4 ">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
                                                             placeholder="選擇查詢起日">
@@ -398,7 +396,7 @@
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-md-4 form-group">
+                                                <div class="col-md-4 ">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
                                                             placeholder="選擇查詢迄日">
@@ -456,8 +454,12 @@
                                                     <label>搜尋賣場名稱</label>
                                                 </div>
                                                 <div class="col-md-4 form-group">
+                                                    <div class="controls">
                                                     <input type="text"  class="form-control"
-                                                        name="contact" placeholder="搜尋賣場名稱">
+                                                        name="contact" placeholder="搜尋賣場名稱" required
+                                                        data-validation-required-message="驗證欄位">
+                                                        </div>
+                                                      
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -502,7 +504,7 @@
                                                     <label>退貨門市</label>
                                                 </div>
                                                 <div class="col-md-10 form-group">
-                                                        <div class=" mr-2 mb-1">
+                                                        <div class=" mr-2 ">
                                                                 <div class="custom-control custom-radio">
                                                                     <input type="radio" class="custom-control-input"
                                                                         name="customRadio" id="customRadio1" checked="">
@@ -510,16 +512,18 @@
                                                                         for="customRadio1">退回原寄門市</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="d-flex mr-2 mb-1 align-items-center">
-                                                                <div class="custom-control custom-radio mr-1">
+                                                            <div
+                                                                class="d-flex mr-2 mb-1 align-items-center m-flex-column
+                                                                w-100 m-align-items-flex-start">
+                                                                <div class="custom-control custom-radio mr-1 mb-1">
                                                                     <input type="radio" class="custom-control-input"
                                                                         name="customRadio" id="customRadio2">
                                                                     <label class="custom-control-label "
                                                                         for="customRadio2">指定退貨門市</label>
                                                                 </div>
-                                                                 <input type="number" "="" class="mr-1 form-control"
+                                                                 <input type="number"  class="mr-1 form-control mb-1"
                                                                      name="contact" placeholder="選擇退貨門市">
-                                                                     <button class="btn btn-outline-primary w-100"
+                                                                     <button class="btn btn-outline-primary w-100 mb-1"
                                                                          type="submit">選擇退貨門市</button>
                                                             </div>
                                                       
@@ -566,7 +570,7 @@
                                                                     for="customRadio4">期間</label>
 
                                                             </div>
-                                                            <div class="col-md-4 form-group">
+                                                            <div class="col-md-4 ">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
                                                             placeholder="選擇查詢起日">
@@ -575,7 +579,7 @@
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div class="col-md-4 form-group">
+                                                <div class="col-md-4 ">
                                                     <fieldset class="form-group position-relative has-icon-right">
                                                         <input type="text" class="form-control pickadate"
                                                             placeholder="選擇查詢迄日">
@@ -593,8 +597,16 @@
                                                 <div class="col-md-2 seven-form-label">
                                                     <label>要求買家回饋資訊</label>
                                                 </div>
-                                                <div class="col-md-10 form-group">
-                                                        先跳過，再回來補
+                                                <div class="col-md-8 form-group justify-content-start">
+                                                    <div class="buyer-list">
+                                                        <div class="buyer-list-number">1</div>
+                                                        <input type="text" class="form-control" name=""
+                                                            placeholder="最多五則，可要求買家填入ATM匯款帳號" >
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 form-group justify-content-start ">
+                                                    <button class="btn btn-outline-primary add_buyer_list w-100" type="submit"
+                                                        id="add_buyer_list">加入</button>
                                                 </div>
                                             </div>
                                             <!--  -->
@@ -662,8 +674,9 @@
                                                     <div class="success-tick">已驗證</div>
                                                 </div>
                                             </div>
-                                            
+                                            <button type="submit" class="btn btn-primary">Submit</button>
                                         </div>
+                                        
                                     </form>
                                     <!-- 按鈕部分 -->
                                     <div>
@@ -1042,13 +1055,14 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="../../Content/components/vendors/js/extensions/swiper.min.js"></script>
     <!-- END: Page Vendor JS-->
+   
     <!-- BEGIN: Theme JS-->
     <script src="../../Content/components/js/core/app-menu.js"></script>
     <script src="../../Content/components/js/core/app.js"></script>
     <script src="../../Content/components/js/scripts/components.js"></script>
     <script src="../../Content/components/js/scripts/footer.js"></script>
     <!-- END: Theme JS-->
-
+    <script src="../../Content/components/vendors/js/forms/validation/jqBootstrapValidation.js"></script>
     <!-- BEGIN: Page JS-->
     <script src="../../Content/components/js/scripts/datatables/datatable.js"></script>
     <script src="../../Content/components/js/scripts/extensions/swiper.js"></script>
@@ -1065,6 +1079,9 @@
     <script src="../../Content/components/js/scripts/forms/select/form-select2.js"></script>
     <script src="../../Content/components/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
     <script src="../../Content/components/js/scripts/seven.js"></script>
+    <!-- END: Page JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../Content/components/js/scripts/forms/validation/form-validation.js"></script>
     <!-- END: Page JS-->
 </body>
 <!-- END: Body-->
