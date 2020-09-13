@@ -1,0 +1,256 @@
+$primary: #ff6000;
+.card-body-container {
+  max-width: 960px;
+  width: 100%;
+}
+.steps {
+  width: 100%;
+  max-width: 960px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fafafa;
+  .step_progress {
+    position: relative;
+    padding: 30px 60px;
+    .bar_box {
+      position: relative;
+      margin-bottom: 15px;
+      width: 100%;
+      height: 3px;
+      background: #e4e4e4;
+      .bar {
+        position: absolute;
+        left: 0;
+        width: 0%;
+        height: 3px;
+        background: $primary;
+      }
+    }
+  }
+  .step_content {
+    user-select: none;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    padding: 0px 40px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .step {
+    text-align: center;
+    cursor: pointer;
+    .step_num {
+      color: #e4e4e4;
+      background: #e4e4e4;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      line-height: 26px;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  .step.done {
+    .step_num {
+      background: $primary;
+      color: $primary;
+      border: 2px solid $primary;
+    }
+    .step_name {
+      color: $primary;
+    }
+  }
+  .step.active {
+    .step_num {
+      background: #fafafa;
+      color: $primary;
+      border: 2px solid $primary;
+    }
+    .step_name {
+      color: $primary;
+    }
+  }
+}
+.search {
+  background: #fef1ea;
+  padding: 10px 20px;
+  h6 {
+    font-weight: bold;
+  }
+  .btn-circle {
+    border-radius: 50%;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.order__table.mobile {
+  display: none;
+  text-align-last: left;
+  td {
+    padding: 8px;
+  }
+}
+.order__table {
+  h6 {
+    color: #2f2f2f;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  table {
+    text-align: center;
+    thead {
+      background: #fafafa;
+      th {
+        color: #757575;
+        padding: 5px;
+        font-size: 14px;
+      }
+    }
+    td {
+      padding: 10px;
+      color: #333333;
+      img {
+        margin: 0 10px;
+      }
+    }
+    .detail {
+      color: $primary;
+    }
+  }
+}
+.order__table.mobile {
+  .mobile_th {
+    min-width: 100px;
+    background: #f4f5f6;
+    font-weight: bold;
+  }
+  table {
+    td {
+      padding: 10px;
+      img {
+        margin: 0px;
+      }
+    }
+  }
+}
+.pagination {
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  ul,
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      border: 2px solid white;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      line-height: 12px;
+      text-align: center;
+      border-radius: 3px;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      i {
+        top: initial;
+        line-height: 12px;
+      }
+    }
+
+    li.btn {
+      border: 1px solid #e8e8e7;
+      background: white;
+    }
+    li.active {
+      border: 1px solid $primary;
+      background: white;
+    }
+    li.unactive {
+      cursor: not-allowed;
+      border: 1px solid #f3f3f3;
+      background: #f3f3f3;
+    }
+  }
+  .pagination__info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+.step__btns {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btns {
+    max-width: 200px;
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+.step__finish {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .finish__icon {
+    margin-bottom: 10px;
+    i {
+      font-size: 3rem;
+      color: $primary;
+      padding: 3px;
+      border-radius: 50%;
+      border: 3px solid #f4f5f6;
+    }
+  }
+  .finish__message {
+    p {
+      font-size: 18px;
+      color: #4a4a4a;
+      line-height: 28px;
+      margin: 0;
+      span {
+        color: $primary;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .order__table.web {
+    display: none;
+  }
+  .order__table.mobile {
+    display: block;
+  }
+  .pagination {
+    .pagination__info {
+      margin-top: 10px;
+      font-size: 12px;
+      width: 100%;
+      text-align: right;
+      position: relative;
+    }
+  }
+}

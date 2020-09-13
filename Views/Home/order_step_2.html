@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+  <!-- BEGIN: Head-->
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="PIXINVENT" />
+    <title>7-ELEVEN 賣貨便</title>
+    <link rel="apple-touch-icon" sizes="60x60" href="../../Content/components/images/ico/apple-icon-60.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../../Content/components/images/ico/apple-icon-76.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../../Content/components/images/ico/apple-icon-120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../../Content/components/images/ico/apple-icon-152.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../Content/components/images/ico/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i%7COpen+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/forms/select/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/pickers/pickadate/pickadate.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/pickers/daterange/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/vendors.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/extensions/swiper.min.css" />
+    <!-- END VENDOR CSS-->
+    <!-- BEGIN Frest CSS-->
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/bootstrap-extended.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/colors.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/components.css" />
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/core/menu/menu-types/vertical-menu.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/plugins/extensions/swiper.css" />
+    <!-- link(rel='stylesheet', type='text/css', href='../../Content/components/css'+rtl+'/core/menu/menu-types/vertical-overlay-menu.css')-->
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/ui/prism.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../Content/components/vendors/css/documentation.css" />
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+
+    <link rel="stylesheet" type="text/css" href="../../Content/components/css/order_step.css" />
+    <!-- END Custom CSS-->
+  </head>
+  <!-- END: Head-->
+
+  <!-- BEGIN: Body-->
+  <body data-menu="vertical-menu-modern" class="seven-global vertical-layout vertical-menu-modern 2-columns navbar-sticky footer-static menu-expanded">
+    <!-- BEGIN: Header-->
+    <div class="header-navbar-shadow"></div>
+    <nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top">
+      <div class="navbar-wrapper">
+        <div class="navbar-container content">
+          <div class="navbar-collapse" id="navbar-mobile">
+            <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center justify-content-between w-100">
+              <ul class="nav navbar-nav d-lg-none">
+                <li class="nav-item mobile-menu d-xl-none mr-auto">
+                  <a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon bx bx-menu"></i></a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav bookmark-icons">
+                <li class="nav-item d-lg-block">
+                  <a class="nav-link"
+                    ><img src="../../Content/components/images/logo/7-eleven.png" alt="" class="seven-logo" /><img
+                      src="../../Content/components/images/logo/sevenlogo.png"
+                      alt=""
+                      class="seven-logo-two"
+                  /></a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav float-right">
+                <li class="dropdown nav-user-name nav-item d-none d-lg-block">
+                  <div class="nav-link">王曉雯，歡迎回來</div>
+                </li>
+                <li class="nav-item nav-user-more">
+                  <a class="dropdown-toggle nav-link" id="dropdown-flag" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class=""><i class="bx bx-dots-horizontal-rounded"></i></span
+                  ></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdown-flag">
+                    <a class="dropdown-item" href="#"> <i class="bx bx-power-off mr-50"></i> 登出</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END: Header-->
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+      <div class="navbar-header">
+        <ul class="nav navbar-nav flex-row">
+          <li class="nav-item mr-auto"></li>
+          <li class="nav-item nav-toggle">
+            <a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse">
+              <i class="bx bx-x d-block d-xl-none font-medium-4 gray-text"></i>
+              <i class="bx bx-menu font-medium-4 d-none d-xl-block gray-text"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="shadow-bottom"></div>
+      <div class="main-menu-content">
+        <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation" data-icon-style="">
+          <li class="nav-item has-sub open">
+            <a href="app-email.html"><i class="bx bx-task"></i><span class="menu-title" data-i18n="Email">訂單管理</span></a>
+            <ul class="menu-content">
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">賣家訂單</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">買家訂單</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="index.html"
+              ><i class="bx bx-store-alt"></i><span class="menu-title" data-i18n="Dashboard">賣場管理</span
+              ><span class="badge badge-light-danger badge-pill badge-round mr-2">new</span></a
+            >
+            <ul class="menu-content">
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Second Level">我的賣場</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Analytics">新增賣場</span></a>
+                <ul class="menu-content">
+                  <li>
+                    <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">一般賣場</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">快速結帳賣場</span></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">便利自填單</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Second Level">賣場匯入</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Second Level">賣場匯入紀錄</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#"><i class="bx bx-wallet"></i><span class="menu-title" data-i18n="Chat">帳務管理</span></a>
+            <ul class="menu-content">
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">收款紀錄</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="bx bx-briefcase-alt"></i><span class="menu-title" data-i18n="Todo">訂單工具</span></a>
+            <ul class="menu-content">
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">訂單匯入</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">訂單匯入紀錄</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">訂單合併</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="bx bx-cog"></i><span class="menu-title" data-i18n="Calendar">個人資料管理</span></a>
+            <ul class="menu-content">
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">帳號資料管理</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">會員資料管理</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">常用地址與門市</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">銀行帳戶資訊管理</span></a>
+              </li>
+              <li>
+                <a href="#"><i class="bx bx-caret-right"></i><span class="menu-item" data-i18n="Third Level">社群帳號綁定</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#"><i class="bx bx-help-circle"></i><span class="menu-title" data-i18n="Calendar">幫助中心</span></a>
+          </li>
+          <ul class="nav-footer-info">
+            <li class="nav-item">
+              <hr />
+            </li>
+            <li class="nav-item">
+              <div>客服專線：(02)2721-4234</div>
+            </li>
+            <li class="nav-item">
+              <div>服務時間：週一至週五</div>
+            </li>
+            <li class="nav-item">
+              <div>09:00~18:00 (例假日休息)</div>
+            </li>
+            <li class="nav-item">
+              <div>客服信箱：711ec@sp88.com</div>
+            </li>
+            <div class="nav-item nav-footer-icon">
+              <a href="#"><img src="../../Content/components/images/icons/fb.png" alt="" class="nav-icon" /></a>
+              <a href="#"><img src="../../Content/components/images/icons/youtube.png" alt="" class="nav-icon" /></a>
+              <a href="#"><img src="../../Content/components/images/icons/line.png" alt="" class="nav-icon" /></a>
+            </div>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+      <div class="global-alert-wrapper global-announcement">
+        <div class="alert alert-warning alert-dismissible mb-0" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="d-flex align-items-start">
+            <span class="badge badge-light-danger badge-pill badge-round float-right">公告事項</span>
+            <span> 金鼠迎新賺紅包-賣貨便寄件送運費折扣券 </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="content-wrapper">
+          <!-- header 麵包屑 -->
+          <div class="content-header row">
+            <div class="content-header-left col-12 mb-1">
+              <div class="row breadcrumbs-top">
+                <div class="col-12">
+                  <div class="breadcrumb-wrapper col-12">
+                    <ol class="breadcrumb p-0 mb-0">
+                      <li class="breadcrumb-item">
+                        <a href="index.html"><i class="bx bx-home-alt"></i>首頁</a>
+                      </li>
+                      <li class="breadcrumb-item active"><a href="#">賣家訂單</a></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-body">
+            <!--Content Right Sidebar-->
+            <section id="content-right-sidebar">
+              <section id="content-right-sidebar-css" class="card">
+                <div class="card-header">
+                  <h4 class="card-title">
+                    訂單合併
+                    <span data-toggle="modal" data-target="#default" class="info-word">
+                      <img src="../../Content/components/images/icons/info.png" alt="" class="info-i" />
+                      <span>使用說明</span>
+                    </span>
+                  </h4>
+                </div>
+                <!--基礎燈箱 -->
+                <div
+                  class="modal fade text-left"
+                  id="default"
+                  tabindex="-1"
+                  role="dialog"
+                  aria-labelledby="myModalLabel1"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h3 class="modal-title" id="myModalLabel1">使用說明</h3>
+                        <button type="button" class="close rounded-pill" data-dismiss="modal" aria-label="Close">
+                          <i class="bx bx-x"></i>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>說明內容</p>
+                      </div>
+                      <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary ml-1" data-dismiss="modal">
+                          <span class="d-block">我知道了</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 燈箱結束 -->
+
+                <div class="card-content" aria-expanded="true">
+                  <div class="card-body">
+                    <div class="card-body-container">
+                      <!--BEGIN: 步驟條-->
+                      <div class="steps mb-1">
+                        <div class="step_progress">
+                          <div class="bar_box">
+                            <div class="bar"></div>
+                          </div>
+                          <div class="step_content">
+                            <div class="step done">
+                              <div class="step_num">1</div>
+                              <div class="step_name">搜尋訂單</div>
+                            </div>
+                            <div class="step">
+                              <div class="step_num">2</div>
+                              <div class="step_name">確認訂單</div>
+                            </div>
+                            <div class="step">
+                              <div class="step_num">3</div>
+                              <div class="step_name">成立訂單</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!--END: 步驟條-->
+
+                      <!--BEGIN: 新訂單資訊 Table-->
+                      <!--web-->
+                      <div class="order__table web mb-3">
+                        <h6>新訂單資訊</h6>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>訂單編號</th>
+                              <th>收件人姓名<br />收件人電話</th>
+                              <th>取件門市<br />付款方式</th>
+                              <th>購買數量</th>
+                              <th>訂購金額</th>
+                              <th>運費</th>
+                              <th>購買金額<br />(含運費）</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <a href="#">尚未成立</a>
+                              </td>
+                              <td>
+                                <div>李*明</div>
+                                <div>0910***001</div>
+                              </td>
+                              <td>
+                                <div>宏圖門市</div>
+                                <div>取貨付款</div>
+                              </td>
+                              <td>
+                                <div>20000000</div>
+                              </td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                              </td>
+                              <td>
+                                <div class="form-group form-control-sm">
+                                  <input type="text" class="form-control" placeholder="" />
+                                </div>
+                              </td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                                <div>(免運))</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--mobile-->
+                      <div class="order__table mobile mb-3">
+                        <h6>新訂單資訊</h6>
+                        <table class="table table-bordered">
+                          <tbody>
+                            <tr>
+                              <td class="mobile_th">訂單編號</td>
+                              <td>
+                                <a href="#">尚未成立</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">收件人姓名<br />收件人電話</td>
+                              <td>
+                                <div>李*明</div>
+                                <div>0910***001</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">取件門市<br />付款方式</td>
+                              <td>
+                                <div>宏圖門市</div>
+                                <div>取貨付款</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">購買數量</td>
+                              <td>
+                                <div>20000000</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">訂購金額</td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">運費</td>
+                              <td>
+                                <div class="form-group form-control-sm">
+                                  <input type="text" class="form-control" placeholder="" />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">購買金額<br />(含運費）</td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                                <div>(免運))</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--END: 新訂單資訊 Table-->
+                      <!--BEGIN: 商品明細 Table-->
+                      <!--web-->
+                      <div class="order__table web">
+                        <h6>商品明細</h6>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr>
+                              <th>序號</th>
+                              <th>商品圖片</th>
+                              <th>商品名稱</th>
+                              <th>金額</th>
+                              <th>數量</th>
+                              <th>小計</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <div>1</div>
+                              </td>
+                              <td>
+                                <div>
+                                  <img src="https://fakeimg.pl/80x80/" />
+                                </div>
+                              </td>
+                              <td>
+                                <div>Theodora's｜Tethys 經典水波紋金屬腕錶 水波深藍-米蘭黑</div>
+                              </td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                              </td>
+                              <td>
+                                <div>2000000</div>
+                              </td>
+                              <td>
+                                <div>$ 300,000,000</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--mobile-->
+                      <div class="order__table mobile">
+                        <h6>商品明細</h6>
+                        <table class="table table-bordered">
+                          <tbody>
+                            <tr>
+                              <td class="mobile_th">序號</td>
+                              <td>
+                                <div>1</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">商品圖片</td>
+                              <td>
+                                <div>
+                                  <img src="https://fakeimg.pl/80x80/" />
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">商品名稱</td>
+                              <td>
+                                <div>Theodora's｜Tethys 經典水波紋金屬腕錶 水波深藍-米蘭黑</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">金額</td>
+                              <td>
+                                <div>$ 750,000,000</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">數量</td>
+                              <td>
+                                <div>2000000</div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="mobile_th">小計</td>
+                              <td>
+                                <div>$ 300,000,000</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!--END: 商品明細 Table-->
+                      <!--BEGIN: 按鈕-->
+                      <div class="step__btns">
+                        <div class="btns">
+                          <a class="btn btn-outline-primary w-100" href="./order_step_1.html">上一步</a>
+                          <!-- <button class="btn btn-outline-primary w-100" type="submit">上一步</button> -->
+                        </div>
+                        <div class="btns">
+                          <a class="btn btn-primary w-100" href="./order_step_3.html">下一步</a>
+                          <!-- <button class="btn btn-primary w-100" type="submit">下一步</button> -->
+                        </div>
+                      </div>
+                      <!--END: 按鈕-->
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </section>
+            <!--/ Content Right Sidebar-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <footer class="footer footer-static footer-light bg-white">
+      <p class="clearfix mb-0"><span class="float-right d-sm-inline-block">© 2020 President Information CORP. All Rights Reserved. </span></p>
+    </footer>
+    <!-- END: Footer-->
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../Content/components/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../Content/components/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/dataTables.bootstrap4.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/dataTables.buttons.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../../Content/components/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <!-- END: Page Vendor JS-->
+    <script src="../../Content/components/vendors/js/forms/select/select2.full.min.js"></script>
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../Content/components/vendors/js/extensions/swiper.min.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Theme JS-->
+    <script src="../../Content/components/js/core/app-menu.js"></script>
+    <script src="../../Content/components/js/core/app.js"></script>
+    <script src="../../Content/components/js/scripts/components.js"></script>
+    <script src="../../Content/components/js/scripts/footer.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../Content/components/js/scripts/datatables/datatable.js"></script>
+    <script src="../../Content/components/js/scripts/extensions/swiper.js"></script>
+    <!-- END: Page JS-->
+    <!-- BEGIN: Pick date JS-->
+    <script src="../../Content/components/vendors/js/pickers/pickadate/picker.js"></script>
+    <script src="../../Content/components/vendors/js/pickers/pickadate/picker.date.js"></script>
+    <script src="../../Content/components/vendors/js/pickers/pickadate/picker.time.js"></script>
+    <script src="../../Content/components/vendors/js/pickers/pickadate/legacy.js"></script>
+    <script src="../../Content/components/vendors/js/pickers/daterange/moment.min.js"></script>
+    <script src="../../Content/components/vendors/js/pickers/daterange/daterangepicker.js"></script>
+    <!-- END: Page Vendor JS-->
+    <!-- BEGIN: Page JS-->
+    <script src="../../Content/components/js/scripts/forms/select/form-select2.js"></script>
+    <script src="../../Content/components/js/scripts/pickers/dateTime/pick-a-datetime.js"></script>
+    <!-- END: Page JS-->
+
+    <script src="../../Content/components/js/scripts/seven.js"></script>
+
+    <!-- BEGIN: 訂單合併步驟 -->
+    <script src="../../Content/components/js/scripts/order_step.js"></script>
+    <script>
+      setSteps(1, 2);
+    </script>
+    <!-- END: 訂單合併步驟 -->
+  </body>
+  <!-- END: Body-->
+</html>
