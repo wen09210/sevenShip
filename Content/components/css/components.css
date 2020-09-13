@@ -7464,6 +7464,9 @@ html body.navbar-sticky .app-content .content-wrapper {
   html body.navbar-sticky .navbar-container {
     padding-right: 5px; } }
 
+.picker__day {
+  white-space: nowrap; }
+
 .seven-form-label {
   background-color: #fff6f1;
   -webkit-box-pack: end;
@@ -7490,7 +7493,8 @@ html body.navbar-sticky .app-content .content-wrapper {
     font-weight: normal;
     line-height: 1.86;
     letter-spacing: normal;
-    color: #ffffff; }
+    color: #ffffff;
+    word-break: keep-all; }
   @media all and (max-width: 768px) {
     .seven-form-label {
       -webkit-box-pack: start;
@@ -7709,7 +7713,8 @@ a.form-link {
     top: 4px;
     border-radius: 5px;
     margin: -1px;
-    background: #fff; }
+    background: #fff;
+    color: #ff6000; }
   .buyer-list input[type="text"] {
     border: 1px solid #d8d8d8;
     margin-left: 30px;

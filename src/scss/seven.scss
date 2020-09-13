@@ -574,7 +574,9 @@ html body.navbar-sticky .app-content .content-wrapper {
 		padding-right: 5px;
 	}
 }
-
+.picker__day{
+	white-space: nowrap;
+}
 // 元件頁
 .seven-form-label {
 	background-color: $form-label;
@@ -600,6 +602,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		line-height: 1.86;
 		letter-spacing: normal;
 		color: #ffffff;
+		word-break: keep-all;
 	}
 	@media all and (max-width:768px){
 		justify-content: flex-start;
@@ -847,6 +850,7 @@ a.form-link {
 		border-radius: 5px;
 		margin: -1px;
 		background: #fff;
+		color:$main-orange;
 	}
 	input[type="text"]{
 		border:1px solid #d8d8d8;
