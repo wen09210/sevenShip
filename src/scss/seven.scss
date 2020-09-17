@@ -578,6 +578,16 @@ html body.navbar-sticky .app-content .content-wrapper {
 	white-space: nowrap;
 }
 // 元件頁
+.form-padding-min {
+	.form-group {
+		padding: 0px 5px;
+	}
+
+}
+
+
+
+.form-padding-min{
 .seven-form-label {
 	background-color: $form-label;
 	justify-content: flex-end;
@@ -586,7 +596,12 @@ html body.navbar-sticky .app-content .content-wrapper {
 	margin-bottom: 4px;
 	text-align: right;
 	padding: 20px 15px;
-
+	
+	& + .form-group{
+		@media all and (min-width:768px) {
+		padding-left:15px;
+		}
+	}
 	label {
 		font-size: 16px;
 		color: #333;
@@ -613,6 +628,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 		}
 	}
 }
+}
 
 .form-group {
 	margin: 0.5rem 0px;
@@ -623,7 +639,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 	justify-content: center;
 
 	input,
-	select {
+	.select2 {
 		margin-top: 3px;
 		margin-bottom: 3px;
 	}

@@ -7467,7 +7467,10 @@ html body.navbar-sticky .app-content .content-wrapper {
 .picker__day {
   white-space: nowrap; }
 
-.seven-form-label {
+.form-padding-min .form-group {
+  padding: 0px 5px; }
+
+.form-padding-min .seven-form-label {
   background-color: #fff6f1;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
@@ -7481,10 +7484,13 @@ html body.navbar-sticky .app-content .content-wrapper {
   margin-bottom: 4px;
   text-align: right;
   padding: 20px 15px; }
-  .seven-form-label label {
+  @media all and (min-width: 768px) {
+    .form-padding-min .seven-form-label + .form-group {
+      padding-left: 15px; } }
+  .form-padding-min .seven-form-label label {
     font-size: 16px;
     color: #333; }
-  .seven-form-label .label-required {
+  .form-padding-min .seven-form-label .label-required {
     border-radius: 2px;
     background-color: #ababab;
     font-size: 14px;
@@ -7496,12 +7502,12 @@ html body.navbar-sticky .app-content .content-wrapper {
     color: #ffffff;
     word-break: keep-all; }
   @media all and (max-width: 768px) {
-    .seven-form-label {
+    .form-padding-min .seven-form-label {
       -webkit-box-pack: start;
       -ms-flex-pack: start;
       justify-content: flex-start;
       padding: 10px 15px; }
-      .seven-form-label .seven-form-remark-outer {
+      .form-padding-min .seven-form-label .seven-form-remark-outer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -7526,7 +7532,7 @@ html body.navbar-sticky .app-content .content-wrapper {
   -ms-flex-pack: center;
   justify-content: center; }
   .form-group input,
-  .form-group select {
+  .form-group .select2 {
     margin-top: 3px;
     margin-bottom: 3px; }
 
