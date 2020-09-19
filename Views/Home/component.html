@@ -568,24 +568,23 @@
                                                                 for="customRadio4">期間</label>
 
                                                         </div>
-                                                <div class="col-md-5 ">
-                                                    <fieldset class="form-group position-relative has-icon-right">
-                                                        <input type="text" class="form-control pickadate"
-                                                            placeholder="選擇查詢起日">
-                                                        <div class="form-control-position">
-                                                            <i class='bx bx-calendar'></i>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
-                                                <div class="col-md-5 ">
-                                                    <fieldset class="form-group position-relative has-icon-right">
-                                                        <input type="text" class="form-control pickadate"
-                                                            placeholder="選擇查詢迄日">
-                                                        <div class="form-control-position">
-                                                            <i class='bx bx-calendar'></i>
-                                                        </div>
-                                                    </fieldset>
-                                                </div>
+                                                 <fieldset
+                                                     class=" col-md-4 form-group position-relative has-icon-right">
+                                                     <input type="text" class="form-control pickadate"
+                                                         placeholder="選擇查詢起日">
+                                                     <div class="form-control-position">
+                                                         <i class='bx bx-calendar'></i>
+                                                     </div>
+                                                 </fieldset>
+
+                                                 <fieldset
+                                                     class=" col-md-4 form-group position-relative has-icon-right">
+                                                     <input type="text" class="form-control pickadate"
+                                                         placeholder="選擇查詢迄日">
+                                                     <div class="form-control-position">
+                                                         <i class='bx bx-calendar'></i>
+                                                     </div>
+                                                 </fieldset>
                                                 </div>
 
                                                 </div>
@@ -596,11 +595,12 @@
                                                     <label>要求買家回饋資訊</label>
                                                 </div>
                                                 <div class="col-md-8 form-group justify-content-start">
-                                                    <div class="buyer-list">
-                                                        <div class="buyer-list-number">1</div>
-                                                        <input type="text" class="form-control" name=""
-                                                            placeholder="最多五則，可要求買家填入ATM匯款帳號" >
-                                                    </div>
+                                                    <ol class="buy_ol">
+                                                        <li class="buyer-list">
+                                                            <input type="text" class="form-control" name=""
+                                                                placeholder="最多五則，可要求買家填入ATM匯款帳號" >
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                                 <div class="col-md-2 form-group justify-content-start ">
                                                     <button class="btn btn-outline-primary add_buyer_list w-100" type="submit"

@@ -24,15 +24,19 @@ $(function () {
         }, 500);
     });
 
-    var buyer_list_number =2;
     $('#add_buyer_list').click(function () {
-        if (buyer_list_number < 6){
-            $(this).parent().prev().append(' <div class="buyer-list"><div class="buyer-list-number">' + buyer_list_number + '</div><input type="text" class="form-control" name=""placeholder="最多五則，可要求買家填入ATM匯款帳號" ></div>');
+        var buyer_list_number = $('.buyer-list').length;
+        if (buyer_list_number < 5){
+            $(this).parent().prev().children('ol').append(' <li class="buyer-list"><input type="text" class="form-control" name=""placeholder="最多五則，可要求買家填入ATM匯款帳號" ><i class="bx bx-x" onclick="remove_buyer_list(this)"></i></li>');
         }
         buyer_list_number = buyer_list_number + 1;
-        
     })
 })
+function remove_buyer_list(params) {
+    let list = $(params).parent('.buyer-list');
+    list.remove();
+}
+
 
 $('.mobile-hidden-accordin').click(function () {
     var el = $('.mobile-hidden-accordin .collapse-title span');

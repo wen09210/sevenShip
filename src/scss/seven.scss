@@ -855,10 +855,15 @@ a.form-link {
 .controls{
 	width: 100%;
 }
-.buyer-list{
+
+.buy_ol{
+	list-style: none;
+	counter-reset: li;
 	width: 100%;
-	position: relative;
-	.buyer-list-number {
+	padding-left: 0px;
+	margin-bottom: 0;
+	li::before {
+		content: counter(li);
 		border: 1px solid #d8d8d8;
 		padding: 8px 15px;
 		position: absolute;
@@ -868,10 +873,38 @@ a.form-link {
 		background: #fff;
 		color:$main-orange;
 	}
+
+	li {
+		counter-increment: li
+	}
+}
+
+.buyer-list{
+	display: flex;
+	width: 100%;
+	position: relative;
+	.buyer-list-number {
+		
+	}
 	input[type="text"]{
 		border:1px solid #d8d8d8;
 		margin-left: 30px;
 		width:calc(100% - 30px);
+	}
+	//叉叉
+	.bx-x{
+		position: absolute;
+		right: 5px;
+		top: 29%;
+		font-size: 20px;
+		&:after{
+			content: '';
+			border-left: 1px solid #d8d8d8;
+			height: 38px;
+			top: -10px;
+			left: -5px;
+			position: absolute;
+		}
 	}
 }
 .add_buyer_list{
