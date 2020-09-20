@@ -1014,6 +1014,510 @@
                                         </div>
                                     </div>
                                     <!-- 收合結束 -->
+                                    <!--BEGIN: 步驟條-->
+                                    <div class="steps mb-1">
+                                        <div class="step_progress">
+                                            <div class="bar_box">
+                                                <div class="bar"></div>
+                                            </div>
+                                            <div class="step_content">
+                                                <div class="step done">
+                                                    <div class="step_num">1</div>
+                                                    <div class="step_name">搜尋訂單</div>
+                                                </div>
+                                                <div class="step">
+                                                    <div class="step_num">2</div>
+                                                    <div class="step_name">確認訂單</div>
+                                                </div>
+                                                <div class="step">
+                                                    <div class="step_num">3</div>
+                                                    <div class="step_name">成立訂單</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END: 步驟條-->
+                                    <!--BEGIN: 搜尋訂單-->
+                                    <div class="search card">
+                                        <h6>搜尋訂單</h6>
+                                        <form class="form">
+                                            <div class="row">
+                                                <div class="col-md-4 form-group">
+                                                    <select class="select2 form-control">
+                                                        <option value="square">請選擇商品種類</option>
+                                                        <option value="rectangle">Rectangle</option>
+                                                        <option value="rombo">Rombo</option>
+                                                        <option value="romboid">Romboid</option>
+                                                        <option value="trapeze">Trapeze</option>
+                                                        <option value="traible">Triangle</option>
+                                                        <option value="polygon">Polygon</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-5 form-group">
+                                                    <input type="text" class="form-control" name="contact"
+                                                        placeholder="只能查詢未取號且未被合併的訂單" />
+                                                </div>
+                                                <div class="col-md-3 form-group">
+                                                    <button class="btn btn-primary w-100" type="submit"><i
+                                                            class="bx bx-search-alt-2"></i>查詢</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--END: 搜尋訂單-->
+                                    <!--BEGIN: 訂單列表Table-->
+                                    <!--web-->
+                                    <div class="order__table web">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">訂單編號</th>
+                                                    <th scope="col">收件人姓名<br />收件人電話</th>
+                                                    <th scope="col">取件門市<br />付款方式</th>
+                                                    <th scope="col">購買金額<br />(含運費）</th>
+                                                    <th scope="col">購買數量</th>
+                                                    <th scope="col">合併</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="order_num">CM1911270035182</div>
+                                                        <div class="detail">
+                                                            <a href="#">訂單明細</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="name">李*明</div>
+                                                        <div class="phone">0910***001</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="shop">宏圖門市</div>
+                                                        <div class="payment">取貨付款</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">450</div>
+                                                        <div class="shipping">（含運費60）</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="count">2</div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-outline-primary" type="submit"><i
+                                                                class="bx bx-add-to-queue"></i>加入</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--mobile-->
+                                    <div class="order__table mobile">
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="mobile_th">訂單編號</td>
+                                                    <td>
+                                                        <div class="order_num">CM1911270035182</div>
+                                                        <div class="detail">
+                                                            <a href="#">訂單明細</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">收件人姓名<br />收件人電話</td>
+                                                    <td>
+                                                        <div class="name">李*明</div>
+                                                        <div class="phone">0910***001</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">取件門市<br />付款方式</td>
+                                                    <td>
+                                                        <div class="shop">宏圖門市</div>
+                                                        <div class="payment">取貨付款</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買金額<br />(含運費）</td>
+                                                    <td>
+                                                        <div class="price">450</div>
+                                                        <div class="shipping">（含運費60）</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買數量</td>
+                                                    <td>
+                                                        <div class="count">2</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">合併</td>
+                                                    <td>
+                                                        <button class="btn btn-outline-primary" type="submit"><i
+                                                                class="bx bx-add-to-queue"></i>加入</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--END: 訂單列表Table-->
+                                    <!--BEGIN: 分頁-->
+                                    <div class="pagination">
+                                        <ul>
+                                            <li class="btn" data-handler="begin"><i class="bx bx-first-page"></i></li>
+                                            <li class="btn" data-handler="prev"><i class="bx bx-chevron-left"></i></li>
+                                            <li class="page_num active" data-page="1">1</li>
+                                            <li class="page_num" data-page="2">2</li>
+                                            <li class="page_num" data-page="3">3</li>
+                                            <li class="page_num" data-page="4">4</li>
+                                            <li class="btn" data-handler="next"><i class="bx bx-chevron-right"></i></li>
+                                            <li class="btn" data-handler="end"><i class="bx bx-last-page"></i></li>
+                                        </ul>
+                                        <div class="pagination__info">1 - 2 筆 / 共 2 筆</div>
+                                    </div>
+                                    <!--END: 分頁-->
+
+                                    <!--web-->
+                                    <div class="order__table web">
+                                        <h6>合併訂單</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>訂單編號</th>
+                                                    <th>收件人姓名<br />收件人電話</th>
+                                                    <th>取件門市<br />付款方式</th>
+                                                    <th>購買金額<br />(含運費）</th>
+                                                    <th>購買數量</th>
+                                                    <th>合併後訂單<br />金額小計</th>
+                                                    <th>原運費小計</th>
+                                                    <th>新訂單<br />主要訂購人</th>
+                                                    <th>刪除</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="order_number">
+                                                        <div class="number">CM1911270035182</div>
+                                                        <div class="detail">
+                                                            <a href="#">訂單明細</a>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="name">李*明</div>
+                                                        <div class="phone">0910***001</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="shop">宏圖門市</div>
+                                                        <div class="payment">取貨付款</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="price">450</div>
+                                                        <div class="shipping">（含運費60）</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="count">
+                                                            <button class="btn btn-outline-primary btn-sm"
+                                                                type="submit"><i class="bx bx-star"></i>預設</button>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="count">
+                                                            <button class="btn btn-outline-primary btn-sm"
+                                                                type="submit"><i class="bx bx-trash"></i>刪除</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--mobile-->
+                                    <div class="order__table mobile">
+                                        <h6>合併訂單</h6>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="mobile_th">訂單編號</td>
+                                                    <td class="order_number">
+                                                        <div class="number">CM1911270035182</div>
+                                                        <div class="detail">
+                                                            <a href="#">訂單明細</a>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">收件人姓名<br />收件人電話</td>
+                                                    <td>
+                                                        <div class="name">李*明</div>
+                                                        <div class="phone">0910***001</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">取件門市<br />付款方式</td>
+                                                    <td>
+                                                        <div class="shop">宏圖門市</div>
+                                                        <div class="payment">取貨付款</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買金額<br />(含運費）</td>
+                                                    <td>
+                                                        <div class="price">450</div>
+                                                        <div class="shipping">（含運費60）</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買數量</td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">合併後訂單<br />金額小計</td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">原運費小計</td>
+                                                    <td>
+                                                        <div>2</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">新訂單<br />主要訂購人</td>
+                                                    <td>
+                                                        <div class="count">
+                                                            <button class="btn btn-outline-primary btn-sm"
+                                                                type="submit"><i class="bx bx-star"></i>預設</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">刪除</td>
+                                                    <td>
+                                                        <div class="count">
+                                                            <button class="btn btn-outline-primary btn-sm"
+                                                                type="submit"><i class="bx bx-trash"></i>刪除</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="note">備註：相同[收件人手機+收件人姓名+取件門市]才允許合併</div>
+                                    <!--BEGIN: 新訂單資訊 Table-->
+                                    <!--web-->
+                                    <div class="order__table web mb-3">
+                                        <h6>新訂單資訊</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>訂單編號</th>
+                                                    <th>收件人姓名<br />收件人電話</th>
+                                                    <th>取件門市<br />付款方式</th>
+                                                    <th>購買數量</th>
+                                                    <th>訂購金額</th>
+                                                    <th>運費</th>
+                                                    <th>購買金額<br />(含運費）</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="#">尚未成立</a>
+                                                    </td>
+                                                    <td>
+                                                        <div>李*明</div>
+                                                        <div>0910***001</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>宏圖門市</div>
+                                                        <div>取貨付款</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>20000000</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="form-group form-control-sm">
+                                                            <input type="text" class="form-control" placeholder="" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                        <div>(免運))</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--mobile-->
+                                    <div class="order__table mobile mb-3">
+                                        <h6>新訂單資訊</h6>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="mobile_th">訂單編號</td>
+                                                    <td>
+                                                        <a href="#">尚未成立</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">收件人姓名<br />收件人電話</td>
+                                                    <td>
+                                                        <div>李*明</div>
+                                                        <div>0910***001</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">取件門市<br />付款方式</td>
+                                                    <td>
+                                                        <div>宏圖門市</div>
+                                                        <div>取貨付款</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買數量</td>
+                                                    <td>
+                                                        <div>20000000</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">訂購金額</td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">運費</td>
+                                                    <td>
+                                                        <div class="form-group form-control-sm">
+                                                            <input type="text" class="form-control" placeholder="" />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">購買金額<br />(含運費）</td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                        <div>(免運))</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--END: 新訂單資訊 Table-->
+                                    <!--BEGIN: 商品明細 Table-->
+                                    <!--web-->
+                                    <div class="order__table web">
+                                        <h6>商品明細</h6>
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>序號</th>
+                                                    <th>商品圖片</th>
+                                                    <th>商品名稱</th>
+                                                    <th>金額</th>
+                                                    <th>數量</th>
+                                                    <th>小計</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div>1</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>
+                                                            <img src="https://fakeimg.pl/80x80/" />
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div>Theodora's｜Tethys 經典水波紋金屬腕錶 水波深藍-米蘭黑</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>2000000</div>
+                                                    </td>
+                                                    <td>
+                                                        <div>$ 300,000,000</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--mobile-->
+                                    <div class="order__table mobile">
+                                        <h6>商品明細</h6>
+                                        <table class="table table-bordered">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="mobile_th">序號</td>
+                                                    <td>
+                                                        <div>1</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">商品圖片</td>
+                                                    <td>
+                                                        <div>
+                                                            <img src="https://fakeimg.pl/80x80/" />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">商品名稱</td>
+                                                    <td>
+                                                        <div>Theodora's｜Tethys 經典水波紋金屬腕錶 水波深藍-米蘭黑</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">金額</td>
+                                                    <td>
+                                                        <div>$ 750,000,000</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">數量</td>
+                                                    <td>
+                                                        <div>2000000</div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile_th">小計</td>
+                                                    <td>
+                                                        <div>$ 300,000,000</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--END: 商品明細 Table-->
+                                     <!--BEGIN: 合併成功資訊-->
+                                     <div class="step__finish">
+                                         <div class="finish__icon">
+                                             <i class="bx bx-check"></i>
+                                         </div>
+                                         <div class="finish__message">
+                                             <p>合併成功!</p>
+                                             <p>系統已自動成立新訂單<span>(CM2002060035867)</span></p>
+                                             <p>您可於「訂單查詢》賣家訂單》待出貨」確認狀態，並進行後續出貨作業。</p>
+                                         </div>
+                                     </div>
+                                     <!--END: 合併成功資訊-->
                                 </div>
                             </div>
                         </section>
@@ -1081,6 +1585,14 @@
     <!-- END: Page JS-->
     <!-- BEGIN: Page JS-->
     <script src="../../Content/components/js/scripts/forms/validation/form-validation.js"></script>
+    <!-- 訂單合併js -->
+    <script src="../../Content/components/js/scripts/order_step.js"></script>
+    <script>
+        // 引入step.js,設定現在步驟setSteps(nowStep,totalSteps),
+        // 設定頁數
+        setSteps(0, 2);
+        updatePagination();
+    </script>
     <!-- END: Page JS-->
 </body>
 <!-- END: Body-->
