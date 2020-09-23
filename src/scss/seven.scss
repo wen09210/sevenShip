@@ -595,7 +595,7 @@ html body.navbar-sticky .app-content .content-wrapper {
 	display: flex;
 	margin-bottom: 4px;
 	text-align: right;
-	padding: 20px 15px;
+	// padding: 20px 15px;
 	
 	& + .form-group{
 		@media all and (min-width:768px) {
@@ -920,3 +920,4 @@ a.form-link {
 		align-items:flex-start !important;
 	}
 }
+

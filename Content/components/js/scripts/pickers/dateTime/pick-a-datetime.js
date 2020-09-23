@@ -17,7 +17,12 @@
   $('.pickadate').pickadate({
     today: '',
     clear: '',
-    close: ''
+    close: '',
+    format: 'yyyy/mm/dd',
+    monthsFull: ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月"],
+    monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+    weekdaysShort: ["日", "一", "二", "三", "四", "五", "六"],
+    
   });
 
   // Format Date Picker
@@ -46,10 +51,7 @@
       formatSubmit: 'dd/mm/yyyy',
       monthsFull: [ 'Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre' ],
       monthsShort: [ 'Jan', 'Fev', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Aou', 'Sep', 'Oct', 'Nov', 'Dec' ],
-      weekdaysShort: [ 'Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam' ],
-      today: 'aujourd\'hui',
-      clear: 'clair',
-      close: 'Fermer'
+      weekdaysShort: ["日","一","二","三","四","五","六"],
   });
 
   // Month Select Picker

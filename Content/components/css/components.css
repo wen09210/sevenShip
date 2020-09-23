@@ -7482,8 +7482,7 @@ html body.navbar-sticky .app-content .content-wrapper {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 4px;
-  text-align: right;
-  padding: 20px 15px; }
+  text-align: right; }
   @media all and (min-width: 768px) {
     .form-padding-min .seven-form-label + .form-group {
       padding-left: 15px; } }
