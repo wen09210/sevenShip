@@ -42,6 +42,14 @@ li.on .svg-icon path {
 [data-switch-content="riskProvisions"] {
   display: none;
 }
+@media only screen and (min-width: 640px) {
+.c-menuLv1__child {
+  top: 47px;
+  border-bottom: 0px;
+  box-shadow: 0 0px 8px rgba(2, 2, 2, .15);
+  min-width: 555px;
+}
+}
 
 /* 桌機板 */
 @media only screen and (min-width: 320px) {
@@ -143,7 +151,7 @@ li.on .svg-icon path {
     top: 47px;
     border-bottom: 0px;
     box-shadow: 0 0px 8px rgba(2, 2, 2, .15);
-    min-width: 555px;
+    // min-width: 555px;
   }
 
 
@@ -608,18 +616,18 @@ header.header {
 
   z-index: 999;
   width: 100%;
-  min-width: 1240px;
+  /* min-width: 1240px; */
 
   @include rwd-max-width(1920px) {
-    min-width: 1240px;
+    /* min-width: 1240px; */
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 1080px;
+    // min-width: 1080px;
   }
 
   @include rwd-max-width(1080px) {
-    min-width: 1280px;
+    // min-width: 1280px;
   }
 
 
@@ -654,14 +662,14 @@ float:left;
   }
 
   display: block;
-  min-width: 1240px;
+  /* min-width: 1240px; */
 
   @include rwd-max-width(1920px) {
-    min-width: 1240px;
+    /* min-width: 1240px; */
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 1280px;
+    // min-width: 1280px;
 
   }
 
@@ -673,15 +681,15 @@ float:left;
 }
 
 .footerWrap {
-  min-width:1240px;
+  /* min-width: 1240px; */
 
 
   @include rwd-max-width(1920px) {
-    min-width: 1240px;
+    /* min-width: 1240px; */
   }
 
   @include rwd-max-width(1280px) {
-    min-width: 1240px;
+    /* min-width: 1240px; */
   }
 
   margin: 0 auto;
@@ -705,7 +713,7 @@ float:left;
 
 
 .cs-l-mainKv {
-  min-width: 1240px;
+  /* min-width: 1240px; */
   overflow: hidden;
   height: 420px;
 }
@@ -888,7 +896,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock {
   padding: 50px 0 74px;
-  min-width: 1240px;
+  /* min-width: 1240px; */
 }
 
 .cs-l-mainBlock-small {
@@ -897,7 +905,7 @@ button.slick-prev.slick-arrow:hover:before {
 
 .cs-l-mainBlock--bglightGrn {
   background-color: #edf3e9;
-  min-width: 1280px;
+  // min-width: 1280px;
 }
 
 .mainBlockWrap {
@@ -910,7 +918,7 @@ button.slick-prev.slick-arrow:hover:before {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  min-width: 1240px;
+  /* min-width: 1240px; */
 }
 
 @media all and (max-width: 1280px) {
@@ -1113,4 +1121,9 @@ a.goOutlink {
   margin-left:10px;
   padding:0px;
   height: calc(2.25rem + 2px);
+}
+.hidden-phone{
+  @include pad-width(){
+      display: none;
+  }
 }
