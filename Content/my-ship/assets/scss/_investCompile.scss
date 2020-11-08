@@ -408,9 +408,10 @@ header.header .info-menu .search>input[type=text]:hover {
 }
 
 header.header .info-menu .logo {
-	left: 0;
-	position: absolute;
-	top: 12px
+	padding-top: 12px;
+	@media screen and(max-width:768px) {
+		text-align: center;
+	}
 }
 
 header.header .info-menu .toggle {

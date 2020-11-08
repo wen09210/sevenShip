@@ -1,7 +1,7 @@
 @import '_color.scss';
+@import '_screenWidth.scss';
 @import '_slider.scss';
 @import '_investCompile.scss';
-@import '_screenWidth.scss';
 @import '_button.scss';
 @import '_seven_delivery.scss';
 
@@ -431,6 +431,7 @@ li.on .svg-icon path {
 
   .f-recommandLink {
     background-color: $main-blue;
+    padding:0 28px;
   }
 
   .f-recommandLink ul {
@@ -439,13 +440,10 @@ li.on .svg-icon path {
 
   }
 
-
-
   .f-recommandFlex {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-
   }
 
   .pt-30 {
@@ -457,11 +455,6 @@ li.on .svg-icon path {
     float: right;
     font-size: 14px;
   }
-
-
-
-
-
   .f-recommandLink .iconSpan:before {
     content: '';
     width: 25px;
@@ -609,8 +602,14 @@ li.on .svg-icon path {
 
 
 }
+@media only screen and (max-width: 768px) {
+.f-recommandFlex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
 
-
+}
 // 首頁header變化
 header.header {
 
@@ -930,6 +929,11 @@ button.slick-prev.slick-arrow:hover:before {
 @media all and (max-width: 1080px) {
   .mainBlockWrap {
     padding: 0px 10px;
+  }
+}
+@media all and (max-width: 960px) {
+  .mainBlockWrap {
+    display: block;
   }
 }
 
