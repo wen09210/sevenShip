@@ -1,5 +1,4 @@
 .cub-text-wrapper a.cub-button {
-	height: 50px;
 	background-color: #ffffff;
 	color: $main-blue;
 	padding: 12px 20px;
@@ -13,10 +12,29 @@
 	min-width: 190px;
 	display: inline-block;
 	border-radius: 4px;
+	width: 140px;
+	margin-top: 20px;
 
 	&:hover {
 		background-color: $light-blue;
 		color: #fff;
+	}
+
+	@include rwd-max-width(960px) {
+		background-color: transparent;
+		color: #fff;
+		border: 1px solid #fff;
+		min-width: 80px;
+		margin-top: 10px;
+		width: 88px;
+		font-size: 14px;
+		font-weight: normal;
+		padding: 7px;
+
+		&:hover {
+			background-color: transparent;
+			color: #fff;
+		}
 	}
 }
 
@@ -51,7 +69,7 @@
 
 }
 
-a.header-small-btn{
+a.header-small-btn {
 	width: 100px;
 	height: 30px;
 	border-radius: 5px;
@@ -61,20 +79,28 @@ a.header-small-btn{
 	font-stretch: normal;
 	font-style: normal;
 	line-height: normal;
-	padding:6px;
+	padding: 6px;
 	letter-spacing: normal;
 	justify-content: center;
 	align-items: center;
-	color:$main-blue;
-	&:hover{
-		background-color:$main-blue;
-		color:#fff;
+	color: $main-blue;
+
+	&:hover {
+		background-color: $main-blue;
+		color: #fff;
+
+		.bx-user {
+			color: #fff;
+		}
 	}
-	.bx-user{
+
+	.bx-user {
 		font-size: 18px;
+		color: $main-blue;
 	}
-	&.active{
-		background-color:$main-blue;
-		color:#fff;
+
+	&.active {
+		background-color: $main-blue;
+		color: #fff;
 	}
 }

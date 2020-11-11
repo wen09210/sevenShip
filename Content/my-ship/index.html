@@ -24,14 +24,15 @@
 <body class="home rwd ">
     <div class="cs-l-container">
         <div class="marginTopSpace"></div>
+        <div class="o-menuMask"></div>
         <header class="header">
             <div class="l-cubHeader">
                 <nav class="info-menu">
                     <div class="container">
 
                         <h1 class="logo">
-                            <a href="/client/personal" title="交貨便" id="lnk_ADLink_7-ELEVEN 交貨便">
-                                <img src="assets/images/logo.png" alt="" width="133" height="50" />
+                            <a href="" title="交貨便" id="lnk_ADLink_7-ELEVEN 交貨便">
+                                <img src="assets/images/logo.png" alt="" >
                             </a>
                         </h1>
                     </div>
@@ -57,6 +58,21 @@
                         </ul>
                     </div> -->
                 </nav>
+            </div>
+            <div class="l-mobileHeader l-mobileHeader--transparent">
+                <div class="l-mobileHeader__container">
+                    <div class="wrap clearfix">
+                        <div class="l-mobileHeader__burger" data-id="js-burger">
+                            <div class="c-burger">
+                                <span class="c-burger--top"></span>
+                                <span class="c-burger--middle"></span>
+                                <span class="c-burger--bottom"></span>
+                            </div>
+                        </div>
+                        <a href="#" class="l-mobileHeader__logo">
+                            <img src="assets/images/logo.png" alt=""></a>
+                    </div>
+                </div>
             </div>
             <nav class="l-menu">
                 <div class="l-menu__container">
@@ -117,11 +133,17 @@
                                 聯絡我們</a>
                             
                         </li>
-                        <li class="go_sell"><a href="#" class="c-menuLv1__name"><img
+                        <li class="go_sell"><a href="#" class="c-menuLv1__name "><img
                                     src="assets/images/icons/sell_logo.png" alt="" 
-                                    class="sell_logo">去賣貨便</a>
+                                    class="sell_logo hidden-phone" >去賣貨便</a>
                         </li>
                     </ul>
+                    <div id="mobile_menu_login">
+                        <div>
+                            <p>客服專線：(02)2721-4234</p>
+                            <p>週一至週五：09:00~18:00(例假日休息)</p>
+                        </div>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -133,9 +155,7 @@
                     </button>
                     <div class="d-flex align-items-start">
                         <span class="badge  ">公告事項</span>
-                        <span>
-                            武漢肺炎全民防疫，請勿於平台販售醫用口罩，政府相關規範請見最新資訊
-                        </span>
+                        <marquee scrollamount="4">武漢肺炎全民防疫，請勿於平台販售醫用口罩，政府相關規範請見最新資訊</marquee>
                     </div>
                 </div>
             </div>
@@ -226,9 +246,9 @@
                         <div class="cs-c-banner" data-banner="cs-banner-3"></div>
                     </div>
 
-                    <div class="cs-l-wrap mainBlockWrap">
+                    <div class="cs-l-wrap mainBlockWrap d-flex justify-content-between bgGradient">
                         <div class="cs-l-mainKv__text" data-text="text">
-                            <div class="cub-text-wrapper">
+                            <div class="cub-text-wrapper mobile-text-black">
                                 <div>
                                     <h2>交貨便。安心便利
                                         寄送服務！</h2>
@@ -237,7 +257,7 @@
                                 </div>
                                 
                             </div>
-                            <div class="cub-text-wrapper">
+                            <div class="cub-text-wrapper mobile-text-black">
                                 <div>
                                     <h2>離島交貨便寄件<br>
                                         一律優惠60元</h2>
@@ -344,7 +364,7 @@
                     <div class="footerWrap f-recommandFlex pt-30">
                         <div>
                             <ul class="corp_logo">
-                                <li><img src="assets/images/seven_logo.png" alt="" class="f-recommandLinkLogo"></li>
+                                <li class="hidden-phone"><img src="assets/images/seven_logo.png" alt="" class="f-recommandLinkLogo"></li>
                                 <li><img src="assets/images/logo_white.png" alt="" class="f-logo-white"></li>
                             </ul>
                             <div class="cus_time">
@@ -393,10 +413,10 @@
                     <ul>
                         <li><a href="">© 2020 President Information CORP. All Rights Reserved. </a></li>
                     </ul>
-                    <div class="allRightReserve">
+                    <div class="allRightReserve hidden-phone"">
                         <ul>
                             <li>隱私權保護政策</li>
-                            <li>瀏覽器建議IE版本11與Chrome螢幕解析度1280x800以上</li>
+                            <li class="">瀏覽器建議IE版本11與Chrome螢幕解析度1280x800以上</li>
                         </ul>
                     </div>
                 </div>
