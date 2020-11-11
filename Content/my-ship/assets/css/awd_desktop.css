@@ -1173,9 +1173,9 @@ header.header .sub-menu .change-unit-menu li:first-of-type div {
 .c-menuLv1__child {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.8s;
-  -o-transition: max-height 0.8s;
-  transition: max-height 0.8s;
+  -webkit-transition: max-height 0.2s;
+  -o-transition: max-height 0.2s;
+  transition: max-height 0.2s;
   -webkit-box-shadow: 0px 3px 8px rgba(2, 2, 2, 0.15);
   box-shadow: 0px 3px 8px rgba(2, 2, 2, 0.15);
 }
@@ -1330,14 +1330,6 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 
 .c-menuLv2__name.on:after {
   background-position: 0 -20px;
-}
-
-.c-menuLv2__child {
-  max-height: 0;
-  overflow: hidden;
-  -webkit-transition: max-height 0.8s;
-  -o-transition: max-height 0.8s;
-  transition: max-height 0.8s;
 }
 
 .c-menuLv2__name.on + .c-menuLv2__child {
@@ -2157,9 +2149,9 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 .c-menuLv2__child {
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: max-height 0.8s;
-  -o-transition: max-height 0.8s;
-  transition: max-height 0.8s;
+  -webkit-transition: max-height 0.2s;
+  -o-transition: max-height 0.2s;
+  transition: max-height 0.2s;
 }
 
 .c-menuLv2__name.on + .c-menuLv2__child {
@@ -2405,7 +2397,8 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
   background-color: #fff;
 }
 
-.is-openMenu .o-menuMask {
+.is-openMenu .o-menuMask,
+.side-menu-on .o-menuMask {
   display: block;
 }
 
@@ -2435,7 +2428,8 @@ header.header.sticky .c-menuLv1 li.c-menuLv1__logo {
 }
 
 @media only screen and (min-width: 960px) {
-  .is-openMenu .o-menuMask {
+  .is-openMenu .o-menuMask,
+.side-menu-on .o-menuMask {
     display: none;
   }
 }

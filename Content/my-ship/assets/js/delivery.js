@@ -47,12 +47,13 @@
 
         $('.myFavorBtn').click(function () {
             $('.sideFunction').removeClass('closeFunction');
-
+            $('body').addClass('side-menu-on');
+            
         })
         $('.sideFunctionClose').click(function () {
             $('.sideFunction').addClass('closeFunction')
             $('.sideFixedBtn').removeClass('active');
-            $('.blackMask').removeClass('on');
+            $('body').removeClass('side-menu-on');
         })
         $('.smallDelete').click(function (e) {
             $(this).parents('.favorOuter').remove();
@@ -74,7 +75,10 @@ $('[data-id="js-burger"]').on('click', function () {
 $('.o-menuMask').on('touchstart click', function (e) {
     e.preventDefault();
     $('body').removeClass('is-openMenu');
+    $('body').removeClass('side-menu-on');
     $('.header').removeClass('on');
+    $('.sideFunction').addClass('closeFunction')
+    $('.sideFixedBtn').removeClass('active');
 });
 
 $('.c-menuLv1__name').on('click', function () {
@@ -91,11 +95,11 @@ $('.cs-o-link').on('touchstart click', function (e) {
     $('.header').removeClass('on');
     $([document.documentElement, document.body]).animate({
         scrollTop: $($(this).attr("href")).offset().top
-    }, 1000);
+    }, 1);
 });
 
 $('.side-nav .nav-link').on('touchstart click', function () {
     $([document.documentElement, document.body]).animate({
         scrollTop: $($(this).attr("href")).offset().top
-    }, 1000);
+    }, 1);
 });
