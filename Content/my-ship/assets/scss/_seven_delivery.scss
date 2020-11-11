@@ -546,7 +546,9 @@ button.close {
 	background-color: #fff;
 	padding: 22px 30px 0px;
 	min-height: 370px;
-
+	@include rwd-max-width(960px) {
+		width: 305px;
+	}
 
 	.sideFunctionTitle {
 		font-size: 24px;
@@ -730,7 +732,9 @@ button.close {
 
 	right: -360px;
 
-
+	@include rwd-max-width(960px) {
+		right: -305px;
+	}
 
 }
 

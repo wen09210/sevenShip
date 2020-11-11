@@ -3054,6 +3054,11 @@ button.close:hover, button.close:active, button.close:focus {
   padding: 22px 30px 0px;
   min-height: 370px;
 }
+@media all and (max-width: 960px) {
+  .sideFunctionBox {
+    width: 305px;
+  }
+}
 .sideFunctionBox .sideFunctionTitle {
   font-size: 24px;
   padding-bottom: 8px;
@@ -3217,6 +3222,11 @@ button.close:hover, button.close:active, button.close:focus {
 
 .closeFunction {
   right: -360px;
+}
+@media all and (max-width: 960px) {
+  .closeFunction {
+    right: -305px;
+  }
 }
 
 .mt-30 {
@@ -4171,6 +4181,10 @@ button.slick-prev.slick-arrow:hover:before {
     font-weight: normal;
     margin-top: 8px;
   }
+}
+
+.ml-30 {
+  margin-left: 30px;
 }
 
 .cs-l-mainKv__nav {
